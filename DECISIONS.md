@@ -39,6 +39,33 @@ Each entry:
 - **Scope:** global.
 - **Do not:** model campaigns, naming conventions, spend levels or results on any real program operator or client the owner has worked with, or any other real account.
 
+### 2026-10-16 — Hygiene-page slot test relaxed from strict-case to mechanism-or-case (test B)
+- **Decision:** a defect class earns a hygiene-audit-page slot with a documented decision case **or** a Google-documented mechanism by which it moves conversion credit or conversion counts. The page carries a "documented case" column: Uber/Frisch on the bot row, "none published" stated plainly on every other row.
+- **Why:** strict-case, applied as written, left 1 of 9 classes on the page. The research found published decision cases only for large public ad-fraud events (Uber, Chase, P&G). The cause is **publication bias**: budget misallocations from tag-level tracking defects are not publishable events. Companies fix them quietly, and agencies don't publish their clients' mistakes. The absence of a published case is therefore not evidence that a class is noise, and the strict rule couldn't tell the two apart. Google's own documentation of the mechanism is the strongest available evidence that a class reaches the numbers budgets are set on.
+- **Rejected:** A (as written: honest but leaves a one-class "ledger"). C (empirical in this dataset: lets A-tag rates decide page content).
+- **Scope:** `docs/defect-taxonomy.md`, hygiene-audit view.
+- **Do not:** cite a mechanism as if it were a decision case. Drop the "none published" text to make a row look stronger. Admit a class on a vendor-only mechanism (2a stays a footnote for that reason).
+
+### 2026-10-16 — Verdict grammar: "your top campaign depends on a rule nobody chose"
+- **Decision:** the tool computes four transparent rules itself (last-click, first-click, linear, position-based). The copy names the Nov 2023 removal: GA4 replaced the dropdown with a default no one can audit. The four rules are the checkable bracket around that black box. Every number on the page is reproducible by hand. Data-driven attribution appears only as the thing you can't reproduce, cited to [Google's doc](https://support.google.com/analytics/answer/10596866) ("no longer available as of November 2023").
+- **Why:** owner decision. The removal strengthens the story. Comparing GA4's own models would rest the flagship on a model that can't be checked, which is what this portfolio exists to refuse.
+- **Rejected:** comparing GA4's current models (DDA vs the last-click variants).
+- **Scope:** verdict view, all copy.
+- **Do not:** say "dropdown" as if the four rules are still in GA4. Present any DDA number as computed by us.
+
+### 2026-10-16 — Universe wears the Cinderhaven DTC identity; data is standalone
+- **Decision:** the brand is Cinderhaven's DTC channel ("the same brand, through the marketing lens"). The dataset lives in this repo with zero dependency on Cinderhaven canon.
+- **Scope:** universe, README (Cinderhaven context section applies).
+- **Do not:** import or reconcile figures from Cinderhaven canon. Any shared-looking figure is coincidental and must not be presented as canon.
+
+### 2026-10-16 — Public name: Campaign Math (campaignmath.lailarallc.com)
+- **Decision:** the tool is **Campaign Math**, subdomain `campaignmath.lailarallc.com`. The repo stays `campaign-attribution-audit` permanently.
+- **Why:** owner pick. A CEO reads it instantly ("the math on our campaigns"), and it fits the family (Lift Math, Slot Math).
+- **Rejected:** Credit Math, Click Math, Track Math, Spend Math.
+
+### 2026-10-16 — Brief leans adopted (no owner objection)
+- Four rules, no time-decay. The hygiene audit quantifies dollars (spend sitting on unattributable traffic). One fixed calendar quarter, stated on every view.
+
 ---
 
 ## Visualization

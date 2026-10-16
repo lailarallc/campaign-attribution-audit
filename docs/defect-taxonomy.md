@@ -11,22 +11,26 @@ Policy: `DECISIONS.md` 2026-10-16. Raw evidence: `docs/anchors-research.md`.
   decision stated" does not qualify. Mechanism-only claims ("this could hurt your
   budget") do not qualify.
 
-Status: filter applied **as written** (2026-10-16). Result: 1 of 9 classes keeps a page
-slot. See "Filter outcome" at the bottom. That outcome is a fork for the owner.
+Status: **slot test B adopted (owner, 2026-10-16; `DECISIONS.md`).** A class earns a page
+slot with a documented decision case **or** a Google-documented mechanism that moves
+conversion credit or counts. The "documented case" column is shown on the page honestly.
+As-written result (1 of 9) is kept below for the record. **Result under B: 9 page rows
+(classes 1, 2b, 3-9), 1 footnote (2a).**
 
 ---
 
-| # | Class | Existence | Rate source | Documented decision case | Placement |
-|---|---|---|---|---|---|
-| 1 | Missing UTMs | CITE (Google) | A-tag; vendor heuristic | none found | **Footnote** |
-| 2 | Malformed / inconsistent UTMs | CITE (Google) | A-tag | none found | **Footnote** |
-| 3 | (not set) | CITE (Google) | A-tag (largely derived) | none found | **Footnote** |
-| 4 | Duplicate tagging / double-counted conversions | CITE (Google) | A-tag; one-dataset bound | unconfirmed snippet only | **Footnote** |
-| 5 | Self-referrals / payment gateways | CITE (agency, READ) | A-tag | defect found, no decision stated | **Footnote** |
-| 6 | Bot / invalid traffic | CITE (Google) | A-tag; vendor paid-click bound | **yes — Uber** | **Page** |
-| 7 | gclid lost / auto-tagging conflict | CITE (Google) | A-tag | none found | **Footnote** |
-| 8 | Cross-domain / session breaks / cookie loss | CITE (Google, SNIP) | A-tag | defect found, no decision stated | **Footnote** |
-| 9 | Platform vs GA4 conversion gap | CITE (agency, SNIP) | A-tag; agency heuristic | none for the *defect* | **Footnote** |
+| # | Class | Existence | Rate source | Documented decision case | As written | **Under B** |
+|---|---|---|---|---|---|---|
+| 1 | Missing UTMs | CITE (Google) | A-tag; vendor heuristic | none published | Footnote | **Page**: Google channel rules [READ] |
+| 2a | Case/spelling variants | CITE (Google) | A-tag | none published | Footnote | **Footnote**: Google says channel rules are case-insensitive; campaign-row split is vendor-sourced only |
+| 2b | Off-spec medium → Unassigned | CITE (Google) | A-tag | none published | Footnote | **Page**: Google channel rules [READ] |
+| 3 | (not set) | CITE (Google) | A-tag (largely derived) | none published | Footnote | **Page**: Google, (not set) → Unassigned [READ] |
+| 4 | Duplicate tagging / double-counted conversions | CITE (Google) | A-tag; one-dataset bound | none published (Augurian unconfirmed) | Footnote | **Page**: Google dedup rule [READ] |
+| 5 | Self-referrals / payment gateways | CITE (Google, READ) | A-tag | none published | Footnote | **Page**: Google unwanted-referrals + cross-domain docs [READ] |
+| 6 | Bot / invalid traffic | CITE (Google) | A-tag; vendor paid-click bound | **Uber / Frisch** [READ] | Page | **Page**: documented case |
+| 7 | gclid lost / auto-tagging conflict | CITE (Google) | A-tag | none published | Footnote | **Page**: Google traffic-source doc [READ] |
+| 8 | Cross-domain / session breaks / cookie loss | CITE (Google, READ) | mechanical (CITE Safari share) | none published | Footnote | **Page**: Google cross-domain doc [READ]; ITP part needs WebKit primary |
+| 9 | Platform vs GA4 conversion gap | CITE (Google Ads, READ) | A-tag; agency heuristic | none published | Footnote | **Page**: Google Ads conversion-window doc [READ]; weakest mechanism, Google says only "risk of data discrepancies" |
 
 ---
 
@@ -92,7 +96,9 @@ slot. See "Filter outcome" at the bottom. That outcome is a fork for the owner.
 
 ---
 
-## Filter outcome — fork for the owner
+## Filter outcome — RESOLVED: test B (owner, 2026-10-16)
+
+Per-class "Demotion reasoning" lines above record the **as-written** outcome. The table's "Under B" column is the live placement.
 
 Applied as written, **the hygiene-audit page holds one class (bots/invalid traffic)** and
 eight footnotes. The brief's view 3 ("the defect ledger … the lane's positioning as a
@@ -107,3 +113,13 @@ Options:
 - **A — keep as written.** Page = bots plus the computed unattributable share. Eight footnotes. Honest but thin, and the lane's "hygiene" positioning rests on one class.
 - **B — widen the slot test (recommended):** admit a class if it has *either* a documented decision case *or* a Google-documented mechanism by which it moves the inputs a budget decision reads (channel/campaign conversion credit or conversion counts). Show a "documented decision case" column honestly: "Uber" for one row, "none published" for the rest. Classes whose mechanism doesn't touch conversion credit stay footnotes. Class 2a (case variants) fragments rows without changing channel, so it stays a footnote.
 - **C — empirical slot test:** admit a class if removing it moves a campaign's ROAS range in *this* dataset. Rejected as a default: it makes A-tag rates decide page content, which edges toward drama-by-design.
+
+---
+
+## Mechanism citations added for test B (all [READ], 2026-10-16)
+
+- **3:** [GA4 (not set)](https://support.google.com/analytics/answer/13504892): "If the session source / medium is reported as (not set), your traffic will be shown as Unassigned".
+- **5:** [GA4 unwanted referrals](https://support.google.com/analytics/answer/10327750) lists "a third-party payment processor" as a domain that should not count as a referral. [GA4 cross-domain](https://support.google.com/analytics/answer/10071811): "Self-referrals may mean that traffic to your site is being attributed incorrectly."
+- **8:** [GA4 cross-domain](https://support.google.com/analytics/answer/10071811): without it, one visitor counts as "two users and two sessions instead of one user and one session." The ITP 7-day cap is still vendor-sourced. Read the WebKit primary before citing it on the page.
+- **9:** [Google Ads conversion windows](https://support.google.com/google-ads/answer/3123169): defaults are 30-day click and 1-day view. Aligning windows "reduces the risk of data discrepancies." This is the weakest mechanism on the page.
+- **A8 Safari share:** [StatCounter US, all platforms, Sep 2026](https://gs.statcounter.com/browser-market-share/all/united-states-of-america): Safari 30.42%.
