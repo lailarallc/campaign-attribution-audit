@@ -63,7 +63,7 @@ Lailara frame v1.5.1 + measure/table rules, static precompute stack (all computa
 
 ## Open questions — /clarify ammunition
 
-> **Resolved 2026-10-16** (see `DECISIONS.md`): name = **Campaign Math** (campaignmath.lailarallc.com). Universe = Cinderhaven DTC identity, standalone data. Verdict grammar = "depends on a rule nobody chose" (GA4 removed the four rules in Nov 2023). Hygiene slot test = mechanism-or-case. Q3/Q4/Q6 leans adopted.
+> **Resolved 2026-10-16** (see `DECISIONS.md`): name = **Campaign Math** (campaignmath.lailarallc.com). Universe = ~~Cinderhaven DTC identity~~ **Quellwood Provisions** (invented; reversed at office hours: canon DTC $182.7K/yr vs pinned ~$500K/quarter). Verdict grammar = "depends on a rule nobody chose" (GA4 removed the four rules in Nov 2023). Hygiene slot test = mechanism-or-case. Q3/Q4/Q6 leans adopted.
 
 1. ~~Practitioner interview (anchor 4)~~ — withdrawn 2026-10-16; replaced by the researched, CITE-backed taxonomy (anchor 4 above).
 2. Universe identity: Cinderhaven's DTC marketing vs fresh brand (lean: Cinderhaven brand identity, standalone data).

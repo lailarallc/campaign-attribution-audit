@@ -53,7 +53,7 @@ Each entry:
 - **Scope:** verdict view, all copy.
 - **Do not:** say "dropdown" as if the four rules are still in GA4. Present any DDA number as computed by us.
 
-### 2026-10-16 — Universe wears the Cinderhaven DTC identity; data is standalone
+### ~~2026-10-16 — Universe wears the Cinderhaven DTC identity; data is standalone~~ — REVERSED same day, see "Universe identity reversed" below
 - **Decision:** the brand is Cinderhaven's DTC channel ("the same brand, through the marketing lens"). The dataset lives in this repo with zero dependency on Cinderhaven canon.
 - **Scope:** universe, README (Cinderhaven context section applies).
 - **Do not:** import or reconcile figures from Cinderhaven canon. Any shared-looking figure is coincidental and must not be presented as canon.
@@ -70,6 +70,32 @@ Each entry:
 ### 2026-10-16 — 20-row owner eyeball gate replaced by an independent adversarial realism review
 - **Decision:** a fresh, read-only session reviews the generated universe against the pinned criteria and writes `docs/realism-review.md` (verdict plus findings plus response table). This is the rebate repo's exact pattern, substituted for the same reason. Owner sampling is optional.
 - **Do not:** answer a realism finding by changing defect rates.
+
+### 2026-10-16 — Universe identity reversed: fresh invented brand, Quellwood Provisions
+- **Decision:** the universe is **Quellwood Provisions**, an invented small-batch specialty-food DTC brand. It is not Cinderhaven. This reverses the Cinderhaven-identity entry above.
+- **Only the identity moves.** Pinned scale, AOV, spend split and A-tags A1–A9 are unchanged.
+- **Why (office-hours panel finding, verified):**
+  - Canon DTC is **$182,672 gross for CY2025 on 5,962 orders** (AOV ≈ $31), per `cinderhaven-data-platform/reference/canonical_values.yml:349-353, 505-508`. channel-profitability-analysis shows it live.
+  - The pinned universe is ~$500K **per quarter** at an $80–120 AOV, an ~11x mismatch. A skeptical reader finds it in two clicks.
+  - Conforming to canon (~$45K quarters, AOV $31, ~7 events for A4b) guts the dollar grammar.
+  - A visible scope-exception disclaimer on a tool whose claim is "every number reproducible" refutes itself.
+  - Upside: this lane's buyers aren't CPG-only, so a non-Cinderhaven DTC brand widens who recognizes themselves.
+- **Distance discipline (Galewick pattern):** no real company.
+  - Name web-screened 2026-10-16: exact-match searches for "Quellwood" and "Quellwood" + food/pantry/provisions returned no business, brand or product.
+  - A trademark check (USPTO) is required before launch.
+  - Products, campaign names and naming conventions are invented. Within-campaign parameters are seeded draws (`docs/design-gate.md` §1.5).
+- **Scope:** universe, all copy, README. The README omits the Cinderhaven context and data-contract sections.
+- **Do not:** use the Cinderhaven name, products, retailers or figures anywhere in this repo's output. Vendor the Cinderhaven canon here.
+
+### 2026-10-16 — Attribution definitions pinned so neither "last-click" nor "top campaign" is a tuning lever
+- **Decision:** `docs/design-gate.md` §1.5:
+  - Last-click = last non-direct click. Direct is removed from paths for all four rules alike. Direct-only paths go to an unattributable Direct bucket. 90-day lookback.
+  - Top campaign = the paid campaign with the highest attributed revenue (not ROAS). No tiebreak.
+  - Conversions are deduplicated on `transaction_id` as GA4 does.
+  - Campaign match is case-insensitive and trimmed. Anything else is Unmatched.
+  - 15-campaign roster pinned, with the within-platform split drawn from a derived seed.
+- **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
+- **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
 ### 2026-10-16 — Brief leans adopted (no owner objection)
 - Four rules, no time-decay. The hygiene audit quantifies dollars (spend sitting on unattributable traffic). One fixed calendar quarter, stated on every view.

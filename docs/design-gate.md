@@ -7,7 +7,7 @@ Sources: `docs/anchors-research.md`, `docs/defect-taxonomy.md`. Tags:
 - **CITE** = published figure used as the criterion.
 - **DIR** = published direction or ranking only.
 - **STRUCT** = Google platform documentation (exact rules).
-- **A** = assumed, proposed, owner acceptance pending.
+- **A** = assumed, owner-accepted 2026-10-16.
 
 ## 0. What the gate is for
 
@@ -24,6 +24,45 @@ The gate exists for realism, not drama.
 
 Attribution rules run on the *recorded* layer, which is what a real analyst sees. True
 journeys are kept for the roadmap's scored version and do not feed v1 claims.
+
+## 1.5 Attribution definitions — pinned (office hours, 2026-10-16)
+
+These close the verdict critic's two gaps. Each definition is fixed before generation, so
+none can be chosen after output is seen.
+
+**Touches, conversions, credit**
+- **Touch** = one recorded session. Its channel is the GA4 default channel group (§4), and its campaign key comes from the matching rule below.
+- **Conversion** = a `purchase` event, deduplicated on `transaction_id` exactly as the GA4 UI does. Purchases with no `transaction_id` count once each, because GA4 cannot dedup them. Raw-export duplication (class 4) is reported in the hygiene ledger, not in the rules.
+- **Credit unit** = purchase `value` (revenue).
+- **Lookback** = 90 days before the conversion, the GA4 default ([doc](https://support.google.com/analytics/answer/9191807)), the same for all four rules.
+- **Path** = the user's recorded touches in the lookback, in time order, with **Direct sessions removed** (GA4's last-non-direct-click convention, applied to all four rules alike). Unassigned and (not set) touches stay in the path. They are non-direct, so they take credit, and that credit lands in the unattributable bucket.
+- **Direct-only path** (every touch Direct) → 100% to the **Direct** bucket, which is unattributable. It is never credited to a campaign.
+
+**The four rules** (on the path, n = number of touches)
+- **Last-click** = last non-direct click: 100% to touch n.
+- **First-click** = 100% to touch 1.
+- **Linear** = 1/n to each touch.
+- **Position-based** = 40% first, 40% last, 20% split evenly across the middle. n=1 → 100%; n=2 → 50/50.
+
+**Campaign matching**
+- The recorded `utm_campaign` matches a spend-table campaign name **case-insensitively after trimming whitespace**.
+- Auto-tagged Google Ads sessions match by campaign ID.
+- Anything else, including spelling variants, goes to **Unmatched**, which is unattributable.
+- Consequence for class 2a: case variants are recovered. Spelling variants land in Unmatched and count in the unattributable total. The class row stays a footnote per test B.
+
+**Top campaign**
+- Winner set = **paid campaigns only** (spend > 0 in the spend table). Email, organic and the unattributable buckets are shown, but can't be "top."
+- Ranking metric = **attributed revenue** under the rule, not ROAS, so a tiny-spend campaign can't win on a ratio.
+- Ties: both campaigns are named. No tiebreak.
+- ROAS (attributed revenue ÷ spend) is shown per campaign as a **range across the four rules**.
+
+**Campaign roster** (pinned, 15 campaigns, within the §2 band)
+- Google, 5: brand search ×1, non-brand search ×3, Shopping ×1.
+- Meta, 5: prospecting ×3, retargeting ×2.
+- Other paid, 2: TikTok prospecting ×1, affiliate ×1.
+- Email, 3: no media spend; not eligible for top.
+- Platform totals follow the §3 split (Google 45 / Meta 40 / other 15).
+- **Within-platform split** is a seeded Dirichlet draw. The seed is SHA-256 of `quellwood-provisions/campaign-roster/v1`, mod 2^32: derived, not chosen (Galewick distance-by-construction pattern). The draw is not repeated after seeing output.
 
 ## 2. Universe scale and period
 

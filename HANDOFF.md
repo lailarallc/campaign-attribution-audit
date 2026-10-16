@@ -47,3 +47,16 @@ realism review (rebate pattern). PLAN.md Goal written.
 **State:** Scoping done. No code or data yet.
 
 **Next:** /office-hours (Heavy), then /decompose the universe build.
+
+## 2026-10-16 — Office hours (panel)
+
+**Did:** Three-critic panel → `docs/office-hours.md`. Identity reversed to an invented
+brand, **Quellwood Provisions** (canon DTC $182.7K/yr vs pinned ~$500K/quarter; name
+web-screened, USPTO check before launch). Pinned the attribution definitions in
+design-gate §1.5: last non-direct click, top = paid campaign by attributed revenue,
+15-campaign roster with a seeded split. Client-mode stays out of v1.
+
+**State:** Gate pinned + definitions pinned. Three forks open (bank rule, verdict lead,
+presentation). No code or data.
+
+**Next:** owner answers forks A–C → /plan-ceo-review.

@@ -12,7 +12,7 @@ The tool's job, which this arc serves: four transparent, hand-reproducible attri
 rules that bracket GA4's un-auditable default.
 
 - **Tool:** Campaign Math (`campaignmath.lailarallc.com`). The verdict is "your top campaign depends on a rule nobody chose", plus the unattributable share at full size, in dollars.
-- **Universe:** Cinderhaven DTC identity with standalone data. GA4-export-shaped, one fixed quarter, ~$500K online revenue. True journeys come first, then a tracking layer seeds 9 defect classes, exactly logged.
+- **Universe:** Quellwood Provisions, an invented specialty-food DTC brand (identity reversed at office hours; see DECISIONS). GA4-export-shaped, one fixed quarter, ~$500K online revenue. True journeys come first, then a tracking layer seeds 9 defect classes, exactly logged.
 - **Hygiene page:** 9 rows under test B with an honest "documented case" column (Uber on one row, "none published" on the rest). Class 2a goes in a footnote.
 - **v1 = measurement version.** The version scored against true journeys is roadmap.
 - **Done for this arc:** the gate is pinned (done 2026-10-16), the universe is built and passes `docs/design-gate.md` §2–§5, and the independent adversarial realism review (§6) returns PASS or PASS WITH FINDINGS with every finding answered.
