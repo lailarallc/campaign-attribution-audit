@@ -7,9 +7,19 @@ session. For session-by-session state, see HANDOFF.md.
 
 ## Goal
 
-[Written by /clarify after the owner confirms the forks below.]
+Build the pinned, seed-locked universe for **Campaign Math** and get it through the gate.
+The tool's job, which this arc serves: four transparent, hand-reproducible attribution
+rules that bracket GA4's un-auditable default.
 
-## Open forks — /clarify (2026-10-16)
+- **Tool:** Campaign Math (`campaignmath.lailarallc.com`). The verdict is "your top campaign depends on a rule nobody chose", plus the unattributable share at full size, in dollars.
+- **Universe:** Cinderhaven DTC identity with standalone data. GA4-export-shaped, one fixed quarter, ~$500K online revenue. True journeys come first, then a tracking layer seeds 9 defect classes, exactly logged.
+- **Hygiene page:** 9 rows under test B with an honest "documented case" column (Uber on one row, "none published" on the rest). Class 2a goes in a footnote.
+- **v1 = measurement version.** The version scored against true journeys is roadmap.
+- **Done for this arc:** the gate is pinned (done 2026-10-16), the universe is built and passes `docs/design-gate.md` §2–§5, and the independent adversarial realism review (§6) returns PASS or PASS WITH FINDINGS with every finding answered.
+
+_Confirmed by the owner at /clarify, 2026-10-16._
+
+## Forks — /clarify (2026-10-16) — all resolved, see DECISIONS.md
 
 Asked now:
 1. **Hygiene-page slot test.** Applied as written, the decision-impact filter leaves 1 of 9 classes on the page (bots, via Uber). Options A/B/C are in `docs/defect-taxonomy.md`. Recommended: **B**, a documented case *or* a Google-documented mechanism that moves conversion credit, with an honest "documented case" column.

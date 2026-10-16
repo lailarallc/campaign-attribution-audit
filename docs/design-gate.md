@@ -1,7 +1,6 @@
 # Design gate — realism criteria (pre-registered)
 
-**Status:** DRAFT 2026-10-16. Pinned when the owner accepts it. No data is generated
-before that. After pinning, a criterion changes only through a `DECISIONS.md` entry
+**Status:** **PINNED 2026-10-16.** The owner accepted all A-tags (§2, §3, §5). After pinning, a criterion changes only through a `DECISIONS.md` entry
 whose reason is not "the verdict looked better."
 
 Sources: `docs/anchors-research.md`, `docs/defect-taxonomy.md`. Tags:
@@ -81,11 +80,17 @@ acceptance. They are pinned here **before** generation and never retuned against
 **Aggregate sanity check, not a target:** the resulting unattributable share of
 conversions is *reported*, not tuned. No published GA4 aggregate exists to bound it.
 
-## 6. Intent test
+## 6. Intent test — independent adversarial realism review
 
-20 randomly sampled rows (sessions plus one purchase each), drawn with a fixed seed, are
-shown to the owner raw. Pass = the owner judges them "looks like real GA data." On a
-fail, the reason goes in FAILURES.md and the fix is to structure, never to defect rates.
+Same pattern as the rebate repo (owner decision, 2026-10-16). It replaces the owner
+eyeball gate.
+
+- **Reviewer:** a fresh session with no stake in the build. It is read-only against the generator and data, and reviews against **these pinned criteria only**.
+- **Sample:** 20 rows drawn with a fixed seed (sessions plus one purchase each), plus whatever whole-dataset checks the reviewer chooses to run.
+- **Question:** "Does this look like a real GA4 export?" The reviewer also checks §2–§5 pass/fail and lists synthetic tells.
+- **Output:** `docs/realism-review.md` with verdict PASS / PASS WITH FINDINGS / FAIL and numbered findings. A response table is appended: each finding is addressed or explicitly kept with a reason.
+- **Fixes go to structure and the generator only.** Defect rates (§5) and pinned A rows are never retuned to answer a finding. Any parameter a fix needs comes from a separate seeded stream, so existing draws stay unchanged.
+- Owner sampling is optional, not required.
 
 ## 7. Guardrail check (blocks the build)
 
@@ -95,7 +100,7 @@ fail, the reason goes in FAILURES.md and the fix is to structure, never to defec
 
 ## 8. Open items at the gate
 
-1. Owner acceptance of A-tags A1–A9 and the §2/§3 A rows.
+1. ~~Owner acceptance of A-tags~~: accepted 2026-10-16.
 2. ~~Safari share (A8)~~: resolved, StatCounter 30.42%.
 3. **Verified [READ]:** Google, [Select attribution settings](https://support.google.com/analytics/answer/10596866): "The first click, linear, time decay, and position-based attribution models are no longer available as of November 2023." GA4 now offers data-driven (default), paid-and-organic last click, and Google-paid last click. The brief's "dropdown" verdict grammar is stale for GA4 users. See the fork in `PLAN.md`.
 4. ~~Taxonomy filter outcome~~: resolved, test B (`DECISIONS.md`).

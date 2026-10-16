@@ -63,6 +63,14 @@ Each entry:
 - **Why:** owner pick. A CEO reads it instantly ("the math on our campaigns"), and it fits the family (Lift Math, Slot Math).
 - **Rejected:** Credit Math, Click Math, Track Math, Spend Math.
 
+### 2026-10-16 — Design gate pinned
+- **Decision:** `docs/design-gate.md` is pinned. The owner accepted every A-tag (A1–A9) and the §2/§3 A rows.
+- **Do not:** change a pinned criterion or rate without a DECISIONS entry whose reason is not the verdict. Retune rates after seeing output.
+
+### 2026-10-16 — 20-row owner eyeball gate replaced by an independent adversarial realism review
+- **Decision:** a fresh, read-only session reviews the generated universe against the pinned criteria and writes `docs/realism-review.md` (verdict plus findings plus response table). This is the rebate repo's exact pattern, substituted for the same reason. Owner sampling is optional.
+- **Do not:** answer a realism finding by changing defect rates.
+
 ### 2026-10-16 — Brief leans adopted (no owner objection)
 - Four rules, no time-decay. The hygiene audit quantifies dollars (spend sitting on unattributable traffic). One fixed calendar quarter, stated on every view.
 

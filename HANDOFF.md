@@ -35,3 +35,15 @@ against Google that GA4 dropped first-click/linear/position-based in Nov 2023.
 That outcome and the stale "dropdown" grammar are open forks in PLAN.md. No data generated.
 
 **Next:** owner answers forks 1–4 + accepts A-tags → pin the gate → write PLAN.md Goal.
+
+## 2026-10-16 — /clarify closed; gate pinned
+
+**Did:** The owner answered all forks: slot test B, "rule nobody chose", Cinderhaven DTC
+identity, name **Campaign Math**. Read Google mechanism docs for classes 3/5/8/9 and cited
+the Safari share. Owner confirmed the 95% read and accepted all A-tags, so
+`docs/design-gate.md` is PINNED. The intent test is now an independent adversarial
+realism review (rebate pattern). PLAN.md Goal written.
+
+**State:** Scoping done. No code or data yet.
+
+**Next:** /office-hours (Heavy), then /decompose the universe build.
