@@ -7,7 +7,22 @@ session. For session-by-session state, see HANDOFF.md.
 
 ## Goal
 
-[One sentence — what "done" looks like for this arc.]
+[Written by /clarify after the owner confirms the forks below.]
+
+## Open forks — /clarify (2026-10-16)
+
+Asked now:
+1. **Hygiene-page slot test.** Applied as written, the decision-impact filter leaves 1 of 9 classes on the page (bots, via Uber). Options A/B/C are in `docs/defect-taxonomy.md`. Recommended: **B**, a documented case *or* a Google-documented mechanism that moves conversion credit, with an honest "documented case" column.
+2. **Verdict grammar.** GA4 removed first-click, linear, time-decay and position-based in Nov 2023 (Google doc, READ). "Your top campaign depends on a dropdown" is stale. Recommended: keep the four transparent rules, computed by the tool, and reframe as "depends on a rule nobody chose." GA4's default data-driven model is named as the black box the four rules bracket.
+3. **Universe identity.** Cinderhaven's DTC brand vs a fresh brand. The brief leans Cinderhaven identity with standalone data.
+4. **Tool name.** Candidates: **Credit Math** (recommended: attribution *is* credit assignment, Google's docs use the word, and the hygiene half is "credit nobody can assign"), Click Math, Track Math, Spend Math. The name decides the subdomain.
+
+Taking the brief's lean unless the owner objects:
+5. Rule set: the four standard rules, no time-decay.
+6. Hygiene audit quantifies dollars (spend sitting on unattributable traffic).
+7. One fixed calendar quarter, stated on every view.
+
+Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in `docs/design-gate.md`, and a citable Safari share for A8.
 
 ## Why this arc, why now
 

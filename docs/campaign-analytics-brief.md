@@ -40,7 +40,10 @@ Synthetic GA4-style sessions/events plus a campaign spend table, with seeded tra
 1. Published figures on tracking/data-quality failure rates: (not set) prevalence, UTM error rates, bot-traffic share (industry studies, analytics-vendor benchmarks — CITE with vendor caveat).
 2. Attribution-rule disagreement magnitudes from published studies (CITE where they exist; DIRECTION otherwise).
 3. Campaign-mix realism: typical channel mix, spend distribution, conversion rates for a small DTC brand (CITE/DIRECTION).
-4. **PRACTITIONER anchor class:** the owner's campaign/GA analysis experience supplies the defect taxonomy — which tracking failures actually occur and how often. Interview the owner; record as practitioner-sourced, labeled as such, never dressed as a citation.
+4. ~~**PRACTITIONER anchor class**~~ — **withdrawn for this repo (owner decision, 2026-10-16).** No practitioner interview. Research-only anchor policy (see `DECISIONS.md`):
+   - **Taxonomy:** the nine standard tracking-defect classes (`docs/defect-taxonomy.md`). Every class's *existence* is CITE-backed (analytics docs, auditor write-ups, published studies).
+   - **Rates:** CITE where published; otherwise an **A-tag** (ASSUMED — Claude's labeled best guess, same convention as the rebate clarify log), bounded by any citable aggregate. Aggregates are bounds, never divided into classes.
+   - **Decision-impact filter:** a class earns a hygiene-audit-page slot only with a *documented* case of it changing (or demonstrably distorting) a budget decision. No documented case → demoted to a footnote, demotion recorded per class with reasoning.
 
 ## Views (working shape — pressure-test it)
 
@@ -60,7 +63,7 @@ Lailara frame v1.5.1 + measure/table rules, static precompute stack (all computa
 
 ## Open questions — /clarify ammunition
 
-1. Practitioner interview (anchor 4): the owner's tracking-defect taxonomy and war stories. Do first.
+1. ~~Practitioner interview (anchor 4)~~ — withdrawn 2026-10-16; replaced by the researched, CITE-backed taxonomy (anchor 4 above).
 2. Universe identity: Cinderhaven's DTC marketing vs fresh brand (lean: Cinderhaven brand identity, standalone data).
 3. Attribution rule set: the four standard rules, or add time-decay? (Lean: four; more rules dilute the picture.)
 4. Does the hygiene audit quantify dollars (spend sitting on unattributable traffic) — lean yes, it is the money-leak grammar.
@@ -69,4 +72,4 @@ Lailara frame v1.5.1 + measure/table rules, static precompute stack (all computa
 
 ## Estimate
 
-Practitioner interview + design gate: one session. Universe build: ~2–3 days. Tool: ~1–1.5 weeks at fleet rigor. Parallel-safe with the rebate build — different repos, no shared dependencies.
+Taxonomy research + design gate: one session. Universe build: ~2–3 days. Tool: ~1–1.5 weeks at fleet rigor. Parallel-safe with the rebate build — different repos, no shared dependencies.

@@ -18,7 +18,20 @@ docs/campaign-analytics-brief.md. Private repo under lailarallc.
 
 **State:** Foundation only. PLAN.md empty until /clarify.
 
-**Next:** /clarify — practitioner interview (anchor 4) first, then the
+**Next:** /clarify — researched defect taxonomy (anchor 4, CITE/A-tag) first, then the
 design gate (realism criteria), then forks + name candidates.
 
 ---
+
+## 2026-10-16 — Research-only anchors; taxonomy + design gate drafted
+
+**Did:** Owner withdrew the practitioner interview. Updated brief/DECISIONS/CLAUDE.md to
+the research-only anchor policy. Five research passes →
+`docs/anchors-research.md`. Sourced taxonomy with per-class demotions →
+`docs/defect-taxonomy.md`. Draft realism criteria → `docs/design-gate.md`. Verified
+against Google that GA4 dropped first-click/linear/position-based in Nov 2023.
+
+**State:** Decision-impact filter as written leaves 1 of 9 classes on the hygiene page.
+That outcome and the stale "dropdown" grammar are open forks in PLAN.md. No data generated.
+
+**Next:** owner answers forks 1–4 + accepts A-tags → pin the gate → write PLAN.md Goal.

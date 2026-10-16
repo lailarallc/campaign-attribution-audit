@@ -15,8 +15,8 @@ worked — and can your data even answer that question?
 
 **Hard guardrail:** nothing mirrors any real client's campaign data, account
 structure, or results (not any real program operator or client the owner has worked with).
-Invented brand, invented campaigns. Practitioner input supplies defect
-*classes and rates*, never client specifics.
+Invented brand, invented campaigns. Anchors are research-only (no
+practitioner input in this repo): CITE or labeled A-tag, never client specifics.
 
 ## Stack and tools
 
@@ -39,12 +39,9 @@ FAILURES.md as relevant.
 
 ## Voice and standards
 
-- [Describe how written output should sound — e.g., "casual and
-  clear", "professional but approachable", "technical and precise"]
 - No marketing voice or consultant filler ("leverage," "synergy,"
   "best-in-class," "unlock," "drive value")
 - No hedging that softens a real finding
-
 - Economist style for written deliverables: sober, declarative,
   data-forward
 - Charts must be readable by non-data-scientist, non-researcher
