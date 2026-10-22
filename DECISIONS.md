@@ -97,6 +97,18 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-10-22 — Office-hours forks A, B, C adopted as written; copy branches pre-registered
+- **A, bank rule:** bank (do not ship) only if all three hold:
+  - every rule names the same top paid campaign;
+  - fewer than 3 paid campaigns have ROAS max/min ≥ 1.5;
+  - Kendall τ-b (first-click vs last-click ranks) ≥ 0.6.
+  Otherwise ship branch B1 (top differs) or B2 (top holds, order moves). **Owner rider:** the rules-agree branch (B3) presents agreement as a plain finding about this book ("on this data the four rules mostly agree — here's why"), never spun or buried.
+- **B, verdict lead:** dollars first (untraced spend), then "which campaign worked best depends on a rule nobody chose."
+- **C, presentation:** top 4 hygiene classes by revenue at full size, the rest expandable with the documented-case column kept, plus a "measurable floor" line for retail-led brands.
+- **Pre-registration:** `docs/verdict-branches.md` is committed before any generator code. It holds the selection rule, measure definitions and verbatim copy.
+- **Scope:** verdict view, hygiene view.
+- **Do not:** edit branch copy, thresholds or measure definitions after generation without an entry whose reason is not the verdict. Ship BANK without an explicit owner override.
+
 ### 2026-10-16 — Brief leans adopted (no owner objection)
 - Four rules, no time-decay. The hygiene audit quantifies dollars (spend sitting on unattributable traffic). One fixed calendar quarter, stated on every view.
 
