@@ -296,8 +296,11 @@ def split_share(truth):
     or a gateway return (A5)."""
     a8 = {e["sid"] for e in truth["log"] if e["class"] == "A8"}
     gw = {e["ref"] for e in truth["log"] if e["class"] == "A5"}
+    first_of = {o["txn"]: min(o["window"], key=lambda sid: truth["sessions"][sid]["ts"])
+                for o in truth["orders"] if o["window"]}
     multi = [o for o in truth["orders"] if len(o["window"]) >= 2]
-    split = [o for o in multi if o["txn"] in gw or o["window"] & a8]
+    # a reset on the journey's first session splits nothing inside it (R8)
+    split = [o for o in multi if o["txn"] in gw or (o["window"] - {first_of[o["txn"]]}) & a8]
     return round(len(split) / len(multi), 4) if multi else 0.0
 
 

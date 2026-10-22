@@ -97,6 +97,12 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-10-22 — Re-review FAIL (R1) answered; A1's recording mechanism corrected to GA4 behavior
+- **Re-review (independent):** FAIL on R1 alone (history the export couldn't contain). The engine was re-derived exactly. All R1–R8 are answered in `docs/realism-review.md`.
+- **A1 mechanism (R3).** Untagged paid-social clicks keep the social referrer, so GA4 records a social referral (Organic Social), not Direct. Untagged email still falls to Direct. The **rate (6%) is unchanged**. `docs/defect-taxonomy.md` A1 text said "(direct)/(none)"; that was wrong for social, and the change follows Google's channel rules, not the verdict.
+- **Downloads.** The event export (31 MB) exceeds Cloudflare Pages' 25 MB per-file limit, so it ships as three monthly files. Joined, their rows reproduce the manifest hash exactly (verified).
+- **Result (mechanical):** still B2. τ-b 0.545 now fails Leg 3 as well as Leg 2. Leg 1 holds, so the branch is unchanged. Bounds 41/41.
+
 ### 2026-10-22 — Realism review FAIL answered in generator, engine and bounds check; rates and pins untouched
 - **Review:** `docs/realism-review.md` (independent session). Verdict FAIL with 13 findings. The engine math was reproduced exactly. Every finding is answered in the response table appended to that file.
 - **Measure repairs (definitions, not verdict-driven):**

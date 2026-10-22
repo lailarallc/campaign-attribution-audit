@@ -307,8 +307,10 @@
 		</p>
 		<p>
 			<strong>Check it by hand.</strong>
-			<a href="/data/events.csv.gz" download>GA4 event export</a> ({site.events.toLocaleString('en-US')} events, gzip CSV,
-			SHA-256 <code class="hash">{site.manifest_sha_events.slice(0, 16)}…</code>) and
+			GA4 event export, one gzip CSV per month: <a href="/data/events_2026-07.csv.gz" download>July</a>,
+			<a href="/data/events_2026-08.csv.gz" download>August</a>, <a href="/data/events_2026-09.csv.gz" download>September</a>
+			({site.events.toLocaleString('en-US')} events; joined, their rows hash to SHA-256
+			<code class="hash">{site.manifest_sha_events.slice(0, 16)}…</code>), and the daily
 			<a href="/data/spend.csv" download>spend table</a>. Every number on this page comes from those two files.
 		</p>
 		<p class="cta-row">

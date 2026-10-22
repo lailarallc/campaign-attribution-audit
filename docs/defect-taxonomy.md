@@ -38,7 +38,7 @@ As-written result (1 of 9) is kept below for the record. **Result under B: 9 pag
 
 ### 1. Missing UTMs
 - **Existence:** [GA4 default channel group](https://support.google.com/analytics/answer/9756891) [READ]. Untagged clicks land in Direct, Organic or Unassigned.
-- **Rate — A1:** 6% of paid-social and email sessions arrive untagged and fall to (direct)/(none). **Bounds:** the vendor heuristic says <5–10% of a known paid campaign's clicks in Direct is "acceptable" (Terminus, SNIP). The vendor figure ">30% of campaigns" (Trackingplan citing Improvado, no method) is a *campaign-share* ceiling and is not used as a rate.
+- **Rate — A1:** 6% of paid-social and email sessions arrive untagged. Email falls to (direct)/(none); paid social keeps its referrer and falls to Organic Social (corrected 2026-10-22, re-review R3; rate unchanged). **Bounds:** the vendor heuristic says <5–10% of a known paid campaign's clicks in Direct is "acceptable" (Terminus, SNIP). The vendor figure ">30% of campaigns" (Trackingplan citing Improvado, no method) is a *campaign-share* ceiling and is not used as a rate.
 - **Decision case:** none documented found. The best mechanism-only source is a blueriverd glossary example, which is explicitly hypothetical.
 - **Demotion reasoning:** existence and mechanism are solid, but no published case ties it to a budget decision. → footnote.
 

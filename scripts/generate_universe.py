@@ -106,10 +106,16 @@ STATES = [("California", 12), ("Texas", 9), ("New York", 8), ("Florida", 7), ("I
           ("Ohio", 3.5), ("Georgia", 3.5), ("North Carolina", 3.3), ("Michigan", 3), ("New Jersey", 3), ("Virginia", 2.8),
           ("Washington", 2.7), ("Massachusetts", 2.5), ("Arizona", 2.3), ("Tennessee", 2.1), ("Colorado", 2),
           ("Minnesota", 1.8), ("Maryland", 1.8), ("Oregon", 1.4), ("Wisconsin", 1.7), ("Missouri", 1.8),
-          ("Indiana", 2), ("South Carolina", 1.6), ("Connecticut", 1.1), ("Utah", 1.0), ("Louisiana", 1.3)]
+          ("Indiana", 2), ("South Carolina", 1.6), ("Connecticut", 1.1), ("Utah", 1.0), ("Louisiana", 1.3),
+          ("Alabama", 1.5), ("Kentucky", 1.3), ("Oklahoma", 1.2), ("Iowa", 0.95), ("Nevada", 0.95), ("Arkansas", 0.9),
+          ("Kansas", 0.88), ("Mississippi", 0.88), ("New Mexico", 0.63), ("Nebraska", 0.59), ("Idaho", 0.58),
+          ("West Virginia", 0.53), ("Hawaii", 0.43), ("New Hampshire", 0.42), ("Maine", 0.41), ("Montana", 0.33),
+          ("Rhode Island", 0.33), ("Delaware", 0.3), ("South Dakota", 0.27), ("North Dakota", 0.23), ("Alaska", 0.22),
+          ("District of Columbia", 0.2), ("Vermont", 0.19), ("Wyoming", 0.17)]
 TAX = {"California": 0.0825, "Texas": 0.0625, "New York": 0.08, "Florida": 0.06, "Illinois": 0.0625,
        "Pennsylvania": 0.06, "Washington": 0.065, "New Jersey": 0.06625}
-CA_PROVINCES = [("Ontario", 5), ("British Columbia", 3), ("Quebec", 2)]
+CA_PROVINCES = [("Ontario", 5), ("British Columbia", 3), ("Quebec", 2), ("Alberta", 1.8), ("Manitoba", 0.5),
+                ("Nova Scotia", 0.4), ("Saskatchewan", 0.4), ("New Brunswick", 0.3)]
 # F6: local-time hour weights (evening peak for food e-commerce); email clicks peak after a morning send.
 HOUR_W = [2, 1, 1, 1, 1, 1, 2, 3, 5, 6, 6, 6, 7, 7, 6, 6, 6, 7, 8, 10, 11, 10, 7, 4]
 HOUR_W_EMAIL = [1, 1, 1, 1, 1, 1, 3, 6, 12, 11, 9, 7, 7, 6, 5, 5, 5, 5, 5, 6, 6, 5, 3, 2]
@@ -374,6 +380,13 @@ def main():
     by_user = {}
     for s in sessions:
         by_user.setdefault(s["uid"], []).append(s)
+    late = q_end - timedelta(hours=2)
+    for s in sessions:   # R7: nothing may spill past midnight into Q4
+        if late <= s["ts"] < q_end:
+            shift = (late - timedelta(minutes=rng.randint(10, 300))) - s["ts"]
+            s["ts"] += shift
+            if s["sid"] in order_by_sid:
+                order_by_sid[s["sid"]]["ts"] += shift
     for ss in by_user.values():
         ss.sort(key=lambda s: (s["ts"], s["sid"]))
         for prev, s in zip(ss, ss[1:]):
@@ -388,14 +401,29 @@ def main():
     user_sessions = {}
     for s in sorted(sessions, key=lambda s: (s["ts"], s["sid"])):
         user_sessions.setdefault(s["uid"], []).append(s)
-    for uid, ss in user_sessions.items():
+    for uid, ss in list(user_sessions.items()):
         first = ss[0]
+        u = users[uid]
+        if first["cid"] in ("E02", "M05", "E03"):
+            # R1: cart-abandon and welcome traffic need a RECENT qualifying visit. Generate it for real:
+            # inside the quarter it is exported (with its own add_to_cart); before it, it is history.
+            lag = rh.uniform(0.2, 3) if first["cid"] != "M05" else rh.uniform(1, 14)
+            q = add_session(uid, first["ts"] - timedelta(days=lag),
+                            wpick(rh, [("organic_search", 35), ("direct", 25), ("meta_prospecting", 20),
+                                       ("nonbrand_search", 10), ("organic_social", 10)]))
+            q["force_cart"] = first["cid"] != "E03"
+            if rh.random() < 0.5:   # some were seen even earlier, before the quarter
+                u["prior"] = 1 + min(40, int(rh.expovariate(1 / 5)))
+                u["first_seen"] = min(q["ts"], Q_START) - timedelta(days=rh.uniform(14, 700))
+                u["gap_prior_days"] = max(0.0, (q["ts"] - Q_START).total_seconds() / 86400) + rh.uniform(0.5, 45)
+            continue
         must = first["sub"] in REQUIRES_HISTORY or first["cid"] in REQUIRES_HISTORY_CAMPAIGN
         if must or rh.random() < EXISTING_P.get(first["sub"], 0.08):
-            u = users[uid]
-            u["prior"] = rh.randint(1, 3) if first["cid"] == "E03" else 1 + min(40, int(rh.expovariate(1 / 5)))
-            back = rh.uniform(1, 25) if first["cid"] in ("E03", "M04", "M05", "E02") else rh.uniform(14, 700)
-            u["first_seen"] = first["ts"] - timedelta(days=back)
+            # History lies strictly before the quarter, so the export never misses a session it
+            # should contain (R1). The last pre-quarter visit sets the gap that A8 tests (R2).
+            u["prior"] = 1 + min(40, int(rh.expovariate(1 / 5)))
+            u["first_seen"] = Q_START - timedelta(days=rh.uniform(1, 700))
+            u["gap_prior_days"] = (first["ts"] - Q_START).total_seconds() / 86400 + rh.uniform(0.5, 45)
 
     # ---- bots (A6), three profiles (F9) ----
     seed_log = []
@@ -446,11 +474,15 @@ def main():
         client_first[cur] = u["prior"]
         prev = None
         for s in ss:
-            if prev and u["browser"] == "Safari" and not u["bot"] and \
-                    (s["ts"] - prev["ts"]).total_seconds() > ITP_DAYS * 86400:
+            if prev:
+                gap = (s["ts"] - prev["ts"]).total_seconds() / 86400
+            else:   # R2: the gap since the last pre-quarter visit counts too
+                gap = u.get("gap_prior_days", 0.0) if u["prior"] else 0.0
+            if u["browser"] == "Safari" and not u["bot"] and gap > ITP_DAYS:
                 cur = f"{idr.randint(100000000, 2147483647)}.{int(s['ts'].timestamp())}"
                 client_first[cur] = 0
-                seed_log.append(("A8", s["sid"], "", "client_id reset"))
+                if in_q(s["ts"]):
+                    seed_log.append(("A8", s["sid"], "", "client_id reset" if prev else "reset across pre-quarter gap"))
             client_of[s["sid"]] = cur
             prev = s
 
@@ -460,10 +492,10 @@ def main():
     rd = random.Random(SEED11 + 5)
     link_n = {}
     for s in sessions:
-        if s["link"] and not s["bot"]:
+        if s["link"] and not s["bot"] and in_q(s["ts"]):
             link_n[s["link"]] = link_n.get(s["link"], 0) + 1
     link_cid = {s["link"]: s["cid"] for s in sessions if s["link"]}
-    humans = [s for s in sessions if not s["bot"]]
+    humans = [s for s in sessions if not s["bot"] and in_q(s["ts"])]
     a1_subs = ("meta_prospecting", "meta_retargeting", "tiktok", "email")
     base_a1 = sum(1 for s in humans if s["sub"] in a1_subs)
     base_tag = sum(1 for s in humans if s["sub"] in TAGGED_SUBS)
@@ -478,11 +510,13 @@ def main():
             n = link_n.get(l, 0)
             if l in taken or n == 0:
                 continue
-            if cum + n <= target + n / 2:
+            if cum + n <= target:
                 got.append(l)
                 taken.add(l)
                 cum += n
-            if cum >= target:
+            elif abs(cum + n - target) < abs(cum - target):   # one last link only if it lands closer
+                got.append(l)
+                taken.add(l)
                 break
         return got
 
@@ -510,7 +544,11 @@ def main():
         cls, info = b
         src, med, camp, gclid, q = rec[s["sid"]]
         if cls == "A1":
-            rec[s["sid"]] = ("(direct)", "(none)", "(not set)", "", "")
+            if s["sub"] == "email":   # mail clients send no referrer
+                rec[s["sid"]] = ("(direct)", "(none)", "(not set)", "", "")
+            else:
+                host = social_host(src, users[s["uid"]]["device"])
+                rec[s["sid"]] = (host, "referral", "(referral)", "", "")
         elif cls == "A2a":
             kind, camp2, cap = info
             src2 = src.capitalize() if cap else src
@@ -525,7 +563,7 @@ def main():
             rec[s["sid"]] = (src2, med2, camp, gclid, utm_q(src2, med2, camp))
         elif cls == "A7":   # redirect strips gclid; Google referrer survives -> google/organic
             rec[s["sid"]] = ("google", "organic", "(organic)", "", "")
-        if not s["bot"]:
+        if not s["bot"] and in_q(s["ts"]):
             seed_log.append((cls, s["sid"], s["link"], info[0] if info else ""))
 
     no_session_start = set()
@@ -583,8 +621,9 @@ def main():
                 "geo_country": u["country"], "geo_region": u["region"]}
         src, med, camp, gclid, q = rec[s["sid"]]
         landing = LANDING.get(s["cid"]) or LANDING.get(s["sub"], "/")
-        if ev.random() < 0.35:
+        if ev.random() < 0.35 and s["cid"] not in ("E02", "M05"):
             landing = ev.choice(COLLECTIONS)
+        s["device"] = u["device"]
         ext_ref = external_referrer(ev, s, src)
         t = s["ts"]
         if s["sid"] not in no_session_start:
@@ -608,8 +647,15 @@ def main():
         path_list = [landing + q] + [ev.choice(COLLECTIONS + PRODUCT_PAGES) for _ in range(extra_n)]
         funnel = 4 if o else (3 if ev.random() < 0.025 else 2 if ev.random() < 0.05 else 1 if ev.random() < 0.22 else 0)
         item = o["lines"][0][0] if o else wpick(ev, list(zip(CATALOG, CATALOG_W)))
+        if o:   # an order's funnel products are its own lines (R5)
+            cart_items = list(o["lines"])[:4]
+        else:
+            if s.get("force_cart"):
+                funnel = max(funnel, 2)
+            cart_items = [(item, 1)]
+        prod_start = len(path_list)
         if funnel >= 1:
-            path_list.append("/products/" + item[1])
+            path_list.extend("/products/" + i[1] for i, _ in (cart_items if funnel >= 2 else cart_items[:1]))
         if funnel >= 2:
             path_list.append("/cart")
         if funnel >= 3:
@@ -624,13 +670,14 @@ def main():
         for i, (tt, path, ref, dwell) in enumerate(events):
             eng = "" if (single and ev.random() < 0.3) else int(dwell * 1000 * ev.uniform(0.35, 0.95))
             push(tt, "page_view", base, SITE + path, ref, eng=eng)
-            if funnel >= 1 and i == 1 + extra_n:   # the funnel's product page
+            k = i - prod_start
+            if funnel >= 1 and 0 <= k < (len(cart_items) if funnel >= 2 else 1):   # a funnel product page
+                ci, qn = cart_items[k]
                 push(tt + timedelta(milliseconds=ev.randint(300, 2500)), "view_item", base, SITE + path, ref,
-                     value=f"{item[2]:.2f}", currency="USD", items=f"{item[0]}:1:{item[2]:.2f}")
-            if path == "/cart" and i > 0:
-                push(tt - timedelta(milliseconds=ev.randint(800, 4000)), "add_to_cart", base,
-                     SITE + events[i - 1][1], events[i - 1][2], value=f"{item[2]:.2f}", currency="USD",
-                     items=f"{item[0]}:1:{item[2]:.2f}")
+                     value=f"{ci[2]:.2f}", currency="USD", items=f"{ci[0]}:1:{ci[2]:.2f}")
+                if funnel >= 2:
+                    push(tt + timedelta(seconds=ev.uniform(4, 40)), "add_to_cart", base, SITE + path, ref,
+                         value=f"{ci[2] * qn:.2f}", currency="USD", items=f"{ci[0]}:{qn}:{ci[2]:.2f}")
             if path.startswith("/checkouts/"):
                 push(tt + timedelta(milliseconds=ev.randint(200, 900)), "begin_checkout", base, SITE + path, ref,
                      currency="USD")
@@ -693,15 +740,23 @@ def main():
         if cid == "A01":   # affiliate: commission on platform-reported sales, not per click
             weights = [lc_day.get((cid, d), (0, 0.0))[1] for d in days]
         else:
-            weights = [k * rs.uniform(0.9, 1.1) for k in daily_clicks]
+            weights = [k * rs.uniform(0.75, 1.25) for k in daily_clicks]
         wsum = sum(weights)
         cents = [round(camp_spend * 100 * w / wsum) if wsum else 0 for w in weights]
         if is_paid and wsum:
             cents[max(range(Q_DAYS), key=lambda i: weights[i])] += round(camp_spend * 100) - sum(cents)
+        # Platforms credit conversions to the click/impression date, so their days lead GA4's (R6).
+        lagged_n, lagged_v = [0.0] * Q_DAYS, [0.0] * Q_DAYS
+        for j, d in enumerate(days):
+            n0, v0 = lc_day.get((cid, d), (0, 0.0))
+            for lag, w in ((0, 0.55), (1, 0.2), (2, 0.1), (3, 0.08), (5, 0.07)):
+                jj = max(0, j - lag)
+                lagged_n[jj] += n0 * w
+                lagged_v[jj] += v0 * w
         conv_cum_exact, conv_cum_round = 0.0, 0
         for i, d in enumerate(days):
             k = daily_clicks[i]
-            n_, v_ = lc_day.get((cid, d), (0, 0.0))
+            n_, v_ = (lagged_n[i], lagged_v[i]) if is_paid else lc_day.get((cid, d), (0, 0.0))
             if k == 0 and cents[i] == 0 and n_ == 0:
                 continue
             if is_paid:
@@ -710,7 +765,7 @@ def main():
                 conv_cum_round += pc
                 pv = v_ * mult[cid]
                 ctr = VC[cid]["ctr_pct"]
-                imps = round(k / (ctr / 100) * rs.uniform(0.85, 1.15)) if ctr and k else ""
+                imps = round(k / (ctr / 100) * rs.uniform(0.7, 1.3)) if ctr and k else ""
             else:
                 pc, pv, imps = n_, v_, ""
             billing = {"Google": "cpc", "Meta": "cpm", "Email": "owned"}.get(c["platform"]) or \
@@ -818,16 +873,24 @@ def external_referrer(rng, s, src):
         return "https://www.google.com/"
     if sub == "organic_search":
         return SEARCH_REF.get(src, "https://www.google.com/")
-    if sub in ("meta_prospecting", "meta_retargeting"):
-        return rng.choice(["https://m.facebook.com/", "https://l.instagram.com/", "https://l.facebook.com/"])
-    if sub == "tiktok":
-        return "https://www.tiktok.com/"
+    if sub in ("meta_prospecting", "meta_retargeting", "tiktok"):
+        return "https://" + social_host(src, s.get("device", "mobile")) + "/"
     if sub in ("organic_social", "referral"):
         return f"https://{src}/" if "." in src else ""
     if sub == "affiliate":
         k = int(s["link"].split("-L")[-1]) - 1 if s["link"] else 0
         return f"https://{AFF_PUBLISHERS[k % len(AFF_PUBLISHERS)]}/"
     return ""   # direct and email (mail clients strip the referrer)
+
+
+def social_host(src, device):
+    """Referrer host consistent with the ad's utm_source (R7)."""
+    s = src.lower()
+    if s.startswith("instagram") or s == "l.instagram.com":
+        return "l.instagram.com"
+    if s.startswith("tiktok") or s == "tt":
+        return "tiktok.com"
+    return "m.facebook.com" if device != "desktop" else "l.facebook.com"
 
 
 def case_variant(rng, camp):

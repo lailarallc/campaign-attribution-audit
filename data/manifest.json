@@ -3,14 +3,14 @@
   "seed_v1_1": 1056183004,
   "quarter": "2026-Q3",
   "orders": 5556,
-  "events": 1061422,
-  "sessions_in_quarter": 237824,
+  "events": 1196593,
+  "sessions_in_quarter": 249848,
   "files": {
-    "export/events.csv.gz": "467114bb8aec49bdc32597bf165c1960d97da58fb3c80405d3437a00ba42f308",
-    "truth/sessions.csv.gz": "7d4a7d838dfaa025bf7b30108a700e73dd73fdcd0433d696463ab05e9a3de75e",
-    "truth/orders.csv.gz": "2990954f0fb41586663621cd61598c89cb37bd84fe04c5d401d56ae71ef61661",
-    "truth/seed_log.csv.gz": "be4e2ac9bc91cf6afde5f7ea091c34e631f8344542395b1212d2037814f6c352",
-    "spend.csv": "194888db501ee3df49ecb723b5c13d7fb05e500684a98655f25d695d9a5590b6",
+    "export/events.csv.gz": "fa994ba079a860bcba8ecd943f83488ffddab2a4b3229045719c672dae5c41de",
+    "truth/sessions.csv.gz": "58fd17289e661accc8d7289d45c23b342bbdec0507770dfa93237f5548202d01",
+    "truth/orders.csv.gz": "10c7aee62cd52f8070bcf12bf9deb298c9c4277238b032e980e849d4cddb412c",
+    "truth/seed_log.csv.gz": "ad0cae61be66b0a02f5392eea936f087825cf00f9c9c136a378c8b8cddbd1ae0",
+    "spend.csv": "8bb7d5ca69da7a8ae30b182a8b7a23f8cf2bcb223dab0a57fce6e389f4a8a902",
     "parameters.json": "4f9c876b1d2565e2909461605d66ff00c76d0c000b72912ea05d96326c458225"
   }
 }

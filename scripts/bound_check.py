@@ -198,7 +198,7 @@ def main():
     for e in log:
         k[e["class"]] = k.get(e["class"], 0) + 1
     paid_subs = set(PLATFORM)
-    humans_all = [s for s in sess if s["bot"] == "0"]
+    humans_all = [s for s in sess if s["bot"] == "0" and s["in_quarter"] == "1"]   # seed log is in-quarter only
     a1_base = sum(1 for s in humans_all if s["sub"] in ("meta_prospecting", "meta_retargeting", "tiktok", "email"))
     tagged = sum(1 for s in humans_all if s["sub"] in ("meta_prospecting", "meta_retargeting", "tiktok", "email", "affiliate"))
     goog = sum(1 for s in humans_all if s["sub"] in ("brand_search", "nonbrand_search", "shopping"))
