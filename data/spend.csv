@@ -1,0 +1,16 @@
+campaign_id,campaign_name,platform,spend,impressions,clicks,platform_conversions,platform_conversion_value
+G01,qw_search_brand,Google,6133.74,743562,11897,700,61695.60
+G02,qw_search_nb_chili-crisp,Google,6356.38,469875,7518,160,14814.00
+G03,qw_search_nb_gift-boxes,Google,8409.25,632062,10113,208,17787.60
+G04,qw_search_nb_spice-blends,Google,5087.68,381625,6106,133,11480.40
+G05,qw_shopping_all-products,Google,7966.13,743438,11895,388,36759.60
+M01,qw_meta_pro_gifting,Meta,2235.90,222875,3566,64,5910.00
+M02,qw_meta_pro_chili-crisp,Meta,6735.23,679438,10871,176,15422.40
+M03,qw_meta_pro_lookalike-buyers,Meta,8643.88,879688,14075,229,20275.20
+M04,qw_meta_rt_site-visitors,Meta,7507.94,442125,7074,365,32612.40
+M05,qw_meta_rt_cart-abandoners,Meta,5057.70,300000,4800,258,25159.20
+T01,qw_tiktok_pro_chili-crisp,Other paid,9159.34,593812,9501,226,21099.60
+A01,qw_affiliate_partner-network,Other paid,2158.39,222750,3564,113,11371.20
+E01,qw_email_weekly-newsletter,Email,0.00,,8169,437,37202.00
+E02,qw_email_abandoned-cart,Email,0.00,,4820,261,23641.00
+E03,qw_email_welcome-series,Email,0.00,,3144,161,14686.00

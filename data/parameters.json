@@ -1,0 +1,184 @@
+{
+  "seed_string": "quellwood-provisions/2026-q3/parameters/v1",
+  "draws": {
+    "aov_target_usd": {
+      "value": 90,
+      "low": 85,
+      "high": 115,
+      "step": 5,
+      "basis": "DIR: food & bev AOV ~$80-120 (Attribuly, vendor); gate 2 band"
+    },
+    "cvr_scale": {
+      "value": 0.65,
+      "low": 0.55,
+      "high": 0.85,
+      "step": 0.05,
+      "basis": "CITE-range: scales ThoughtMetric Q3 2025 per-channel CVRs (ranking kept) so the site CVR lands in the 1.9-3.0% band (Triple Whale); each level stays within the gate's +/-50%"
+    },
+    "cvr_direct_pct": {
+      "value": 2.75,
+      "low": 2.0,
+      "high": 3.5,
+      "step": 0.25,
+      "basis": "STRUCTURAL: no published DTC direct CVR"
+    },
+    "cvr_referral_pct": {
+      "value": 2.75,
+      "low": 1.25,
+      "high": 2.75,
+      "step": 0.25,
+      "basis": "STRUCTURAL: referral and affiliate CVR"
+    },
+    "single_session_share": {
+      "value": 0.5,
+      "low": 0.35,
+      "high": 0.5,
+      "step": 0.05,
+      "basis": "STRUCTURAL, bounded by gate 3 path-length criterion (DIR Wolfgang 2016)"
+    },
+    "extra_sessions_mean": {
+      "value": 2.75,
+      "low": 1.5,
+      "high": 3.0,
+      "step": 0.25,
+      "basis": "STRUCTURAL: mean extra sessions in multi-session journeys"
+    },
+    "gap_days_mean": {
+      "value": 4,
+      "low": 2,
+      "high": 6,
+      "step": 1,
+      "basis": "DIR: ~40% of revenue after >=5 days (Wolfgang 2016)"
+    },
+    "blended_roas": {
+      "value": 3.5,
+      "low": 2.5,
+      "high": 4.0,
+      "step": 0.25,
+      "basis": "DIR: median ROAS Meta 2.70 / Google 4.07 (TopGrowth, n=5); sets total paid spend from true linear paid revenue"
+    },
+    "a2a_case_share": {
+      "value": 0.85,
+      "low": 0.6,
+      "high": 0.9,
+      "step": 0.05,
+      "basis": "STRUCTURAL: share of A2a variants that are case-only (recovered by case-insensitive match); the rest are spelling variants (Unmatched). Pinned 2026-10-22 before generation"
+    },
+    "ctr_pct": {
+      "value": 1.6,
+      "low": 0.8,
+      "high": 2.4,
+      "step": 0.2,
+      "basis": "STRUCTURAL: blended CTR to derive impressions in the spend table"
+    }
+  },
+  "roster_seed_string": "quellwood-provisions/campaign-roster/v1",
+  "dirichlet_alpha": 4.0,
+  "roster": [
+    {
+      "campaign_id": "G01",
+      "campaign_name": "qw_search_brand",
+      "platform": "Google",
+      "sub_channel": "brand_search",
+      "platform_share": 0.180653
+    },
+    {
+      "campaign_id": "G02",
+      "campaign_name": "qw_search_nb_chili-crisp",
+      "platform": "Google",
+      "sub_channel": "nonbrand_search",
+      "platform_share": 0.18721
+    },
+    {
+      "campaign_id": "G03",
+      "campaign_name": "qw_search_nb_gift-boxes",
+      "platform": "Google",
+      "sub_channel": "nonbrand_search",
+      "platform_share": 0.247672
+    },
+    {
+      "campaign_id": "G04",
+      "campaign_name": "qw_search_nb_spice-blends",
+      "platform": "Google",
+      "sub_channel": "nonbrand_search",
+      "platform_share": 0.149844
+    },
+    {
+      "campaign_id": "G05",
+      "campaign_name": "qw_shopping_all-products",
+      "platform": "Google",
+      "sub_channel": "shopping",
+      "platform_share": 0.234621
+    },
+    {
+      "campaign_id": "M01",
+      "campaign_name": "qw_meta_pro_gifting",
+      "platform": "Meta",
+      "sub_channel": "meta_prospecting",
+      "platform_share": 0.074084
+    },
+    {
+      "campaign_id": "M02",
+      "campaign_name": "qw_meta_pro_chili-crisp",
+      "platform": "Meta",
+      "sub_channel": "meta_prospecting",
+      "platform_share": 0.223164
+    },
+    {
+      "campaign_id": "M03",
+      "campaign_name": "qw_meta_pro_lookalike-buyers",
+      "platform": "Meta",
+      "sub_channel": "meta_prospecting",
+      "platform_share": 0.286405
+    },
+    {
+      "campaign_id": "M04",
+      "campaign_name": "qw_meta_rt_site-visitors",
+      "platform": "Meta",
+      "sub_channel": "meta_retargeting",
+      "platform_share": 0.248767
+    },
+    {
+      "campaign_id": "M05",
+      "campaign_name": "qw_meta_rt_cart-abandoners",
+      "platform": "Meta",
+      "sub_channel": "meta_retargeting",
+      "platform_share": 0.167581
+    },
+    {
+      "campaign_id": "T01",
+      "campaign_name": "qw_tiktok_pro_chili-crisp",
+      "platform": "Other paid",
+      "sub_channel": "tiktok",
+      "platform_share": 0.809291
+    },
+    {
+      "campaign_id": "A01",
+      "campaign_name": "qw_affiliate_partner-network",
+      "platform": "Other paid",
+      "sub_channel": "affiliate",
+      "platform_share": 0.190709
+    },
+    {
+      "campaign_id": "E01",
+      "campaign_name": "qw_email_weekly-newsletter",
+      "platform": "Email",
+      "sub_channel": "email",
+      "platform_share": null
+    },
+    {
+      "campaign_id": "E02",
+      "campaign_name": "qw_email_abandoned-cart",
+      "platform": "Email",
+      "sub_channel": "email",
+      "platform_share": null
+    },
+    {
+      "campaign_id": "E03",
+      "campaign_name": "qw_email_welcome-series",
+      "platform": "Email",
+      "sub_channel": "email",
+      "platform_share": null
+    }
+  ]
+}

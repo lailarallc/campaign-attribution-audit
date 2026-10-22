@@ -51,7 +51,9 @@ In branch B3, the second line is replaced by the B3 body.
 
 > Every rule names {X} the top campaign. That result is real. Below it, the order is a choice: {n} of {m} paid campaigns move two or more places depending on the rule, and {Z}'s return on spend runs from {lo} to {hi}.
 >
-> Why the top holds: {p1}% of revenue comes from customers with one recorded visit, where every rule gives the same answer by arithmetic, and {X} closes most of them.
+> Why the top holds: {p1}% of revenue comes from customers with one recorded visit, where every rule gives the same answer by arithmetic, and among paid campaigns, {X} takes the largest share of those one-visit sales ({share}%).
+>
+> _(Corrected 2026-10-22 after generation: the pre-registered clause "and {X} closes most of them" was false in this data. See DECISIONS. `{Z}` = the paid campaign with the widest ROAS max/min ratio.)_
 
 **B3 — the four rules mostly agree (ships only on owner override of BANK)**
 

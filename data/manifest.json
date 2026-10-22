@@ -1,0 +1,15 @@
+{
+  "seed": 3804582492,
+  "quarter": "2026-Q3",
+  "orders": 5556,
+  "events": 923756,
+  "sessions_in_quarter": 234840,
+  "files": {
+    "export/events.csv.gz": "f128f07e7ac6ad029b285c0a842edc401b58682d7198a7cd3aff40a81ab72cbb",
+    "truth/sessions.csv.gz": "cee6510692296812c6aa9f60caac2fe500e5e24587cdfd0d0bb9c63f4497cb13",
+    "truth/orders.csv.gz": "17489b034154d9b01d5ae445c4d75f672ec098fc40f5bb38178a33f5147fb304",
+    "truth/seed_log.csv.gz": "b8621d29d4936ec4be08efd15cc0668e516ac0f15a63e683d4f867f8191ff561",
+    "spend.csv": "306f029e395471bc04588b9ea9ebc6eb430a40832cef4e5650e276dc0cccccde",
+    "parameters.json": "194693671db4a2f3ced92ee6fbf3400a0c4324de256fac3ba57cf45e7c32d8dd"
+  }
+}

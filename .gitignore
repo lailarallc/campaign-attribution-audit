@@ -8,3 +8,10 @@ credentials.*
 .DS_Store
 Thumbs.db
 .claude-project-url
+
+# Regenerable, hashed in data/manifest.json
+data/export/
+data/truth/
+node_modules/
+.svelte-kit/
+build/

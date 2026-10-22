@@ -97,6 +97,13 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-10-22 — Post-generation copy corrections (accuracy only; branch and thresholds untouched)
+- **Context:** the engine selected **B2** mechanically. All four rules name `qw_search_brand` top. Leg 2 failed (5 paid campaigns have ROAS max/min ≥ 1.5). Kendall τ-b is 0.606 (Leg 3 holds).
+- **Slot rule added for `{Z}`.** The pre-registration left open which campaign's ROAS range B2 quotes. Pinned to the mechanical reading: the paid campaign with the widest max/min ROAS ratio (M02 here). Recorded as made after generation.
+- **False clause removed.** The pre-registered B2 sentence "…and {X} closes most of them" is false in this data. `qw_search_brand` takes 11.6% of one-visit revenue (21.2% of paid one-visit revenue; organic search takes more). Replaced with the true, computed statement: "…and among paid campaigns, {X} takes the largest share of those one-visit sales ({share}%)."
+- **Why this is not tuning:** the branch, legs and thresholds are untouched. The only change replaces a sentence that would have printed a falsehood.
+- **Do not:** print any pre-registered clause without checking it against the computed result.
+
 ### 2026-10-22 — Office-hours forks A, B, C adopted as written; copy branches pre-registered
 - **A, bank rule:** bank (do not ship) only if all three hold:
   - every rule names the same top paid campaign;
