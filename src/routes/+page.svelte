@@ -84,8 +84,9 @@
 				On this data the four rules mostly agree. Here is why: {pct(site.p1)} of revenue comes from customers with one
 				recorded visit, where every rule must give the same answer. Another {pct(site.p2)} comes from two-visit journeys,
 				where position-based and linear are identical by construction. Only {pct(site.p3)} of revenue comes from longer
-				journeys, the only place the rules can disagree, and tracking breaks shorten some of those. The rule barely matters
-				this quarter. Tracking decides the numbers instead.
+				journeys, the only place the rules can disagree, and tracking breaks shorten some of those: {pct(site.u)} of
+				multi-visit journeys were split by a seeded cookie or session break. The rule barely matters this quarter.
+				Tracking decides the numbers instead.
 			</p>
 		{/if}
 
@@ -278,7 +279,9 @@
 		</div>
 		<p class="footnote">
 			Untraced spend = spend × (platform clicks − GA4 sessions carrying the campaign's name) ÷ platform clicks. Bot clicks
-			are counted on both sides, so they don't shrink the gap.
+			are counted on both sides, so they don't shrink the gap. Untraced spend here counts only the seeded tracking
+			defects: this synthetic quarter has no other click loss (consent refusals, ad blockers, visitors who leave before
+			the tag fires), so a real account's gap would be larger.
 			{#each site.hygiene_footnote as h}Class {h.taxonomy}, {h.label.toLowerCase()} ({h.seeded_at}): case differences are matched back to their campaign; spelling variants are not, and land in the unattributable count. No published decision case.{/each}
 		</p>
 	</section>

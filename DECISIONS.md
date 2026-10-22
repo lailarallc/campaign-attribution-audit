@@ -97,6 +97,22 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-10-22 — Realism review FAIL answered in generator, engine and bounds check; rates and pins untouched
+- **Review:** `docs/realism-review.md` (independent session). Verdict FAIL with 13 findings. The engine math was reproduced exactly. Every finding is answered in the response table appended to that file.
+- **Measure repairs (definitions, not verdict-driven):**
+  - F1: `{p1}`/`{p2}`/`{p3}` now count recorded *visits* (the copy's own words), and `{share}` uses the same population.
+  - F12: B3's split statistic gets its own slot, `{u}`.
+  - F11: the ledger, `{t}` and `{u}` count each order's 90-day path window, not the buyer's whole history.
+- **Bounds-check rows added:**
+  - F3: a 30-minute session rule. The per-channel funnel row is evaluated **excluding seeded A5 gateway-return sessions**, because a purchase with no begin_checkout is that defect's real signature. It is a logic row, not an A row.
+  - F2: retention-channel first visits must be explained by an A8 reset. Repeat buyers must exist.
+  - F5: the A9 aggregate is held at exactly 1.20.
+- **New structural randomness comes from a separate v1.1 stream** (`roll_parameters.py` `v1_1`, generator `SEED11`). Every v1.0 draw is unchanged (verified).
+  - Traffic inside each platform now follows the pinned Dirichlet spend divided by a type-ordered CPC draw (F13). The pinned spend split is not overridden.
+  - Within-platform CVR multipliers are renormalized to the realized traffic mix, so each benchmark group holds its ThoughtMetric level (their stated intent). Without that, retargeting's cheap traffic pushed paid social above paid search.
+- **Kept, owner call (F5):** no non-defect click loss was added. It would be a new unpinned rate, and it moves `{U}`. The page footnote states that untraced spend counts only the seeded defects, so a real account's gap would be larger.
+- **Result after fixes (mechanical):** still **B2**: same top under all rules (`qw_search_brand`), 6 wide ROAS ranges, τ-b 0.758. Bounds check 41/41.
+
 ### 2026-10-22 — Post-generation copy corrections (accuracy only; branch and thresholds untouched)
 - **Context:** the engine selected **B2** mechanically. All four rules name `qw_search_brand` top. Leg 2 failed (5 paid campaigns have ROAS max/min ≥ 1.5). Kendall τ-b is 0.606 (Leg 3 holds).
 - **Slot rule added for `{Z}`.** The pre-registration left open which campaign's ROAS range B2 quotes. Pinned to the mechanical reading: the paid campaign with the widest max/min ROAS ratio (M02 here). Recorded as made after generation.

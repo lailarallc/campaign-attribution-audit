@@ -49,6 +49,9 @@ def main():
     eligible = sorted([h for h in hyg if h["page_eligible"]], key=lambda h: (-h["revenue_affected"], h["class"]))
     footnote = [h for h in hyg if not h["page_eligible"]]
 
+    # The B2 clause "among paid campaigns, {X} takes the largest share" must be true to print.
+    if R["branch"] == "B2" and not R["one_touch"]["top_is_largest_paid"]:
+        raise SystemExit("B2 clause false: X is not the largest paid campaign in one-visit sales")
     site = {
         "quarter_label": "Q3 2026 (July 1 – September 30)",
         "branch": R["branch"],
@@ -59,7 +62,8 @@ def main():
         "n": m["n_movers"], "m": m["m_paid"],
         "Z": {"name": name(R["Z"]["campaign_id"]), "lo": R["Z"]["lo"], "hi": R["Z"]["hi"]},
         "p1": m["p1_one_touch_rev_share"], "p2": m["p2_two_touch_rev_share"], "p3": m["p3_three_plus_rev_share"],
-        "share": R["one_touch"]["top_share_of_paid_one_touch_rev"],
+        "share": R["one_touch"]["top_share_of_one_visit_rev"],
+        "u": m["u_split_share_of_multivisit"],
         "every_rule": [name(c) for c in R["every_rule_top3"]], "k": 3,
         "s": m["s_unattributable_share"], "d": m["d_unattributable_revenue"],
         "t": m["t_defect_share_of_unattributable"],

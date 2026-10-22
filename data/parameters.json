@@ -180,5 +180,93 @@
       "sub_channel": "email",
       "platform_share": null
     }
-  ]
+  ],
+  "v1_1": {
+    "seed_string": "quellwood-provisions/2026-q3/parameters/v1.1",
+    "draws": {
+      "repeat_order_share": {
+        "value": 0.1,
+        "low": 0.06,
+        "high": 0.12,
+        "step": 0.01,
+        "basis": "STRUCTURAL: share of quarter orders that are a buyer's second order (F2)"
+      },
+      "post_purchase_share": {
+        "value": 0.35,
+        "low": 0.2,
+        "high": 0.35,
+        "step": 0.05,
+        "basis": "STRUCTURAL: share of buyers who browse again after buying (F2)"
+      },
+      "a9_log_sd": {
+        "value": 0.06,
+        "low": 0.05,
+        "high": 0.12,
+        "step": 0.01,
+        "basis": "STRUCTURAL: per-campaign spread of the A9 multiplier; conversion-weighted mean held at exactly 1.20 (pinned)"
+      }
+    },
+    "campaign": {
+      "G01": {
+        "cpc_usd": 1.04,
+        "ctr_pct": 8.2,
+        "a9_z": -0.8762
+      },
+      "G02": {
+        "cpc_usd": 1.73,
+        "ctr_pct": 2.84,
+        "a9_z": 0.6382
+      },
+      "G03": {
+        "cpc_usd": 3.03,
+        "ctr_pct": 3.56,
+        "a9_z": 0.1527
+      },
+      "G04": {
+        "cpc_usd": 2.14,
+        "ctr_pct": 2.93,
+        "a9_z": -0.474
+      },
+      "G05": {
+        "cpc_usd": 0.96,
+        "ctr_pct": 0.93,
+        "a9_z": -1.0017
+      },
+      "M01": {
+        "cpc_usd": 1.39,
+        "ctr_pct": 1.0,
+        "a9_z": 0.7552
+      },
+      "M02": {
+        "cpc_usd": 1.19,
+        "ctr_pct": 1.25,
+        "a9_z": 0.5529
+      },
+      "M03": {
+        "cpc_usd": 1.28,
+        "ctr_pct": 1.24,
+        "a9_z": -1.7464
+      },
+      "M04": {
+        "cpc_usd": 0.79,
+        "ctr_pct": 1.69,
+        "a9_z": 0.9499
+      },
+      "M05": {
+        "cpc_usd": 0.81,
+        "ctr_pct": 1.09,
+        "a9_z": 1.3934
+      },
+      "T01": {
+        "cpc_usd": 0.9,
+        "ctr_pct": 0.65,
+        "a9_z": 0.4636
+      },
+      "A01": {
+        "cpc_usd": 0.54,
+        "ctr_pct": null,
+        "a9_z": -0.7664
+      }
+    }
+  }
 }

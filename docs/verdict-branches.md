@@ -26,7 +26,7 @@ Outcome:
 - **Total paid spend `{S}`.** The sum of the spend table.
 - **Unattributable conversions `{s}` / `${d}`.** Deduped conversions whose path, after removing Direct (§1.5), is empty or contains only Unassigned, (not set) or Unmatched touches. `{s}` is the share of deduped conversions; `${d}` is their revenue.
 - **Defect share `{t}`.** Of those conversions, the share whose path was altered by at least one seeded defect (from the seed log).
-- **Why-mechanics `{p1}` / `{p2}` / `{p3}`.** Shares of deduped revenue whose recorded path has 1 touch, 2 touches, and 3+ touches.
+- **Why-mechanics `{p1}` / `{p2}` / `{p3}`.** ~~Shares of deduped revenue whose recorded path has 1 touch, 2 touches, and 3+ touches.~~ **Repaired 2026-10-22 (realism review F1):** shares of deduped revenue whose buyer has exactly 1, exactly 2, and 3+ recorded **visits** (any channel, Direct included) in the 90-day window. That matches the copy's wording, "one recorded visit". `{share}` = `{X}`'s share of the same one-visit revenue. `{u}` (B3 only) = share of multi-visit purchase journeys split by a seeded cookie reset (A8) or a gateway return (A5).
 - **Rank movers `{n}` of `{m}`.** Paid campaigns whose rank moves 2+ places between any two rules, out of `{m}` = 12.
 
 ## 3. Lead (fork B: dollars first) — always shown, first
@@ -57,7 +57,7 @@ In branch B3, the second line is replaced by the B3 body.
 
 **B3 — the four rules mostly agree (ships only on owner override of BANK)**
 
-> On this data the four rules mostly agree. Here is why: {p1}% of revenue comes from customers with one recorded visit, where every rule must give the same answer. Another {p2}% comes from two-visit journeys, where position-based and linear are identical by construction. Only {p3}% of revenue comes from longer journeys, the only place the rules can disagree, and tracking breaks shorten some of those: {t}% of multi-visit journeys were split by a seeded cookie or session break. The rule barely matters this quarter. Tracking decides the numbers instead.
+> On this data the four rules mostly agree. Here is why: {p1}% of revenue comes from customers with one recorded visit, where every rule must give the same answer. Another {p2}% comes from two-visit journeys, where position-based and linear are identical by construction. Only {p3}% of revenue comes from longer journeys, the only place the rules can disagree, and tracking breaks shorten some of those: {u}% of multi-visit journeys were split by a seeded cookie or session break. _(Slot was `{t}`, which §2 defines differently; renamed `{u}` 2026-10-22, review F12.)_ The rule barely matters this quarter. Tracking decides the numbers instead.
 
 ## 5. Always-shown lines
 

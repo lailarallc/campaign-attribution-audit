@@ -3,14 +3,14 @@
  "branch": "B2",
  "legs": {
   "leg1_same_top": true,
-  "leg2_wide_roas_count": 5,
+  "leg2_wide_roas_count": 6,
   "leg2_holds": false,
-  "leg3_kendall_tau_b": 0.6061,
+  "leg3_kendall_tau_b": 0.7576,
   "leg3_holds": true
  },
  "lead": {
-  "U": 4250.33,
-  "S": 75451.56
+  "U": 5010.14,
+  "S": 72503.44
  },
  "X": "qw_search_brand",
  "tops": {
@@ -27,32 +27,33 @@
    "qw_search_brand"
   ]
  },
- "n": 6,
+ "n": 3,
  "m": 12,
  "Z": {
   "name": "qw_meta_pro_chili-crisp",
-  "lo": 1.908,
-  "hi": 3.459
+  "lo": 1.6,
+  "hi": 3.795
  },
- "p1": 0.5935,
- "p2": 0.206,
- "p3": 0.2005,
- "share": 0.212,
+ "p1": 0.4895,
+ "p2": 0.2209,
+ "p3": 0.2896,
+ "share": 0.1015,
+ "u": 0.1696,
  "every_rule": [
   "qw_search_brand",
   "qw_shopping_all-products"
  ],
  "k": 3,
- "s": 0.1359,
- "d": 69644.0,
- "t": 0.2212,
+ "s": 0.1346,
+ "d": 66103.1,
+ "t": 0.3088,
  "conversions": 5556,
- "revenue": 503227.0,
+ "revenue": 497338.0,
  "raw_purchase_events": 5708,
  "orders_generated": 5556,
- "events": 923756,
- "sessions": 234840,
- "manifest_sha_events": "feab274f8e647bfb4b90c8abe542f7fea0442280bb8631e5697088b3cc591885",
+ "events": 1061422,
+ "sessions": 237824,
+ "manifest_sha_events": "467114bb8aec49bdc32597bf165c1960d97da58fb3c80405d3437a00ba42f308",
  "rule_labels": {
   "last_click": "Last-click",
   "first_click": "First-click",
@@ -64,18 +65,18 @@
    "id": "G01",
    "name": "qw_search_brand",
    "platform": "Google",
-   "spend": 6133.74,
+   "spend": 5894.08,
    "revenue": {
-    "last_click": 51413.0,
-    "first_click": 46400.0,
-    "linear": 53573.97,
-    "position_based": 50830.95
+    "last_click": 51911.2,
+    "first_click": 45199.55,
+    "linear": 53528.6,
+    "position_based": 50695.86
    },
    "roas": {
-    "last_click": 8.382,
-    "first_click": 7.565,
-    "linear": 8.734,
-    "position_based": 8.287
+    "last_click": 8.807,
+    "first_click": 7.669,
+    "linear": 9.082,
+    "position_based": 8.601
    },
    "ranks": {
     "last_click": 1,
@@ -83,36 +84,36 @@
     "linear": 1,
     "position_based": 1
    },
-   "rev_lo": 46400.0,
-   "rev_hi": 53573.97,
-   "roas_lo": 7.565,
-   "roas_hi": 8.734,
+   "rev_lo": 45199.55,
+   "rev_hi": 53528.6,
+   "roas_lo": 7.669,
+   "roas_hi": 9.082,
    "rank_lo": 1,
    "rank_hi": 1,
    "every_rule_top3": true,
    "rule_dependent": false,
-   "clicks": 11897,
-   "matched": 11554,
-   "untraced": 176.84,
-   "platform_conversions": 700,
-   "platform_value": 61695.6
+   "clicks": 12426,
+   "matched": 12309,
+   "untraced": 55.5,
+   "platform_conversions": 663,
+   "platform_value": 59417.03000000002
   },
   {
    "id": "G05",
    "name": "qw_shopping_all-products",
    "platform": "Google",
-   "spend": 7966.13,
+   "spend": 7654.87,
    "revenue": {
-    "last_click": 30633.0,
-    "first_click": 31778.0,
-    "linear": 31692.58,
-    "position_based": 31508.14
+    "last_click": 39413.5,
+    "first_click": 37268.1,
+    "linear": 37760.52,
+    "position_based": 37960.5
    },
    "roas": {
-    "last_click": 3.845,
-    "first_click": 3.989,
-    "linear": 3.978,
-    "position_based": 3.955
+    "last_click": 5.149,
+    "first_click": 4.869,
+    "linear": 4.933,
+    "position_based": 4.959
    },
    "ranks": {
     "last_click": 2,
@@ -120,369 +121,369 @@
     "linear": 2,
     "position_based": 2
    },
-   "rev_lo": 30633.0,
-   "rev_hi": 31778.0,
-   "roas_lo": 3.845,
-   "roas_hi": 3.989,
+   "rev_lo": 37268.1,
+   "rev_hi": 39413.5,
+   "roas_lo": 4.869,
+   "roas_hi": 5.149,
    "rank_lo": 2,
    "rank_hi": 2,
    "every_rule_top3": true,
    "rule_dependent": false,
-   "clicks": 11895,
-   "matched": 11563,
-   "untraced": 222.34,
-   "platform_conversions": 388,
-   "platform_value": 36759.6
+   "clicks": 17505,
+   "matched": 17325,
+   "untraced": 78.71,
+   "platform_conversions": 496,
+   "platform_value": 44773.88
   },
   {
    "id": "M04",
    "name": "qw_meta_rt_site-visitors",
    "platform": "Meta",
-   "spend": 7507.94,
+   "spend": 7214.58,
    "revenue": {
-    "last_click": 27177.0,
-    "first_click": 17685.0,
-    "linear": 25249.92,
-    "position_based": 23696.14
+    "last_click": 34793.65,
+    "first_click": 22197.85,
+    "linear": 30210.35,
+    "position_based": 29302.16
    },
    "roas": {
-    "last_click": 3.62,
-    "first_click": 2.356,
-    "linear": 3.363,
-    "position_based": 3.156
+    "last_click": 4.823,
+    "first_click": 3.077,
+    "linear": 4.187,
+    "position_based": 4.062
    },
    "ranks": {
     "last_click": 3,
-    "first_click": 7,
+    "first_click": 4,
     "linear": 3,
     "position_based": 3
    },
-   "rev_lo": 17685.0,
-   "rev_hi": 27177.0,
-   "roas_lo": 2.356,
-   "roas_hi": 3.62,
+   "rev_lo": 22197.85,
+   "rev_hi": 34793.65,
+   "roas_lo": 3.077,
+   "roas_hi": 4.823,
    "rank_lo": 3,
-   "rank_hi": 7,
+   "rank_hi": 4,
    "every_rule_top3": false,
    "rule_dependent": true,
-   "clicks": 7074,
-   "matched": 6534,
-   "untraced": 573.13,
-   "platform_conversions": 365,
-   "platform_value": 32612.4
+   "clicks": 12669,
+   "matched": 10941,
+   "untraced": 984.04,
+   "platform_conversions": 519,
+   "platform_value": 44435.85999999999
   },
   {
    "id": "M05",
    "name": "qw_meta_rt_cart-abandoners",
    "platform": "Meta",
-   "spend": 5057.7,
+   "spend": 4860.08,
    "revenue": {
-    "last_click": 20966.0,
-    "first_click": 13259.0,
-    "linear": 18076.13,
-    "position_based": 17542.08
+    "last_click": 21465.1,
+    "first_click": 15802.05,
+    "linear": 20182.93,
+    "position_based": 19377.21
    },
    "roas": {
-    "last_click": 4.145,
-    "first_click": 2.622,
-    "linear": 3.574,
-    "position_based": 3.468
+    "last_click": 4.417,
+    "first_click": 3.251,
+    "linear": 4.153,
+    "position_based": 3.987
    },
    "ranks": {
     "last_click": 4,
-    "first_click": 9,
-    "linear": 5,
-    "position_based": 8
+    "first_click": 8,
+    "linear": 4,
+    "position_based": 4
    },
-   "rev_lo": 13259.0,
-   "rev_hi": 20966.0,
-   "roas_lo": 2.622,
-   "roas_hi": 4.145,
+   "rev_lo": 15802.05,
+   "rev_hi": 21465.1,
+   "roas_lo": 3.251,
+   "roas_hi": 4.417,
    "rank_lo": 4,
-   "rank_hi": 9,
+   "rank_hi": 8,
    "every_rule_top3": false,
    "rule_dependent": true,
-   "clicks": 4800,
-   "matched": 4403,
-   "untraced": 418.31,
-   "platform_conversions": 258,
-   "platform_value": 25159.2
+   "clicks": 8321,
+   "matched": 8231,
+   "untraced": 52.57,
+   "platform_conversions": 321,
+   "platform_value": 28152.909999999993
   },
   {
    "id": "T01",
    "name": "qw_tiktok_pro_chili-crisp",
    "platform": "Other paid",
-   "spend": 9159.34,
+   "spend": 8801.45,
    "revenue": {
-    "last_click": 17583.0,
-    "first_click": 21102.0,
-    "linear": 17300.86,
-    "position_based": 18471.8
+    "last_click": 14691.85,
+    "first_click": 17403.2,
+    "linear": 14737.28,
+    "position_based": 15445.13
    },
    "roas": {
-    "last_click": 1.92,
-    "first_click": 2.304,
-    "linear": 1.889,
-    "position_based": 2.017
+    "last_click": 1.669,
+    "first_click": 1.977,
+    "linear": 1.674,
+    "position_based": 1.755
    },
    "ranks": {
     "last_click": 5,
     "first_click": 6,
-    "linear": 7,
-    "position_based": 5
-   },
-   "rev_lo": 17300.86,
-   "rev_hi": 21102.0,
-   "roas_lo": 1.889,
-   "roas_hi": 2.304,
-   "rank_lo": 5,
-   "rank_hi": 7,
-   "every_rule_top3": false,
-   "rule_dependent": true,
-   "clicks": 9501,
-   "matched": 8698,
-   "untraced": 774.12,
-   "platform_conversions": 226,
-   "platform_value": 21099.6
-  },
-  {
-   "id": "M03",
-   "name": "qw_meta_pro_lookalike-buyers",
-   "platform": "Meta",
-   "spend": 8643.88,
-   "revenue": {
-    "last_click": 16896.0,
-    "first_click": 29505.0,
-    "linear": 21259.75,
-    "position_based": 22341.7
-   },
-   "roas": {
-    "last_click": 1.955,
-    "first_click": 3.413,
-    "linear": 2.46,
-    "position_based": 2.585
-   },
-   "ranks": {
-    "last_click": 6,
-    "first_click": 3,
-    "linear": 4,
-    "position_based": 4
-   },
-   "rev_lo": 16896.0,
-   "rev_hi": 29505.0,
-   "roas_lo": 1.955,
-   "roas_hi": 3.413,
-   "rank_lo": 3,
-   "rank_hi": 6,
-   "every_rule_top3": false,
-   "rule_dependent": true,
-   "clicks": 14075,
-   "matched": 12899,
-   "untraced": 722.22,
-   "platform_conversions": 229,
-   "platform_value": 20275.2
-  },
-  {
-   "id": "G03",
-   "name": "qw_search_nb_gift-boxes",
-   "platform": "Google",
-   "spend": 8409.25,
-   "revenue": {
-    "last_click": 14823.0,
-    "first_click": 22754.0,
-    "linear": 17517.97,
-    "position_based": 18232.08
-   },
-   "roas": {
-    "last_click": 1.763,
-    "first_click": 2.706,
-    "linear": 2.083,
-    "position_based": 2.168
-   },
-   "ranks": {
-    "last_click": 7,
-    "first_click": 5,
     "linear": 6,
     "position_based": 6
    },
-   "rev_lo": 14823.0,
-   "rev_hi": 22754.0,
-   "roas_lo": 1.763,
-   "roas_hi": 2.706,
+   "rev_lo": 14691.85,
+   "rev_hi": 17403.2,
+   "roas_lo": 1.669,
+   "roas_hi": 1.977,
    "rank_lo": 5,
-   "rank_hi": 7,
+   "rank_hi": 6,
    "every_rule_top3": false,
-   "rule_dependent": true,
-   "clicks": 10113,
-   "matched": 9827,
-   "untraced": 237.82,
-   "platform_conversions": 208,
-   "platform_value": 17787.6
+   "rule_dependent": false,
+   "clicks": 9401,
+   "matched": 9314,
+   "untraced": 81.45,
+   "platform_conversions": 192,
+   "platform_value": 18223.8
   },
   {
    "id": "M02",
    "name": "qw_meta_pro_chili-crisp",
    "platform": "Meta",
-   "spend": 6735.23,
+   "spend": 6472.06,
    "revenue": {
-    "last_click": 12852.0,
-    "first_click": 23298.0,
-    "linear": 17296.76,
-    "position_based": 17726.99
+    "last_click": 10353.5,
+    "first_click": 24558.4,
+    "linear": 16464.31,
+    "position_based": 17032.88
    },
    "roas": {
-    "last_click": 1.908,
-    "first_click": 3.459,
-    "linear": 2.568,
+    "last_click": 1.6,
+    "first_click": 3.795,
+    "linear": 2.544,
     "position_based": 2.632
    },
    "ranks": {
-    "last_click": 8,
-    "first_click": 4,
-    "linear": 8,
-    "position_based": 7
+    "last_click": 6,
+    "first_click": 3,
+    "linear": 5,
+    "position_based": 5
    },
-   "rev_lo": 12852.0,
-   "rev_hi": 23298.0,
-   "roas_lo": 1.908,
-   "roas_hi": 3.459,
-   "rank_lo": 4,
-   "rank_hi": 8,
+   "rev_lo": 10353.5,
+   "rev_hi": 24558.4,
+   "roas_lo": 1.6,
+   "roas_hi": 3.795,
+   "rank_lo": 3,
+   "rank_hi": 6,
    "every_rule_top3": false,
    "rule_dependent": true,
-   "clicks": 10871,
-   "matched": 9990,
-   "untraced": 545.83,
-   "platform_conversions": 176,
-   "platform_value": 15422.4
+   "clicks": 7847,
+   "matched": 7338,
+   "untraced": 419.81,
+   "platform_conversions": 132,
+   "platform_value": 12911.449999999999
+  },
+  {
+   "id": "M03",
+   "name": "qw_meta_pro_lookalike-buyers",
+   "platform": "Meta",
+   "spend": 8306.14,
+   "revenue": {
+    "last_click": 9273.05,
+    "first_click": 21133.2,
+    "linear": 14005.47,
+    "position_based": 14538.82
+   },
+   "roas": {
+    "last_click": 1.116,
+    "first_click": 2.544,
+    "linear": 1.686,
+    "position_based": 1.75
+   },
+   "ranks": {
+    "last_click": 7,
+    "first_click": 5,
+    "linear": 7,
+    "position_based": 7
+   },
+   "rev_lo": 9273.05,
+   "rev_hi": 21133.2,
+   "roas_lo": 1.116,
+   "roas_hi": 2.544,
+   "rank_lo": 5,
+   "rank_hi": 7,
+   "every_rule_top3": false,
+   "rule_dependent": true,
+   "clicks": 9348,
+   "matched": 7129,
+   "untraced": 1971.69,
+   "platform_conversions": 111,
+   "platform_value": 10073.890000000003
   },
   {
    "id": "G02",
    "name": "qw_search_nb_chili-crisp",
    "platform": "Google",
-   "spend": 6356.38,
+   "spend": 6108.01,
    "revenue": {
-    "last_click": 12345.0,
-    "first_click": 17191.0,
-    "linear": 14026.57,
-    "position_based": 14429.83
+    "last_click": 8878.75,
+    "first_click": 16915.6,
+    "linear": 11620.18,
+    "position_based": 12374.39
    },
    "roas": {
-    "last_click": 1.942,
-    "first_click": 2.705,
-    "linear": 2.207,
-    "position_based": 2.27
+    "last_click": 1.454,
+    "first_click": 2.769,
+    "linear": 1.902,
+    "position_based": 2.026
    },
    "ranks": {
-    "last_click": 9,
-    "first_click": 8,
-    "linear": 9,
-    "position_based": 9
+    "last_click": 8,
+    "first_click": 7,
+    "linear": 8,
+    "position_based": 8
    },
-   "rev_lo": 12345.0,
-   "rev_hi": 17191.0,
-   "roas_lo": 1.942,
-   "roas_hi": 2.705,
-   "rank_lo": 8,
-   "rank_hi": 9,
+   "rev_lo": 8878.75,
+   "rev_hi": 16915.6,
+   "roas_lo": 1.454,
+   "roas_hi": 2.769,
+   "rank_lo": 7,
+   "rank_hi": 8,
    "every_rule_top3": false,
-   "rule_dependent": false,
-   "clicks": 7518,
-   "matched": 7318,
-   "untraced": 169.1,
-   "platform_conversions": 160,
-   "platform_value": 14814.0
+   "rule_dependent": true,
+   "clicks": 7737,
+   "matched": 7073,
+   "untraced": 524.2,
+   "platform_conversions": 127,
+   "platform_value": 11129.250000000002
   },
   {
    "id": "G04",
    "name": "qw_search_nb_spice-blends",
    "platform": "Google",
-   "spend": 5087.68,
+   "spend": 4888.89,
    "revenue": {
-    "last_click": 9567.0,
-    "first_click": 12654.0,
-    "linear": 10610.03,
-    "position_based": 10873.34
+    "last_click": 8208.85,
+    "first_click": 14626.65,
+    "linear": 10464.56,
+    "position_based": 11025.0
    },
    "roas": {
-    "last_click": 1.88,
-    "first_click": 2.487,
-    "linear": 2.085,
-    "position_based": 2.137
+    "last_click": 1.679,
+    "first_click": 2.992,
+    "linear": 2.14,
+    "position_based": 2.255
    },
    "ranks": {
-    "last_click": 10,
-    "first_click": 10,
-    "linear": 10,
-    "position_based": 10
+    "last_click": 9,
+    "first_click": 9,
+    "linear": 9,
+    "position_based": 9
    },
-   "rev_lo": 9567.0,
-   "rev_hi": 12654.0,
-   "roas_lo": 1.88,
-   "roas_hi": 2.487,
-   "rank_lo": 10,
-   "rank_hi": 10,
+   "rev_lo": 8208.85,
+   "rev_hi": 14626.65,
+   "roas_lo": 1.679,
+   "roas_hi": 2.992,
+   "rank_lo": 9,
+   "rank_hi": 9,
    "every_rule_top3": false,
-   "rule_dependent": false,
-   "clicks": 6106,
-   "matched": 5913,
-   "untraced": 160.81,
-   "platform_conversions": 133,
-   "platform_value": 11480.4
+   "rule_dependent": true,
+   "clicks": 5021,
+   "matched": 4968,
+   "untraced": 51.61,
+   "platform_conversions": 108,
+   "platform_value": 9625.290000000003
   },
   {
    "id": "A01",
    "name": "qw_affiliate_partner-network",
    "platform": "Other paid",
-   "spend": 2158.39,
+   "spend": 2074.06,
    "revenue": {
-    "last_click": 9476.0,
-    "first_click": 11162.0,
-    "linear": 9694.67,
-    "position_based": 10064.0
+    "last_click": 7516.75,
+    "first_click": 8715.4,
+    "linear": 7766.83,
+    "position_based": 7965.51
    },
    "roas": {
-    "last_click": 4.39,
-    "first_click": 5.171,
-    "linear": 4.492,
-    "position_based": 4.663
+    "last_click": 3.624,
+    "first_click": 4.202,
+    "linear": 3.745,
+    "position_based": 3.841
    },
    "ranks": {
-    "last_click": 11,
+    "last_click": 10,
     "first_click": 11,
     "linear": 11,
     "position_based": 11
    },
-   "rev_lo": 9476.0,
-   "rev_hi": 11162.0,
-   "roas_lo": 4.39,
-   "roas_hi": 5.171,
-   "rank_lo": 11,
+   "rev_lo": 7516.75,
+   "rev_hi": 8715.4,
+   "roas_lo": 3.624,
+   "roas_hi": 4.202,
+   "rank_lo": 10,
    "rank_hi": 11,
    "every_rule_top3": false,
    "rule_dependent": false,
-   "clicks": 3564,
-   "matched": 3459,
-   "untraced": 63.59,
-   "platform_conversions": 113,
-   "platform_value": 11371.2
+   "clicks": 3763,
+   "matched": 3727,
+   "untraced": 19.84,
+   "platform_conversions": 92,
+   "platform_value": 8660.51
+  },
+  {
+   "id": "G03",
+   "name": "qw_search_nb_gift-boxes",
+   "platform": "Google",
+   "spend": 8080.68,
+   "revenue": {
+    "last_click": 5811.65,
+    "first_click": 13590.5,
+    "linear": 8920.89,
+    "position_based": 9399.21
+   },
+   "roas": {
+    "last_click": 0.719,
+    "first_click": 1.682,
+    "linear": 1.104,
+    "position_based": 1.163
+   },
+   "ranks": {
+    "last_click": 11,
+    "first_click": 10,
+    "linear": 10,
+    "position_based": 10
+   },
+   "rev_lo": 5811.65,
+   "rev_hi": 13590.5,
+   "roas_lo": 0.719,
+   "roas_hi": 1.682,
+   "rank_lo": 10,
+   "rank_hi": 11,
+   "every_rule_top3": false,
+   "rule_dependent": true,
+   "clicks": 5829,
+   "matched": 5341,
+   "untraced": 676.51,
+   "platform_conversions": 79,
+   "platform_value": 7075.57
   },
   {
    "id": "M01",
    "name": "qw_meta_pro_gifting",
    "platform": "Meta",
-   "spend": 2235.9,
+   "spend": 2148.54,
    "revenue": {
-    "last_click": 4925.0,
-    "first_click": 6049.0,
-    "linear": 5370.45,
-    "position_based": 5429.48
+    "last_click": 2150.55,
+    "first_click": 2864.3,
+    "linear": 2388.02,
+    "position_based": 2469.17
    },
    "roas": {
-    "last_click": 2.203,
-    "first_click": 2.705,
-    "linear": 2.402,
-    "position_based": 2.428
+    "last_click": 1.001,
+    "first_click": 1.333,
+    "linear": 1.111,
+    "position_based": 1.149
    },
    "ranks": {
     "last_click": 12,
@@ -490,19 +491,19 @@
     "linear": 12,
     "position_based": 12
    },
-   "rev_lo": 4925.0,
-   "rev_hi": 6049.0,
-   "roas_lo": 2.203,
-   "roas_hi": 2.705,
+   "rev_lo": 2150.55,
+   "rev_hi": 2864.3,
+   "roas_lo": 1.001,
+   "roas_hi": 1.333,
    "rank_lo": 12,
    "rank_hi": 12,
    "every_rule_top3": false,
    "rule_dependent": false,
-   "clicks": 3566,
-   "matched": 3269,
-   "untraced": 186.22,
-   "platform_conversions": 64,
-   "platform_value": 5910.0
+   "clicks": 2235,
+   "matched": 2137,
+   "untraced": 94.21,
+   "platform_conversions": 32,
+   "platform_value": 2714.6200000000003
   }
  ],
  "email": [
@@ -510,82 +511,82 @@
    "id": "E01",
    "name": "qw_email_weekly-newsletter",
    "revenue": {
-    "last_click": 37202.0,
-    "first_click": 28766.0,
-    "linear": 34508.3,
-    "position_based": 33508.28
+    "last_click": 40761.7,
+    "first_click": 26042.45,
+    "linear": 34353.31,
+    "position_based": 33802.37
    }
   },
   {
    "id": "E02",
    "name": "qw_email_abandoned-cart",
    "revenue": {
-    "last_click": 23641.0,
-    "first_click": 17426.0,
-    "linear": 21982.12,
-    "position_based": 21247.65
+    "last_click": 28256.65,
+    "first_click": 19666.35,
+    "linear": 24705.21,
+    "position_based": 24342.42
    }
   },
   {
    "id": "E03",
    "name": "qw_email_welcome-series",
    "revenue": {
-    "last_click": 14686.0,
-    "first_click": 13235.0,
-    "linear": 14849.68,
-    "position_based": 14303.18
+    "last_click": 17999.45,
+    "first_click": 13694.75,
+    "linear": 16374.13,
+    "position_based": 16093.1
    }
   }
  ],
  "buckets": [
   {
+   "key": "channel:Organic Social",
+   "label": "Organic social",
+   "revenue": {
+    "last_click": 15366.05,
+    "first_click": 24132.1,
+    "linear": 19366.97,
+    "position_based": 19538.03
+   }
+  },
+  {
    "key": "Direct",
    "label": "Direct (no tracked source)",
    "revenue": {
-    "last_click": 62599.0,
-    "first_click": 62599.0,
-    "linear": 62599.0,
-    "position_based": 62599.0
+    "last_click": 57440.65,
+    "first_click": 57440.65,
+    "linear": 57440.65,
+    "position_based": 57440.65
    }
   },
   {
    "key": "channel:Organic Search",
    "label": "Organic search",
    "revenue": {
-    "last_click": 72171.0,
-    "first_click": 75788.0,
-    "linear": 71928.2,
-    "position_based": 73167.22
+    "last_click": 69558.55,
+    "first_click": 82983.25,
+    "linear": 76233.86,
+    "position_based": 76298.91
    }
   },
   {
    "key": "channel:Referral",
    "label": "Referral (incl. payment gateway)",
    "revenue": {
-    "last_click": 38537.0,
-    "first_click": 17888.0,
-    "linear": 26202.65,
-    "position_based": 27404.8
+    "last_click": 36437.3,
+    "first_click": 17508.1,
+    "linear": 24634.85,
+    "position_based": 25980.95
    }
   },
   {
    "key": "Unattributable",
    "label": "Unassigned, (not set), unmatched",
    "revenue": {
-    "last_click": 11968.0,
-    "first_click": 12410.0,
-    "linear": 12797.53,
-    "position_based": 12420.98
-   }
-  },
-  {
-   "key": "channel:Organic Social",
-   "label": "Organic social",
-   "revenue": {
-    "last_click": 13767.0,
-    "first_click": 22278.0,
-    "linear": 16689.84,
-    "position_based": 17429.35
+    "last_click": 17049.25,
+    "first_click": 15595.55,
+    "linear": 16179.08,
+    "position_based": 16255.75
    }
   }
  ],
@@ -598,7 +599,7 @@
    "page_eligible": true,
    "seeded_at": "+20% over GA4 last-click",
    "instances": 12,
-   "revenue_affected": 45731.2,
+   "revenue_affected": 42725.66,
    "spend_affected": 0.0
   },
   {
@@ -608,8 +609,19 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "Safari 30.42% of users \u00d7 return gaps over 7 days",
-   "instances": 6369,
-   "revenue_affected": 28840.0,
+   "instances": 7179,
+   "revenue_affected": 38503.4,
+   "spend_affected": 0.0
+  },
+  {
+   "class": "A1",
+   "taxonomy": "1",
+   "label": "Missing UTMs",
+   "documented_case": "none published",
+   "page_eligible": true,
+   "seeded_at": "6% of paid-social + email sessions",
+   "instances": 4066,
+   "revenue_affected": 26419.3,
    "spend_affected": 0.0
   },
   {
@@ -620,18 +632,7 @@
    "page_eligible": true,
    "seeded_at": "4% of purchases",
    "instances": 238,
-   "revenue_affected": 22590.0,
-   "spend_affected": 0.0
-  },
-  {
-   "class": "A1",
-   "taxonomy": "1",
-   "label": "Missing UTMs",
-   "documented_case": "none published",
-   "page_eligible": true,
-   "seeded_at": "6% of paid-social + email sessions",
-   "instances": 3817,
-   "revenue_affected": 20749.0,
+   "revenue_affected": 22983.95,
    "spend_affected": 0.0
   }
  ],
@@ -644,18 +645,7 @@
    "page_eligible": true,
    "seeded_at": "3% of purchases",
    "instances": 152,
-   "revenue_affected": 13061.0,
-   "spend_affected": 0.0
-  },
-  {
-   "class": "A3",
-   "taxonomy": "3",
-   "label": "(not set) source",
-   "documented_case": "none published",
-   "page_eligible": true,
-   "seeded_at": "1% of sessions",
-   "instances": 2315,
-   "revenue_affected": 9750.0,
+   "revenue_affected": 14279.65,
    "spend_affected": 0.0
   },
   {
@@ -665,19 +655,19 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "2% of tagged sessions",
-   "instances": 1286,
-   "revenue_affected": 9232.0,
+   "instances": 1666,
+   "revenue_affected": 12253.65,
    "spend_affected": 0.0
   },
   {
-   "class": "A7",
-   "taxonomy": "7",
-   "label": "gclid lost on redirect",
+   "class": "A3",
+   "taxonomy": "3",
+   "label": "(not set) source",
    "documented_case": "none published",
    "page_eligible": true,
-   "seeded_at": "2% of Google Ads clicks",
-   "instances": 912,
-   "revenue_affected": 5809.0,
+   "seeded_at": "1% of sessions",
+   "instances": 2350,
+   "revenue_affected": 11574.85,
    "spend_affected": 0.0
   },
   {
@@ -688,7 +678,18 @@
    "page_eligible": true,
    "seeded_at": "0.5% of purchases",
    "instances": 35,
-   "revenue_affected": 3274.0,
+   "revenue_affected": 3136.3,
+   "spend_affected": 0.0
+  },
+  {
+   "class": "A7",
+   "taxonomy": "7",
+   "label": "gclid lost on redirect",
+   "documented_case": "none published",
+   "page_eligible": true,
+   "seeded_at": "2% of Google Ads clicks",
+   "instances": 998,
+   "revenue_affected": 2787.5,
    "spend_affected": 0.0
   },
   {
@@ -698,9 +699,9 @@
    "documented_case": "Uber / Frisch",
    "page_eligible": true,
    "seeded_at": "3% of paid clicks / 1% of other sessions",
-   "instances": 4368,
+   "instances": 4420,
    "revenue_affected": 0.0,
-   "spend_affected": 2253.62
+   "spend_affected": 2265.0
   }
  ],
  "hygiene_footnote": [
@@ -711,8 +712,8 @@
    "documented_case": "none published",
    "page_eligible": false,
    "seeded_at": "12% of tagged sessions",
-   "instances": 7704,
-   "revenue_affected": 44332.0,
+   "instances": 8653,
+   "revenue_affected": 57570.4,
    "spend_affected": 0.0
   }
  ]

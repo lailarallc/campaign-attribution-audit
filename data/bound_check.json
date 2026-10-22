@@ -3,28 +3,28 @@
   {
    "section": "2",
    "criterion": "Online revenue in period (true)",
-   "value": 503227,
+   "value": 497338,
    "target": "~$500K (+/-10%)",
    "result": "PASS"
   },
   {
    "section": "2",
    "criterion": "AOV",
-   "value": 90.57,
+   "value": 89.51,
    "target": "$80-120",
    "result": "PASS"
   },
   {
    "section": "2",
    "criterion": "Site CVR (true, human sessions)",
-   "value": 2.41,
+   "value": 2.38,
    "target": "1.9-3.0%",
    "result": "PASS"
   },
   {
    "section": "2",
    "criterion": "Sessions in quarter (human)",
-   "value": 230472,
+   "value": 233404,
    "target": "170-270K",
    "result": "PASS"
   },
@@ -39,11 +39,11 @@
    "section": "3",
    "criterion": "CVR ranking email > paid search >= paid social > organic search > organic social",
    "value": {
-    "email": 5.65,
-    "paid_search": 2.73,
-    "paid_social": 2.36,
+    "email": 6.37,
+    "paid_search": 2.62,
+    "paid_social": 2.29,
     "organic_search": 1.3,
-    "organic_social": 0.93
+    "organic_social": 0.95
    },
    "target": "ranking (DIR ThoughtMetric)",
    "result": "PASS"
@@ -51,28 +51,28 @@
   {
    "section": "3",
    "criterion": "CVR level email",
-   "value": 5.65,
+   "value": 6.37,
    "target": "8.43% +/-50%",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "CVR level paid_search",
-   "value": 2.73,
+   "value": 2.62,
    "target": "3.95% +/-50%",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "CVR level paid_social",
-   "value": 2.36,
+   "value": 2.29,
    "target": "3.87% +/-50%",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "CVR level tiktok",
-   "value": 2.12,
+   "value": 1.7,
    "target": "3.07% +/-50%",
    "result": "PASS"
   },
@@ -86,14 +86,14 @@
   {
    "section": "3",
    "criterion": "CVR level organic_social",
-   "value": 0.93,
+   "value": 0.95,
    "target": "1.42% +/-50%",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "Email revenue share (true linear)",
-   "value": 15.7,
+   "value": 17.3,
    "target": "9-25%",
    "result": "PASS"
   },
@@ -111,28 +111,28 @@
   {
    "section": "3",
    "criterion": "True ROAS Google (linear)",
-   "value": 3.96,
+   "value": 3.95,
    "target": "1.5-6.0",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "True ROAS Meta (linear)",
-   "value": 3.3,
+   "value": 3.45,
    "target": "1.5-6.0",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "True ROAS Other paid (linear)",
-   "value": 2.64,
+   "value": 2.28,
    "target": "1.5-6.0",
    "result": "PASS"
   },
   {
    "section": "3",
    "criterion": "Revenue from journeys >=3 sessions and >=5 days",
-   "value": 27.0,
+   "value": 30.0,
    "target": "25-55%",
    "result": "PASS"
   },
@@ -140,8 +140,8 @@
    "section": "3",
    "criterion": "Discovery channels over-represented at first touch",
    "value": {
-    "first": 0.435,
-    "last": 0.176
+    "first": 0.418,
+    "last": 0.101
    },
    "target": "first > last (DIR)",
    "result": "PASS"
@@ -150,8 +150,8 @@
    "section": "3",
    "criterion": "Closers over-represented at last touch",
    "value": {
-    "first": 0.19,
-    "last": 0.457
+    "first": 0.201,
+    "last": 0.526
    },
    "target": "last > first (DIR)",
    "result": "PASS"
@@ -175,12 +175,63 @@
    "section": "4",
    "criterion": "Funnel monotone view_item >= add_to_cart >= begin_checkout >= purchase",
    "value": [
-    68145,
-    22259,
-    11165,
+    68417,
+    22238,
+    11164,
     5708
    ],
    "target": "monotone",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "Funnel monotone per channel (excl. seeded A5 returns)",
+   "value": "all monotone",
+   "target": "monotone",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "New sessions start >= 30 min after the client's previous event",
+   "value": 0,
+   "target": "0 violations",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "First visits on qw_meta_rt_cart-abandoners not explained by A8 resets",
+   "value": {
+    "first_visit_share": 0.028,
+    "unexplained": 0
+   },
+   "target": "0 unexplained",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "First visits on qw_email_abandoned-cart not explained by A8 resets",
+   "value": {
+    "first_visit_share": 0.035,
+    "unexplained": 0
+   },
+   "target": "0 unexplained",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "First visits on qw_meta_rt_site-visitors not explained by A8 resets",
+   "value": {
+    "first_visit_share": 0.028,
+    "unexplained": 0
+   },
+   "target": "0 unexplained",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "Repeat buyers in the quarter",
+   "value": 556,
+   "target": "> 0",
    "result": "PASS"
   },
   {
@@ -193,21 +244,21 @@
   {
    "section": "5",
    "criterion": "Realized rate A1",
-   "value": 0.0589,
+   "value": 0.0621,
    "target": "0.06 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
   {
    "section": "5",
    "criterion": "Realized rate A2a",
-   "value": 0.1128,
+   "value": 0.1251,
    "target": "0.12 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
   {
    "section": "5",
    "criterion": "Realized rate A2b",
-   "value": 0.0188,
+   "value": 0.0241,
    "target": "0.02 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
@@ -242,7 +293,7 @@
   {
    "section": "5",
    "criterion": "Realized rate A7",
-   "value": 0.0197,
+   "value": 0.0213,
    "target": "0.02 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
@@ -252,8 +303,54 @@
    "value": 0.03,
    "target": "0.03 (+/-25% or 0.3pp)",
    "result": "PASS"
+  },
+  {
+   "section": "5",
+   "criterion": "A9 platform / GA4 last-click conversions (paid, aggregate)",
+   "value": 1.2002,
+   "target": "1.20 (pinned)",
+   "result": "PASS"
+  },
+  {
+   "section": "5",
+   "criterion": "A9 multiplier differs by campaign",
+   "value": [
+    1.088,
+    1.135,
+    1.145,
+    1.15,
+    1.174,
+    1.215,
+    1.239,
+    1.245,
+    1.257,
+    1.278,
+    1.28,
+    1.31
+   ],
+   "target": "not uniform (F5)",
+   "result": "PASS"
+  },
+  {
+   "section": "5",
+   "criterion": "CTR differs by campaign type",
+   "value": [
+    0.65,
+    0.94,
+    1.01,
+    1.08,
+    1.24,
+    1.26,
+    1.7,
+    2.86,
+    2.94,
+    3.52,
+    8.26
+   ],
+   "target": "not uniform (F5)",
+   "result": "PASS"
   }
  ],
- "pass": 32,
+ "pass": 41,
  "fail": 0
 }

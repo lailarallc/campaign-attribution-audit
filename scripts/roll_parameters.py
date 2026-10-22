@@ -72,6 +72,28 @@ EMAIL_ROSTER = [("E01", "qw_email_weekly-newsletter", "email"),
                 ("E03", "qw_email_welcome-series", "email")]
 DIRICHLET_ALPHA = 4.0   # STRUCTURAL: keeps within-platform shares away from degenerate extremes
 
+# v1.1 (realism review 2026-10-22, F2/F5/F13): a SEPARATE seeded stream, so every v1.0 draw above
+# is unchanged. All STRUCTURAL (no published per-campaign figure); ranges are type-ordered so
+# brand search can never out-cost non-brand, prospecting CTR never beats brand search, etc.
+SEED_STRING_V11 = "quellwood-provisions/2026-q3/parameters/v1.1"
+RANGES_V11 = {
+    "repeat_order_share": {"low": 0.06, "high": 0.12, "step": 0.01,
+                           "basis": "STRUCTURAL: share of quarter orders that are a buyer's second order (F2)"},
+    "post_purchase_share": {"low": 0.20, "high": 0.35, "step": 0.05,
+                            "basis": "STRUCTURAL: share of buyers who browse again after buying (F2)"},
+    "a9_log_sd": {"low": 0.05, "high": 0.12, "step": 0.01,
+                  "basis": "STRUCTURAL: per-campaign spread of the A9 multiplier; conversion-weighted mean held at "
+                           "exactly 1.20 (pinned)"},
+}
+CPC_RANGE = {   # USD per click, by campaign type (F13). Traffic follows pinned spend / CPC.
+    "brand_search": (0.9, 1.6), "nonbrand_search": (1.6, 3.2), "shopping": (0.7, 1.4),
+    "meta_prospecting": (0.9, 1.8), "meta_retargeting": (0.6, 1.3), "tiktok": (0.5, 1.1), "affiliate": (0.3, 0.6),
+}
+CTR_RANGE = {   # percent, by campaign type (F5)
+    "brand_search": (6.0, 12.0), "nonbrand_search": (2.5, 5.0), "shopping": (0.8, 1.6),
+    "meta_prospecting": (0.7, 1.4), "meta_retargeting": (0.9, 1.8), "tiktok": (0.4, 0.9), "affiliate": None,
+}
+
 
 def draw(rng, spec):
     n = round((spec["high"] - spec["low"]) / spec["step"])
@@ -99,6 +121,23 @@ def main():
     params["roster_seed_string"] = ROSTER_SEED_STRING
     params["dirichlet_alpha"] = DIRICHLET_ALPHA
     params["roster"] = roster
+
+    vrng = random.Random(seed_of(SEED_STRING_V11))
+    v11 = {"seed_string": SEED_STRING_V11, "draws": {}, "campaign": {}}
+    for name, spec in RANGES_V11.items():
+        v11["draws"][name] = {"value": draw(vrng, spec), **spec}
+    for c in roster:
+        sub = c["sub_channel"]
+        if sub not in CPC_RANGE:
+            continue
+        lo, hi = CPC_RANGE[sub]
+        ctr = CTR_RANGE[sub]
+        v11["campaign"][c["campaign_id"]] = {
+            "cpc_usd": round(vrng.uniform(lo, hi), 2),
+            "ctr_pct": round(vrng.uniform(*ctr), 2) if ctr else None,
+            "a9_z": round(vrng.gauss(0, 1), 4),
+        }
+    params["v1_1"] = v11
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(params, indent=2) + "\n", encoding="utf-8", newline="\n")

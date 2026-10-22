@@ -22,14 +22,24 @@ PLATFORM = {"brand_search": "Google", "nonbrand_search": "Google", "shopping": "
 
 
 def ts(s):
-    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%S.%fZ")
 
 
 def main():
     sess = read_gz(DATA / "truth" / "sessions.csv.gz")
+    truth_by_sid = {t["sid"]: t for t in sess}
     orders = read_gz(DATA / "truth" / "orders.csv.gz")
     log = read_gz(DATA / "truth" / "seed_log.csv.gz")
-    spend = list(csv.DictReader(open(DATA / "spend.csv", encoding="utf-8")))
+    daily = list(csv.DictReader(open(DATA / "spend.csv", encoding="utf-8")))
+    spend = {}
+    for r in daily:
+        a = spend.setdefault(r["campaign_id"], {"campaign_id": r["campaign_id"], "platform": r["platform"],
+                                                "spend": 0.0, "clicks": 0, "impressions": 0, "pconv": 0})
+        a["spend"] += float(r["spend"])
+        a["clicks"] += int(r["clicks"])
+        a["impressions"] += int(r["impressions"] or 0)
+        a["pconv"] += int(r["platform_conversions"])
+    spend = list(spend.values())
     results = json.loads((DATA / "results.json").read_text(encoding="utf-8"))
     checks = []
 
@@ -125,6 +135,59 @@ def main():
     f = [cnt.get(n, 0) for n in ["view_item", "add_to_cart", "begin_checkout", "purchase"]]
     check("4", "Funnel monotone view_item >= add_to_cart >= begin_checkout >= purchase", f,
           f[0] >= f[1] >= f[2] >= f[3], "monotone")
+    # Per-channel funnel (pinned per channel). Seeded A5 gateway-return sessions are excluded:
+    # a purchase with no begin_checkout is that defect's real signature (DECISIONS 2026-10-22).
+    import cmlib
+    sess_ch, gw_sessions = {}, set()
+    for r in ev:
+        if r["event_name"] == "session_start":
+            key = (r["user_pseudo_id"], r["ga_session_id"])
+            sess_ch[key] = cmlib.channel_group(r["source"], r["medium"], r["campaign"])
+            if r["source"] == "paypal.com":
+                gw_sessions.add(key)
+    fun = {}
+    for r in ev:
+        key = (r["user_pseudo_id"], r["ga_session_id"])
+        if key in gw_sessions or r["event_name"] not in ("view_item", "add_to_cart", "begin_checkout", "purchase"):
+            continue
+        ch = sess_ch.get(key, "Unassigned")
+        fun.setdefault(ch, {}).setdefault(r["event_name"], 0)
+        fun[ch][r["event_name"]] += 1
+    bad = {ch: [f.get(n, 0) for n in ("view_item", "add_to_cart", "begin_checkout", "purchase")]
+           for ch, f in fun.items()}
+    bad = {ch: v for ch, v in bad.items() if not (v[0] >= v[1] >= v[2] >= v[3])}
+    check("4", "Funnel monotone per channel (excl. seeded A5 returns)", bad or "all monotone", not bad, "monotone")
+    # 30-minute session rule: a client's new session starts >= 30 min after its previous event
+    last_ev, starts = {}, []
+    for r in ev:
+        c = r["user_pseudo_id"]
+        t = int(r["event_timestamp"])
+        if r["event_name"] == "session_start" and c in last_ev:
+            starts.append(t - last_ev[c])
+        last_ev[c] = max(t, last_ev.get(c, 0))
+    short = sum(1 for g in starts if g < 30 * 60 * 1_000_000)
+    check("4", "New sessions start >= 30 min after the client's previous event", short, short == 0, "0 violations")
+    # History (F2)
+    fv = {}
+    for r in ev:
+        if r["event_name"] == "session_start":
+            fv.setdefault(r["campaign"].lower(), [0, 0])[0] += 1
+            if r["ga_session_number"] == "1":
+                fv[r["campaign"].lower()][1] += 1
+    # Retention channels reach only users with history. A first visit there is legitimate only when
+    # Safari ITP (A8) minted a new client id for a returning user.
+    a8_clients = {next(t["client_id"] for t in [truth_by_sid[e["sid"]]]) for e in log if e["class"] == "A8"}
+    for camp in ("qw_meta_rt_cart-abandoners", "qw_email_abandoned-cart", "qw_meta_rt_site-visitors"):
+        n, f1 = fv.get(camp, [0, 0])
+        stray = sum(1 for r in ev if r["event_name"] == "session_start" and r["campaign"].lower() == camp
+                    and r["ga_session_number"] == "1" and r["user_pseudo_id"] not in a8_clients)
+        check("4", f"First visits on {camp} not explained by A8 resets", {"first_visit_share": round(f1 / n, 3),
+              "unexplained": stray}, stray == 0, "0 unexplained")
+    buyers = {}
+    for o in orders:
+        buyers[o["uid"]] = buyers.get(o["uid"], 0) + 1
+    rep = sum(1 for v in buyers.values() if v > 1)
+    check("4", "Repeat buyers in the quarter", rep, rep > 0, "> 0")
     pur = [r for r in ev if r["event_name"] == "purchase"]
     missing = sum(1 for r in pur if not r["transaction_id"])
     check("4", "Purchases missing transaction_id", missing, missing == sum(1 for e in log if e["class"] == "A4b"),
@@ -152,6 +215,17 @@ def main():
         # tolerance: 3 binomial standard errors (A2a/A2b are conditional on surviving A1, so slightly below)
         check("5", f"Realized rate {c}", round(v, 4), abs(v - t) <= max(0.003, 0.25 * t), f"{t} (+/-25% or 0.3pp)")
 
+    paid_rows = [r for r in spend if r["spend"] > 0]
+    res_c = {c["campaign_id"]: c for c in results["campaigns"]}
+    lc_conv = sum(res_c[r["campaign_id"]]["lc_conversions"] for r in paid_rows)
+    ratio = sum(r["pconv"] for r in paid_rows) / lc_conv
+    check("5", "A9 platform / GA4 last-click conversions (paid, aggregate)", round(ratio, 4),
+          abs(ratio - 1.20) <= 0.01, "1.20 (pinned)")
+    per = sorted(round(r["pconv"] / res_c[r["campaign_id"]]["lc_conversions"], 3) for r in paid_rows
+                 if res_c[r["campaign_id"]]["lc_conversions"])
+    check("5", "A9 multiplier differs by campaign", per, per[-1] - per[0] > 0.05, "not uniform (F5)")
+    ctrs = sorted(round(100 * r["clicks"] / r["impressions"], 2) for r in paid_rows if r["impressions"])
+    check("5", "CTR differs by campaign type", ctrs, len(set(ctrs)) > 3, "not uniform (F5)")
     out = {"checks": checks, "pass": sum(c["result"] == "PASS" for c in checks),
            "fail": sum(c["result"] == "FAIL" for c in checks)}
     (DATA / "bound_check.json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8", newline="\n")

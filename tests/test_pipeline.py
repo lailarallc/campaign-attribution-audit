@@ -144,6 +144,15 @@ class GeneratedUniverse(unittest.TestCase):
             ("B1" if not L["leg1_same_top"] else "B2")
         self.assertEqual(self.r["branch"], expected)
 
+    def test_visit_shares_partition_revenue(self):
+        m = self.r["measures"]
+        self.assertAlmostEqual(m["p1_one_touch_rev_share"] + m["p2_two_touch_rev_share"] + m["p3_three_plus_rev_share"],
+                               1.0, delta=0.001)
+
+    def test_b2_clause_is_true_when_b2_ships(self):
+        if self.r["branch"] == "B2":
+            self.assertTrue(self.r["one_touch"]["top_is_largest_paid"])
+
     def test_rule_credit_conserves_revenue(self):
         total = self.r["measures"]["revenue"]
         for rule in cmlib.RULES:
