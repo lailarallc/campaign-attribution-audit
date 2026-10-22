@@ -91,12 +91,14 @@ jobs:
             api -X POST "$base/accounts/$CF_ACCOUNT_ID/pages/projects/$PROJECT/domains" --data "{\"name\":\"$DOMAIN\"}" \
               | grep -q '"success":true' && echo "domain attached" || { echo "::warning::could not attach domain"; exit 1; }
           fi
+          # The bare name was taken globally; read the project's real subdomain (campaignmath-91v.pages.dev).
+          sub=$(api "$base/accounts/$CF_ACCOUNT_ID/pages/projects/$PROJECT" | python3 -c 'import sys,json; print(json.load(sys.stdin)["result"]["subdomain"])')
           zone=$(api "$base/zones?name=lailarallc.com" | python3 -c 'import sys,json; r=json.load(sys.stdin)["result"]; print(r[0]["id"] if r else "")')
           [ -n "$zone" ] || { echo "::warning::zone not visible to token"; exit 1; }
           if api "$base/zones/$zone/dns_records?name=$DOMAIN" | grep -q "\"name\":\"$DOMAIN\""; then
             echo "dns record exists"
           else
             api -X POST "$base/zones/$zone/dns_records" \
-              --data "{\"type\":\"CNAME\",\"name\":\"campaignmath\",\"content\":\"$PROJECT.pages.dev\",\"proxied\":true}" \
+              --data "{\"type\":\"CNAME\",\"name\":\"campaignmath\",\"content\":\"$sub\",\"proxied\":true}" \
               | grep -q '"success":true' && echo "cname created" || { echo "::warning::could not create CNAME"; exit 1; }
           fi
