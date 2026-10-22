@@ -737,3 +737,281 @@ with history keeps a pre-quarter id however long ago `first_seen` was.
 | F2 | Resolved by R1 and R2. |
 | F13 | **Kept as partial, stated:** realized CPC levels are about 45% of the drawn type CPCs, because total spend (pinned via ROAS) and sessions (pinned via CVR) fix the level. The draw fixes the order within each platform (non-brand above brand), which was the finding's risk. |
 
+
+## Third pass — commit a46be44
+
+**Verdict: PASS WITH FINDINGS.**
+
+R1 is resolved, and so is every other High issue. Two Medium findings remain, S1 and S2. Both are
+printed-claim accuracy issues on the page. Neither touches the attribution engine, the branch
+or any pinned rate.
+
+Reviewer: third independent session with no stake in the build. Read-only except for this section.
+Analysis used Python stdlib only. The generator and `roll_parameters.py` were not run. I wrote my
+own sessionizer, channel classifier, campaign matcher, four rules and Kendall τ-b. I took no code
+from `cmlib.py` or `attribute.py`.
+
+**Integrity**
+- All six manifest hashes match.
+- The three monthly files are `static/data/events_2026-0{7,8,9}.csv.gz`. Their row counts are
+  374,662, 400,659 and 421,272, and no row is filed under the wrong month. I took one header, then
+  the rows of all three files in order. That joined content is byte-identical to the decompressed
+  canonical export, so it hashes to `fa994ba0…5c41de` = manifest `files["export/events.csv.gz"]`.
+- `static/data/spend.csv` is byte-identical to `data/spend.csv`.
+
+**Engine re-derived (export + daily spend table only)**
+- Conversions: 5,708 raw purchase events → 5,556 deduped; revenue $497,338.00.
+- Credit: all 60 campaign × rule revenues match `results.json` to within $0.005.
+- Branch **B2**:
+  - Leg 1 holds: `qw_search_brand` (G01) is top under all four rules.
+  - Leg 2 fails: 7 wide ranges (G02, G03, G04, M02, M03, M04, M05).
+  - Leg 3 fails: τ-b = 0.5455.
+- **Z** = G03 `qw_search_nb_gift-boxes`, ROAS 0.694 (last) – 1.869 (first), ratio 2.69.
+- Movers: 9 of 12 (all paid campaigns except G01, G05 and M01). Every-rule top 3: G01, G05.
+- **U / S** = $5,056.84 / $72,621.29 (7.0%). Matching counts a session if its campaign string
+  matches, whatever its channel, as §2 says. If the 883 A2b `meta/social_ad` sessions (Unassigned)
+  are excluded, U is $5,665.21. The printed figure follows the pinned definition.
+- **s / d** = 695 / 5,556 = 12.51%; $61,736.45. 603 of the 695 are Direct-only paths.
+- **p1 / p2 / p3** = 43.63 / 26.55 / 29.82%. No conversion has zero visits in its window.
+- **share** = 11.48% of all one-visit revenue. G01 is the largest **paid** key in one-visit revenue
+  ($24,920; next G05 $18,992). Direct ($51,203) and Organic Search ($32,058) are larger, but they
+  are not paid campaigns.
+- **u** = 524 / 3,300 = 15.88% (strict, R8 definition).
+- **t** = 238 / 695 = 34.24% on the recorded path. That matches the engine; S1 is about what it
+  counts.
+- A9: platform-reported value exceeds GA4 last-click by $42,484.33. Conversions are held at
+  1.2003× in aggregate.
+- `src/lib/site.json` carries every one of these values unchanged, and `+page.svelte` prints them
+  with the stated rounding.
+
+**Printed claims checked against this data**
+
+| Claim on the page | Status |
+|---|---|
+| Lead: $5,057 of $72,621 | true |
+| B2: "every rule names `qw_search_brand`" | true |
+| "9 of 12 move two or more places" | true |
+| "`qw_search_nb_gift-boxes` runs from 0.69× to 1.87×" | true |
+| "44% … one recorded visit … same answer by arithmetic" | true |
+| "among paid campaigns, X takes the largest share … (11%)" | true |
+| Every-rule winners G01, G05 | true |
+| Bump-chart and table readings | true |
+| "Untraced spend … counts only the seeded tracking defects" | consistent with the generator |
+| "34% of those got there through a tracking defect" | overstated (**S1**) |
+| "Every number on this page comes from those two files" | false (**S2**) |
+| "reach no campaign or channel at all" | wording issue (**S6**) |
+
+### R1–R8 resolution (and F2, F13)
+
+| # | Status | Evidence |
+|---|---|---|
+| R1 | **Resolved** | The test you specified is 0 violations. 193,245 exported clients; 39,492 have no `first_visit` at their first exported session, and **all 39,492** carry a client-id timestamp before 2026-07-01 00:00 local (0 minted in-quarter). Stronger checks also pass: (a) every one of 153,753 `first_visit` clients starts at `ga_session_number` 1, with the id minted within 1 s of that session; (b) consecutive exported sessions of the same client step `ga_session_number` by exactly 1 in **every** case (0 gaps), so no in-quarter session is missing anywhere; (c) every retention session (M04, M05, E02, E03) not preceded by an exported session either has a pre-quarter id or is a `first_visit` on Safari (an A8 reset). For M05, 6,056 of the 6,931 non-reset sessions have an earlier exported `add_to_cart`; E02: 4,355 of 4,694. **Gap:** the bounds rows the re-review asked for (history/id consistency; earlier `add_to_cart` for cart audiences) were not added, so nothing guards this against regression (S8). |
+| R2 | **Resolved mechanically**, side effects in S1 and S5 | 16,683 A8 "reset across pre-quarter gap" entries. Safari in-export same-client gaps over 7 days: 0 of 11,867. Retention first-visit shares are now M05 15.9%, M04 26.3%, E02 3.5%, E03 3.0%, all Safari. |
+| R3 | **Resolved** | 0 `(direct)` sessions have an external referrer. Untagged Meta/TikTok clicks record as `l.instagram.com` / `m.facebook.com` / `l.facebook.com` / `tiktok.com` referral → Organic Social. Every referral session's source equals its referrer host, except PayPal (`paypal.com` vs `www.paypal.com`, 238; normal GA4 behaviour). |
+| R4 | **Partial** | A2b is fixed (2.06%). A2a is 12.22%, A3 1.01%. But A1 now realizes **6.32%** (was 6.21%) and A7 **2.21%** (was 2.13%). The "closer to target" rule still lands above the pin when links are coarse. All are within the bounds tolerance. The response's "no longer overshoots" is true for A2b only. |
+| R5 | **Partial** | Fixed: 4,357 of 5,556 orders have one `add_to_cart` per line, with quantities (1,924 adds of qty 2). Still present: see S4. |
+| R6 | **Partial** (kept items stated) | Daily CPC CV is now 12.6–15.8% and CTR CV 17–20%, but it is nearly identical on every campaign. Relative CPC is weekend 1.007 and Labor Day weekend 1.026, so there is no visible auction pressure. Platform conversions are lagged (G03 has 33 zero days; G01 none). The A01 cost-to-sales ratio is 21.8%, kept and stated. |
+| R7 | **Resolved**, with one regression (S3) | 51 US regions (50 states + DC) and 8 provinces. Meta referrer host matches `utm_source`. 0 events dated October; `event_date` equals the local date on all 1,196,593 events. Cart campaigns land on `/cart` 100% of the time. |
+| R8 | **Resolved** | `{u}` ignores a reset on a window's first session: 524 / 3,300 = 15.88%, which reproduces. The A5 slow-return-only choice is kept and stated. |
+| F2 | **Resolved structurally** (residual Low, S5) | History is consistent with the export (R1). There are 556 repeat buyers. |
+| F13 | **Kept as partial, stated** | Realized CPCs: G01 $0.48, G05 $0.44, G02–G04 $0.74–1.30, Meta $0.57–0.91, T01 $0.94. Non-brand still out-costs brand. |
+
+No response changed a §5 rate, a pinned A row or a pinned definition for a verdict reason. The
+v1.0 draws were not re-examined in this pass beyond the hashes.
+
+### 20-row sample (seed `random.Random(20261024)`)
+
+Method: keys are sorted `(user_pseudo_id, ga_session_id)` pairs. I drew 6 from the 5,556
+purchase-bearing sessions, then 14 from all 250,086 sessions. Times are property-local.
+
+```
+#1  facebook/paid_social rt_site-visitors, sn=19, id minted 2026-03-14, Samsung Internet; PDP x2,
+    one view_item+atc (QW-CC-03), purchase 38.00 + ship 6.95 + tax 2.28
+#2  paypal.com/referral (A5) sn=4, lands on thank-you; purchase 66.50, 4 lines, ship 0.00;
+    prior: nb search 07-28, Meta lookalike 07-29, Shopping 07-30 (with atc)
+#3  quellwood_news/email newsletter sn=8, 03:12 local; 6 pages, 2 lines atc'd in SKU order, 24.90
+#4  google/cpc nb gift-boxes, first_visit, gclid 92 ch; 2 lines (CC-02, GB-03) in SKU order, 142.00
+#5  facebook/paid_social pro_gifting, first_visit; 3 lines CC-03, PR-01, SB-01 in SKU order, 62.90
+#6  (direct) first_visit Safari; 2 lines CC-03, PR-01 in SKU order, 50.95
+#7  google/cpc nb spice-blends sn=8; PDPs spice-library, garlic-chili-crisp, chili-crisp-trio;
+    view_item ONLY on the last one, which is also the atc
+#8  tiktok/paid_social first_visit, single page_view
+#9  tiktok/paid_social first_visit, single page_view, engagement absent
+#10 google/organic first_visit, single page_view, engagement absent
+#11 google/organic first_visit Safari, single page_view
+#12 instagram/paid_social pro_gifting on a client minted 2025-02-16, sn=8
+#13 google/organic sn=2; 3 PDPs, view_item only on the last
+#14 m.facebook.com/referral first_visit; 2 PDPs, view_item on the last; reaches begin_checkout, no purchase
+#15 google/cpc brand sn=9 (id 2024-08-04), lands on /pages/our-kitchen
+#16 giftguide-weekly.net/referral first_visit, PDP landing
+#17 l.instagram.com/referral first_visit
+#18 google/cpc shopping sn=2, previous Shopping click 4 days earlier (consistent)
+#19 (direct) first_visit; 2 PDPs, view_item on the last
+#20 no session_start (A3); gclid in landing URL, google.com referrer
+```
+
+**Does it look like a real GA4 export?** Yes, at row level, with the tells below.
+
+R1's phantom history is gone. Every session number, client-id timestamp and `first_visit` is
+internally consistent. Referrers match sources. A3 and A5 rows look like the real defects.
+
+Remaining tells:
+- `view_item` fires on one product page per session (#7, #13, #14, #19).
+- Add-to-cart order equals SKU sort order (#3–#6).
+- A cart-recovery click re-adds the whole cart (S4).
+
+### New findings
+
+#### S1 (Medium): `{t}` and the A8 ledger card count pre-quarter-gap resets that cannot alter a recorded path
+
+**What:** this is a regression from the R2 fix.
+- 16,683 A8 log entries are "reset across pre-quarter gap". Each sits on a user's **first**
+  in-quarter session.
+- The path is the in-export sessions in the 90-day window. A reset there changes nothing in that
+  path, because the history it cuts off lies before the export window, and the page says
+  lookback is "inside the export window".
+- `defect_share` and `hygiene_ledger` count any window session that carries an A8 entry, so these
+  resets count as defects.
+
+**Evidence:**
+- **{t}:** 238 of 695 unattributable conversions are counted as defect-touched. For **70** of them,
+  the only seeded defect in the window is a pre-quarter-gap reset.
+- Excluding those resets, t = 168 / 695 = **24.2%** on the recorded path, or 175 / 695 = 25.2%
+  on the truth window (2 no-id orders unmatched).
+- The page prints "34% of those got there through a tracking defect". §2 defines `{t}` as the
+  share "whose path was altered by at least one seeded defect", so 34% overstates it.
+- **A8 card:** it shows $74,532 "of revenue on journeys it touched" and 24,809 instances.
+  - Excluding pre-quarter-gap resets: $41,074 (split-only, non-first session: $38,980).
+  - At $41,074, A8 drops below A9 ($42,484), so the card order changes.
+  - It stays in the top 4, so the §6 page selection is unchanged.
+  - The literal §6 metric ("path contains at least one instance") arguably admits these resets.
+    `{t}`'s "altered" wording does not.
+
+**Structural fix (no rate change):**
+- In `{t}`, count an A8 entry only when it splits the window: a reset on a non-first window
+  session, the same rule R8 applied to `{u}`.
+- In the ledger, either apply the same rule to A8 revenue, or show pre-quarter-gap resets as their
+  own line: "users recorded as new", with instances and no revenue.
+- Keep the instance count. Each reset is a real ITP effect on new-vs-returning.
+
+#### S2 (Medium): "Every number on this page comes from those two files" is false
+
+**Evidence:** the published files are the export and the spend table. Several numbers on the page
+come from `data/truth/seed_log.csv.gz` and `orders.csv.gz`, which are not published:
+- `{t}` (34%);
+- every hygiene card and row: instances, "revenue on journeys it touched", A6 "spend on it";
+- `{u}` (B3 only).
+
+A reader who follows "Check it by hand" cannot reproduce them. A9 and the untraced-spend table
+*are* reproducible.
+
+**Fix (choose one, via DECISIONS):**
+- Publish the seed log, plus the order → session mapping it needs, as a third download.
+- Or narrow the sentence to "Every attribution number…" and label the hygiene section as computed
+  from the seed log, which is the v1 truth by design (§1.3).
+
+#### S3 (Low): the quarter-end shift leaves a visible hole in the last two hours
+
+**Evidence:**
+- Session starts on Sep 30 by local hour:
+  - 22:00 has 1 and 23:00 has 1, against 146 and 74 at the same hours on Sep 29;
+  - 19:00–21:00 are inflated: 264 / 240 / 209, against 196 / 198 / 196 the night before.
+- The R7 fix moved every late session 10–300 min earlier, which creates both effects.
+- A real date-filtered export keeps late-evening sessions and simply lacks their events dated
+  Oct 1.
+
+**Fix:**
+- Leave late sessions in place. Drop events whose local date is Oct 1 from the export, exactly as a
+  `event_date BETWEEN` filter would.
+- Count a purchase in Q3 only if its event is dated in Q3, and log the cut.
+- This changes no rate.
+
+#### S4 (Low): ecommerce tells that remain after R5
+
+**Evidence:**
+- **view_item on one PDP only.**
+  - In 73,412 of 73,631 non-purchase sessions with a `view_item`, it fires once, on the last PDP.
+  - Overall: 90,170 `view_item` against 294,454 PDP page_views (sample #7, #13, #14, #19).
+  - Shopify's GA4 integration fires `view_item` on every product page view.
+- **Add-to-cart order is SKU-sorted** in 4,670 of 4,894 multi-add purchase sessions (95%).
+- **Orders with 5–8 lines** (1,007) have at most 4 `add_to_cart` events, so the cart and the order
+  disagree.
+- **No cart persistence.**
+  - 0 of 5,318 non-gateway purchase sessions lack an in-session `add_to_cart`.
+  - That includes all 513 purchases on cart-recovery traffic (E02, M05). They land on `/cart`, then
+    browse and re-add every line.
+  - A recovery click reopens a saved cart, and many real buyers return to an existing cart.
+
+**Fix:**
+- `view_item` on every PDP page_view.
+- Add-to-cart order follows browse order.
+- An `add_to_cart` for every order line.
+- Purchases from cart-recovery sessions, and a share of returning-buyer sessions, use the cart
+  from the qualifying visit with no new `add_to_cart`.
+- The funnel row still passes, because carts persist from an earlier add.
+
+#### S5 (Low): new-vs-returning residuals (F2/R2)
+
+**Safari has almost no pre-quarter users:**
+- The pre-quarter id share at first exported session is 0.27% for Safari, against 30.0–32.3% for
+  Chrome, Edge, Firefox and Samsung.
+- Session-level returning share: Safari 16%, others 48–50%.
+- Cause: the gap since the last pre-quarter visit is days-into-quarter + U(0.5, 45). That puts
+  about 14% of returns within 7 days even for a day-one return, while the build's own in-quarter
+  non-Safari return gaps are 60% within 7 days. Existing users have no frequent-visitor tail, so
+  A8 resets about 99% of them.
+- A lower Safari returning share is the real ITP signature. A 110× gap at first session is not.
+
+**Returning-session share still ramps:**
+- 31.9% (week 1) → 36–40% (weeks 2–12) → 43.2% / 44.9% (weeks 13–14).
+- First exported sessions of pre-quarter clients are flat across weeks (about 2,900 per week),
+  with no front-loading of frequent visitors.
+
+**Fix:** draw the pre-quarter recency from the same return-gap model used in-quarter, from a
+separate stream. No rate is involved.
+
+#### S6 (Low): "reach no campaign or channel at all" vs Direct
+
+**Evidence:**
+- 603 of the 695 unattributable conversions are Direct-only paths. §1.5 sends them to the Direct
+  bucket, and the page's own footnote lists "Direct (no tracked source) $53.4K" as revenue
+  credited to a bucket.
+- GA4 users know Direct as a default channel group.
+- The measure follows its pinned definition. The sentence overstates it.
+
+**Fix:** through a DECISIONS accuracy entry, the same precedent as the B2 clause, reword to
+"reach no campaign or traceable channel (most are Direct-only)". The measure stays as pinned.
+
+#### S7 (Low): spend-table noise is uniform
+
+**Evidence:**
+- CPC CV is 12.6–15.8% and CTR CV 17–20% on every campaign, brand and prospecting alike.
+- Weekend CPC is +0.7% and Labor Day weekend +2.6%.
+
+**Fix:** per-campaign volatility and promo-day auction pressure, from a separate stream. Spend
+totals stay pinned.
+
+#### S8 (Low): no regression guard for R1
+
+`bound_check.py` has no row for:
+- "every client without `first_visit` has a pre-quarter id or an earlier exported session";
+- "`ga_session_number` steps by 1 between a client's exported sessions";
+- "every M05/E02 session has an earlier `add_to_cart`, a pre-quarter id or an A8 reset".
+
+All three pass today (0 / 0 / 0 violations). Add them so the next generator change cannot
+silently reintroduce R1.
+
+### Response (builder)
+
+| Finding | Response |
+|---|---|
+| S1 | **Fixed.** A8 resets across the pre-quarter gap are excluded from `{t}` and from the A8 ledger revenue, since they cannot change an in-export path (`in_path_neutral`). `{t}` is now 25.7%. The card order is now A9, A8, A1, A5. |
+| S2 | **Fixed.** The copy now reads: attribution numbers come from the export and spend table; the hygiene audit reads the seed log, true sessions and true orders, which are now published as downloads. |
+| S3 | **Fixed.** Quarter-end sessions move to 3–16 hours before midnight instead of the last evening hours. |
+| S4 | **Fixed:** every product page view fires view_item; order lines are added in shuffled order, with no 4-line cap. **Kept:** no cart carry-over between sessions. Cart-recovery clicks re-add items, which is a known simplification and low severity. |
+| S5 | **Kept, explained.** Safari's near-zero pre-quarter share is the A8 mechanism working as specified: a Safari user whose last visit was before July 1 is more than 7 days away by their first Q3 visit, so ITP mints a new id. The rising returning share reflects history accumulating within the quarter's own population. Low severity. |
+| S6 | **Fixed (accuracy, logged).** The copy now says "reach no campaign and no traceable source: Direct, Unassigned, (not set) or an unmatched campaign name". |
+| S7 | **Kept.** Uniform noise on spend is low severity, and the pinned spend split governs levels. |
+| S8 | **Fixed.** Bounds rows now guard R1 (pre-quarter ids for history without exported sessions) and session-number continuity. Both are keyed on every event, because A3 drops session_start. 43/43 pass. |
+| R4 | **Kept.** A1 is at 6.3% and A7 at 2.2%, inside the bounds tolerance. Link granularity makes exact hits impossible without splitting links. |
+

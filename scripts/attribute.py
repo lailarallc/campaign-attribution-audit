@@ -270,10 +270,15 @@ def load_truth():
 SESSION_CLASSES = ("A1", "A2a", "A2b", "A3", "A7", "A8")
 
 
+def in_path_neutral(e):
+    """A8 resets across the pre-quarter gap change no in-export path (third pass S1)."""
+    return e["class"] == "A8" and e["detail"] == "reset across pre-quarter gap"
+
+
 def defect_share(unattr, truth):
     """{t}: share of unattributable conversions whose path window carries a seeded defect that
     touched a session (A1, A2a, A2b, A3, A7, A8) or a gateway return (A5)."""
-    hit_sids = {e["sid"] for e in truth["log"] if e["class"] in SESSION_CLASSES}
+    hit_sids = {e["sid"] for e in truth["log"] if e["class"] in SESSION_CLASSES and not in_path_neutral(e)}
     gw = {e["ref"] for e in truth["log"] if e["class"] == "A5"}
     by_txn = {o["txn"]: o for o in truth["orders"]}
     by_uid_orders = {}
@@ -321,7 +326,7 @@ def hygiene_ledger(truth, campaigns):
         elif cls == "A6":
             rev = 0.0
         else:
-            sids = {e["sid"] for e in entries}
+            sids = {e["sid"] for e in entries if not in_path_neutral(e)}
             rev = sum(order_val[o["txn"]] for o in truth["orders"] if o["window"] & sids)
         spend_hit = 0.0
         if cls == "A6":

@@ -97,6 +97,15 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-10-22 — Third independent pass: PASS WITH FINDINGS; realism gate cleared
+- **Verdict:** PASS WITH FINDINGS (`docs/realism-review.md`, third pass). Engine, hashes, branch and every slot were independently reproduced. Every S finding is answered in its response table.
+- **Accuracy corrections to printed claims:**
+  - S1: `{t}` excludes pre-quarter-gap resets.
+  - S2: "every number comes from those two files" was narrowed to attribution numbers; the truth files the ledger reads are published.
+  - S6: "no campaign or channel" became "no campaign and no traceable source".
+- **Result (mechanical):** B2. Bounds 43/43.
+- **Gate status:** cleared for deploy under the owner's sequence (generate → bounds → adversarial review → deploy).
+
 ### 2026-10-22 — Re-review FAIL (R1) answered; A1's recording mechanism corrected to GA4 behavior
 - **Re-review (independent):** FAIL on R1 alone (history the export couldn't contain). The engine was re-derived exactly. All R1–R8 are answered in `docs/realism-review.md`.
 - **A1 mechanism (R3).** Untagged paid-social clicks keep the social referrer, so GA4 records a social referral (Organic Social), not Direct. Untagged email still falls to Direct. The **rate (6%) is unchanged**. `docs/defect-taxonomy.md` A1 text said "(direct)/(none)"; that was wrong for social, and the change follows Google's channel rules, not the verdict.

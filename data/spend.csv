@@ -1,723 +1,723 @@
 date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platform_conversions,platform_conversion_value
 2026-07-01,G01,qw_search_brand,Google,cpc,51.52,1345,96,12,1096.86
-2026-07-02,G01,qw_search_brand,Google,cpc,72.80,1498,126,6,683.81
-2026-07-03,G01,qw_search_brand,Google,cpc,45.82,1174,94,4,281.70
-2026-07-04,G01,qw_search_brand,Google,cpc,54.11,1130,101,3,229.08
-2026-07-05,G01,qw_search_brand,Google,cpc,58.86,1249,107,2,161.25
-2026-07-06,G01,qw_search_brand,Google,cpc,67.94,1906,122,4,333.08
-2026-07-07,G01,qw_search_brand,Google,cpc,59.87,1869,125,4,361.82
-2026-07-08,G01,qw_search_brand,Google,cpc,55.34,1464,124,3,237.23
-2026-07-09,G01,qw_search_brand,Google,cpc,51.78,1565,121,5,349.15
+2026-07-02,G01,qw_search_brand,Google,cpc,73.37,1510,127,6,683.81
+2026-07-03,G01,qw_search_brand,Google,cpc,45.81,1174,94,4,281.70
+2026-07-04,G01,qw_search_brand,Google,cpc,54.10,1130,101,3,229.08
+2026-07-05,G01,qw_search_brand,Google,cpc,58.85,1249,107,2,161.25
+2026-07-06,G01,qw_search_brand,Google,cpc,67.93,1906,122,4,333.08
+2026-07-07,G01,qw_search_brand,Google,cpc,59.86,1869,125,4,361.82
+2026-07-08,G01,qw_search_brand,Google,cpc,55.33,1464,124,3,237.23
+2026-07-09,G01,qw_search_brand,Google,cpc,51.77,1565,121,5,349.15
 2026-07-10,G01,qw_search_brand,Google,cpc,43.27,1571,113,5,601.28
 2026-07-11,G01,qw_search_brand,Google,cpc,40.57,1408,93,7,607.89
 2026-07-12,G01,qw_search_brand,Google,cpc,65.09,1493,134,6,629.50
-2026-07-13,G01,qw_search_brand,Google,cpc,54.94,1501,130,6,589.03
-2026-07-14,G01,qw_search_brand,Google,cpc,68.38,1099,126,7,571.28
-2026-07-15,G01,qw_search_brand,Google,cpc,64.02,1147,117,6,568.08
-2026-07-16,G01,qw_search_brand,Google,cpc,56.02,1429,128,5,596.59
-2026-07-17,G01,qw_search_brand,Google,cpc,63.29,1115,117,6,546.03
-2026-07-18,G01,qw_search_brand,Google,cpc,45.06,1735,110,6,654.76
+2026-07-13,G01,qw_search_brand,Google,cpc,54.93,1501,130,6,589.03
+2026-07-14,G01,qw_search_brand,Google,cpc,68.92,1107,127,7,571.28
+2026-07-15,G01,qw_search_brand,Google,cpc,64.57,1156,118,6,568.09
+2026-07-16,G01,qw_search_brand,Google,cpc,56.02,1429,128,5,596.60
+2026-07-17,G01,qw_search_brand,Google,cpc,63.28,1115,117,6,546.04
+2026-07-18,G01,qw_search_brand,Google,cpc,45.05,1735,110,6,654.76
 2026-07-19,G01,qw_search_brand,Google,cpc,44.62,1674,119,6,530.21
-2026-07-20,G01,qw_search_brand,Google,cpc,66.80,1475,140,7,617.16
+2026-07-20,G01,qw_search_brand,Google,cpc,66.80,1475,140,7,617.17
 2026-07-21,G01,qw_search_brand,Google,cpc,77.48,2010,133,7,525.27
-2026-07-22,G01,qw_search_brand,Google,cpc,61.37,1944,151,5,492.56
+2026-07-22,G01,qw_search_brand,Google,cpc,61.37,1944,151,5,492.57
 2026-07-23,G01,qw_search_brand,Google,cpc,75.59,1216,137,8,629.25
-2026-07-24,G01,qw_search_brand,Google,cpc,51.41,1383,140,9,886.81
-2026-07-25,G01,qw_search_brand,Google,cpc,67.63,1769,139,8,819.19
+2026-07-24,G01,qw_search_brand,Google,cpc,51.40,1383,140,9,886.82
+2026-07-25,G01,qw_search_brand,Google,cpc,67.62,1769,139,8,819.19
 2026-07-26,G01,qw_search_brand,Google,cpc,55.83,1234,132,9,721.56
-2026-07-27,G01,qw_search_brand,Google,cpc,68.03,1833,131,7,828.44
+2026-07-27,G01,qw_search_brand,Google,cpc,68.02,1833,131,7,828.45
 2026-07-28,G01,qw_search_brand,Google,cpc,52.05,1808,115,5,407.96
-2026-07-29,G01,qw_search_brand,Google,cpc,55.82,1285,133,9,866.52
-2026-07-30,G01,qw_search_brand,Google,cpc,55.54,2181,141,7,576.47
-2026-07-31,G01,qw_search_brand,Google,cpc,68.96,1301,144,8,743.39
-2026-08-01,G01,qw_search_brand,Google,cpc,59.89,1913,132,7,649.95
+2026-07-29,G01,qw_search_brand,Google,cpc,55.40,1275,132,9,866.52
+2026-07-30,G01,qw_search_brand,Google,cpc,55.14,2165,140,7,576.47
+2026-07-31,G01,qw_search_brand,Google,cpc,68.95,1301,144,8,743.39
+2026-08-01,G01,qw_search_brand,Google,cpc,59.88,1913,132,7,649.96
 2026-08-02,G01,qw_search_brand,Google,cpc,68.18,2008,155,5,724.46
-2026-08-03,G01,qw_search_brand,Google,cpc,72.41,2264,146,6,858.79
-2026-08-04,G01,qw_search_brand,Google,cpc,56.36,1214,136,9,822.54
-2026-08-05,G01,qw_search_brand,Google,cpc,53.01,1163,116,10,767.79
+2026-08-03,G01,qw_search_brand,Google,cpc,72.40,2264,146,6,858.80
+2026-08-04,G01,qw_search_brand,Google,cpc,56.35,1214,136,9,822.54
+2026-08-05,G01,qw_search_brand,Google,cpc,53.46,1173,117,10,767.79
 2026-08-06,G01,qw_search_brand,Google,cpc,70.08,1494,126,7,509.48
-2026-08-07,G01,qw_search_brand,Google,cpc,79.82,1842,138,10,855.51
-2026-08-08,G01,qw_search_brand,Google,cpc,75.74,1837,127,6,495.34
+2026-08-07,G01,qw_search_brand,Google,cpc,79.81,1842,138,10,855.51
+2026-08-08,G01,qw_search_brand,Google,cpc,75.14,1822,126,6,495.35
 2026-08-09,G01,qw_search_brand,Google,cpc,66.93,1632,177,6,528.68
-2026-08-10,G01,qw_search_brand,Google,cpc,81.85,1313,137,6,702.39
+2026-08-10,G01,qw_search_brand,Google,cpc,81.84,1313,137,6,702.40
 2026-08-11,G01,qw_search_brand,Google,cpc,62.83,1428,125,6,441.09
-2026-08-12,G01,qw_search_brand,Google,cpc,60.91,1236,127,6,559.95
+2026-08-12,G01,qw_search_brand,Google,cpc,60.90,1236,127,6,559.95
 2026-08-13,G01,qw_search_brand,Google,cpc,59.16,1833,145,6,412.74
-2026-08-14,G01,qw_search_brand,Google,cpc,56.25,1299,130,9,721.19
-2026-08-15,G01,qw_search_brand,Google,cpc,51.86,1732,122,4,384.04
-2026-08-16,G01,qw_search_brand,Google,cpc,62.72,1979,170,8,882.68
+2026-08-14,G01,qw_search_brand,Google,cpc,56.24,1299,130,9,721.19
+2026-08-15,G01,qw_search_brand,Google,cpc,51.85,1732,122,4,384.04
+2026-08-16,G01,qw_search_brand,Google,cpc,62.71,1979,170,8,882.68
 2026-08-17,G01,qw_search_brand,Google,cpc,57.73,1067,124,8,672.77
 2026-08-18,G01,qw_search_brand,Google,cpc,63.85,1862,120,7,638.09
-2026-08-19,G01,qw_search_brand,Google,cpc,64.74,1986,128,9,897.57
+2026-08-19,G01,qw_search_brand,Google,cpc,64.74,1986,128,9,897.58
 2026-08-20,G01,qw_search_brand,Google,cpc,60.88,2088,135,10,756.75
 2026-08-21,G01,qw_search_brand,Google,cpc,71.00,1730,148,10,960.13
 2026-08-22,G01,qw_search_brand,Google,cpc,72.29,1537,137,7,570.46
-2026-08-23,G01,qw_search_brand,Google,cpc,53.48,1223,142,8,650.21
+2026-08-23,G01,qw_search_brand,Google,cpc,53.48,1223,142,8,650.22
 2026-08-24,G01,qw_search_brand,Google,cpc,48.72,1035,116,8,798.07
 2026-08-25,G01,qw_search_brand,Google,cpc,71.08,1485,145,10,1017.35
 2026-08-26,G01,qw_search_brand,Google,cpc,48.20,2058,132,10,802.70
 2026-08-27,G01,qw_search_brand,Google,cpc,70.49,2074,143,6,642.34
 2026-08-28,G01,qw_search_brand,Google,cpc,62.81,1451,123,5,464.88
-2026-08-29,G01,qw_search_brand,Google,cpc,70.19,1589,119,10,806.48
+2026-08-29,G01,qw_search_brand,Google,cpc,70.78,1603,120,10,806.49
 2026-08-30,G01,qw_search_brand,Google,cpc,63.13,1869,130,10,601.06
-2026-08-31,G01,qw_search_brand,Google,cpc,74.40,1395,143,10,777.62
-2026-09-01,G01,qw_search_brand,Google,cpc,71.32,1565,141,8,656.62
+2026-08-31,G01,qw_search_brand,Google,cpc,73.87,1385,142,10,777.62
+2026-09-01,G01,qw_search_brand,Google,cpc,71.31,1565,141,8,656.62
 2026-09-02,G01,qw_search_brand,Google,cpc,87.57,1692,159,11,959.08
 2026-09-03,G01,qw_search_brand,Google,cpc,56.45,2083,132,9,868.86
-2026-09-04,G01,qw_search_brand,Google,cpc,64.03,1933,167,8,762.42
+2026-09-04,G01,qw_search_brand,Google,cpc,64.03,1933,167,8,762.43
 2026-09-05,G01,qw_search_brand,Google,cpc,81.52,1993,159,9,874.93
-2026-09-06,G01,qw_search_brand,Google,cpc,106.63,1950,195,9,796.02
+2026-09-06,G01,qw_search_brand,Google,cpc,106.61,1950,195,9,796.02
 2026-09-07,G01,qw_search_brand,Google,cpc,87.07,2397,192,7,753.63
-2026-09-08,G01,qw_search_brand,Google,cpc,69.73,1847,155,7,624.10
+2026-09-08,G01,qw_search_brand,Google,cpc,69.72,1847,155,7,624.10
 2026-09-09,G01,qw_search_brand,Google,cpc,80.06,1491,141,5,494.11
-2026-09-10,G01,qw_search_brand,Google,cpc,46.26,1082,120,9,964.25
-2026-09-11,G01,qw_search_brand,Google,cpc,50.61,1975,136,9,1047.47
-2026-09-12,G01,qw_search_brand,Google,cpc,69.37,1792,160,9,700.37
-2026-09-13,G01,qw_search_brand,Google,cpc,75.18,1171,137,9,827.41
+2026-09-10,G01,qw_search_brand,Google,cpc,46.26,1082,120,9,964.26
+2026-09-11,G01,qw_search_brand,Google,cpc,50.61,1975,136,9,1047.48
+2026-09-12,G01,qw_search_brand,Google,cpc,69.36,1792,160,9,700.37
+2026-09-13,G01,qw_search_brand,Google,cpc,75.17,1171,137,9,828.37
 2026-09-14,G01,qw_search_brand,Google,cpc,65.88,1466,144,6,381.05
-2026-09-15,G01,qw_search_brand,Google,cpc,78.02,1468,144,9,673.98
-2026-09-16,G01,qw_search_brand,Google,cpc,68.40,1568,124,10,759.61
-2026-09-17,G01,qw_search_brand,Google,cpc,82.33,1480,148,8,697.03
-2026-09-18,G01,qw_search_brand,Google,cpc,58.07,1535,142,9,838.53
-2026-09-19,G01,qw_search_brand,Google,cpc,58.02,1769,131,7,439.78
-2026-09-20,G01,qw_search_brand,Google,cpc,73.01,1808,143,7,593.10
-2026-09-21,G01,qw_search_brand,Google,cpc,69.09,1543,147,8,740.38
-2026-09-22,G01,qw_search_brand,Google,cpc,70.64,1712,152,7,386.00
-2026-09-23,G01,qw_search_brand,Google,cpc,63.70,2182,149,7,411.61
-2026-09-24,G01,qw_search_brand,Google,cpc,57.40,1849,140,7,420.46
-2026-09-25,G01,qw_search_brand,Google,cpc,51.57,1503,126,7,598.86
+2026-09-15,G01,qw_search_brand,Google,cpc,78.02,1468,144,10,675.07
+2026-09-16,G01,qw_search_brand,Google,cpc,68.40,1568,124,10,760.98
+2026-09-17,G01,qw_search_brand,Google,cpc,82.33,1480,148,7,699.76
+2026-09-18,G01,qw_search_brand,Google,cpc,58.07,1535,142,10,846.05
+2026-09-19,G01,qw_search_brand,Google,cpc,58.01,1769,131,7,439.78
+2026-09-20,G01,qw_search_brand,Google,cpc,73.01,1808,143,7,593.11
+2026-09-21,G01,qw_search_brand,Google,cpc,69.09,1543,147,9,740.39
+2026-09-22,G01,qw_search_brand,Google,cpc,70.64,1712,152,6,386.00
+2026-09-23,G01,qw_search_brand,Google,cpc,63.69,2182,149,8,411.61
+2026-09-24,G01,qw_search_brand,Google,cpc,57.39,1849,140,6,420.46
+2026-09-25,G01,qw_search_brand,Google,cpc,51.15,1491,125,7,596.59
 2026-09-26,G01,qw_search_brand,Google,cpc,65.91,1645,138,6,604.89
-2026-09-27,G01,qw_search_brand,Google,cpc,56.87,1634,150,6,510.83
-2026-09-28,G01,qw_search_brand,Google,cpc,78.62,2052,139,5,475.86
-2026-09-29,G01,qw_search_brand,Google,cpc,89.72,1867,155,6,639.48
-2026-09-30,G01,qw_search_brand,Google,cpc,59.81,1845,126,7,564.03
-2026-07-01,G02,qw_search_nb_chili-crisp,Google,cpc,59.95,2730,71,3,273.22
-2026-07-02,G02,qw_search_nb_chili-crisp,Google,cpc,43.76,2368,61,2,248.28
-2026-07-03,G02,qw_search_nb_chili-crisp,Google,cpc,39.63,2688,71,0,0.00
-2026-07-04,G02,qw_search_nb_chili-crisp,Google,cpc,53.51,2052,74,0,24.25
-2026-07-05,G02,qw_search_nb_chili-crisp,Google,cpc,66.21,3099,82,0,14.09
-2026-07-06,G02,qw_search_nb_chili-crisp,Google,cpc,74.49,2666,86,1,47.65
-2026-07-07,G02,qw_search_nb_chili-crisp,Google,cpc,48.55,2553,71,1,107.08
-2026-07-08,G02,qw_search_nb_chili-crisp,Google,cpc,52.00,2103,70,0,42.39
-2026-07-09,G02,qw_search_nb_chili-crisp,Google,cpc,66.20,3354,84,1,138.08
-2026-07-10,G02,qw_search_nb_chili-crisp,Google,cpc,48.71,2588,76,1,43.67
-2026-07-11,G02,qw_search_nb_chili-crisp,Google,cpc,48.84,2201,68,1,87.34
-2026-07-12,G02,qw_search_nb_chili-crisp,Google,cpc,80.24,2958,94,2,127.61
-2026-07-13,G02,qw_search_nb_chili-crisp,Google,cpc,57.08,3498,101,0,85.61
-2026-07-14,G02,qw_search_nb_chili-crisp,Google,cpc,57.73,2246,85,1,174.07
-2026-07-15,G02,qw_search_nb_chili-crisp,Google,cpc,49.42,3503,78,1,143.17
-2026-07-16,G02,qw_search_nb_chili-crisp,Google,cpc,39.07,2402,70,1,30.27
-2026-07-17,G02,qw_search_nb_chili-crisp,Google,cpc,61.63,3822,93,0,58.30
-2026-07-18,G02,qw_search_nb_chili-crisp,Google,cpc,61.27,2513,83,2,162.74
-2026-07-19,G02,qw_search_nb_chili-crisp,Google,cpc,52.34,2709,92,0,42.79
-2026-07-20,G02,qw_search_nb_chili-crisp,Google,cpc,91.18,3607,105,2,110.19
-2026-07-21,G02,qw_search_nb_chili-crisp,Google,cpc,54.42,2414,85,1,78.30
-2026-07-22,G02,qw_search_nb_chili-crisp,Google,cpc,61.96,3078,81,0,46.04
-2026-07-23,G02,qw_search_nb_chili-crisp,Google,cpc,74.03,2898,99,2,122.09
-2026-07-24,G02,qw_search_nb_chili-crisp,Google,cpc,56.83,2805,94,2,76.09
-2026-07-25,G02,qw_search_nb_chili-crisp,Google,cpc,54.57,3310,80,1,64.44
-2026-07-26,G02,qw_search_nb_chili-crisp,Google,cpc,62.60,2603,82,1,50.14
-2026-07-27,G02,qw_search_nb_chili-crisp,Google,cpc,65.69,3572,90,1,42.57
-2026-07-28,G02,qw_search_nb_chili-crisp,Google,cpc,69.11,3632,93,2,89.82
-2026-07-29,G02,qw_search_nb_chili-crisp,Google,cpc,57.13,1873,72,2,130.18
-2026-07-30,G02,qw_search_nb_chili-crisp,Google,cpc,91.83,2802,100,2,115.83
-2026-07-31,G02,qw_search_nb_chili-crisp,Google,cpc,64.07,3448,97,1,61.99
-2026-08-01,G02,qw_search_nb_chili-crisp,Google,cpc,52.22,3722,90,0,40.78
-2026-08-02,G02,qw_search_nb_chili-crisp,Google,cpc,83.85,4494,106,1,80.49
-2026-08-03,G02,qw_search_nb_chili-crisp,Google,cpc,66.09,2400,88,1,214.80
-2026-08-04,G02,qw_search_nb_chili-crisp,Google,cpc,70.28,3292,94,1,36.22
-2026-08-05,G02,qw_search_nb_chili-crisp,Google,cpc,55.70,3867,88,2,96.18
-2026-08-06,G02,qw_search_nb_chili-crisp,Google,cpc,46.91,2593,79,1,103.35
-2026-08-07,G02,qw_search_nb_chili-crisp,Google,cpc,43.43,1965,75,1,114.08
-2026-08-08,G02,qw_search_nb_chili-crisp,Google,cpc,83.53,4125,98,2,120.95
-2026-08-09,G02,qw_search_nb_chili-crisp,Google,cpc,54.01,3300,93,0,17.43
-2026-08-10,G02,qw_search_nb_chili-crisp,Google,cpc,48.42,2197,77,0,15.98
-2026-08-11,G02,qw_search_nb_chili-crisp,Google,cpc,89.58,3655,97,1,40.68
-2026-08-12,G02,qw_search_nb_chili-crisp,Google,cpc,72.97,2509,89,2,146.80
-2026-08-13,G02,qw_search_nb_chili-crisp,Google,cpc,80.63,3198,94,1,33.66
-2026-08-14,G02,qw_search_nb_chili-crisp,Google,cpc,64.09,2426,92,2,101.10
-2026-08-15,G02,qw_search_nb_chili-crisp,Google,cpc,59.75,2664,74,1,114.48
-2026-08-16,G02,qw_search_nb_chili-crisp,Google,cpc,89.24,4136,99,2,237.16
-2026-08-17,G02,qw_search_nb_chili-crisp,Google,cpc,69.55,3723,97,4,479.56
-2026-08-18,G02,qw_search_nb_chili-crisp,Google,cpc,53.71,2498,75,2,188.28
-2026-08-19,G02,qw_search_nb_chili-crisp,Google,cpc,52.44,2357,84,1,95.49
-2026-08-20,G02,qw_search_nb_chili-crisp,Google,cpc,56.84,2515,94,2,208.54
-2026-08-21,G02,qw_search_nb_chili-crisp,Google,cpc,75.83,2917,88,3,339.71
-2026-08-22,G02,qw_search_nb_chili-crisp,Google,cpc,81.34,2398,90,2,71.31
-2026-08-23,G02,qw_search_nb_chili-crisp,Google,cpc,68.91,4023,94,0,28.55
-2026-08-24,G02,qw_search_nb_chili-crisp,Google,cpc,69.74,2766,86,0,33.01
-2026-08-25,G02,qw_search_nb_chili-crisp,Google,cpc,79.36,3034,99,2,81.43
-2026-08-26,G02,qw_search_nb_chili-crisp,Google,cpc,68.50,3429,93,2,184.47
-2026-08-27,G02,qw_search_nb_chili-crisp,Google,cpc,61.11,3024,78,0,32.13
-2026-08-28,G02,qw_search_nb_chili-crisp,Google,cpc,83.70,3319,103,1,58.27
-2026-08-29,G02,qw_search_nb_chili-crisp,Google,cpc,44.88,2774,77,1,75.83
-2026-08-30,G02,qw_search_nb_chili-crisp,Google,cpc,94.62,2883,105,1,156.64
-2026-08-31,G02,qw_search_nb_chili-crisp,Google,cpc,109.60,5082,123,2,199.97
-2026-09-01,G02,qw_search_nb_chili-crisp,Google,cpc,72.74,4030,98,2,153.11
-2026-09-02,G02,qw_search_nb_chili-crisp,Google,cpc,56.78,2161,85,1,86.04
-2026-09-03,G02,qw_search_nb_chili-crisp,Google,cpc,69.10,3862,95,2,184.11
-2026-09-04,G02,qw_search_nb_chili-crisp,Google,cpc,112.83,5221,122,1,225.59
-2026-09-05,G02,qw_search_nb_chili-crisp,Google,cpc,104.28,3138,119,2,211.88
-2026-09-06,G02,qw_search_nb_chili-crisp,Google,cpc,106.96,3414,121,4,246.73
-2026-09-07,G02,qw_search_nb_chili-crisp,Google,cpc,86.94,2921,117,3,218.88
-2026-09-08,G02,qw_search_nb_chili-crisp,Google,cpc,60.39,2177,81,2,138.63
-2026-09-09,G02,qw_search_nb_chili-crisp,Google,cpc,56.32,3261,78,3,130.91
-2026-09-10,G02,qw_search_nb_chili-crisp,Google,cpc,75.54,4198,94,1,107.41
-2026-09-11,G02,qw_search_nb_chili-crisp,Google,cpc,71.38,2707,103,3,193.44
-2026-09-12,G02,qw_search_nb_chili-crisp,Google,cpc,77.24,3560,93,3,284.63
-2026-09-13,G02,qw_search_nb_chili-crisp,Google,cpc,77.43,4372,96,1,76.78
-2026-09-14,G02,qw_search_nb_chili-crisp,Google,cpc,64.35,3438,101,2,184.19
-2026-09-15,G02,qw_search_nb_chili-crisp,Google,cpc,74.48,4976,113,0,43.77
-2026-09-16,G02,qw_search_nb_chili-crisp,Google,cpc,65.34,3128,84,1,87.66
-2026-09-17,G02,qw_search_nb_chili-crisp,Google,cpc,60.96,3778,89,1,90.59
-2026-09-18,G02,qw_search_nb_chili-crisp,Google,cpc,65.57,3481,79,0,21.63
-2026-09-19,G02,qw_search_nb_chili-crisp,Google,cpc,59.64,2778,97,1,75.82
-2026-09-20,G02,qw_search_nb_chili-crisp,Google,cpc,51.39,3673,92,2,122.74
-2026-09-21,G02,qw_search_nb_chili-crisp,Google,cpc,60.46,3992,100,1,115.51
-2026-09-22,G02,qw_search_nb_chili-crisp,Google,cpc,79.10,3191,95,3,205.88
-2026-09-23,G02,qw_search_nb_chili-crisp,Google,cpc,59.60,3498,96,1,151.30
-2026-09-24,G02,qw_search_nb_chili-crisp,Google,cpc,84.02,3496,100,3,276.41
-2026-09-25,G02,qw_search_nb_chili-crisp,Google,cpc,49.13,3116,83,2,167.61
-2026-09-26,G02,qw_search_nb_chili-crisp,Google,cpc,53.41,2011,75,2,163.64
-2026-09-27,G02,qw_search_nb_chili-crisp,Google,cpc,88.85,3896,108,2,176.70
-2026-09-28,G02,qw_search_nb_chili-crisp,Google,cpc,60.56,2265,67,1,106.64
-2026-09-29,G02,qw_search_nb_chili-crisp,Google,cpc,60.78,2993,99,1,76.64
-2026-09-30,G02,qw_search_nb_chili-crisp,Google,cpc,57.49,3108,84,1,108.58
-2026-07-01,G03,qw_search_nb_gift-boxes,Google,cpc,49.16,1076,48,3,198.61
-2026-07-02,G03,qw_search_nb_gift-boxes,Google,cpc,51.06,1622,49,0,47.16
-2026-07-03,G03,qw_search_nb_gift-boxes,Google,cpc,56.93,750,35,2,107.52
-2026-07-04,G03,qw_search_nb_gift-boxes,Google,cpc,52.93,1292,46,1,98.51
-2026-07-05,G03,qw_search_nb_gift-boxes,Google,cpc,53.19,1713,52,0,91.31
-2026-07-06,G03,qw_search_nb_gift-boxes,Google,cpc,54.63,1093,47,0,7.97
-2026-07-07,G03,qw_search_nb_gift-boxes,Google,cpc,76.60,1322,47,1,15.94
-2026-07-08,G03,qw_search_nb_gift-boxes,Google,cpc,70.43,1143,44,0,51.57
-2026-07-09,G03,qw_search_nb_gift-boxes,Google,cpc,46.94,966,35,1,9.63
-2026-07-10,G03,qw_search_nb_gift-boxes,Google,cpc,52.07,877,43,0,11.15
-2026-07-11,G03,qw_search_nb_gift-boxes,Google,cpc,72.88,1578,49,0,25.48
-2026-07-12,G03,qw_search_nb_gift-boxes,Google,cpc,72.57,1881,56,1,38.53
-2026-07-13,G03,qw_search_nb_gift-boxes,Google,cpc,102.16,2037,64,2,106.95
-2026-07-14,G03,qw_search_nb_gift-boxes,Google,cpc,67.78,1946,55,1,87.08
-2026-07-15,G03,qw_search_nb_gift-boxes,Google,cpc,98.88,1632,61,1,45.57
-2026-07-16,G03,qw_search_nb_gift-boxes,Google,cpc,84.58,2007,55,1,53.70
-2026-07-17,G03,qw_search_nb_gift-boxes,Google,cpc,84.30,1444,56,0,41.39
-2026-07-18,G03,qw_search_nb_gift-boxes,Google,cpc,73.41,1413,50,1,108.49
-2026-07-19,G03,qw_search_nb_gift-boxes,Google,cpc,77.96,1650,70,1,34.29
-2026-07-20,G03,qw_search_nb_gift-boxes,Google,cpc,51.98,1753,49,1,73.32
-2026-07-21,G03,qw_search_nb_gift-boxes,Google,cpc,77.70,1721,64,1,95.56
-2026-07-22,G03,qw_search_nb_gift-boxes,Google,cpc,62.66,1647,62,1,32.60
-2026-07-23,G03,qw_search_nb_gift-boxes,Google,cpc,92.78,1661,61,0,3.77
-2026-07-24,G03,qw_search_nb_gift-boxes,Google,cpc,54.76,1111,49,1,18.65
-2026-07-25,G03,qw_search_nb_gift-boxes,Google,cpc,74.09,1099,47,0,5.71
-2026-07-26,G03,qw_search_nb_gift-boxes,Google,cpc,68.87,1421,52,1,19.32
-2026-07-27,G03,qw_search_nb_gift-boxes,Google,cpc,76.84,2489,72,1,36.70
-2026-07-28,G03,qw_search_nb_gift-boxes,Google,cpc,56.34,1488,45,1,14.77
-2026-07-29,G03,qw_search_nb_gift-boxes,Google,cpc,72.79,1677,57,0,34.36
-2026-07-30,G03,qw_search_nb_gift-boxes,Google,cpc,90.11,1605,59,1,10.46
-2026-07-31,G03,qw_search_nb_gift-boxes,Google,cpc,56.96,1175,57,0,28.76
-2026-08-01,G03,qw_search_nb_gift-boxes,Google,cpc,66.16,1196,55,0,0.00
-2026-08-02,G03,qw_search_nb_gift-boxes,Google,cpc,54.82,1619,49,0,0.00
-2026-08-03,G03,qw_search_nb_gift-boxes,Google,cpc,65.29,1635,49,0,0.00
-2026-08-04,G03,qw_search_nb_gift-boxes,Google,cpc,72.45,1909,63,0,0.00
-2026-08-05,G03,qw_search_nb_gift-boxes,Google,cpc,84.52,1683,52,0,0.00
-2026-08-06,G03,qw_search_nb_gift-boxes,Google,cpc,67.91,1287,60,1,25.95
-2026-08-07,G03,qw_search_nb_gift-boxes,Google,cpc,58.28,1289,45,0,14.99
-2026-08-08,G03,qw_search_nb_gift-boxes,Google,cpc,80.13,2430,73,0,33.86
-2026-08-09,G03,qw_search_nb_gift-boxes,Google,cpc,93.86,1925,74,0,54.20
-2026-08-10,G03,qw_search_nb_gift-boxes,Google,cpc,84.35,1906,64,1,120.26
-2026-08-11,G03,qw_search_nb_gift-boxes,Google,cpc,99.81,1580,64,2,259.43
-2026-08-12,G03,qw_search_nb_gift-boxes,Google,cpc,65.65,1311,43,1,152.58
-2026-08-13,G03,qw_search_nb_gift-boxes,Google,cpc,59.42,1412,59,1,77.86
-2026-08-14,G03,qw_search_nb_gift-boxes,Google,cpc,52.03,1338,43,0,66.44
-2026-08-15,G03,qw_search_nb_gift-boxes,Google,cpc,51.21,1391,46,1,185.43
-2026-08-16,G03,qw_search_nb_gift-boxes,Google,cpc,62.01,1926,61,1,69.88
-2026-08-17,G03,qw_search_nb_gift-boxes,Google,cpc,84.04,1170,55,1,32.64
-2026-08-18,G03,qw_search_nb_gift-boxes,Google,cpc,73.02,2364,65,1,83.43
-2026-08-19,G03,qw_search_nb_gift-boxes,Google,cpc,75.27,1249,54,1,20.38
-2026-08-20,G03,qw_search_nb_gift-boxes,Google,cpc,65.75,1868,56,0,52.36
-2026-08-21,G03,qw_search_nb_gift-boxes,Google,cpc,62.08,1410,61,2,85.85
-2026-08-22,G03,qw_search_nb_gift-boxes,Google,cpc,61.95,1172,55,1,115.40
-2026-08-23,G03,qw_search_nb_gift-boxes,Google,cpc,115.73,2352,71,1,122.77
-2026-08-24,G03,qw_search_nb_gift-boxes,Google,cpc,87.47,1722,56,1,94.37
-2026-08-25,G03,qw_search_nb_gift-boxes,Google,cpc,89.12,1254,61,2,149.78
-2026-08-26,G03,qw_search_nb_gift-boxes,Google,cpc,89.41,1216,58,1,55.88
-2026-08-27,G03,qw_search_nb_gift-boxes,Google,cpc,51.04,1365,42,0,0.00
-2026-08-28,G03,qw_search_nb_gift-boxes,Google,cpc,64.39,1506,50,0,12.10
-2026-08-29,G03,qw_search_nb_gift-boxes,Google,cpc,57.18,1877,55,0,6.39
-2026-08-30,G03,qw_search_nb_gift-boxes,Google,cpc,77.24,1937,62,0,13.83
-2026-08-31,G03,qw_search_nb_gift-boxes,Google,cpc,53.21,1586,47,0,24.59
-2026-09-01,G03,qw_search_nb_gift-boxes,Google,cpc,112.56,2319,74,1,60.02
-2026-09-02,G03,qw_search_nb_gift-boxes,Google,cpc,168.26,3708,104,1,140.37
-2026-09-03,G03,qw_search_nb_gift-boxes,Google,cpc,139.98,1980,94,1,68.86
-2026-09-04,G03,qw_search_nb_gift-boxes,Google,cpc,102.92,2325,100,0,57.60
-2026-09-05,G03,qw_search_nb_gift-boxes,Google,cpc,116.72,3804,105,2,89.86
-2026-09-06,G03,qw_search_nb_gift-boxes,Google,cpc,197.05,4433,130,2,209.28
-2026-09-07,G03,qw_search_nb_gift-boxes,Google,cpc,195.82,4163,128,3,224.94
-2026-09-08,G03,qw_search_nb_gift-boxes,Google,cpc,105.43,2616,84,0,29.32
-2026-09-09,G03,qw_search_nb_gift-boxes,Google,cpc,117.80,3581,108,1,42.72
-2026-09-10,G03,qw_search_nb_gift-boxes,Google,cpc,131.61,3262,98,2,68.08
-2026-09-11,G03,qw_search_nb_gift-boxes,Google,cpc,136.19,2595,89,0,35.40
-2026-09-12,G03,qw_search_nb_gift-boxes,Google,cpc,113.76,1827,90,2,87.34
-2026-09-13,G03,qw_search_nb_gift-boxes,Google,cpc,160.83,3213,102,1,132.60
-2026-09-14,G03,qw_search_nb_gift-boxes,Google,cpc,169.03,3137,108,1,71.19
-2026-09-15,G03,qw_search_nb_gift-boxes,Google,cpc,116.42,3016,98,2,194.70
-2026-09-16,G03,qw_search_nb_gift-boxes,Google,cpc,102.83,2859,101,1,125.21
-2026-09-17,G03,qw_search_nb_gift-boxes,Google,cpc,126.48,2163,93,1,216.54
-2026-09-18,G03,qw_search_nb_gift-boxes,Google,cpc,90.53,2094,80,0,53.48
-2026-09-19,G03,qw_search_nb_gift-boxes,Google,cpc,113.25,2188,86,1,167.78
-2026-09-20,G03,qw_search_nb_gift-boxes,Google,cpc,99.22,2254,94,2,360.69
-2026-09-21,G03,qw_search_nb_gift-boxes,Google,cpc,107.12,3206,92,1,141.80
-2026-09-22,G03,qw_search_nb_gift-boxes,Google,cpc,165.11,2409,111,3,391.32
-2026-09-23,G03,qw_search_nb_gift-boxes,Google,cpc,91.94,2601,80,1,29.18
-2026-09-24,G03,qw_search_nb_gift-boxes,Google,cpc,90.50,1506,66,1,75.86
-2026-09-25,G03,qw_search_nb_gift-boxes,Google,cpc,90.27,2421,74,1,29.14
-2026-09-26,G03,qw_search_nb_gift-boxes,Google,cpc,128.06,2194,79,0,51.80
-2026-09-27,G03,qw_search_nb_gift-boxes,Google,cpc,115.83,3092,103,2,134.33
-2026-09-28,G03,qw_search_nb_gift-boxes,Google,cpc,143.95,2930,90,1,59.43
-2026-09-29,G03,qw_search_nb_gift-boxes,Google,cpc,79.46,1694,80,0,0.00
-2026-09-30,G03,qw_search_nb_gift-boxes,Google,cpc,105.74,2467,79,0,0.00
-2026-07-01,G04,qw_search_nb_spice-blends,Google,cpc,65.80,1851,58,3,319.20
-2026-07-02,G04,qw_search_nb_spice-blends,Google,cpc,37.54,853,34,2,181.85
-2026-07-03,G04,qw_search_nb_spice-blends,Google,cpc,38.46,1299,41,0,29.97
-2026-07-04,G04,qw_search_nb_spice-blends,Google,cpc,42.80,1749,43,1,46.81
-2026-07-05,G04,qw_search_nb_spice-blends,Google,cpc,28.67,1350,41,1,135.86
-2026-07-06,G04,qw_search_nb_spice-blends,Google,cpc,66.76,1581,59,1,55.69
-2026-07-07,G04,qw_search_nb_spice-blends,Google,cpc,48.61,1724,49,1,79.23
-2026-07-08,G04,qw_search_nb_spice-blends,Google,cpc,57.08,1802,52,1,85.88
-2026-07-09,G04,qw_search_nb_spice-blends,Google,cpc,43.67,1853,51,0,35.26
-2026-07-10,G04,qw_search_nb_spice-blends,Google,cpc,45.82,1582,58,1,112.30
-2026-07-11,G04,qw_search_nb_spice-blends,Google,cpc,52.77,2031,48,1,34.11
-2026-07-12,G04,qw_search_nb_spice-blends,Google,cpc,52.87,1858,59,1,32.56
-2026-07-13,G04,qw_search_nb_spice-blends,Google,cpc,46.30,2411,63,0,40.18
-2026-07-14,G04,qw_search_nb_spice-blends,Google,cpc,33.19,1906,48,2,79.83
-2026-07-15,G04,qw_search_nb_spice-blends,Google,cpc,64.75,2308,77,3,221.59
-2026-07-16,G04,qw_search_nb_spice-blends,Google,cpc,58.23,1955,58,1,79.97
-2026-07-17,G04,qw_search_nb_spice-blends,Google,cpc,38.13,1095,45,3,172.73
-2026-07-18,G04,qw_search_nb_spice-blends,Google,cpc,62.62,1683,55,3,203.29
-2026-07-19,G04,qw_search_nb_spice-blends,Google,cpc,73.51,2916,70,3,239.72
-2026-07-20,G04,qw_search_nb_spice-blends,Google,cpc,57.28,2044,60,3,368.63
-2026-07-21,G04,qw_search_nb_spice-blends,Google,cpc,45.16,1443,60,2,210.51
-2026-07-22,G04,qw_search_nb_spice-blends,Google,cpc,62.51,2049,56,0,45.74
-2026-07-23,G04,qw_search_nb_spice-blends,Google,cpc,48.56,1629,55,1,49.32
-2026-07-24,G04,qw_search_nb_spice-blends,Google,cpc,45.64,1233,44,1,85.57
-2026-07-25,G04,qw_search_nb_spice-blends,Google,cpc,62.19,1450,57,2,124.30
-2026-07-26,G04,qw_search_nb_spice-blends,Google,cpc,44.38,2338,59,1,176.03
-2026-07-27,G04,qw_search_nb_spice-blends,Google,cpc,52.31,1391,56,1,53.81
-2026-07-28,G04,qw_search_nb_spice-blends,Google,cpc,36.02,1601,47,2,133.50
-2026-07-29,G04,qw_search_nb_spice-blends,Google,cpc,75.97,1647,67,1,142.33
-2026-07-30,G04,qw_search_nb_spice-blends,Google,cpc,41.95,1820,57,3,275.94
-2026-07-31,G04,qw_search_nb_spice-blends,Google,cpc,66.87,1579,60,2,221.98
-2026-08-01,G04,qw_search_nb_spice-blends,Google,cpc,45.19,1481,48,0,31.36
-2026-08-02,G04,qw_search_nb_spice-blends,Google,cpc,65.58,2419,64,1,28.11
-2026-08-03,G04,qw_search_nb_spice-blends,Google,cpc,48.44,1363,45,1,52.09
-2026-08-04,G04,qw_search_nb_spice-blends,Google,cpc,34.10,2036,49,1,113.17
-2026-08-05,G04,qw_search_nb_spice-blends,Google,cpc,56.42,2081,68,2,125.59
-2026-08-06,G04,qw_search_nb_spice-blends,Google,cpc,56.11,2647,61,3,250.93
-2026-08-07,G04,qw_search_nb_spice-blends,Google,cpc,50.46,2362,61,1,113.97
-2026-08-08,G04,qw_search_nb_spice-blends,Google,cpc,53.83,1468,57,0,28.58
-2026-08-09,G04,qw_search_nb_spice-blends,Google,cpc,71.07,3039,75,0,40.53
-2026-08-10,G04,qw_search_nb_spice-blends,Google,cpc,40.37,2223,53,2,91.90
-2026-08-11,G04,qw_search_nb_spice-blends,Google,cpc,47.71,1461,59,1,198.33
-2026-08-12,G04,qw_search_nb_spice-blends,Google,cpc,55.92,2317,57,1,51.59
-2026-08-13,G04,qw_search_nb_spice-blends,Google,cpc,46.75,1908,52,1,31.37
-2026-08-14,G04,qw_search_nb_spice-blends,Google,cpc,49.77,2231,60,0,91.46
-2026-08-15,G04,qw_search_nb_spice-blends,Google,cpc,49.83,1605,64,2,156.10
-2026-08-16,G04,qw_search_nb_spice-blends,Google,cpc,66.59,2580,59,2,227.95
-2026-08-17,G04,qw_search_nb_spice-blends,Google,cpc,65.88,2670,61,1,245.30
-2026-08-18,G04,qw_search_nb_spice-blends,Google,cpc,72.16,2158,65,1,50.65
-2026-08-19,G04,qw_search_nb_spice-blends,Google,cpc,57.60,2824,64,1,170.81
-2026-08-20,G04,qw_search_nb_spice-blends,Google,cpc,54.50,2612,72,0,74.53
-2026-08-21,G04,qw_search_nb_spice-blends,Google,cpc,57.42,1486,62,1,67.67
-2026-08-22,G04,qw_search_nb_spice-blends,Google,cpc,46.77,2290,58,1,144.43
-2026-08-23,G04,qw_search_nb_spice-blends,Google,cpc,46.99,1585,55,0,65.80
-2026-08-24,G04,qw_search_nb_spice-blends,Google,cpc,49.50,1601,46,2,179.12
-2026-08-25,G04,qw_search_nb_spice-blends,Google,cpc,58.30,2176,59,0,3.04
-2026-08-26,G04,qw_search_nb_spice-blends,Google,cpc,64.24,2177,60,1,42.68
-2026-08-27,G04,qw_search_nb_spice-blends,Google,cpc,62.77,2026,57,0,15.47
-2026-08-28,G04,qw_search_nb_spice-blends,Google,cpc,64.66,2086,61,1,47.89
-2026-08-29,G04,qw_search_nb_spice-blends,Google,cpc,66.98,2475,59,1,79.73
-2026-08-30,G04,qw_search_nb_spice-blends,Google,cpc,49.20,1611,67,1,152.72
-2026-08-31,G04,qw_search_nb_spice-blends,Google,cpc,45.63,1680,65,4,343.26
-2026-09-01,G04,qw_search_nb_spice-blends,Google,cpc,65.25,3138,76,2,199.32
-2026-09-02,G04,qw_search_nb_spice-blends,Google,cpc,48.77,1618,61,2,159.50
-2026-09-03,G04,qw_search_nb_spice-blends,Google,cpc,51.47,2773,70,2,180.85
-2026-09-04,G04,qw_search_nb_spice-blends,Google,cpc,48.19,2175,69,2,228.84
-2026-09-05,G04,qw_search_nb_spice-blends,Google,cpc,78.61,3120,85,1,79.04
-2026-09-06,G04,qw_search_nb_spice-blends,Google,cpc,79.06,2909,71,2,137.07
-2026-09-07,G04,qw_search_nb_spice-blends,Google,cpc,87.65,2169,89,1,181.91
-2026-09-08,G04,qw_search_nb_spice-blends,Google,cpc,36.10,1706,49,1,50.68
-2026-09-09,G04,qw_search_nb_spice-blends,Google,cpc,45.05,2824,65,1,105.27
-2026-09-10,G04,qw_search_nb_spice-blends,Google,cpc,61.16,1885,64,1,72.27
-2026-09-11,G04,qw_search_nb_spice-blends,Google,cpc,27.59,1515,40,0,0.98
-2026-09-12,G04,qw_search_nb_spice-blends,Google,cpc,37.45,1854,54,0,4.88
-2026-09-13,G04,qw_search_nb_spice-blends,Google,cpc,59.79,2643,67,1,13.21
-2026-09-14,G04,qw_search_nb_spice-blends,Google,cpc,43.05,1635,58,0,13.60
-2026-09-15,G04,qw_search_nb_spice-blends,Google,cpc,58.29,1933,56,1,61.40
-2026-09-16,G04,qw_search_nb_spice-blends,Google,cpc,61.06,1411,59,1,16.27
-2026-09-17,G04,qw_search_nb_spice-blends,Google,cpc,50.82,2313,63,1,41.54
-2026-09-18,G04,qw_search_nb_spice-blends,Google,cpc,63.09,2431,60,1,73.09
-2026-09-19,G04,qw_search_nb_spice-blends,Google,cpc,55.09,2486,57,0,56.16
-2026-09-20,G04,qw_search_nb_spice-blends,Google,cpc,38.82,1986,52,1,148.25
-2026-09-21,G04,qw_search_nb_spice-blends,Google,cpc,40.33,1868,57,1,23.19
-2026-09-22,G04,qw_search_nb_spice-blends,Google,cpc,59.13,2772,64,0,28.34
-2026-09-23,G04,qw_search_nb_spice-blends,Google,cpc,48.09,1498,57,1,27.69
-2026-09-24,G04,qw_search_nb_spice-blends,Google,cpc,53.83,2054,51,0,20.53
-2026-09-25,G04,qw_search_nb_spice-blends,Google,cpc,64.11,1747,63,0,51.62
-2026-09-26,G04,qw_search_nb_spice-blends,Google,cpc,33.78,1192,48,2,122.17
-2026-09-27,G04,qw_search_nb_spice-blends,Google,cpc,59.97,2149,58,1,40.08
-2026-09-28,G04,qw_search_nb_spice-blends,Google,cpc,37.18,1277,41,1,107.94
-2026-09-29,G04,qw_search_nb_spice-blends,Google,cpc,66.01,2472,62,1,16.73
-2026-09-30,G04,qw_search_nb_spice-blends,Google,cpc,40.89,1275,38,0,0.00
-2026-07-01,G05,qw_shopping_all-products,Google,cpc,66.38,15842,127,9,925.36
-2026-07-02,G05,qw_shopping_all-products,Google,cpc,68.47,15420,159,5,521.43
-2026-07-03,G05,qw_shopping_all-products,Google,cpc,56.92,13016,134,6,559.53
+2026-09-27,G01,qw_search_brand,Google,cpc,56.87,1634,150,5,508.23
+2026-09-28,G01,qw_search_brand,Google,cpc,78.61,2052,139,6,472.60
+2026-09-29,G01,qw_search_brand,Google,cpc,89.72,1867,155,6,632.97
+2026-09-30,G01,qw_search_brand,Google,cpc,59.81,1845,126,6,546.12
+2026-07-01,G02,qw_search_nb_chili-crisp,Google,cpc,60.90,2768,72,3,273.22
+2026-07-02,G02,qw_search_nb_chili-crisp,Google,cpc,43.83,2368,61,2,248.28
+2026-07-03,G02,qw_search_nb_chili-crisp,Google,cpc,38.02,2574,68,0,0.00
+2026-07-04,G02,qw_search_nb_chili-crisp,Google,cpc,55.05,2107,76,0,24.25
+2026-07-05,G02,qw_search_nb_chili-crisp,Google,cpc,67.13,3136,83,0,14.09
+2026-07-06,G02,qw_search_nb_chili-crisp,Google,cpc,73.75,2635,85,1,47.65
+2026-07-07,G02,qw_search_nb_chili-crisp,Google,cpc,46.58,2445,68,1,107.08
+2026-07-08,G02,qw_search_nb_chili-crisp,Google,cpc,48.37,1953,65,0,42.39
+2026-07-09,G02,qw_search_nb_chili-crisp,Google,cpc,68.68,3474,87,1,138.08
+2026-07-10,G02,qw_search_nb_chili-crisp,Google,cpc,48.79,2588,76,1,43.67
+2026-07-11,G02,qw_search_nb_chili-crisp,Google,cpc,48.21,2169,67,1,87.34
+2026-07-12,G02,qw_search_nb_chili-crisp,Google,cpc,80.37,2958,94,2,127.61
+2026-07-13,G02,qw_search_nb_chili-crisp,Google,cpc,57.74,3533,102,0,85.61
+2026-07-14,G02,qw_search_nb_chili-crisp,Google,cpc,59.19,2298,87,1,174.07
+2026-07-15,G02,qw_search_nb_chili-crisp,Google,cpc,52.67,3727,83,1,143.18
+2026-07-16,G02,qw_search_nb_chili-crisp,Google,cpc,40.26,2471,72,1,30.27
+2026-07-17,G02,qw_search_nb_chili-crisp,Google,cpc,58.42,3617,88,0,58.30
+2026-07-18,G02,qw_search_nb_chili-crisp,Google,cpc,61.38,2513,83,2,162.74
+2026-07-19,G02,qw_search_nb_chili-crisp,Google,cpc,51.86,2679,91,0,42.79
+2026-07-20,G02,qw_search_nb_chili-crisp,Google,cpc,88.72,3504,102,2,110.19
+2026-07-21,G02,qw_search_nb_chili-crisp,Google,cpc,54.52,2414,85,1,78.30
+2026-07-22,G02,qw_search_nb_chili-crisp,Google,cpc,62.07,3078,81,0,46.04
+2026-07-23,G02,qw_search_nb_chili-crisp,Google,cpc,74.16,2898,99,2,122.09
+2026-07-24,G02,qw_search_nb_chili-crisp,Google,cpc,55.72,2745,92,2,76.09
+2026-07-25,G02,qw_search_nb_chili-crisp,Google,cpc,54.66,3310,80,1,64.44
+2026-07-26,G02,qw_search_nb_chili-crisp,Google,cpc,69.59,2889,91,1,50.14
+2026-07-27,G02,qw_search_nb_chili-crisp,Google,cpc,68.00,3691,93,1,42.57
+2026-07-28,G02,qw_search_nb_chili-crisp,Google,cpc,68.48,3593,92,2,89.82
+2026-07-29,G02,qw_search_nb_chili-crisp,Google,cpc,54.04,1769,68,2,130.18
+2026-07-30,G02,qw_search_nb_chili-crisp,Google,cpc,89.23,2718,97,2,115.83
+2026-07-31,G02,qw_search_nb_chili-crisp,Google,cpc,63.52,3413,96,1,61.99
+2026-08-01,G02,qw_search_nb_chili-crisp,Google,cpc,53.47,3804,92,0,40.78
+2026-08-02,G02,qw_search_nb_chili-crisp,Google,cpc,84.78,4537,107,1,80.49
+2026-08-03,G02,qw_search_nb_chili-crisp,Google,cpc,68.46,2482,91,1,214.80
+2026-08-04,G02,qw_search_nb_chili-crisp,Google,cpc,65.16,3047,87,1,36.22
+2026-08-05,G02,qw_search_nb_chili-crisp,Google,cpc,55.16,3823,87,2,96.18
+2026-08-06,G02,qw_search_nb_chili-crisp,Google,cpc,46.99,2593,79,1,103.35
+2026-08-07,G02,qw_search_nb_chili-crisp,Google,cpc,43.51,1965,75,1,114.08
+2026-08-08,G02,qw_search_nb_chili-crisp,Google,cpc,82.82,4083,97,2,120.95
+2026-08-09,G02,qw_search_nb_chili-crisp,Google,cpc,54.10,3300,93,0,17.43
+2026-08-10,G02,qw_search_nb_chili-crisp,Google,cpc,52.28,2369,83,0,15.98
+2026-08-11,G02,qw_search_nb_chili-crisp,Google,cpc,86.03,3505,93,1,40.68
+2026-08-12,G02,qw_search_nb_chili-crisp,Google,cpc,73.91,2538,90,2,146.81
+2026-08-13,G02,qw_search_nb_chili-crisp,Google,cpc,79.05,3130,92,1,33.66
+2026-08-14,G02,qw_search_nb_chili-crisp,Google,cpc,63.50,2399,91,2,101.10
+2026-08-15,G02,qw_search_nb_chili-crisp,Google,cpc,61.47,2736,76,1,114.48
+2026-08-16,G02,qw_search_nb_chili-crisp,Google,cpc,90.29,4178,100,2,237.16
+2026-08-17,G02,qw_search_nb_chili-crisp,Google,cpc,68.23,3646,95,4,479.56
+2026-08-18,G02,qw_search_nb_chili-crisp,Google,cpc,50.21,2331,70,2,188.28
+2026-08-19,G02,qw_search_nb_chili-crisp,Google,cpc,52.53,2357,84,1,95.49
+2026-08-20,G02,qw_search_nb_chili-crisp,Google,cpc,56.94,2515,94,2,208.54
+2026-08-21,G02,qw_search_nb_chili-crisp,Google,cpc,76.82,2950,89,3,339.71
+2026-08-22,G02,qw_search_nb_chili-crisp,Google,cpc,82.38,2424,91,2,71.31
+2026-08-23,G02,qw_search_nb_chili-crisp,Google,cpc,68.30,3980,93,0,28.55
+2026-08-24,G02,qw_search_nb_chili-crisp,Google,cpc,71.48,2831,88,0,33.01
+2026-08-25,G02,qw_search_nb_chili-crisp,Google,cpc,76.29,2912,95,2,81.43
+2026-08-26,G02,qw_search_nb_chili-crisp,Google,cpc,70.09,3503,95,2,184.47
+2026-08-27,G02,qw_search_nb_chili-crisp,Google,cpc,61.22,3024,78,0,32.13
+2026-08-28,G02,qw_search_nb_chili-crisp,Google,cpc,82.22,3255,101,1,58.27
+2026-08-29,G02,qw_search_nb_chili-crisp,Google,cpc,44.38,2738,76,1,75.83
+2026-08-30,G02,qw_search_nb_chili-crisp,Google,cpc,95.69,2911,106,1,156.64
+2026-08-31,G02,qw_search_nb_chili-crisp,Google,cpc,105.32,4876,118,2,199.97
+2026-09-01,G02,qw_search_nb_chili-crisp,Google,cpc,74.35,4113,100,2,153.11
+2026-09-02,G02,qw_search_nb_chili-crisp,Google,cpc,56.87,2161,85,1,86.04
+2026-09-03,G02,qw_search_nb_chili-crisp,Google,cpc,71.41,3984,98,2,184.11
+2026-09-04,G02,qw_search_nb_chili-crisp,Google,cpc,110.21,5093,119,1,225.59
+2026-09-05,G02,qw_search_nb_chili-crisp,Google,cpc,103.58,3112,118,2,211.88
+2026-09-06,G02,qw_search_nb_chili-crisp,Google,cpc,109.79,3498,124,4,246.73
+2026-09-07,G02,qw_search_nb_chili-crisp,Google,cpc,85.60,2871,115,3,218.88
+2026-09-08,G02,qw_search_nb_chili-crisp,Google,cpc,64.98,2339,87,2,138.63
+2026-09-09,G02,qw_search_nb_chili-crisp,Google,cpc,58.58,3387,81,3,130.91
+2026-09-10,G02,qw_search_nb_chili-crisp,Google,cpc,73.25,4064,91,1,107.41
+2026-09-11,G02,qw_search_nb_chili-crisp,Google,cpc,70.80,2681,102,3,193.45
+2026-09-12,G02,qw_search_nb_chili-crisp,Google,cpc,80.70,3713,97,3,284.63
+2026-09-13,G02,qw_search_nb_chili-crisp,Google,cpc,73.52,4144,91,1,76.78
+2026-09-14,G02,qw_search_nb_chili-crisp,Google,cpc,64.46,3438,101,2,184.19
+2026-09-15,G02,qw_search_nb_chili-crisp,Google,cpc,79.23,5284,120,0,43.77
+2026-09-16,G02,qw_search_nb_chili-crisp,Google,cpc,63.12,3016,81,1,87.66
+2026-09-17,G02,qw_search_nb_chili-crisp,Google,cpc,61.06,3778,89,1,90.59
+2026-09-18,G02,qw_search_nb_chili-crisp,Google,cpc,62.36,3304,75,0,21.63
+2026-09-19,G02,qw_search_nb_chili-crisp,Google,cpc,60.35,2807,98,1,75.82
+2026-09-20,G02,qw_search_nb_chili-crisp,Google,cpc,49.80,3553,89,1,112.04
+2026-09-21,G02,qw_search_nb_chili-crisp,Google,cpc,61.17,4032,101,2,115.51
+2026-09-22,G02,qw_search_nb_chili-crisp,Google,cpc,81.74,3292,98,2,193.65
+2026-09-23,G02,qw_search_nb_chili-crisp,Google,cpc,60.32,3534,97,2,126.66
+2026-09-24,G02,qw_search_nb_chili-crisp,Google,cpc,84.16,3496,100,3,245.83
+2026-09-25,G02,qw_search_nb_chili-crisp,Google,cpc,50.99,3228,86,0,72.83
+2026-09-26,G02,qw_search_nb_chili-crisp,Google,cpc,53.50,2011,75,2,150.30
+2026-09-27,G02,qw_search_nb_chili-crisp,Google,cpc,86.53,3788,105,2,150.01
+2026-09-28,G02,qw_search_nb_chili-crisp,Google,cpc,60.67,2265,67,0,33.25
+2026-09-29,G02,qw_search_nb_chili-crisp,Google,cpc,60.26,2962,98,1,76.64
+2026-09-30,G02,qw_search_nb_chili-crisp,Google,cpc,57.59,3108,84,1,108.58
+2026-07-01,G03,qw_search_nb_gift-boxes,Google,cpc,45.94,1009,45,3,198.61
+2026-07-02,G03,qw_search_nb_gift-boxes,Google,cpc,54.01,1722,52,0,47.16
+2026-07-03,G03,qw_search_nb_gift-boxes,Google,cpc,61.61,814,38,2,107.52
+2026-07-04,G03,qw_search_nb_gift-boxes,Google,cpc,51.61,1264,45,1,98.51
+2026-07-05,G03,qw_search_nb_gift-boxes,Google,cpc,50.98,1647,50,0,91.31
+2026-07-06,G03,qw_search_nb_gift-boxes,Google,cpc,56.77,1140,49,0,7.97
+2026-07-07,G03,qw_search_nb_gift-boxes,Google,cpc,76.35,1322,47,1,15.94
+2026-07-08,G03,qw_search_nb_gift-boxes,Google,cpc,76.58,1247,48,0,51.58
+2026-07-09,G03,qw_search_nb_gift-boxes,Google,cpc,50.80,1048,38,1,9.63
+2026-07-10,G03,qw_search_nb_gift-boxes,Google,cpc,53.11,897,44,0,11.15
+2026-07-11,G03,qw_search_nb_gift-boxes,Google,cpc,66.72,1450,45,0,25.48
+2026-07-12,G03,qw_search_nb_gift-boxes,Google,cpc,74.92,1948,58,1,38.53
+2026-07-13,G03,qw_search_nb_gift-boxes,Google,cpc,105.01,2100,66,2,106.95
+2026-07-14,G03,qw_search_nb_gift-boxes,Google,cpc,63.87,1839,52,1,87.08
+2026-07-15,G03,qw_search_nb_gift-boxes,Google,cpc,101.79,1685,63,1,45.57
+2026-07-16,G03,qw_search_nb_gift-boxes,Google,cpc,85.84,2044,56,1,53.70
+2026-07-17,G03,qw_search_nb_gift-boxes,Google,cpc,84.03,1444,56,0,41.39
+2026-07-18,G03,qw_search_nb_gift-boxes,Google,cpc,74.63,1442,51,1,108.50
+2026-07-19,G03,qw_search_nb_gift-boxes,Google,cpc,81.04,1721,73,1,34.29
+2026-07-20,G03,qw_search_nb_gift-boxes,Google,cpc,48.64,1645,46,1,73.32
+2026-07-21,G03,qw_search_nb_gift-boxes,Google,cpc,81.08,1802,67,1,95.56
+2026-07-22,G03,qw_search_nb_gift-boxes,Google,cpc,56.41,1488,56,1,32.60
+2026-07-23,G03,qw_search_nb_gift-boxes,Google,cpc,89.45,1606,59,0,3.77
+2026-07-24,G03,qw_search_nb_gift-boxes,Google,cpc,57.93,1179,52,1,18.65
+2026-07-25,G03,qw_search_nb_gift-boxes,Google,cpc,75.41,1123,48,0,5.71
+2026-07-26,G03,qw_search_nb_gift-boxes,Google,cpc,66.00,1367,50,1,19.32
+2026-07-27,G03,qw_search_nb_gift-boxes,Google,cpc,72.33,2351,68,1,36.70
+2026-07-28,G03,qw_search_nb_gift-boxes,Google,cpc,62.40,1653,50,1,14.77
+2026-07-29,G03,qw_search_nb_gift-boxes,Google,cpc,75.10,1736,59,0,34.36
+2026-07-30,G03,qw_search_nb_gift-boxes,Google,cpc,89.82,1605,59,1,10.46
+2026-07-31,G03,qw_search_nb_gift-boxes,Google,cpc,57.77,1196,58,0,28.76
+2026-08-01,G03,qw_search_nb_gift-boxes,Google,cpc,61.15,1109,51,0,0.00
+2026-08-02,G03,qw_search_nb_gift-boxes,Google,cpc,53.53,1586,48,0,0.00
+2026-08-03,G03,qw_search_nb_gift-boxes,Google,cpc,67.73,1702,51,0,0.00
+2026-08-04,G03,qw_search_nb_gift-boxes,Google,cpc,75.65,1999,66,0,0.00
+2026-08-05,G03,qw_search_nb_gift-boxes,Google,cpc,90.73,1812,56,0,0.00
+2026-08-06,G03,qw_search_nb_gift-boxes,Google,cpc,67.68,1287,60,1,25.95
+2026-08-07,G03,qw_search_nb_gift-boxes,Google,cpc,61.97,1375,48,0,14.99
+2026-08-08,G03,qw_search_nb_gift-boxes,Google,cpc,83.15,2530,76,0,33.86
+2026-08-09,G03,qw_search_nb_gift-boxes,Google,cpc,87.24,1795,69,0,54.20
+2026-08-10,G03,qw_search_nb_gift-boxes,Google,cpc,78.82,1787,60,1,120.26
+2026-08-11,G03,qw_search_nb_gift-boxes,Google,cpc,97.93,1555,63,2,259.43
+2026-08-12,G03,qw_search_nb_gift-boxes,Google,cpc,68.48,1372,45,1,152.58
+2026-08-13,G03,qw_search_nb_gift-boxes,Google,cpc,58.22,1388,58,1,77.86
+2026-08-14,G03,qw_search_nb_gift-boxes,Google,cpc,53.07,1369,44,0,66.44
+2026-08-15,G03,qw_search_nb_gift-boxes,Google,cpc,53.27,1452,48,1,185.43
+2026-08-16,G03,qw_search_nb_gift-boxes,Google,cpc,64.84,2020,64,1,69.88
+2026-08-17,G03,qw_search_nb_gift-boxes,Google,cpc,89.86,1255,59,1,32.64
+2026-08-18,G03,qw_search_nb_gift-boxes,Google,cpc,72.78,2364,65,1,83.43
+2026-08-19,G03,qw_search_nb_gift-boxes,Google,cpc,69.47,1156,50,1,20.38
+2026-08-20,G03,qw_search_nb_gift-boxes,Google,cpc,62.03,1768,53,0,52.36
+2026-08-21,G03,qw_search_nb_gift-boxes,Google,cpc,59.84,1364,59,2,85.85
+2026-08-22,G03,qw_search_nb_gift-boxes,Google,cpc,59.50,1129,53,1,115.40
+2026-08-23,G03,qw_search_nb_gift-boxes,Google,cpc,115.35,2352,71,1,122.77
+2026-08-24,G03,qw_search_nb_gift-boxes,Google,cpc,85.63,1691,55,1,94.37
+2026-08-25,G03,qw_search_nb_gift-boxes,Google,cpc,88.83,1254,61,2,149.78
+2026-08-26,G03,qw_search_nb_gift-boxes,Google,cpc,89.12,1216,58,1,55.88
+2026-08-27,G03,qw_search_nb_gift-boxes,Google,cpc,49.66,1332,41,0,0.00
+2026-08-28,G03,qw_search_nb_gift-boxes,Google,cpc,61.62,1446,48,0,12.10
+2026-08-29,G03,qw_search_nb_gift-boxes,Google,cpc,56.99,1877,55,0,6.39
+2026-08-30,G03,qw_search_nb_gift-boxes,Google,cpc,79.47,2000,64,0,13.83
+2026-08-31,G03,qw_search_nb_gift-boxes,Google,cpc,55.30,1654,49,0,24.59
+2026-09-01,G03,qw_search_nb_gift-boxes,Google,cpc,122.80,2538,81,1,60.02
+2026-09-02,G03,qw_search_nb_gift-boxes,Google,cpc,161.26,3566,100,1,140.37
+2026-09-03,G03,qw_search_nb_gift-boxes,Google,cpc,139.53,1980,94,1,68.86
+2026-09-04,G03,qw_search_nb_gift-boxes,Google,cpc,108.74,2464,106,0,57.60
+2026-09-05,G03,qw_search_nb_gift-boxes,Google,cpc,118.56,3876,107,2,89.86
+2026-09-06,G03,qw_search_nb_gift-boxes,Google,cpc,202.37,4569,134,2,209.28
+2026-09-07,G03,qw_search_nb_gift-boxes,Google,cpc,195.18,4163,128,3,224.94
+2026-09-08,G03,qw_search_nb_gift-boxes,Google,cpc,106.34,2647,85,0,29.32
+2026-09-09,G03,qw_search_nb_gift-boxes,Google,cpc,115.24,3514,106,1,42.72
+2026-09-10,G03,qw_search_nb_gift-boxes,Google,cpc,133.86,3329,100,2,68.08
+2026-09-11,G03,qw_search_nb_gift-boxes,Google,cpc,137.28,2624,90,0,35.40
+2026-09-12,G03,qw_search_nb_gift-boxes,Google,cpc,104.57,1685,83,2,87.34
+2026-09-13,G03,qw_search_nb_gift-boxes,Google,cpc,158.73,3181,101,1,132.60
+2026-09-14,G03,qw_search_nb_gift-boxes,Google,cpc,160.68,2992,103,1,71.19
+2026-09-15,G03,qw_search_nb_gift-boxes,Google,cpc,113.68,2954,96,2,194.70
+2026-09-16,G03,qw_search_nb_gift-boxes,Google,cpc,102.50,2859,101,1,125.22
+2026-09-17,G03,qw_search_nb_gift-boxes,Google,cpc,124.71,2140,92,1,216.54
+2026-09-18,G03,qw_search_nb_gift-boxes,Google,cpc,98.13,2277,87,0,53.48
+2026-09-19,G03,qw_search_nb_gift-boxes,Google,cpc,108.94,2112,83,1,167.78
+2026-09-20,G03,qw_search_nb_gift-boxes,Google,cpc,97.84,2230,93,2,360.69
+2026-09-21,G03,qw_search_nb_gift-boxes,Google,cpc,107.93,3240,93,1,141.80
+2026-09-22,G03,qw_search_nb_gift-boxes,Google,cpc,161.61,2365,109,3,391.32
+2026-09-23,G03,qw_search_nb_gift-boxes,Google,cpc,89.35,2536,78,1,29.18
+2026-09-24,G03,qw_search_nb_gift-boxes,Google,cpc,88.84,1483,65,1,75.86
+2026-09-25,G03,qw_search_nb_gift-boxes,Google,cpc,89.97,2421,74,1,29.14
+2026-09-26,G03,qw_search_nb_gift-boxes,Google,cpc,122.80,2110,76,0,51.80
+2026-09-27,G03,qw_search_nb_gift-boxes,Google,cpc,115.45,3092,103,2,134.33
+2026-09-28,G03,qw_search_nb_gift-boxes,Google,cpc,151.46,3093,95,1,59.43
+2026-09-29,G03,qw_search_nb_gift-boxes,Google,cpc,79.20,1694,80,0,0.00
+2026-09-30,G03,qw_search_nb_gift-boxes,Google,cpc,109.40,2561,82,0,0.00
+2026-07-01,G04,qw_search_nb_spice-blends,Google,cpc,67.07,1883,59,3,319.20
+2026-07-02,G04,qw_search_nb_spice-blends,Google,cpc,34.29,778,31,2,181.85
+2026-07-03,G04,qw_search_nb_spice-blends,Google,cpc,38.54,1299,41,0,29.97
+2026-07-04,G04,qw_search_nb_spice-blends,Google,cpc,42.88,1749,43,1,46.81
+2026-07-05,G04,qw_search_nb_spice-blends,Google,cpc,30.12,1416,43,1,135.87
+2026-07-06,G04,qw_search_nb_spice-blends,Google,cpc,65.75,1554,58,1,55.69
+2026-07-07,G04,qw_search_nb_spice-blends,Google,cpc,48.70,1724,49,1,79.23
+2026-07-08,G04,qw_search_nb_spice-blends,Google,cpc,60.49,1906,55,1,85.88
+2026-07-09,G04,qw_search_nb_spice-blends,Google,cpc,40.32,1708,47,0,35.26
+2026-07-10,G04,qw_search_nb_spice-blends,Google,cpc,44.32,1528,56,1,112.30
+2026-07-11,G04,qw_search_nb_spice-blends,Google,cpc,53.97,2073,49,1,34.11
+2026-07-12,G04,qw_search_nb_spice-blends,Google,cpc,54.76,1921,61,1,32.56
+2026-07-13,G04,qw_search_nb_spice-blends,Google,cpc,44.91,2334,61,0,40.18
+2026-07-14,G04,qw_search_nb_spice-blends,Google,cpc,32.56,1866,47,2,79.83
+2026-07-15,G04,qw_search_nb_spice-blends,Google,cpc,58.13,2068,69,3,221.59
+2026-07-16,G04,qw_search_nb_spice-blends,Google,cpc,59.35,1989,59,1,79.97
+2026-07-17,G04,qw_search_nb_spice-blends,Google,cpc,41.59,1192,49,3,172.73
+2026-07-18,G04,qw_search_nb_spice-blends,Google,cpc,66.16,1775,58,3,203.30
+2026-07-19,G04,qw_search_nb_spice-blends,Google,cpc,71.55,2833,68,3,239.72
+2026-07-20,G04,qw_search_nb_spice-blends,Google,cpc,63.12,2248,66,3,368.64
+2026-07-21,G04,qw_search_nb_spice-blends,Google,cpc,40.72,1299,54,2,210.51
+2026-07-22,G04,qw_search_nb_spice-blends,Google,cpc,65.99,2158,59,0,45.75
+2026-07-23,G04,qw_search_nb_spice-blends,Google,cpc,49.54,1659,56,1,49.32
+2026-07-24,G04,qw_search_nb_spice-blends,Google,cpc,41.57,1121,40,1,85.57
+2026-07-25,G04,qw_search_nb_spice-blends,Google,cpc,61.22,1425,56,2,124.30
+2026-07-26,G04,qw_search_nb_spice-blends,Google,cpc,43.71,2299,58,1,176.03
+2026-07-27,G04,qw_search_nb_spice-blends,Google,cpc,53.35,1416,57,1,53.81
+2026-07-28,G04,qw_search_nb_spice-blends,Google,cpc,33.78,1499,44,2,133.50
+2026-07-29,G04,qw_search_nb_spice-blends,Google,cpc,77.25,1672,68,1,142.34
+2026-07-30,G04,qw_search_nb_spice-blends,Google,cpc,44.24,1915,60,3,275.94
+2026-07-31,G04,qw_search_nb_spice-blends,Google,cpc,65.88,1553,59,2,221.98
+2026-08-01,G04,qw_search_nb_spice-blends,Google,cpc,44.33,1450,47,0,31.36
+2026-08-02,G04,qw_search_nb_spice-blends,Google,cpc,65.70,2419,64,1,28.11
+2026-08-03,G04,qw_search_nb_spice-blends,Google,cpc,47.45,1333,44,1,52.09
+2026-08-04,G04,qw_search_nb_spice-blends,Google,cpc,36.95,2202,53,1,113.17
+2026-08-05,G04,qw_search_nb_spice-blends,Google,cpc,55.69,2050,67,2,125.59
+2026-08-06,G04,qw_search_nb_spice-blends,Google,cpc,56.22,2647,61,3,250.93
+2026-08-07,G04,qw_search_nb_spice-blends,Google,cpc,46.42,2169,56,1,113.97
+2026-08-08,G04,qw_search_nb_spice-blends,Google,cpc,52.04,1417,55,0,28.58
+2026-08-09,G04,qw_search_nb_spice-blends,Google,cpc,73.11,3120,77,0,40.53
+2026-08-10,G04,qw_search_nb_spice-blends,Google,cpc,38.92,2140,51,2,91.90
+2026-08-11,G04,qw_search_nb_spice-blends,Google,cpc,48.61,1486,60,1,198.33
+2026-08-12,G04,qw_search_nb_spice-blends,Google,cpc,57.01,2357,58,1,51.59
+2026-08-13,G04,qw_search_nb_spice-blends,Google,cpc,51.34,2092,57,1,31.37
+2026-08-14,G04,qw_search_nb_spice-blends,Google,cpc,49.04,2194,59,0,91.46
+2026-08-15,G04,qw_search_nb_spice-blends,Google,cpc,46.02,1480,59,2,156.10
+2026-08-16,G04,qw_search_nb_spice-blends,Google,cpc,63.32,2449,56,2,227.95
+2026-08-17,G04,qw_search_nb_spice-blends,Google,cpc,67.09,2714,62,1,245.30
+2026-08-18,G04,qw_search_nb_spice-blends,Google,cpc,77.85,2324,70,1,50.65
+2026-08-19,G04,qw_search_nb_spice-blends,Google,cpc,60.41,2957,67,1,170.81
+2026-08-20,G04,qw_search_nb_spice-blends,Google,cpc,53.84,2576,71,0,74.53
+2026-08-21,G04,qw_search_nb_spice-blends,Google,cpc,55.67,1438,60,1,67.67
+2026-08-22,G04,qw_search_nb_spice-blends,Google,cpc,50.09,2448,62,1,144.43
+2026-08-23,G04,qw_search_nb_spice-blends,Google,cpc,46.22,1556,54,0,65.80
+2026-08-24,G04,qw_search_nb_spice-blends,Google,cpc,46.36,1497,43,2,179.12
+2026-08-25,G04,qw_search_nb_spice-blends,Google,cpc,61.38,2287,62,0,3.04
+2026-08-26,G04,qw_search_nb_spice-blends,Google,cpc,65.44,2214,61,1,42.68
+2026-08-27,G04,qw_search_nb_spice-blends,Google,cpc,67.30,2168,61,0,15.47
+2026-08-28,G04,qw_search_nb_spice-blends,Google,cpc,62.65,2018,59,1,47.89
+2026-08-29,G04,qw_search_nb_spice-blends,Google,cpc,65.97,2433,58,1,79.73
+2026-08-30,G04,qw_search_nb_spice-blends,Google,cpc,50.02,1635,68,1,152.72
+2026-08-31,G04,qw_search_nb_spice-blends,Google,cpc,46.42,1706,66,4,343.26
+2026-09-01,G04,qw_search_nb_spice-blends,Google,cpc,61.07,2932,71,2,199.32
+2026-09-02,G04,qw_search_nb_spice-blends,Google,cpc,48.86,1618,61,2,159.51
+2026-09-03,G04,qw_search_nb_spice-blends,Google,cpc,52.30,2813,71,2,180.85
+2026-09-04,G04,qw_search_nb_spice-blends,Google,cpc,46.89,2112,67,2,228.84
+2026-09-05,G04,qw_search_nb_spice-blends,Google,cpc,76.90,3047,83,1,79.04
+2026-09-06,G04,qw_search_nb_spice-blends,Google,cpc,76.98,2827,69,2,137.07
+2026-09-07,G04,qw_search_nb_spice-blends,Google,cpc,89.81,2218,91,1,181.91
+2026-09-08,G04,qw_search_nb_spice-blends,Google,cpc,36.91,1741,50,1,50.68
+2026-09-09,G04,qw_search_nb_spice-blends,Google,cpc,42.35,2650,61,1,105.27
+2026-09-10,G04,qw_search_nb_spice-blends,Google,cpc,63.19,1943,66,1,72.27
+2026-09-11,G04,qw_search_nb_spice-blends,Google,cpc,26.95,1477,39,0,0.98
+2026-09-12,G04,qw_search_nb_spice-blends,Google,cpc,38.91,1923,56,0,4.88
+2026-09-13,G04,qw_search_nb_spice-blends,Google,cpc,59.90,2643,67,1,13.21
+2026-09-14,G04,qw_search_nb_spice-blends,Google,cpc,41.64,1579,56,0,13.60
+2026-09-15,G04,qw_search_nb_spice-blends,Google,cpc,59.44,1967,57,1,61.40
+2026-09-16,G04,qw_search_nb_spice-blends,Google,cpc,62.21,1435,60,1,16.27
+2026-09-17,G04,qw_search_nb_spice-blends,Google,cpc,51.73,2350,64,1,41.54
+2026-09-18,G04,qw_search_nb_spice-blends,Google,cpc,63.20,2431,60,1,73.09
+2026-09-19,G04,qw_search_nb_spice-blends,Google,cpc,51.32,2311,53,0,56.16
+2026-09-20,G04,qw_search_nb_spice-blends,Google,cpc,41.89,2139,56,1,148.25
+2026-09-21,G04,qw_search_nb_spice-blends,Google,cpc,38.99,1802,55,1,23.19
+2026-09-22,G04,qw_search_nb_spice-blends,Google,cpc,56.47,2642,61,0,28.34
+2026-09-23,G04,qw_search_nb_spice-blends,Google,cpc,49.88,1550,59,1,27.69
+2026-09-24,G04,qw_search_nb_spice-blends,Google,cpc,57.10,2175,54,0,20.53
+2026-09-25,G04,qw_search_nb_spice-blends,Google,cpc,59.14,1608,58,0,51.62
+2026-09-26,G04,qw_search_nb_spice-blends,Google,cpc,33.85,1192,48,2,122.17
+2026-09-27,G04,qw_search_nb_spice-blends,Google,cpc,60.09,2149,58,1,40.08
+2026-09-28,G04,qw_search_nb_spice-blends,Google,cpc,38.15,1309,42,1,107.94
+2026-09-29,G04,qw_search_nb_spice-blends,Google,cpc,67.20,2512,63,1,16.73
+2026-09-30,G04,qw_search_nb_spice-blends,Google,cpc,38.81,1208,36,0,0.00
+2026-07-01,G05,qw_shopping_all-products,Google,cpc,66.38,15842,127,9,925.37
+2026-07-02,G05,qw_shopping_all-products,Google,cpc,68.04,15323,158,5,521.43
+2026-07-03,G05,qw_shopping_all-products,Google,cpc,56.92,13016,134,6,559.54
 2026-07-04,G05,qw_shopping_all-products,Google,cpc,53.90,20668,163,6,577.39
 2026-07-05,G05,qw_shopping_all-products,Google,cpc,67.61,13839,154,4,319.17
-2026-07-06,G05,qw_shopping_all-products,Google,cpc,78.63,23657,173,5,314.55
-2026-07-07,G05,qw_shopping_all-products,Google,cpc,63.35,14217,173,2,193.77
-2026-07-08,G05,qw_shopping_all-products,Google,cpc,57.79,11937,152,4,314.70
+2026-07-06,G05,qw_shopping_all-products,Google,cpc,78.62,23657,173,5,314.55
+2026-07-07,G05,qw_shopping_all-products,Google,cpc,63.34,14217,173,2,193.77
+2026-07-08,G05,qw_shopping_all-products,Google,cpc,57.78,11937,152,4,314.70
 2026-07-09,G05,qw_shopping_all-products,Google,cpc,71.05,24546,191,5,418.34
 2026-07-10,G05,qw_shopping_all-products,Google,cpc,73.11,15962,168,7,438.35
-2026-07-11,G05,qw_shopping_all-products,Google,cpc,72.21,13234,158,6,421.86
-2026-07-12,G05,qw_shopping_all-products,Google,cpc,90.59,21707,200,6,661.38
+2026-07-11,G05,qw_shopping_all-products,Google,cpc,72.20,13234,158,6,421.86
+2026-07-12,G05,qw_shopping_all-products,Google,cpc,90.58,21707,200,6,661.38
 2026-07-13,G05,qw_shopping_all-products,Google,cpc,84.23,16812,187,6,590.88
-2026-07-14,G05,qw_shopping_all-products,Google,cpc,50.93,20912,151,5,326.18
-2026-07-15,G05,qw_shopping_all-products,Google,cpc,67.81,18498,188,5,347.31
+2026-07-14,G05,qw_shopping_all-products,Google,cpc,50.59,20774,150,5,326.18
+2026-07-15,G05,qw_shopping_all-products,Google,cpc,67.45,18399,187,5,347.31
 2026-07-16,G05,qw_shopping_all-products,Google,cpc,80.18,17231,174,4,434.48
 2026-07-17,G05,qw_shopping_all-products,Google,cpc,94.15,16910,177,5,552.67
-2026-07-18,G05,qw_shopping_all-products,Google,cpc,87.64,22834,192,5,383.74
-2026-07-19,G05,qw_shopping_all-products,Google,cpc,103.86,21090,211,3,279.12
+2026-07-18,G05,qw_shopping_all-products,Google,cpc,88.09,22953,193,5,383.74
+2026-07-19,G05,qw_shopping_all-products,Google,cpc,103.85,21090,211,3,279.12
 2026-07-20,G05,qw_shopping_all-products,Google,cpc,73.15,26333,189,4,320.44
-2026-07-21,G05,qw_shopping_all-products,Google,cpc,68.89,17146,171,4,292.61
-2026-07-22,G05,qw_shopping_all-products,Google,cpc,90.76,22236,177,6,573.73
+2026-07-21,G05,qw_shopping_all-products,Google,cpc,68.88,17146,171,4,292.62
+2026-07-22,G05,qw_shopping_all-products,Google,cpc,90.76,22236,177,6,573.74
 2026-07-23,G05,qw_shopping_all-products,Google,cpc,70.88,16308,171,5,290.57
 2026-07-24,G05,qw_shopping_all-products,Google,cpc,79.71,21662,187,4,262.65
-2026-07-25,G05,qw_shopping_all-products,Google,cpc,64.67,22740,196,6,548.14
+2026-07-25,G05,qw_shopping_all-products,Google,cpc,64.67,22740,196,6,548.15
 2026-07-26,G05,qw_shopping_all-products,Google,cpc,111.30,23378,218,4,309.04
 2026-07-27,G05,qw_shopping_all-products,Google,cpc,90.65,20610,197,7,582.76
 2026-07-28,G05,qw_shopping_all-products,Google,cpc,91.83,14942,183,7,506.82
-2026-07-29,G05,qw_shopping_all-products,Google,cpc,78.63,25074,186,5,457.83
+2026-07-29,G05,qw_shopping_all-products,Google,cpc,79.05,25209,187,5,457.83
 2026-07-30,G05,qw_shopping_all-products,Google,cpc,79.23,23311,173,6,362.42
-2026-07-31,G05,qw_shopping_all-products,Google,cpc,80.47,15969,188,4,325.61
-2026-08-01,G05,qw_shopping_all-products,Google,cpc,102.32,17335,198,6,540.78
+2026-07-31,G05,qw_shopping_all-products,Google,cpc,80.46,15969,188,4,325.61
+2026-08-01,G05,qw_shopping_all-products,Google,cpc,102.31,17335,198,6,540.78
 2026-08-02,G05,qw_shopping_all-products,Google,cpc,94.79,25780,211,6,553.24
-2026-08-03,G05,qw_shopping_all-products,Google,cpc,105.25,17164,216,7,744.57
+2026-08-03,G05,qw_shopping_all-products,Google,cpc,105.24,17164,216,7,744.58
 2026-08-04,G05,qw_shopping_all-products,Google,cpc,72.29,24486,177,5,538.63
 2026-08-05,G05,qw_shopping_all-products,Google,cpc,85.18,20960,188,6,386.30
-2026-08-06,G05,qw_shopping_all-products,Google,cpc,65.61,22900,175,5,448.92
-2026-08-07,G05,qw_shopping_all-products,Google,cpc,69.47,16559,170,5,419.51
-2026-08-08,G05,qw_shopping_all-products,Google,cpc,81.21,22513,205,7,474.26
+2026-08-06,G05,qw_shopping_all-products,Google,cpc,65.60,22900,175,5,448.92
+2026-08-07,G05,qw_shopping_all-products,Google,cpc,69.46,16559,170,5,419.52
+2026-08-08,G05,qw_shopping_all-products,Google,cpc,81.20,22513,205,7,474.26
 2026-08-09,G05,qw_shopping_all-products,Google,cpc,95.79,15750,180,7,663.02
-2026-08-10,G05,qw_shopping_all-products,Google,cpc,74.13,20861,190,7,537.65
+2026-08-10,G05,qw_shopping_all-products,Google,cpc,74.12,20861,190,7,537.65
 2026-08-11,G05,qw_shopping_all-products,Google,cpc,74.48,19589,204,6,446.32
 2026-08-12,G05,qw_shopping_all-products,Google,cpc,58.07,24107,174,5,581.41
-2026-08-13,G05,qw_shopping_all-products,Google,cpc,94.41,16307,212,3,366.28
-2026-08-14,G05,qw_shopping_all-products,Google,cpc,90.78,21131,197,5,428.14
-2026-08-15,G05,qw_shopping_all-products,Google,cpc,83.97,23213,201,4,435.95
-2026-08-16,G05,qw_shopping_all-products,Google,cpc,84.39,23343,191,5,542.46
-2026-08-17,G05,qw_shopping_all-products,Google,cpc,110.26,19002,208,3,282.15
-2026-08-18,G05,qw_shopping_all-products,Google,cpc,84.87,25945,192,3,533.52
-2026-08-19,G05,qw_shopping_all-products,Google,cpc,99.74,14870,197,2,174.56
-2026-08-20,G05,qw_shopping_all-products,Google,cpc,104.26,21997,195,5,431.19
+2026-08-13,G05,qw_shopping_all-products,Google,cpc,94.41,16307,212,3,348.36
+2026-08-14,G05,qw_shopping_all-products,Google,cpc,90.78,21131,197,5,446.06
+2026-08-15,G05,qw_shopping_all-products,Google,cpc,83.97,23213,201,4,415.47
+2026-08-16,G05,qw_shopping_all-products,Google,cpc,84.39,23343,191,5,537.34
+2026-08-17,G05,qw_shopping_all-products,Google,cpc,110.26,19002,208,3,256.55
+2026-08-18,G05,qw_shopping_all-products,Google,cpc,84.86,25945,192,3,443.90
+2026-08-19,G05,qw_shopping_all-products,Google,cpc,99.73,14870,197,2,315.38
+2026-08-20,G05,qw_shopping_all-products,Google,cpc,104.26,21997,195,5,431.20
 2026-08-21,G05,qw_shopping_all-products,Google,cpc,85.32,23369,171,4,478.05
 2026-08-22,G05,qw_shopping_all-products,Google,cpc,84.10,14794,176,4,273.86
 2026-08-23,G05,qw_shopping_all-products,Google,cpc,81.55,27865,207,6,510.70
 2026-08-24,G05,qw_shopping_all-products,Google,cpc,88.83,23708,204,6,561.29
 2026-08-25,G05,qw_shopping_all-products,Google,cpc,90.53,16012,191,8,730.76
 2026-08-26,G05,qw_shopping_all-products,Google,cpc,84.56,15087,187,5,358.93
-2026-08-27,G05,qw_shopping_all-products,Google,cpc,85.94,14862,180,4,315.25
-2026-08-28,G05,qw_shopping_all-products,Google,cpc,62.18,22164,184,6,597.94
-2026-08-29,G05,qw_shopping_all-products,Google,cpc,90.59,27884,204,4,362.73
-2026-08-30,G05,qw_shopping_all-products,Google,cpc,113.19,25983,219,5,537.71
-2026-08-31,G05,qw_shopping_all-products,Google,cpc,82.87,23523,213,6,813.87
-2026-09-01,G05,qw_shopping_all-products,Google,cpc,95.31,17078,186,7,765.03
-2026-09-02,G05,qw_shopping_all-products,Google,cpc,90.50,21968,207,9,1167.19
-2026-09-03,G05,qw_shopping_all-products,Google,cpc,58.91,23337,182,8,831.25
-2026-09-04,G05,qw_shopping_all-products,Google,cpc,91.21,28804,256,10,1075.69
-2026-09-05,G05,qw_shopping_all-products,Google,cpc,113.66,23672,255,8,808.99
-2026-09-06,G05,qw_shopping_all-products,Google,cpc,121.24,35228,279,7,546.70
-2026-09-07,G05,qw_shopping_all-products,Google,cpc,126.66,27701,260,6,483.11
+2026-08-27,G05,qw_shopping_all-products,Google,cpc,85.93,14862,180,4,315.25
+2026-08-28,G05,qw_shopping_all-products,Google,cpc,62.18,22164,184,5,584.04
+2026-08-29,G05,qw_shopping_all-products,Google,cpc,90.58,27884,204,5,376.64
+2026-08-30,G05,qw_shopping_all-products,Google,cpc,113.18,25983,219,5,521.82
+2026-08-31,G05,qw_shopping_all-products,Google,cpc,83.25,23634,214,6,809.90
+2026-09-01,G05,qw_shopping_all-products,Google,cpc,95.31,17078,186,7,745.17
+2026-09-02,G05,qw_shopping_all-products,Google,cpc,90.50,21968,207,9,1097.66
+2026-09-03,G05,qw_shopping_all-products,Google,cpc,58.59,23208,181,8,940.52
+2026-09-04,G05,qw_shopping_all-products,Google,cpc,91.20,28804,256,10,1075.70
+2026-09-05,G05,qw_shopping_all-products,Google,cpc,113.65,23672,255,8,808.99
+2026-09-06,G05,qw_shopping_all-products,Google,cpc,121.23,35228,279,7,546.71
+2026-09-07,G05,qw_shopping_all-products,Google,cpc,126.63,27701,260,6,483.12
 2026-09-08,G05,qw_shopping_all-products,Google,cpc,77.05,16408,198,5,489.77
-2026-09-09,G05,qw_shopping_all-products,Google,cpc,65.38,20270,195,5,318.42
-2026-09-10,G05,qw_shopping_all-products,Google,cpc,115.32,16279,216,4,477.20
+2026-09-09,G05,qw_shopping_all-products,Google,cpc,65.37,20270,195,5,318.42
+2026-09-10,G05,qw_shopping_all-products,Google,cpc,115.32,16279,216,4,477.21
 2026-09-11,G05,qw_shopping_all-products,Google,cpc,106.17,16618,209,6,347.69
-2026-09-12,G05,qw_shopping_all-products,Google,cpc,70.52,23665,187,4,423.68
-2026-09-13,G05,qw_shopping_all-products,Google,cpc,90.10,17876,204,6,671.05
-2026-09-14,G05,qw_shopping_all-products,Google,cpc,89.39,28491,218,8,552.87
+2026-09-12,G05,qw_shopping_all-products,Google,cpc,70.51,23665,187,4,423.68
+2026-09-13,G05,qw_shopping_all-products,Google,cpc,90.10,17876,204,6,671.06
+2026-09-14,G05,qw_shopping_all-products,Google,cpc,89.39,28491,218,8,552.88
 2026-09-15,G05,qw_shopping_all-products,Google,cpc,81.99,22144,202,6,492.82
-2026-09-16,G05,qw_shopping_all-products,Google,cpc,93.41,22133,184,7,502.48
-2026-09-17,G05,qw_shopping_all-products,Google,cpc,88.76,12816,169,6,633.91
-2026-09-18,G05,qw_shopping_all-products,Google,cpc,79.69,17104,184,7,809.98
-2026-09-19,G05,qw_shopping_all-products,Google,cpc,74.22,17472,163,4,249.65
-2026-09-20,G05,qw_shopping_all-products,Google,cpc,86.09,19654,197,4,299.25
-2026-09-21,G05,qw_shopping_all-products,Google,cpc,71.54,20445,185,6,517.17
+2026-09-16,G05,qw_shopping_all-products,Google,cpc,93.91,22253,185,7,507.73
+2026-09-17,G05,qw_shopping_all-products,Google,cpc,88.75,12816,169,6,633.91
+2026-09-18,G05,qw_shopping_all-products,Google,cpc,79.69,17104,184,7,815.98
+2026-09-19,G05,qw_shopping_all-products,Google,cpc,74.22,17472,163,4,257.14
+2026-09-20,G05,qw_shopping_all-products,Google,cpc,86.09,19654,197,5,314.24
+2026-09-21,G05,qw_shopping_all-products,Google,cpc,71.53,20445,185,6,558.41
 2026-09-22,G05,qw_shopping_all-products,Google,cpc,98.58,16502,191,7,534.11
 2026-09-23,G05,qw_shopping_all-products,Google,cpc,95.64,22326,221,5,361.76
 2026-09-24,G05,qw_shopping_all-products,Google,cpc,76.92,20045,179,4,276.60
 2026-09-25,G05,qw_shopping_all-products,Google,cpc,65.24,14759,165,4,294.56
-2026-09-26,G05,qw_shopping_all-products,Google,cpc,66.90,16749,167,4,484.04
-2026-09-27,G05,qw_shopping_all-products,Google,cpc,75.49,20350,200,4,196.57
+2026-09-26,G05,qw_shopping_all-products,Google,cpc,66.89,16749,167,5,484.05
+2026-09-27,G05,qw_shopping_all-products,Google,cpc,75.49,20350,200,3,196.57
 2026-09-28,G05,qw_shopping_all-products,Google,cpc,105.16,21157,216,3,201.88
 2026-09-29,G05,qw_shopping_all-products,Google,cpc,61.41,12916,168,4,389.05
 2026-09-30,G05,qw_shopping_all-products,Google,cpc,84.94,17492,186,3,224.14
 2026-08-14,M01,qw_meta_pro_gifting,Meta,cpm,0.00,,0,0,10.55
 2026-08-16,M01,qw_meta_pro_gifting,Meta,cpm,0.00,,0,1,15.59
-2026-08-17,M01,qw_meta_pro_gifting,Meta,cpm,39.08,5769,47,0,15.07
-2026-08-18,M01,qw_meta_pro_gifting,Meta,cpm,27.49,4360,40,1,34.18
-2026-08-19,M01,qw_meta_pro_gifting,Meta,cpm,43.17,3969,49,2,95.49
-2026-08-20,M01,qw_meta_pro_gifting,Meta,cpm,36.44,2631,37,1,10.09
-2026-08-21,M01,qw_meta_pro_gifting,Meta,cpm,35.65,4616,47,0,36.37
-2026-08-22,M01,qw_meta_pro_gifting,Meta,cpm,62.77,6695,57,1,10.79
-2026-08-23,M01,qw_meta_pro_gifting,Meta,cpm,54.40,4514,52,0,21.58
-2026-08-24,M01,qw_meta_pro_gifting,Meta,cpm,45.07,7087,55,2,64.87
-2026-08-25,M01,qw_meta_pro_gifting,Meta,cpm,31.05,3477,42,0,0.00
-2026-08-26,M01,qw_meta_pro_gifting,Meta,cpm,37.12,3220,46,0,6.30
-2026-08-27,M01,qw_meta_pro_gifting,Meta,cpm,41.07,5632,45,0,7.87
-2026-08-28,M01,qw_meta_pro_gifting,Meta,cpm,51.53,5475,50,0,34.11
-2026-08-29,M01,qw_meta_pro_gifting,Meta,cpm,30.16,4161,43,1,46.82
-2026-08-30,M01,qw_meta_pro_gifting,Meta,cpm,62.24,5902,59,0,20.99
-2026-08-31,M01,qw_meta_pro_gifting,Meta,cpm,49.68,4092,53,1,34.51
-2026-09-01,M01,qw_meta_pro_gifting,Meta,cpm,59.83,5100,62,1,84.20
-2026-09-02,M01,qw_meta_pro_gifting,Meta,cpm,68.19,4933,62,1,159.25
-2026-09-03,M01,qw_meta_pro_gifting,Meta,cpm,52.01,5428,62,1,91.90
-2026-09-04,M01,qw_meta_pro_gifting,Meta,cpm,48.36,5974,62,1,50.19
-2026-09-05,M01,qw_meta_pro_gifting,Meta,cpm,62.34,7560,82,1,141.05
-2026-09-06,M01,qw_meta_pro_gifting,Meta,cpm,78.64,8303,72,2,249.04
-2026-09-07,M01,qw_meta_pro_gifting,Meta,cpm,78.33,7048,81,1,78.98
-2026-09-08,M01,qw_meta_pro_gifting,Meta,cpm,70.48,6573,64,1,217.19
-2026-09-09,M01,qw_meta_pro_gifting,Meta,cpm,49.56,4930,49,0,8.57
-2026-09-10,M01,qw_meta_pro_gifting,Meta,cpm,58.01,7557,63,0,0.00
-2026-09-11,M01,qw_meta_pro_gifting,Meta,cpm,33.61,2931,39,0,21.80
-2026-09-12,M01,qw_meta_pro_gifting,Meta,cpm,52.11,4473,48,0,12.24
-2026-09-13,M01,qw_meta_pro_gifting,Meta,cpm,50.43,3463,48,1,38.20
-2026-09-14,M01,qw_meta_pro_gifting,Meta,cpm,28.65,4164,37,1,90.02
-2026-09-15,M01,qw_meta_pro_gifting,Meta,cpm,61.60,8128,68,1,36.47
-2026-09-16,M01,qw_meta_pro_gifting,Meta,cpm,63.13,6111,59,1,100.70
-2026-09-17,M01,qw_meta_pro_gifting,Meta,cpm,42.28,4542,43,0,10.41
-2026-09-18,M01,qw_meta_pro_gifting,Meta,cpm,57.59,6076,56,1,23.55
-2026-09-19,M01,qw_meta_pro_gifting,Meta,cpm,48.63,3888,52,1,49.84
-2026-09-20,M01,qw_meta_pro_gifting,Meta,cpm,33.18,3355,43,0,22.21
-2026-09-21,M01,qw_meta_pro_gifting,Meta,cpm,36.45,3873,46,1,24.66
-2026-09-22,M01,qw_meta_pro_gifting,Meta,cpm,39.48,2665,37,0,13.10
-2026-09-23,M01,qw_meta_pro_gifting,Meta,cpm,43.13,6319,50,1,56.73
-2026-09-24,M01,qw_meta_pro_gifting,Meta,cpm,39.03,3647,45,0,32.55
-2026-09-25,M01,qw_meta_pro_gifting,Meta,cpm,34.55,4519,38,0,73.30
-2026-09-26,M01,qw_meta_pro_gifting,Meta,cpm,45.33,5190,51,1,149.94
-2026-09-27,M01,qw_meta_pro_gifting,Meta,cpm,38.71,6827,57,0,34.16
-2026-09-28,M01,qw_meta_pro_gifting,Meta,cpm,57.12,7309,59,1,49.85
-2026-09-29,M01,qw_meta_pro_gifting,Meta,cpm,32.91,3882,43,1,113.99
-2026-09-30,M01,qw_meta_pro_gifting,Meta,cpm,41.44,4320,43,0,169.32
-2026-07-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,40.28,3866,66,3,250.95
-2026-07-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,50.73,3951,62,3,134.88
-2026-07-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,61.95,8386,85,0,59.90
-2026-07-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,57.70,6728,78,2,154.97
-2026-07-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.36,8696,91,2,71.57
-2026-07-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,48.66,5100,86,0,6.98
-2026-07-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,58.73,5683,89,0,0.00
-2026-07-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,66.60,6276,91,0,7.98
-2026-07-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,79.47,5117,87,1,33.32
-2026-07-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,79.38,9389,105,0,30.10
-2026-07-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,56.74,7312,80,2,115.11
-2026-07-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,59.97,9861,96,0,44.97
-2026-07-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.89,11202,110,1,148.51
-2026-07-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.87,4820,82,1,267.43
-2026-07-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,63.94,5535,91,2,208.85
-2026-07-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,91.40,6439,101,2,313.11
-2026-07-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,54.06,8509,93,0,92.43
-2026-07-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.43,8722,84,3,246.76
-2026-07-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,82.51,7882,100,1,59.02
-2026-07-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.49,5494,87,0,11.20
-2026-07-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,61.17,6159,89,0,28.87
-2026-07-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,76.31,7466,99,1,30.61
-2026-07-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,58.03,6196,96,1,83.49
-2026-07-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,45.34,6117,80,1,119.88
-2026-07-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,50.42,5856,72,3,218.56
-2026-07-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.59,7878,116,3,265.09
-2026-07-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.03,6758,103,3,206.83
-2026-07-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,76.50,10031,98,3,270.31
-2026-07-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,59.08,5280,92,2,110.56
-2026-07-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,80.63,9142,105,2,163.06
-2026-07-31,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.84,7866,85,2,82.99
-2026-08-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.26,8764,94,2,189.18
-2026-08-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,92.19,8224,106,3,173.67
-2026-08-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,64.39,10317,106,1,90.31
-2026-08-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,66.26,5649,79,2,113.79
-2026-08-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,74.44,10931,116,2,157.83
-2026-08-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.89,5681,94,2,283.44
-2026-08-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.93,6173,93,1,235.66
-2026-08-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.81,7612,82,1,128.87
-2026-08-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,53.05,6590,89,1,251.49
-2026-08-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.23,7367,94,2,199.35
-2026-08-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,62.19,5640,94,2,166.16
-2026-08-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,91.81,7062,115,1,152.91
-2026-08-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,58.87,8497,100,1,259.03
-2026-08-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,89.42,6198,100,1,37.00
-2026-08-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,81.58,8953,97,0,75.50
-2026-08-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,79.08,7063,100,2,196.43
-2026-08-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,56.29,9282,95,0,50.92
-2026-08-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.60,10106,102,2,137.11
-2026-08-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.22,7416,92,1,118.48
-2026-08-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.05,8077,91,1,102.21
-2026-08-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,81.45,8126,90,1,129.75
-2026-08-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,48.81,5400,88,0,33.85
-2026-08-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,72.23,10605,105,0,50.50
-2026-08-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,62.79,6942,93,1,130.58
-2026-08-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,90.71,7261,109,1,138.99
-2026-08-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.29,7350,92,1,49.85
-2026-08-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,50.95,6367,88,1,81.95
-2026-08-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,79.43,6830,109,1,106.02
-2026-08-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,63.00,9704,104,1,194.95
-2026-08-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.70,7808,100,2,484.88
-2026-08-31,M02,qw_meta_pro_chili-crisp,Meta,cpm,72.04,6705,110,4,368.33
-2026-09-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,87.80,8762,100,1,119.89
-2026-09-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,102.82,9193,118,1,114.63
-2026-09-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.26,10011,97,3,258.58
-2026-09-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,74.83,7283,117,3,405.56
-2026-09-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,121.28,13362,151,3,347.70
-2026-09-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,101.50,10192,144,3,292.70
-2026-09-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,90.28,10752,125,1,89.69
-2026-09-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,63.59,5558,95,1,120.96
-2026-09-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.88,8414,101,2,252.73
-2026-09-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,101.04,8142,114,1,64.41
-2026-09-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,63.72,7842,83,1,26.73
-2026-09-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,103.42,6655,114,1,73.96
-2026-09-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,86.46,10767,105,1,69.46
-2026-09-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,72.93,8649,107,1,82.73
-2026-09-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,55.72,8035,80,2,196.87
-2026-09-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,56.79,5685,96,2,180.34
-2026-09-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.12,6354,96,2,222.08
-2026-09-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,59.38,6773,87,2,216.61
-2026-09-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,51.30,6988,86,1,111.38
-2026-09-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.80,8122,115,2,138.49
-2026-09-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.85,8662,120,1,90.06
-2026-09-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.86,7247,98,1,63.78
-2026-09-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,58.64,8336,89,3,181.55
-2026-09-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,68.01,6066,89,1,67.50
-2026-09-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,82.31,9407,92,1,102.83
-2026-09-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.54,9785,101,2,139.26
-2026-09-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.81,7750,102,1,45.86
-2026-09-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.24,9327,96,1,57.62
-2026-09-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,74.42,7779,81,1,41.86
-2026-09-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,55.92,7182,75,1,115.12
-2026-07-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,50.05,7020,80,3,254.95
-2026-07-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,70.71,6026,98,1,82.11
-2026-07-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,62.05,6630,90,1,80.56
-2026-07-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,76.93,9351,92,1,62.62
-2026-07-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.95,7608,126,1,162.87
-2026-07-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.23,8691,87,2,139.80
-2026-07-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,99.29,5873,101,2,73.52
-2026-07-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,78.00,9409,94,2,54.98
-2026-07-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,85.04,8775,98,0,61.84
-2026-07-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,64.36,8469,92,2,125.33
-2026-07-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,101.44,10622,110,1,123.86
-2026-07-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,124.26,12685,124,2,280.41
-2026-07-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.74,7157,94,1,77.25
-2026-07-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,66.20,10089,103,0,12.42
-2026-07-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.02,7811,110,0,23.84
-2026-07-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.25,10587,107,0,36.05
-2026-07-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,75.94,9971,118,1,101.17
-2026-07-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,90.40,9002,109,1,29.12
-2026-07-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,127.01,12014,130,1,71.49
-2026-07-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,86.84,9217,109,2,124.78
-2026-07-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,81.13,9639,106,1,102.48
-2026-07-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,85.50,11910,114,1,123.70
-2026-07-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.03,7841,108,0,16.99
-2026-07-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,96.79,6551,115,1,27.24
-2026-07-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.83,7042,110,0,47.98
-2026-07-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,68.87,10186,99,2,98.13
-2026-07-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,87.30,12707,123,1,176.82
-2026-07-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,86.99,6832,110,1,118.82
-2026-07-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,96.66,11507,117,1,56.81
-2026-07-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.89,9717,108,1,31.91
-2026-07-31,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,97.22,10975,133,1,88.46
-2026-08-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,62.24,9888,95,2,175.13
-2026-08-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.71,9242,123,1,145.69
-2026-08-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,100.65,10857,138,2,169.94
-2026-08-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,112.93,10226,121,1,83.36
-2026-08-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.48,9910,106,3,252.71
-2026-08-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,121.17,10276,121,1,217.32
-2026-08-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,116.81,11782,124,1,84.52
-2026-08-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,115.51,6740,118,1,228.16
-2026-08-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,102.38,7480,124,1,129.03
-2026-08-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,103.83,6762,117,2,290.23
-2026-08-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,100.28,7428,118,2,329.23
-2026-08-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,101.11,8693,105,1,56.70
-2026-08-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,94.23,9327,107,1,61.67
-2026-08-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,116.63,8723,132,1,125.59
-2026-08-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.39,8972,123,2,113.47
-2026-08-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.18,7844,130,1,150.10
-2026-08-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,87.53,8437,110,2,115.19
-2026-08-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,78.68,11548,116,2,123.88
-2026-08-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,89.19,11213,111,2,98.60
-2026-08-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,80.32,9280,110,1,17.46
-2026-08-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,76.23,9633,119,0,65.80
-2026-08-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,110.56,10481,119,2,127.62
-2026-08-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.87,7508,119,1,108.35
-2026-08-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.36,9303,110,1,194.25
-2026-08-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.53,12034,121,1,79.65
-2026-08-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,96.69,12840,137,2,177.67
-2026-08-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,68.74,8446,112,2,194.06
-2026-08-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,99.96,7215,115,1,32.18
-2026-08-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,95.89,7423,113,1,59.13
-2026-08-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,99.39,10281,142,0,81.36
-2026-08-31,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,59.41,8424,98,1,38.54
-2026-09-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.61,8457,110,1,83.00
-2026-09-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,76.31,11701,117,1,111.00
-2026-09-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.86,6284,106,0,46.54
-2026-09-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,91.89,10064,150,0,9.96
-2026-09-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.07,8744,111,0,3.95
-2026-09-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,161.37,10916,180,1,18.71
-2026-09-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,92.37,12780,153,0,26.53
-2026-09-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,105.47,8195,118,1,42.48
-2026-09-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,121.37,12394,144,1,121.60
-2026-09-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,134.52,10259,135,1,86.18
-2026-09-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,102.89,13373,134,2,107.79
-2026-09-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,74.19,8109,111,0,105.64
-2026-09-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,110.91,8975,111,1,91.60
-2026-09-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,77.81,11714,116,1,184.69
-2026-09-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,74.94,7108,122,2,242.36
-2026-09-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.84,11972,118,2,115.55
-2026-09-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,93.32,10013,114,0,38.25
-2026-09-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,125.03,7892,130,2,77.18
-2026-09-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,102.03,8746,129,0,43.69
-2026-09-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,107.73,11482,121,2,118.65
-2026-09-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,112.59,8396,116,0,2.50
-2026-09-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.28,7249,104,1,33.50
-2026-09-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.31,7498,108,0,12.61
-2026-09-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,90.03,5767,96,1,30.43
-2026-09-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,116.70,12286,122,0,58.84
-2026-09-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,68.56,6839,94,2,94.10
-2026-09-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,125.38,12840,125,4,252.56
-2026-09-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.54,9115,105,0,108.21
-2026-09-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,86.53,7376,116,1,18.24
-2026-09-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,67.39,9967,102,0,50.16
-2026-07-01,M04,qw_meta_rt_site-visitors,Meta,cpm,75.78,6209,115,9,825.27
+2026-08-17,M01,qw_meta_pro_gifting,Meta,cpm,40.21,6014,49,0,15.07
+2026-08-18,M01,qw_meta_pro_gifting,Meta,cpm,26.45,4251,39,1,34.18
+2026-08-19,M01,qw_meta_pro_gifting,Meta,cpm,46.08,4293,53,2,95.49
+2026-08-20,M01,qw_meta_pro_gifting,Meta,cpm,42.76,3129,44,1,10.09
+2026-08-21,M01,qw_meta_pro_gifting,Meta,cpm,32.93,4321,44,0,36.37
+2026-08-22,M01,qw_meta_pro_gifting,Meta,cpm,63.02,6812,58,1,10.79
+2026-08-23,M01,qw_meta_pro_gifting,Meta,cpm,43.36,3646,42,0,21.58
+2026-08-24,M01,qw_meta_pro_gifting,Meta,cpm,43.67,6958,54,2,64.87
+2026-08-25,M01,qw_meta_pro_gifting,Meta,cpm,29.91,3394,41,0,0.00
+2026-08-26,M01,qw_meta_pro_gifting,Meta,cpm,35.84,3150,45,0,6.30
+2026-08-27,M01,qw_meta_pro_gifting,Meta,cpm,37.83,5256,42,0,7.87
+2026-08-28,M01,qw_meta_pro_gifting,Meta,cpm,54.92,5913,54,0,34.11
+2026-08-29,M01,qw_meta_pro_gifting,Meta,cpm,29.76,4161,43,1,46.82
+2026-08-30,M01,qw_meta_pro_gifting,Meta,cpm,61.42,5902,59,0,20.99
+2026-08-31,M01,qw_meta_pro_gifting,Meta,cpm,46.25,3860,50,1,34.51
+2026-09-01,M01,qw_meta_pro_gifting,Meta,cpm,59.99,5182,63,1,84.20
+2026-09-02,M01,qw_meta_pro_gifting,Meta,cpm,67.29,4933,62,1,159.25
+2026-09-03,M01,qw_meta_pro_gifting,Meta,cpm,52.15,5516,63,1,91.90
+2026-09-04,M01,qw_meta_pro_gifting,Meta,cpm,48.49,6070,63,1,50.19
+2026-09-05,M01,qw_meta_pro_gifting,Meta,cpm,62.26,7652,83,1,141.05
+2026-09-06,M01,qw_meta_pro_gifting,Meta,cpm,84.09,8995,78,2,249.04
+2026-09-07,M01,qw_meta_pro_gifting,Meta,cpm,79.20,7223,83,1,78.98
+2026-09-08,M01,qw_meta_pro_gifting,Meta,cpm,71.73,6779,66,1,217.19
+2026-09-09,M01,qw_meta_pro_gifting,Meta,cpm,47.90,4830,48,0,8.57
+2026-09-10,M01,qw_meta_pro_gifting,Meta,cpm,59.06,7797,65,0,0.00
+2026-09-11,M01,qw_meta_pro_gifting,Meta,cpm,38.27,3382,45,0,21.80
+2026-09-12,M01,qw_meta_pro_gifting,Meta,cpm,50.35,4380,47,0,12.24
+2026-09-13,M01,qw_meta_pro_gifting,Meta,cpm,52.87,3679,51,1,38.20
+2026-09-14,M01,qw_meta_pro_gifting,Meta,cpm,26.75,3939,35,1,90.02
+2026-09-15,M01,qw_meta_pro_gifting,Meta,cpm,58.10,7769,65,1,36.47
+2026-09-16,M01,qw_meta_pro_gifting,Meta,cpm,62.30,6111,59,1,100.70
+2026-09-17,M01,qw_meta_pro_gifting,Meta,cpm,44.63,4858,46,0,10.41
+2026-09-18,M01,qw_meta_pro_gifting,Meta,cpm,60.89,6510,60,1,23.55
+2026-09-19,M01,qw_meta_pro_gifting,Meta,cpm,48.91,3963,53,1,49.84
+2026-09-20,M01,qw_meta_pro_gifting,Meta,cpm,31.22,3199,41,0,22.21
+2026-09-21,M01,qw_meta_pro_gifting,Meta,cpm,39.09,4210,50,1,24.66
+2026-09-22,M01,qw_meta_pro_gifting,Meta,cpm,40.01,2737,38,0,13.10
+2026-09-23,M01,qw_meta_pro_gifting,Meta,cpm,45.11,6698,53,1,56.73
+2026-09-24,M01,qw_meta_pro_gifting,Meta,cpm,41.08,3890,48,0,32.55
+2026-09-25,M01,qw_meta_pro_gifting,Meta,cpm,34.99,4638,39,0,73.30
+2026-09-26,M01,qw_meta_pro_gifting,Meta,cpm,45.61,5291,52,1,149.94
+2026-09-27,M01,qw_meta_pro_gifting,Meta,cpm,40.88,7306,61,0,34.16
+2026-09-28,M01,qw_meta_pro_gifting,Meta,cpm,53.50,6938,56,1,49.85
+2026-09-29,M01,qw_meta_pro_gifting,Meta,cpm,30.96,3702,41,1,113.99
+2026-09-30,M01,qw_meta_pro_gifting,Meta,cpm,39.94,4219,42,0,169.32
+2026-07-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,42.07,4041,69,3,250.95
+2026-07-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,51.50,4014,63,3,134.88
+2026-07-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.44,8188,83,0,59.90
+2026-07-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,53.95,6297,73,2,154.97
+2026-07-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.43,8600,90,2,71.57
+2026-07-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,48.61,5100,86,0,6.98
+2026-07-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,59.33,5746,90,0,0.00
+2026-07-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.08,6138,89,0,7.98
+2026-07-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,83.04,5353,91,1,33.32
+2026-07-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,81.57,9657,108,0,30.10
+2026-07-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.23,7769,85,2,115.11
+2026-07-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.54,9963,97,0,44.97
+2026-07-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.54,10998,108,1,148.51
+2026-07-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,74.42,4997,85,1,267.43
+2026-07-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,62.48,5413,89,2,208.85
+2026-07-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,89.51,6311,99,2,313.11
+2026-07-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,56.92,8966,98,0,92.43
+2026-07-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.16,9552,92,3,246.77
+2026-07-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,88.20,8433,107,1,59.02
+2026-07-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.69,5683,90,0,11.20
+2026-07-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.42,6090,88,0,28.87
+2026-07-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,73.93,7240,96,1,30.61
+2026-07-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,59.79,6390,99,1,83.49
+2026-07-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,46.99,6346,83,1,119.88
+2026-07-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,48.97,5693,70,3,218.56
+2026-07-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,69.52,7878,116,3,265.10
+2026-07-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.64,7021,107,3,206.83
+2026-07-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.21,10133,99,3,270.31
+2026-07-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.31,5395,94,2,110.56
+2026-07-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,85.16,9665,111,2,163.06
+2026-07-31,M02,qw_meta_pro_chili-crisp,Meta,cpm,72.24,8144,88,2,82.99
+2026-08-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,76.53,8577,92,2,189.19
+2026-08-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,91.24,8147,105,3,173.67
+2026-08-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,64.33,10317,106,1,90.31
+2026-08-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.87,5792,81,2,113.79
+2026-08-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.96,9988,106,2,157.83
+2026-08-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.44,5983,99,2,283.44
+2026-08-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.09,6106,92,1,235.66
+2026-08-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.74,7612,82,1,128.87
+2026-08-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,52.41,6516,88,1,251.49
+2026-08-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,73.88,7053,90,2,199.35
+2026-08-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.14,5460,91,2,166.16
+2026-08-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,92.52,7124,116,1,152.91
+2026-08-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.58,8752,103,1,259.03
+2026-08-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,80.40,5578,90,1,37.01
+2026-08-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.98,8676,94,0,75.50
+2026-08-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.22,6992,99,2,196.43
+2026-08-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,53.87,8891,91,0,50.92
+2026-08-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.23,10205,103,2,137.11
+2026-08-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.14,7416,92,1,118.48
+2026-08-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.26,8343,94,1,102.21
+2026-08-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,82.28,8216,91,1,129.75
+2026-08-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,50.98,5646,92,0,33.85
+2026-08-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,74.92,11009,109,0,50.50
+2026-08-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,62.06,6868,92,1,130.58
+2026-08-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,90.62,7261,109,1,138.99
+2026-08-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,73.28,7670,96,1,49.85
+2026-08-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,49.17,6150,85,1,81.95
+2026-08-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.17,6642,106,1,106.02
+2026-08-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,63.55,9797,105,1,194.95
+2026-08-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,64.26,7418,95,2,484.89
+2026-08-31,M02,qw_meta_pro_chili-crisp,Meta,cpm,68.70,6400,105,4,368.33
+2026-09-01,M02,qw_meta_pro_chili-crisp,Meta,cpm,85.96,8587,98,1,119.89
+2026-09-02,M02,qw_meta_pro_chili-crisp,Meta,cpm,107.07,9582,123,1,114.63
+2026-09-03,M02,qw_meta_pro_chili-crisp,Meta,cpm,68.75,9805,95,3,258.58
+2026-09-04,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.96,7594,122,3,405.56
+2026-09-05,M02,qw_meta_pro_chili-crisp,Meta,cpm,117.09,12920,146,3,347.70
+2026-09-06,M02,qw_meta_pro_chili-crisp,Meta,cpm,97.88,9838,139,3,292.70
+2026-09-07,M02,qw_meta_pro_chili-crisp,Meta,cpm,90.92,10838,126,1,89.69
+2026-09-08,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.53,5733,98,1,120.96
+2026-09-09,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.81,8414,101,2,252.74
+2026-09-10,M02,qw_meta_pro_chili-crisp,Meta,cpm,93.86,7570,106,1,64.41
+2026-09-11,M02,qw_meta_pro_chili-crisp,Meta,cpm,65.96,8126,86,1,26.73
+2026-09-12,M02,qw_meta_pro_chili-crisp,Meta,cpm,99.69,6421,110,1,73.96
+2026-09-13,M02,qw_meta_pro_chili-crisp,Meta,cpm,89.67,11177,109,1,69.46
+2026-09-14,M02,qw_meta_pro_chili-crisp,Meta,cpm,77.63,9215,114,1,82.73
+2026-09-15,M02,qw_meta_pro_chili-crisp,Meta,cpm,61.24,8838,88,2,196.87
+2026-09-16,M02,qw_meta_pro_chili-crisp,Meta,cpm,56.74,5685,96,2,180.34
+2026-09-17,M02,qw_meta_pro_chili-crisp,Meta,cpm,66.36,6287,95,2,222.08
+2026-09-18,M02,qw_meta_pro_chili-crisp,Meta,cpm,61.37,7006,90,2,216.61
+2026-09-19,M02,qw_meta_pro_chili-crisp,Meta,cpm,50.06,6825,84,1,111.38
+2026-09-20,M02,qw_meta_pro_chili-crisp,Meta,cpm,71.73,8122,115,2,138.49
+2026-09-21,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.19,8590,119,1,90.06
+2026-09-22,M02,qw_meta_pro_chili-crisp,Meta,cpm,60.18,7173,97,1,63.78
+2026-09-23,M02,qw_meta_pro_chili-crisp,Meta,cpm,58.59,8336,89,3,181.55
+2026-09-24,M02,qw_meta_pro_chili-crisp,Meta,cpm,67.18,5998,88,1,67.50
+2026-09-25,M02,qw_meta_pro_chili-crisp,Meta,cpm,78.66,8998,88,2,108.23
+2026-09-26,M02,qw_meta_pro_chili-crisp,Meta,cpm,66.81,9688,100,1,139.26
+2026-09-27,M02,qw_meta_pro_chili-crisp,Meta,cpm,66.40,7826,103,2,52.04
+2026-09-28,M02,qw_meta_pro_chili-crisp,Meta,cpm,70.43,9230,95,1,65.34
+2026-09-29,M02,qw_meta_pro_chili-crisp,Meta,cpm,72.52,7587,79,0,57.30
+2026-09-30,M02,qw_meta_pro_chili-crisp,Meta,cpm,53.63,6895,72,2,157.58
+2026-07-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,48.31,6757,77,3,254.95
+2026-07-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.46,5903,96,1,82.11
+2026-07-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,62.91,6703,91,1,80.56
+2026-07-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.18,9961,98,1,62.62
+2026-07-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.83,7488,124,1,162.87
+2026-07-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.42,8691,87,2,139.80
+2026-07-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,98.57,5815,100,2,73.53
+2026-07-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,79.05,9509,95,2,54.98
+2026-07-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.66,8506,95,0,61.84
+2026-07-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,61.73,8101,88,2,125.33
+2026-07-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,96.18,10042,104,1,123.86
+2026-07-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,126.62,12890,126,2,280.41
+2026-07-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.27,7614,100,1,77.25
+2026-07-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.74,9991,102,0,12.42
+2026-07-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,74.55,7953,112,0,23.84
+2026-07-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,90.14,10785,109,0,36.05
+2026-07-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,74.21,9717,115,1,101.17
+2026-07-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.16,8259,100,1,29.12
+2026-07-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,119.52,11274,122,1,71.49
+2026-07-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,85.48,9047,107,2,124.78
+2026-07-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.89,9821,108,1,102.48
+2026-07-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,87.99,12223,117,1,123.70
+2026-07-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.37,7405,102,0,16.99
+2026-07-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,95.37,6437,113,1,27.24
+2026-07-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.83,7106,111,0,47.98
+2026-07-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,69.76,10289,100,2,98.13
+2026-07-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.98,12191,118,1,176.82
+2026-07-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,85.64,6708,108,1,118.82
+2026-07-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,94.45,11212,114,1,56.81
+2026-07-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,70.66,9267,103,1,31.91
+2026-07-31,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,94.56,10645,129,1,88.46
+2026-08-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,63.07,9992,96,2,175.14
+2026-08-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.94,9242,123,1,145.69
+2026-08-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,101.65,10936,139,2,169.94
+2026-08-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,112.30,10142,120,1,83.36
+2026-08-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,89.51,10471,112,3,252.71
+2026-08-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,115.48,9767,115,1,217.32
+2026-08-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,117.13,11782,124,1,84.53
+2026-08-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,117.79,6855,120,1,228.17
+2026-08-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,103.49,7541,125,1,129.03
+2026-08-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,109.45,7109,123,2,290.24
+2026-08-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,104.81,7743,123,2,329.23
+2026-08-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,99.46,8527,103,1,56.70
+2026-08-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,90.96,8979,103,1,61.67
+2026-08-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,124.93,9318,141,1,125.59
+2026-08-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,86.00,9118,125,2,113.47
+2026-08-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,84.41,7844,130,1,150.11
+2026-08-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,90.96,8744,114,2,115.19
+2026-08-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,77.54,11349,114,2,123.88
+2026-08-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,87.01,10910,108,2,98.60
+2026-08-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.22,8436,100,1,17.46
+2026-08-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,78.37,9876,122,0,65.80
+2026-08-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,105.28,9952,113,2,127.62
+2026-08-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,91.36,7698,122,1,108.35
+2026-08-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.33,9387,111,1,194.25
+2026-08-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,82.66,11736,118,1,79.65
+2026-08-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,92.71,12278,131,2,177.67
+2026-08-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,72.00,8824,117,2,194.07
+2026-08-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,101.10,7277,116,1,32.18
+2026-08-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,96.15,7423,113,1,59.13
+2026-08-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,103.88,10715,148,0,81.36
+2026-08-31,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.04,9198,107,1,38.54
+2026-09-01,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.14,8380,109,1,83.00
+2026-09-02,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,73.90,11301,113,1,111.00
+2026-09-03,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,65.42,6225,105,0,46.54
+2026-09-04,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,87.84,9594,143,0,9.96
+2026-09-05,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,68.64,8665,110,0,3.95
+2026-09-06,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,161.88,10916,180,1,18.71
+2026-09-07,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,88.99,12279,147,0,26.53
+2026-09-08,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,103.07,7987,115,1,42.48
+2026-09-09,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,121.71,12394,144,1,121.61
+2026-09-10,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,138.89,10563,139,1,86.18
+2026-09-11,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,101.64,13173,132,2,107.79
+2026-09-12,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,76.40,8328,114,0,105.64
+2026-09-13,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,109.21,8814,109,1,91.60
+2026-09-14,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,75.33,11310,112,1,184.69
+2026-09-15,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,71.45,6759,116,2,242.36
+2026-09-16,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,83.07,11972,118,2,115.55
+2026-09-17,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,95.22,10189,116,0,38.25
+2026-09-18,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,122.48,7710,127,2,77.18
+2026-09-19,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,104.69,8949,132,0,43.69
+2026-09-20,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,109.82,11671,123,2,118.65
+2026-09-21,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,111.93,8324,115,0,2.50
+2026-09-22,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,91.93,7528,108,1,33.50
+2026-09-23,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,86.09,7289,105,0,12.61
+2026-09-24,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,93.10,5947,99,1,30.43
+2026-09-25,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,123.73,12991,129,0,58.84
+2026-09-26,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,71.67,7130,98,2,94.10
+2026-09-27,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,121.70,12429,121,4,252.56
+2026-09-28,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,66.97,9289,107,0,108.21
+2026-09-29,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,89.01,7567,119,1,18.24
+2026-09-30,M03,qw_meta_pro_lookalike-buyers,Meta,cpm,68.24,10065,103,0,50.16
+2026-07-01,M04,qw_meta_rt_site-visitors,Meta,cpm,75.78,6209,115,9,825.28
 2026-07-02,M04,qw_meta_rt_site-visitors,Meta,cpm,53.98,8150,118,7,454.27
-2026-07-03,M04,qw_meta_rt_site-visitors,Meta,cpm,68.10,6493,104,8,715.11
-2026-07-04,M04,qw_meta_rt_site-visitors,Meta,cpm,56.38,5663,103,7,692.36
+2026-07-03,M04,qw_meta_rt_site-visitors,Meta,cpm,68.10,6493,104,8,715.12
+2026-07-04,M04,qw_meta_rt_site-visitors,Meta,cpm,56.38,5663,103,7,692.37
 2026-07-05,M04,qw_meta_rt_site-visitors,Meta,cpm,80.32,5248,126,8,796.64
 2026-07-06,M04,qw_meta_rt_site-visitors,Meta,cpm,59.45,4908,102,4,373.14
 2026-07-07,M04,qw_meta_rt_site-visitors,Meta,cpm,52.01,7899,104,4,223.93
 2026-07-08,M04,qw_meta_rt_site-visitors,Meta,cpm,63.87,7392,106,4,352.36
 2026-07-09,M04,qw_meta_rt_site-visitors,Meta,cpm,66.84,7037,133,6,534.27
 2026-07-10,M04,qw_meta_rt_site-visitors,Meta,cpm,63.50,8224,122,7,480.78
-2026-07-11,M04,qw_meta_rt_site-visitors,Meta,cpm,58.95,8731,117,7,682.40
-2026-07-12,M04,qw_meta_rt_site-visitors,Meta,cpm,62.83,8276,127,5,653.60
-2026-07-13,M04,qw_meta_rt_site-visitors,Meta,cpm,60.16,7615,117,5,625.76
+2026-07-11,M04,qw_meta_rt_site-visitors,Meta,cpm,58.95,8731,117,7,682.41
+2026-07-12,M04,qw_meta_rt_site-visitors,Meta,cpm,62.83,8276,127,5,653.61
+2026-07-13,M04,qw_meta_rt_site-visitors,Meta,cpm,60.16,7615,117,5,625.77
 2026-07-14,M04,qw_meta_rt_site-visitors,Meta,cpm,62.43,5305,128,8,729.03
 2026-07-15,M04,qw_meta_rt_site-visitors,Meta,cpm,98.94,6770,142,8,805.30
 2026-07-16,M04,qw_meta_rt_site-visitors,Meta,cpm,78.44,6022,136,8,947.92
-2026-07-17,M04,qw_meta_rt_site-visitors,Meta,cpm,52.66,7592,123,6,496.73
+2026-07-17,M04,qw_meta_rt_site-visitors,Meta,cpm,52.66,7592,123,6,496.74
 2026-07-18,M04,qw_meta_rt_site-visitors,Meta,cpm,87.00,8440,134,5,479.59
 2026-07-19,M04,qw_meta_rt_site-visitors,Meta,cpm,87.10,7921,160,6,542.97
 2026-07-20,M04,qw_meta_rt_site-visitors,Meta,cpm,69.94,10194,142,8,542.15
-2026-07-21,M04,qw_meta_rt_site-visitors,Meta,cpm,69.42,9707,158,6,596.77
+2026-07-21,M04,qw_meta_rt_site-visitors,Meta,cpm,69.42,9707,158,6,596.78
 2026-07-22,M04,qw_meta_rt_site-visitors,Meta,cpm,67.40,6645,132,5,431.55
-2026-07-23,M04,qw_meta_rt_site-visitors,Meta,cpm,97.16,9283,139,5,371.93
+2026-07-23,M04,qw_meta_rt_site-visitors,Meta,cpm,97.16,9283,139,5,371.94
 2026-07-24,M04,qw_meta_rt_site-visitors,Meta,cpm,72.04,7592,126,2,164.66
 2026-07-25,M04,qw_meta_rt_site-visitors,Meta,cpm,65.47,7763,129,4,365.77
-2026-07-26,M04,qw_meta_rt_site-visitors,Meta,cpm,91.11,9910,152,4,410.41
-2026-07-27,M04,qw_meta_rt_site-visitors,Meta,cpm,72.10,8665,163,5,379.18
-2026-07-28,M04,qw_meta_rt_site-visitors,Meta,cpm,72.31,11268,149,8,517.22
+2026-07-26,M04,qw_meta_rt_site-visitors,Meta,cpm,91.11,9910,152,4,410.42
+2026-07-27,M04,qw_meta_rt_site-visitors,Meta,cpm,72.10,8665,163,5,379.19
+2026-07-28,M04,qw_meta_rt_site-visitors,Meta,cpm,72.31,11268,149,8,517.23
 2026-07-29,M04,qw_meta_rt_site-visitors,Meta,cpm,69.24,5790,135,3,221.82
 2026-07-30,M04,qw_meta_rt_site-visitors,Meta,cpm,76.68,8744,128,3,244.71
 2026-07-31,M04,qw_meta_rt_site-visitors,Meta,cpm,64.90,6358,120,3,288.00
@@ -725,16 +725,16 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-08-02,M04,qw_meta_rt_site-visitors,Meta,cpm,88.31,10791,156,6,445.89
 2026-08-03,M04,qw_meta_rt_site-visitors,Meta,cpm,102.25,7911,147,6,443.12
 2026-08-04,M04,qw_meta_rt_site-visitors,Meta,cpm,57.75,7407,132,5,462.14
-2026-08-05,M04,qw_meta_rt_site-visitors,Meta,cpm,101.93,8864,146,4,360.94
+2026-08-05,M04,qw_meta_rt_site-visitors,Meta,cpm,101.93,8864,146,4,360.95
 2026-08-06,M04,qw_meta_rt_site-visitors,Meta,cpm,67.30,7933,132,6,539.44
 2026-08-07,M04,qw_meta_rt_site-visitors,Meta,cpm,68.34,6676,137,5,367.89
-2026-08-08,M04,qw_meta_rt_site-visitors,Meta,cpm,92.35,8734,149,7,582.80
+2026-08-08,M04,qw_meta_rt_site-visitors,Meta,cpm,92.35,8734,149,7,582.81
 2026-08-09,M04,qw_meta_rt_site-visitors,Meta,cpm,105.81,11153,173,5,668.30
-2026-08-10,M04,qw_meta_rt_site-visitors,Meta,cpm,86.15,6820,134,5,455.48
+2026-08-10,M04,qw_meta_rt_site-visitors,Meta,cpm,86.15,6820,134,5,455.49
 2026-08-11,M04,qw_meta_rt_site-visitors,Meta,cpm,97.92,9904,147,3,267.44
-2026-08-12,M04,qw_meta_rt_site-visitors,Meta,cpm,90.58,7558,149,4,248.15
+2026-08-12,M04,qw_meta_rt_site-visitors,Meta,cpm,90.58,7558,149,4,248.16
 2026-08-13,M04,qw_meta_rt_site-visitors,Meta,cpm,72.76,8032,131,4,342.25
-2026-08-14,M04,qw_meta_rt_site-visitors,Meta,cpm,70.62,5569,134,6,392.72
+2026-08-14,M04,qw_meta_rt_site-visitors,Meta,cpm,70.62,5569,134,6,392.73
 2026-08-15,M04,qw_meta_rt_site-visitors,Meta,cpm,72.89,6583,127,7,516.78
 2026-08-16,M04,qw_meta_rt_site-visitors,Meta,cpm,87.53,6241,143,8,682.38
 2026-08-17,M04,qw_meta_rt_site-visitors,Meta,cpm,87.29,6930,142,4,484.02
@@ -772,7 +772,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-09-18,M04,qw_meta_rt_site-visitors,Meta,cpm,62.67,8349,112,5,372.90
 2026-09-19,M04,qw_meta_rt_site-visitors,Meta,cpm,80.97,9601,125,6,536.90
 2026-09-20,M04,qw_meta_rt_site-visitors,Meta,cpm,97.69,9638,159,6,524.28
-2026-09-21,M04,qw_meta_rt_site-visitors,Meta,cpm,69.21,6300,127,9,797.15
+2026-09-21,M04,qw_meta_rt_site-visitors,Meta,cpm,69.21,6300,127,9,797.16
 2026-09-22,M04,qw_meta_rt_site-visitors,Meta,cpm,81.81,5789,130,7,693.77
 2026-09-23,M04,qw_meta_rt_site-visitors,Meta,cpm,91.67,11400,156,6,583.71
 2026-09-24,M04,qw_meta_rt_site-visitors,Meta,cpm,75.48,10170,135,4,394.52
@@ -786,7 +786,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-07-02,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.24,9462,82,4,318.04
 2026-07-03,M05,qw_meta_rt_cart-abandoners,Meta,cpm,42.89,6467,64,3,252.24
 2026-07-04,M05,qw_meta_rt_cart-abandoners,Meta,cpm,51.30,7834,82,3,231.16
-2026-07-05,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.01,6908,85,3,254.09
+2026-07-05,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.01,6908,85,3,254.10
 2026-07-06,M05,qw_meta_rt_cart-abandoners,Meta,cpm,29.36,4929,60,4,343.29
 2026-07-07,M05,qw_meta_rt_cart-abandoners,Meta,cpm,43.98,6385,84,4,281.54
 2026-07-08,M05,qw_meta_rt_cart-abandoners,Meta,cpm,37.46,6721,61,3,281.90
@@ -797,7 +797,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-07-13,M05,qw_meta_rt_cart-abandoners,Meta,cpm,61.77,10510,95,5,405.93
 2026-07-14,M05,qw_meta_rt_cart-abandoners,Meta,cpm,58.15,6023,89,3,297.68
 2026-07-15,M05,qw_meta_rt_cart-abandoners,Meta,cpm,54.24,8838,77,2,236.49
-2026-07-16,M05,qw_meta_rt_cart-abandoners,Meta,cpm,33.70,6058,72,2,199.64
+2026-07-16,M05,qw_meta_rt_cart-abandoners,Meta,cpm,33.70,6058,72,2,199.65
 2026-07-17,M05,qw_meta_rt_cart-abandoners,Meta,cpm,59.78,10063,87,2,151.14
 2026-07-18,M05,qw_meta_rt_cart-abandoners,Meta,cpm,42.90,5232,67,5,400.49
 2026-07-19,M05,qw_meta_rt_cart-abandoners,Meta,cpm,58.34,8976,100,5,445.65
@@ -814,7 +814,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-07-30,M05,qw_meta_rt_cart-abandoners,Meta,cpm,60.14,7972,90,3,317.39
 2026-07-31,M05,qw_meta_rt_cart-abandoners,Meta,cpm,50.28,9244,93,4,283.61
 2026-08-01,M05,qw_meta_rt_cart-abandoners,Meta,cpm,39.44,7705,84,4,223.39
-2026-08-02,M05,qw_meta_rt_cart-abandoners,Meta,cpm,55.25,8343,85,5,378.87
+2026-08-02,M05,qw_meta_rt_cart-abandoners,Meta,cpm,55.25,8343,85,5,378.88
 2026-08-03,M05,qw_meta_rt_cart-abandoners,Meta,cpm,49.90,8459,86,5,546.72
 2026-08-04,M05,qw_meta_rt_cart-abandoners,Meta,cpm,44.34,5993,93,2,204.19
 2026-08-05,M05,qw_meta_rt_cart-abandoners,Meta,cpm,56.74,8776,87,3,358.49
@@ -827,29 +827,29 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-08-12,M05,qw_meta_rt_cart-abandoners,Meta,cpm,61.61,8074,94,3,306.79
 2026-08-13,M05,qw_meta_rt_cart-abandoners,Meta,cpm,43.77,6166,86,3,313.08
 2026-08-14,M05,qw_meta_rt_cart-abandoners,Meta,cpm,57.21,9465,89,4,367.58
-2026-08-15,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.98,10933,92,3,233.21
+2026-08-15,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.98,10933,92,3,233.22
 2026-08-16,M05,qw_meta_rt_cart-abandoners,Meta,cpm,74.29,10944,107,3,284.89
 2026-08-17,M05,qw_meta_rt_cart-abandoners,Meta,cpm,48.19,11353,99,5,556.21
 2026-08-18,M05,qw_meta_rt_cart-abandoners,Meta,cpm,47.76,9983,88,3,199.53
 2026-08-19,M05,qw_meta_rt_cart-abandoners,Meta,cpm,42.84,10766,92,4,307.77
 2026-08-20,M05,qw_meta_rt_cart-abandoners,Meta,cpm,57.32,6415,90,7,619.83
-2026-08-21,M05,qw_meta_rt_cart-abandoners,Meta,cpm,79.74,12959,114,4,253.88
+2026-08-21,M05,qw_meta_rt_cart-abandoners,Meta,cpm,79.74,12959,114,4,253.89
 2026-08-22,M05,qw_meta_rt_cart-abandoners,Meta,cpm,56.32,6178,96,5,413.79
 2026-08-23,M05,qw_meta_rt_cart-abandoners,Meta,cpm,48.86,7380,100,6,359.75
 2026-08-24,M05,qw_meta_rt_cart-abandoners,Meta,cpm,58.19,9670,99,4,312.22
 2026-08-25,M05,qw_meta_rt_cart-abandoners,Meta,cpm,59.45,8856,90,5,365.49
-2026-08-26,M05,qw_meta_rt_cart-abandoners,Meta,cpm,59.77,10715,92,5,390.59
-2026-08-27,M05,qw_meta_rt_cart-abandoners,Meta,cpm,53.56,5799,88,4,341.61
-2026-08-28,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.96,8455,101,5,297.65
-2026-08-29,M05,qw_meta_rt_cart-abandoners,Meta,cpm,61.89,9947,100,2,219.77
-2026-08-30,M05,qw_meta_rt_cart-abandoners,Meta,cpm,75.30,12421,105,3,164.52
-2026-08-31,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.17,5211,81,3,204.37
-2026-09-01,M05,qw_meta_rt_cart-abandoners,Meta,cpm,43.82,9775,86,3,237.99
+2026-08-26,M05,qw_meta_rt_cart-abandoners,Meta,cpm,59.77,10715,92,5,379.81
+2026-08-27,M05,qw_meta_rt_cart-abandoners,Meta,cpm,53.56,5799,88,4,352.39
+2026-08-28,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.96,8455,101,5,285.33
+2026-08-29,M05,qw_meta_rt_cart-abandoners,Meta,cpm,61.89,9947,100,2,216.69
+2026-08-30,M05,qw_meta_rt_cart-abandoners,Meta,cpm,75.30,12421,105,2,149.12
+2026-08-31,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.17,5211,81,3,150.48
+2026-09-01,M05,qw_meta_rt_cart-abandoners,Meta,cpm,43.82,9775,86,4,322.68
 2026-09-02,M05,qw_meta_rt_cart-abandoners,Meta,cpm,51.69,7495,90,3,224.21
 2026-09-03,M05,qw_meta_rt_cart-abandoners,Meta,cpm,59.82,6362,94,2,203.35
 2026-09-04,M05,qw_meta_rt_cart-abandoners,Meta,cpm,68.07,9603,117,5,470.12
 2026-09-05,M05,qw_meta_rt_cart-abandoners,Meta,cpm,87.52,15528,141,4,497.68
-2026-09-06,M05,qw_meta_rt_cart-abandoners,Meta,cpm,75.06,9313,142,5,584.38
+2026-09-06,M05,qw_meta_rt_cart-abandoners,Meta,cpm,75.06,9313,142,5,584.39
 2026-09-07,M05,qw_meta_rt_cart-abandoners,Meta,cpm,100.36,12532,146,6,574.98
 2026-09-08,M05,qw_meta_rt_cart-abandoners,Meta,cpm,52.72,10790,94,3,247.66
 2026-09-09,M05,qw_meta_rt_cart-abandoners,Meta,cpm,39.67,8477,88,4,321.06
@@ -857,56 +857,56 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-09-11,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.52,11465,99,4,257.26
 2026-09-12,M05,qw_meta_rt_cart-abandoners,Meta,cpm,63.63,8543,103,3,339.49
 2026-09-13,M05,qw_meta_rt_cart-abandoners,Meta,cpm,66.46,11561,107,4,448.10
-2026-09-14,M05,qw_meta_rt_cart-abandoners,Meta,cpm,53.90,11910,101,4,492.51
+2026-09-14,M05,qw_meta_rt_cart-abandoners,Meta,cpm,53.90,11910,101,4,492.52
 2026-09-15,M05,qw_meta_rt_cart-abandoners,Meta,cpm,51.01,10736,91,6,532.01
 2026-09-16,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.21,6444,78,5,472.61
 2026-09-17,M05,qw_meta_rt_cart-abandoners,Meta,cpm,43.23,6685,92,4,337.98
 2026-09-18,M05,qw_meta_rt_cart-abandoners,Meta,cpm,46.53,10617,92,4,406.82
 2026-09-19,M05,qw_meta_rt_cart-abandoners,Meta,cpm,55.13,7895,85,3,225.71
 2026-09-20,M05,qw_meta_rt_cart-abandoners,Meta,cpm,45.78,10416,102,3,261.94
-2026-09-21,M05,qw_meta_rt_cart-abandoners,Meta,cpm,55.99,9619,85,3,210.47
+2026-09-21,M05,qw_meta_rt_cart-abandoners,Meta,cpm,55.99,9619,85,3,226.72
 2026-09-22,M05,qw_meta_rt_cart-abandoners,Meta,cpm,42.75,6025,87,2,170.07
-2026-09-23,M05,qw_meta_rt_cart-abandoners,Meta,cpm,52.01,6570,92,2,309.69
-2026-09-24,M05,qw_meta_rt_cart-abandoners,Meta,cpm,39.91,5729,83,2,194.58
-2026-09-25,M05,qw_meta_rt_cart-abandoners,Meta,cpm,50.23,9991,84,4,312.49
-2026-09-26,M05,qw_meta_rt_cart-abandoners,Meta,cpm,49.65,8290,87,5,422.78
-2026-09-27,M05,qw_meta_rt_cart-abandoners,Meta,cpm,64.08,9163,96,4,377.34
-2026-09-28,M05,qw_meta_rt_cart-abandoners,Meta,cpm,47.44,8957,80,3,191.02
-2026-09-29,M05,qw_meta_rt_cart-abandoners,Meta,cpm,48.65,6659,77,1,115.99
+2026-09-23,M05,qw_meta_rt_cart-abandoners,Meta,cpm,52.01,6570,92,2,328.27
+2026-09-24,M05,qw_meta_rt_cart-abandoners,Meta,cpm,39.91,5729,83,3,217.80
+2026-09-25,M05,qw_meta_rt_cart-abandoners,Meta,cpm,50.23,9991,84,4,358.92
+2026-09-26,M05,qw_meta_rt_cart-abandoners,Meta,cpm,49.65,8290,87,6,550.46
+2026-09-27,M05,qw_meta_rt_cart-abandoners,Meta,cpm,64.08,9163,96,4,377.35
+2026-09-28,M05,qw_meta_rt_cart-abandoners,Meta,cpm,47.44,8957,80,2,191.03
+2026-09-29,M05,qw_meta_rt_cart-abandoners,Meta,cpm,48.65,6659,77,2,115.99
 2026-09-30,M05,qw_meta_rt_cart-abandoners,Meta,cpm,54.77,6805,94,0,0.00
-2026-07-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,113.15,17082,100,5,389.23
-2026-07-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,85.99,20335,108,2,136.93
-2026-07-03,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,91.33,13468,88,2,213.07
-2026-07-04,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,81.40,13014,90,2,136.70
-2026-07-05,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,87.87,15166,104,3,261.71
-2026-07-06,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.34,18320,102,2,64.41
-2026-07-07,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.43,18399,105,1,82.24
-2026-07-08,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,117.36,23567,122,2,98.58
-2026-07-09,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.46,16007,120,2,216.24
-2026-07-10,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,106.86,19388,123,3,280.55
-2026-07-11,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,103.59,13349,93,2,127.55
-2026-07-12,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.77,18887,126,3,278.43
-2026-07-13,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,109.54,23220,130,1,95.99
-2026-07-14,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,111.22,22216,123,1,82.60
+2026-07-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,113.14,17082,100,5,389.23
+2026-07-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,85.98,20335,108,2,136.93
+2026-07-03,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,91.32,13468,88,2,213.07
+2026-07-04,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,81.39,13014,90,2,136.70
+2026-07-05,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,88.70,15312,105,3,261.71
+2026-07-06,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.33,18320,102,2,64.41
+2026-07-07,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.42,18399,105,1,82.24
+2026-07-08,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,117.35,23567,122,2,98.58
+2026-07-09,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.45,16007,120,2,216.24
+2026-07-10,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,106.85,19388,123,3,280.55
+2026-07-11,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,103.58,13349,93,2,127.55
+2026-07-12,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.76,18887,126,3,278.43
+2026-07-13,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,109.53,23220,130,1,95.99
+2026-07-14,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,111.21,22216,123,1,82.60
 2026-07-15,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,83.92,12695,112,2,126.68
-2026-07-16,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,113.53,25088,140,2,172.60
-2026-07-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,130.52,18136,122,4,243.64
+2026-07-16,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,113.52,25088,140,2,172.60
+2026-07-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,130.50,18136,122,4,243.64
 2026-07-18,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.82,18735,98,2,242.81
-2026-07-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.64,20894,125,4,411.31
-2026-07-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,124.63,13828,118,3,340.48
-2026-07-21,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,136.39,19869,116,4,394.08
-2026-07-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,129.29,19678,119,3,354.37
-2026-07-23,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,106.04,26424,133,2,247.60
-2026-07-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.84,16751,131,1,152.62
-2026-07-25,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,138.07,23455,119,2,384.34
-2026-07-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,164.38,20249,141,3,344.83
-2026-07-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,80.53,20016,112,2,177.03
-2026-07-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,97.58,18193,117,1,94.49
-2026-07-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,109.85,25039,126,1,144.65
-2026-07-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.39,21070,116,3,309.78
-2026-07-31,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,139.57,16223,119,3,334.91
-2026-08-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,88.29,15962,107,4,360.57
-2026-08-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,148.56,18084,133,2,79.65
+2026-07-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.63,20894,125,4,411.32
+2026-07-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,124.61,13828,118,3,340.48
+2026-07-21,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,136.38,19869,116,4,394.09
+2026-07-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,129.27,19678,119,3,354.37
+2026-07-23,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,106.03,26424,133,2,247.60
+2026-07-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.83,16751,131,1,152.62
+2026-07-25,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,138.06,23455,119,2,384.35
+2026-07-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,164.37,20249,141,3,344.83
+2026-07-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,80.52,20016,112,2,177.03
+2026-07-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,97.57,18193,117,1,94.49
+2026-07-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,109.84,25039,126,1,144.65
+2026-07-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.37,21070,116,3,309.78
+2026-07-31,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,139.56,16223,119,3,334.92
+2026-08-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,88.28,15962,107,4,360.58
+2026-08-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,148.54,18084,133,2,79.65
 2026-08-08,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,0,2.56
 2026-08-10,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,1,2.93
 2026-08-11,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,0,3.66
@@ -915,51 +915,51 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-08-14,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,0,33.41
 2026-08-15,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,0,4.51
 2026-08-16,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,0.00,,0,1,56.23
-2026-08-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,85.75,19552,113,1,75.39
-2026-08-18,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.48,16387,93,1,100.16
-2026-08-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,123.05,15274,109,3,271.21
-2026-08-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,75.81,13519,88,1,70.34
+2026-08-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,85.74,19552,113,1,75.39
+2026-08-18,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.47,16387,93,1,100.16
+2026-08-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,123.04,15274,109,3,271.21
+2026-08-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,75.80,13519,88,1,70.34
 2026-08-21,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,70.50,15886,94,3,153.33
-2026-08-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,88.45,17834,102,1,123.94
-2026-08-23,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.22,15777,103,1,92.27
-2026-08-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,124.44,22415,115,3,200.82
-2026-08-25,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.17,15015,115,4,305.72
-2026-08-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.05,23431,123,2,242.25
-2026-08-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,93.85,11650,103,3,306.04
-2026-08-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,125.16,22864,118,3,243.94
-2026-08-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,146.15,19811,128,3,248.78
-2026-08-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.40,21911,124,3,332.66
-2026-08-31,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,94.85,15541,119,1,92.73
-2026-09-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,114.40,15146,129,2,154.68
-2026-09-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,101.53,18970,114,2,231.90
-2026-09-03,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,118.93,14796,136,3,189.94
-2026-09-04,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.27,21239,139,3,328.91
-2026-09-05,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,143.64,16824,145,6,591.41
-2026-09-06,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,168.30,23393,214,4,386.73
-2026-09-07,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,180.66,27413,179,4,409.18
-2026-09-08,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.49,24550,128,3,278.81
-2026-09-09,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,87.34,18222,114,2,258.71
-2026-09-10,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,112.09,20170,127,5,544.78
-2026-09-11,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,96.89,24910,128,1,130.07
-2026-09-12,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,168.00,24337,148,3,283.65
-2026-09-13,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,128.47,19195,121,2,215.91
-2026-09-14,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,148.40,25201,134,3,209.61
-2026-09-15,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,95.18,17809,111,2,174.58
-2026-09-16,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,146.30,15459,129,3,359.57
-2026-09-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,164.64,17094,139,3,359.09
-2026-09-18,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,147.48,17318,140,3,324.13
-2026-09-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,100.42,9751,87,1,143.17
-2026-09-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,81.29,13063,110,2,158.66
-2026-09-21,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.19,18083,134,2,259.96
-2026-09-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,131.62,14545,127,1,66.78
+2026-08-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,88.44,17834,102,1,123.94
+2026-08-23,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.21,15777,103,1,92.27
+2026-08-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,124.42,22415,115,3,200.82
+2026-08-25,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,107.16,15015,115,4,305.72
+2026-08-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,102.04,23431,123,2,242.25
+2026-08-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,93.84,11650,103,3,306.04
+2026-08-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,125.14,22864,118,3,243.94
+2026-08-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,146.13,19811,128,3,248.78
+2026-08-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.39,21911,124,3,332.67
+2026-08-31,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,94.84,15541,119,1,92.73
+2026-09-01,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,114.39,15146,129,2,154.68
+2026-09-02,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,101.52,18970,114,2,231.90
+2026-09-03,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,118.91,14796,136,3,189.94
+2026-09-04,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.26,21239,139,3,328.91
+2026-09-05,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,143.63,16824,145,6,591.41
+2026-09-06,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,168.28,23393,214,4,386.73
+2026-09-07,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,180.67,27413,179,4,409.19
+2026-09-08,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,120.48,24550,128,3,278.81
+2026-09-09,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,87.33,18222,114,2,258.71
+2026-09-10,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,112.08,20170,127,5,544.79
+2026-09-11,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,96.88,24910,128,1,130.07
+2026-09-12,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,167.98,24337,148,3,283.65
+2026-09-13,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,128.45,19195,121,2,215.91
+2026-09-14,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,148.39,25201,134,3,209.61
+2026-09-15,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,95.17,17809,111,2,174.59
+2026-09-16,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,146.29,15459,129,3,359.57
+2026-09-17,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,164.63,17094,139,3,359.09
+2026-09-18,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,147.47,17318,140,3,324.13
+2026-09-19,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,100.41,9751,87,1,143.17
+2026-09-20,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,81.28,13063,110,2,158.66
+2026-09-21,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.18,18083,134,2,259.96
+2026-09-22,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,131.61,14545,127,1,66.78
 2026-09-23,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,90.01,19875,110,1,125.80
-2026-09-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,118.29,18543,114,3,294.73
+2026-09-24,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,118.28,18543,114,3,294.73
 2026-09-25,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,97.36,13848,117,3,184.19
-2026-09-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,137.47,15289,129,1,165.14
-2026-09-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,117.86,21993,158,2,306.15
-2026-09-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,93.05,13162,122,3,388.00
-2026-09-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.02,15599,119,2,349.22
-2026-09-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,94.69,24561,128,2,196.06
+2026-09-26,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,137.45,15289,129,1,165.14
+2026-09-27,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,117.85,21993,158,2,306.15
+2026-09-28,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,93.04,13162,122,3,388.00
+2026-09-29,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,105.01,15599,119,2,349.22
+2026-09-30,T01,qw_tiktok_pro_chili-crisp,Other paid,cpm,94.68,24561,128,2,196.06
 2026-07-01,A01,qw_affiliate_partner-network,Other paid,commission,40.75,,34,2,322.10
 2026-07-02,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,34,1,124.24
 2026-07-03,A01,qw_affiliate_partner-network,Other paid,commission,100.32,,37,3,289.97
@@ -984,7 +984,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-07-22,A01,qw_affiliate_partner-network,Other paid,commission,57.30,,43,2,168.07
 2026-07-23,A01,qw_affiliate_partner-network,Other paid,commission,23.34,,40,1,62.11
 2026-07-24,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,30,0,5.62
-2026-07-25,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,32,0,24.61
+2026-07-25,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,33,0,24.61
 2026-07-26,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,44,1,33.38
 2026-07-27,A01,qw_affiliate_partner-network,Other paid,commission,7.42,,33,1,70.44
 2026-07-28,A01,qw_affiliate_partner-network,Other paid,commission,10.42,,31,2,80.52
@@ -1024,23 +1024,23 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-08-31,A01,qw_affiliate_partner-network,Other paid,commission,11.94,,49,2,79.58
 2026-09-01,A01,qw_affiliate_partner-network,Other paid,commission,9.80,,51,1,106.13
 2026-09-02,A01,qw_affiliate_partner-network,Other paid,commission,54.72,,50,2,183.66
-2026-09-03,A01,qw_affiliate_partner-network,Other paid,commission,26.52,,40,1,122.71
-2026-09-04,A01,qw_affiliate_partner-network,Other paid,commission,32.67,,67,1,112.49
-2026-09-05,A01,qw_affiliate_partner-network,Other paid,commission,17.99,,47,2,76.80
-2026-09-06,A01,qw_affiliate_partner-network,Other paid,commission,22.52,,65,1,96.00
-2026-09-07,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,69,0,32.07
-2026-09-08,A01,qw_affiliate_partner-network,Other paid,commission,29.68,,39,2,109.42
-2026-09-09,A01,qw_affiliate_partner-network,Other paid,commission,10.68,,43,1,80.32
+2026-09-03,A01,qw_affiliate_partner-network,Other paid,commission,26.52,,40,1,126.13
+2026-09-04,A01,qw_affiliate_partner-network,Other paid,commission,32.67,,67,1,109.07
+2026-09-05,A01,qw_affiliate_partner-network,Other paid,commission,17.99,,47,2,80.71
+2026-09-06,A01,qw_affiliate_partner-network,Other paid,commission,22.52,,65,1,96.98
+2026-09-07,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,69,1,36.96
+2026-09-08,A01,qw_affiliate_partner-network,Other paid,commission,40.36,,39,1,126.54
+2026-09-09,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,43,1,53.42
 2026-09-10,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,42,0,65.77
 2026-09-11,A01,qw_affiliate_partner-network,Other paid,commission,67.98,,46,3,196.69
 2026-09-12,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,43,0,35.86
-2026-09-13,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,52,1,79.86
+2026-09-13,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,52,1,79.87
 2026-09-14,A01,qw_affiliate_partner-network,Other paid,commission,69.55,,41,1,220.11
 2026-09-15,A01,qw_affiliate_partner-network,Other paid,commission,10.94,,53,1,61.68
 2026-09-16,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,40,1,77.19
 2026-09-17,A01,qw_affiliate_partner-network,Other paid,commission,0.00,,45,1,111.54
 2026-09-18,A01,qw_affiliate_partner-network,Other paid,commission,34.80,,42,2,242.33
-2026-09-19,A01,qw_affiliate_partner-network,Other paid,commission,108.92,,41,3,372.03
+2026-09-19,A01,qw_affiliate_partner-network,Other paid,commission,108.92,,41,3,372.04
 2026-09-20,A01,qw_affiliate_partner-network,Other paid,commission,66.67,,48,2,240.61
 2026-09-21,A01,qw_affiliate_partner-network,Other paid,commission,66.61,,28,2,200.83
 2026-09-22,A01,qw_affiliate_partner-network,Other paid,commission,16.73,,43,0,46.74
@@ -1228,7 +1228,7 @@ date,campaign_id,campaign_name,platform,billing,spend,impressions,clicks,platfor
 2026-09-20,E02,qw_email_abandoned-cart,Email,owned,0.00,,63,3,185.30
 2026-09-21,E02,qw_email_abandoned-cart,Email,owned,0.00,,62,6,867.80
 2026-09-22,E02,qw_email_abandoned-cart,Email,owned,0.00,,61,2,139.90
-2026-09-23,E02,qw_email_abandoned-cart,Email,owned,0.00,,50,4,477.55
+2026-09-23,E02,qw_email_abandoned-cart,Email,owned,0.00,,50,3,332.65
 2026-09-24,E02,qw_email_abandoned-cart,Email,owned,0.00,,45,6,577.75
 2026-09-25,E02,qw_email_abandoned-cart,Email,owned,0.00,,46,3,210.35
 2026-09-26,E02,qw_email_abandoned-cart,Email,owned,0.00,,46,2,111.35

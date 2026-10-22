@@ -175,9 +175,9 @@
    "section": "4",
    "criterion": "Funnel monotone view_item >= add_to_cart >= begin_checkout >= purchase",
    "value": [
-    90170,
-    43091,
-    11522,
+    290817,
+    44764,
+    11543,
     5708
    ],
    "target": "monotone",
@@ -229,6 +229,20 @@
   },
   {
    "section": "4",
+   "criterion": "History without exported sessions has a pre-quarter client id (R1 guard)",
+   "value": 0,
+   "target": "0",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
+   "criterion": "Session numbers step by 1 across a client's exported sessions",
+   "value": 0,
+   "target": "0",
+   "result": "PASS"
+  },
+  {
+   "section": "4",
    "criterion": "Repeat buyers in the quarter",
    "value": 556,
    "target": "> 0",
@@ -244,21 +258,21 @@
   {
    "section": "5",
    "criterion": "Realized rate A1",
-   "value": 0.0632,
+   "value": 0.0628,
    "target": "0.06 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
   {
    "section": "5",
    "criterion": "Realized rate A2a",
-   "value": 0.1222,
+   "value": 0.1219,
    "target": "0.12 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
   {
    "section": "5",
    "criterion": "Realized rate A2b",
-   "value": 0.0206,
+   "value": 0.0209,
    "target": "0.02 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
@@ -293,7 +307,7 @@
   {
    "section": "5",
    "criterion": "Realized rate A7",
-   "value": 0.0221,
+   "value": 0.0224,
    "target": "0.02 (+/-25% or 0.3pp)",
    "result": "PASS"
   },
@@ -316,17 +330,17 @@
    "criterion": "A9 multiplier differs by campaign",
    "value": [
     1.084,
-    1.137,
+    1.136,
     1.145,
     1.156,
     1.174,
     1.222,
     1.239,
-    1.245,
+    1.243,
     1.25,
-    1.257,
+    1.253,
     1.278,
-    1.31
+    1.313
    ],
    "target": "not uniform (F5)",
    "result": "PASS"
@@ -351,6 +365,6 @@
    "result": "PASS"
   }
  ],
- "pass": 41,
+ "pass": 43,
  "fail": 0
 }

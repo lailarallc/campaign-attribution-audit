@@ -3,9 +3,9 @@
  "branch": "B2",
  "legs": {
   "leg1_same_top": true,
-  "leg2_wide_roas_count": 7,
+  "leg2_wide_roas_count": 8,
   "leg2_holds": false,
-  "leg3_kendall_tau_b": 0.5455,
+  "leg3_kendall_tau_b": 0.5758,
   "leg3_holds": false
  },
  "tops": {
@@ -30,8 +30,8 @@
    "M05": 4,
    "T01": 5,
    "M02": 6,
-   "G02": 7,
-   "M03": 8,
+   "M03": 7,
+   "G02": 8,
    "A01": 9,
    "G04": 10,
    "G03": 11,
@@ -84,6 +84,7 @@
   "G02",
   "G03",
   "G04",
+  "M01",
   "M02",
   "M03",
   "M04",
@@ -105,20 +106,20 @@
   "G05"
  ],
  "measures": {
-  "U_untraced_spend": 5056.84,
+  "U_untraced_spend": 5064.26,
   "S_total_spend": 72621.29,
   "conversions": 5556,
   "revenue": 497338.0,
   "raw_purchase_events": 5708,
-  "unattributable_conversions": 695,
-  "s_unattributable_share": 0.1251,
-  "d_unattributable_revenue": 61736.45,
-  "p1_one_touch_rev_share": 0.4363,
-  "p2_two_touch_rev_share": 0.2655,
+  "unattributable_conversions": 694,
+  "s_unattributable_share": 0.1249,
+  "d_unattributable_revenue": 61682.0,
+  "p1_one_touch_rev_share": 0.4362,
+  "p2_two_touch_rev_share": 0.2656,
   "p3_three_plus_rev_share": 0.2982,
   "n_movers": 9,
   "m_paid": 12,
-  "t_defect_share_of_unattributable": 0.3424,
+  "t_defect_share_of_unattributable": 0.2565,
   "u_split_share_of_multivisit": 0.1588
  },
  "campaigns": [
@@ -128,95 +129,95 @@
    "platform": "Google",
    "spend": 5903.66,
    "clicks": 12425,
-   "ga4_sessions_matched": 12304,
-   "untraced_spend": 57.49,
+   "ga4_sessions_matched": 12305,
+   "untraced_spend": 57.02,
    "revenue": {
-    "last_click": 51707.35,
+    "last_click": 51690.85,
     "first_click": 44593.35,
-    "linear": 52863.43,
-    "position_based": 50137.27
+    "linear": 52835.35,
+    "position_based": 50114.76
    },
    "roas": {
-    "last_click": 8.759,
+    "last_click": 8.756,
     "first_click": 7.554,
-    "linear": 8.954,
-    "position_based": 8.493
+    "linear": 8.95,
+    "position_based": 8.489
    },
    "lc_conversions": 578.0,
    "platform_conversions": 662,
-   "platform_conversion_value": 59181.060000000005
+   "platform_conversion_value": 59162.37000000001
   },
   {
    "campaign_id": "G02",
    "campaign_name": "qw_search_nb_chili-crisp",
    "platform": "Google",
    "spend": 6117.94,
-   "clicks": 8271,
-   "ga4_sessions_matched": 7552,
-   "untraced_spend": 531.83,
+   "clicks": 8262,
+   "ga4_sessions_matched": 7537,
+   "untraced_spend": 536.86,
    "revenue": {
-    "last_click": 8791.3,
-    "first_click": 18188.7,
-    "linear": 12215.68,
-    "position_based": 12979.39
+    "last_click": 8562.85,
+    "first_click": 18021.7,
+    "linear": 12035.72,
+    "position_based": 12792.32
    },
    "roas": {
-    "last_click": 1.437,
-    "first_click": 2.973,
-    "linear": 1.997,
-    "position_based": 2.122
+    "last_click": 1.4,
+    "first_click": 2.946,
+    "linear": 1.967,
+    "position_based": 2.091
    },
-   "lc_conversions": 101.0,
-   "platform_conversions": 127,
-   "platform_conversion_value": 11019.069999999998
+   "lc_conversions": 99.0,
+   "platform_conversions": 124,
+   "platform_conversion_value": 10732.75
   },
   {
    "campaign_id": "G03",
    "campaign_name": "qw_search_nb_gift-boxes",
    "platform": "Google",
    "spend": 8093.81,
-   "clicks": 6204,
-   "ga4_sessions_matched": 5698,
-   "untraced_spend": 660.13,
+   "clicks": 6221,
+   "ga4_sessions_matched": 5707,
+   "untraced_spend": 668.74,
    "revenue": {
     "last_click": 5613.75,
-    "first_click": 15127.3,
-    "linear": 9460.55,
-    "position_based": 10002.07
+    "first_click": 15215.75,
+    "linear": 9521.17,
+    "position_based": 10046.83
    },
    "roas": {
     "last_click": 0.694,
-    "first_click": 1.869,
-    "linear": 1.169,
-    "position_based": 1.236
+    "first_click": 1.88,
+    "linear": 1.176,
+    "position_based": 1.241
    },
    "lc_conversions": 63.0,
    "platform_conversions": 77,
-   "platform_conversion_value": 6834.319999999999
+   "platform_conversion_value": 6834.3499999999985
   },
   {
    "campaign_id": "G04",
    "campaign_name": "qw_search_nb_spice-blends",
    "platform": "Google",
    "spend": 4896.84,
-   "clicks": 5334,
-   "ga4_sessions_matched": 5283,
-   "untraced_spend": 46.82,
+   "clicks": 5320,
+   "ga4_sessions_matched": 5272,
+   "untraced_spend": 44.18,
    "revenue": {
     "last_click": 8232.2,
-    "first_click": 15321.95,
-    "linear": 10820.67,
-    "position_based": 11381.92
+    "first_click": 15377.05,
+    "linear": 10831.81,
+    "position_based": 11408.93
    },
    "roas": {
     "last_click": 1.681,
-    "first_click": 3.129,
-    "linear": 2.21,
-    "position_based": 2.324
+    "first_click": 3.14,
+    "linear": 2.212,
+    "position_based": 2.33
    },
    "lc_conversions": 92.0,
    "platform_conversions": 108,
-   "platform_conversion_value": 9652.240000000005
+   "platform_conversion_value": 9652.300000000005
   },
   {
    "campaign_id": "G05",
@@ -224,43 +225,43 @@
    "platform": "Google",
    "spend": 7667.31,
    "clicks": 17514,
-   "ga4_sessions_matched": 17337,
-   "untraced_spend": 77.49,
+   "ga4_sessions_matched": 17342,
+   "untraced_spend": 75.3,
    "revenue": {
-    "last_click": 38654.25,
-    "first_click": 36682.6,
-    "linear": 37164.04,
-    "position_based": 37341.97
+    "last_click": 38720.25,
+    "first_click": 36748.6,
+    "linear": 37222.44,
+    "position_based": 37405.44
    },
    "roas": {
-    "last_click": 5.041,
-    "first_click": 4.784,
-    "linear": 4.847,
-    "position_based": 4.87
+    "last_click": 5.05,
+    "first_click": 4.793,
+    "linear": 4.855,
+    "position_based": 4.879
    },
-   "lc_conversions": 432.0,
-   "platform_conversions": 491,
-   "platform_conversion_value": 43909.39
+   "lc_conversions": 433.0,
+   "platform_conversions": 492,
+   "platform_conversion_value": 43984.540000000015
   },
   {
    "campaign_id": "M01",
    "campaign_name": "qw_meta_pro_gifting",
    "platform": "Meta",
    "spend": 2152.03,
-   "clicks": 2343,
-   "ga4_sessions_matched": 2251,
-   "untraced_spend": 84.5,
+   "clicks": 2373,
+   "ga4_sessions_matched": 2268,
+   "untraced_spend": 95.22,
    "revenue": {
     "last_click": 2114.15,
-    "first_click": 3002.6,
-    "linear": 2405.64,
-    "position_based": 2499.8
+    "first_click": 3260.05,
+    "linear": 2555.51,
+    "position_based": 2638.32
    },
    "roas": {
     "last_click": 0.982,
-    "first_click": 1.395,
-    "linear": 1.118,
-    "position_based": 1.162
+    "first_click": 1.515,
+    "linear": 1.187,
+    "position_based": 1.226
    },
    "lc_conversions": 24.0,
    "platform_conversions": 30,
@@ -271,48 +272,48 @@
    "campaign_name": "qw_meta_pro_chili-crisp",
    "platform": "Meta",
    "spend": 6482.58,
-   "clicks": 8900,
-   "ga4_sessions_matched": 8274,
-   "untraced_spend": 455.97,
+   "clicks": 8913,
+   "ga4_sessions_matched": 8295,
+   "untraced_spend": 449.48,
    "revenue": {
-    "last_click": 10439.55,
-    "first_click": 27748.75,
-    "linear": 17975.56,
-    "position_based": 18615.73
+    "last_click": 10501.45,
+    "first_click": 26569.25,
+    "linear": 17372.67,
+    "position_based": 18041.24
    },
    "roas": {
-    "last_click": 1.61,
-    "first_click": 4.281,
-    "linear": 2.773,
-    "position_based": 2.872
+    "last_click": 1.62,
+    "first_click": 4.099,
+    "linear": 2.68,
+    "position_based": 2.783
    },
-   "lc_conversions": 106.0,
-   "platform_conversions": 132,
-   "platform_conversion_value": 13018.219999999998
+   "lc_conversions": 107.0,
+   "platform_conversions": 133,
+   "platform_conversion_value": 13095.479999999994
   },
   {
    "campaign_id": "M03",
    "campaign_name": "qw_meta_pro_lookalike-buyers",
    "platform": "Meta",
    "spend": 8319.64,
-   "clicks": 10587,
-   "ga4_sessions_matched": 8078,
-   "untraced_spend": 1971.66,
+   "clicks": 10555,
+   "ga4_sessions_matched": 8070,
+   "untraced_spend": 1958.72,
    "revenue": {
     "last_click": 8590.0,
-    "first_click": 22045.9,
-    "linear": 13929.13,
-    "position_based": 14592.99
+    "first_click": 22954.45,
+    "linear": 14384.53,
+    "position_based": 15040.07
    },
    "roas": {
     "last_click": 1.032,
-    "first_click": 2.65,
-    "linear": 1.674,
-    "position_based": 1.754
+    "first_click": 2.759,
+    "linear": 1.729,
+    "position_based": 1.808
    },
    "lc_conversions": 95.0,
    "platform_conversions": 103,
-   "platform_conversion_value": 9331.4
+   "platform_conversion_value": 9331.48
   },
   {
    "campaign_id": "M04",
@@ -320,23 +321,23 @@
    "platform": "Meta",
    "spend": 7226.31,
    "clicks": 12669,
-   "ga4_sessions_matched": 10922,
-   "untraced_spend": 996.48,
+   "ga4_sessions_matched": 10920,
+   "untraced_spend": 997.62,
    "revenue": {
     "last_click": 34395.4,
     "first_click": 21201.7,
-    "linear": 29507.34,
-    "position_based": 28599.29
+    "linear": 29478.26,
+    "position_based": 28581.85
    },
    "roas": {
     "last_click": 4.76,
     "first_click": 2.934,
-    "linear": 4.083,
-    "position_based": 3.958
+    "linear": 4.079,
+    "position_based": 3.955
    },
    "lc_conversions": 400.0,
    "platform_conversions": 511,
-   "platform_conversion_value": 43925.27000000001
+   "platform_conversion_value": 43925.45000000001
   },
   {
    "campaign_id": "M05",
@@ -344,32 +345,32 @@
    "platform": "Meta",
    "spend": 4867.98,
    "clicks": 8321,
-   "ga4_sessions_matched": 8238,
-   "untraced_spend": 48.56,
+   "ga4_sessions_matched": 8240,
+   "untraced_spend": 47.39,
    "revenue": {
-    "last_click": 21357.2,
+    "last_click": 21534.2,
     "first_click": 9379.4,
-    "linear": 16963.02,
-    "position_based": 16137.54
+    "linear": 17051.52,
+    "position_based": 16226.04
    },
    "roas": {
-    "last_click": 4.387,
+    "last_click": 4.424,
     "first_click": 1.927,
-    "linear": 3.485,
-    "position_based": 3.315
+    "linear": 3.503,
+    "position_based": 3.333
    },
-   "lc_conversions": 245.0,
-   "platform_conversions": 321,
-   "platform_conversion_value": 28010.11
+   "lc_conversions": 246.0,
+   "platform_conversions": 323,
+   "platform_conversion_value": 28242.359999999986
   },
   {
    "campaign_id": "T01",
    "campaign_name": "qw_tiktok_pro_chili-crisp",
    "platform": "Other paid",
    "spend": 8815.76,
-   "clicks": 9415,
-   "ga4_sessions_matched": 9303,
-   "untraced_spend": 104.87,
+   "clicks": 9416,
+   "ga4_sessions_matched": 9298,
+   "untraced_spend": 110.48,
    "revenue": {
     "last_click": 14869.8,
     "first_click": 17375.3,
@@ -384,16 +385,16 @@
    },
    "lc_conversions": 155.0,
    "platform_conversions": 192,
-   "platform_conversion_value": 18443.669999999995
+   "platform_conversion_value": 18443.76
   },
   {
    "campaign_id": "A01",
    "campaign_name": "qw_affiliate_partner-network",
    "platform": "Other paid",
    "spend": 2077.43,
-   "clicks": 3752,
-   "ga4_sessions_matched": 3714,
-   "untraced_spend": 21.04,
+   "clicks": 3753,
+   "ga4_sessions_matched": 3711,
+   "untraced_spend": 23.25,
    "revenue": {
     "last_click": 8257.05,
     "first_click": 10160.2,
@@ -408,7 +409,7 @@
    },
    "lc_conversions": 90.0,
    "platform_conversions": 104,
-   "platform_conversion_value": 9512.990000000002
+   "platform_conversion_value": 9513.010000000002
   },
   {
    "campaign_id": "E01",
@@ -416,12 +417,12 @@
    "platform": "Email",
    "spend": 0.0,
    "clicks": 8169,
-   "ga4_sessions_matched": 6819,
+   "ga4_sessions_matched": 6818,
    "untraced_spend": 0.0,
    "revenue": {
     "last_click": 40722.45,
     "first_click": 25790.6,
-    "linear": 33934.38,
+    "linear": 33930.59,
     "position_based": 33498.52
    },
    "roas": {
@@ -440,13 +441,13 @@
    "platform": "Email",
    "spend": 0.0,
    "clicks": 4902,
-   "ga4_sessions_matched": 4864,
+   "ga4_sessions_matched": 4863,
    "untraced_spend": 0.0,
    "revenue": {
-    "last_click": 27919.25,
+    "last_click": 27774.35,
     "first_click": 7870.0,
-    "linear": 19729.84,
-    "position_based": 18768.03
+    "linear": 19651.21,
+    "position_based": 18692.25
    },
    "roas": {
     "last_click": null,
@@ -454,9 +455,9 @@
     "linear": null,
     "position_based": null
    },
-   "lc_conversions": 304.0,
-   "platform_conversions": 304,
-   "platform_conversion_value": 27919.249999999996
+   "lc_conversions": 303.0,
+   "platform_conversions": 303,
+   "platform_conversion_value": 27774.35
   },
   {
    "campaign_id": "E03",
@@ -464,13 +465,13 @@
    "platform": "Email",
    "spend": 0.0,
    "clicks": 3267,
-   "ga4_sessions_matched": 3239,
+   "ga4_sessions_matched": 3242,
    "untraced_spend": 0.0,
    "revenue": {
     "last_click": 17996.85,
-    "first_click": 5045.85,
-    "linear": 13043.88,
-    "position_based": 12255.29
+    "first_click": 5006.85,
+    "linear": 13024.38,
+    "position_based": 12235.79
    },
    "roas": {
     "last_click": null,
@@ -485,39 +486,39 @@
  ],
  "non_campaign_credit": {
   "channel:Organic Social": {
-   "last_click": 21811.9,
-   "first_click": 37617.9,
-   "linear": 28806.33,
-   "position_based": 29292.61
+   "last_click": 21953.85,
+   "first_click": 37810.45,
+   "linear": 28960.83,
+   "position_based": 29452.21
   },
   "channel:Organic Search": {
-   "last_click": 69289.35,
-   "first_click": 93395.9,
-   "linear": 80986.39,
-   "position_based": 81211.06
+   "last_click": 69333.2,
+   "first_click": 93288.85,
+   "linear": 80909.64,
+   "position_based": 81159.02
   },
   "channel:Referral": {
-   "last_click": 36447.7,
-   "first_click": 17221.7,
-   "linear": 24210.63,
-   "position_based": 25705.22
+   "last_click": 36353.25,
+   "first_click": 17068.2,
+   "linear": 24086.65,
+   "position_based": 25581.25
   },
   "Direct": {
-   "last_click": 53371.65,
-   "first_click": 53371.65,
-   "linear": 53371.65,
-   "position_based": 53371.65
+   "last_click": 53213.9,
+   "first_click": 53213.9,
+   "linear": 53213.9,
+   "position_based": 53213.9
   },
   "Unattributable": {
-   "last_click": 16756.85,
-   "first_click": 16196.65,
-   "linear": 16411.54,
-   "position_based": 16405.2
+   "last_click": 16908.2,
+   "first_click": 16432.35,
+   "linear": 16733.53,
+   "position_based": 16666.83
   }
  },
  "unattributable_txns": [
-  "(no id) 1395614685.1787961931@1787962317491321",
-  "(no id) 1605782316.1781454668@1786657390027064",
+  "(no id) 257006066.1781454668@1786657309071477",
+  "(no id) 885479571.1787961931@1787962305469736",
   "QW104017",
   "QW104022",
   "QW104023",
@@ -644,7 +645,7 @@
   "QW104708",
   "QW104710",
   "QW104712",
-  "QW104721",
+  "QW104720",
   "QW104725",
   "QW104734",
   "QW104742",
@@ -1151,8 +1152,8 @@
   "QW108949",
   "QW108954",
   "QW108967",
-  "QW108994",
   "QW108995",
+  "QW108997",
   "QW109011",
   "QW109012",
   "QW109016",
@@ -1165,7 +1166,6 @@
   "QW109054",
   "QW109058",
   "QW109064",
-  "QW109079",
   "QW109090",
   "QW109095",
   "QW109098",
@@ -1207,29 +1207,29 @@
   "QW109471",
   "QW109485",
   "QW109500",
-  "QW109518",
-  "QW109533",
-  "QW109534",
+  "QW109520",
+  "QW109536",
+  "QW109537",
   "QW109543"
  ],
  "one_touch": {
   "top_campaign": "G01",
-  "top_share_of_one_visit_rev": 0.1148,
+  "top_share_of_one_visit_rev": 0.1149,
   "top_is_largest_paid": true,
   "by_key": {
-   "Direct": 51203.1,
-   "channel:Organic Search": 32058.15,
+   "Direct": 51045.35,
+   "channel:Organic Search": 31937.2,
    "G01": 24920.3,
-   "G05": 18991.85,
+   "G05": 19057.85,
    "E01": 16350.7,
    "M04": 16057.2,
    "channel:Organic Social": 9106.2,
-   "channel:Referral": 7354.6,
+   "channel:Referral": 7201.1,
    "T01": 6314.4,
-   "Unattributable": 5358.0,
+   "Unattributable": 5603.25,
    "M05": 4360.05,
    "G04": 4318.3,
-   "M02": 4057.25,
+   "M02": 4119.15,
    "A01": 3771.85,
    "G02": 3727.2,
    "M03": 3283.0,
@@ -1242,8 +1242,8 @@
  "Z": {
   "campaign_id": "G03",
   "lo": 0.694,
-  "hi": 1.869,
-  "ratio": 2.693
+  "hi": 1.88,
+  "ratio": 2.709
  },
  "hygiene": [
   {
@@ -1253,8 +1253,8 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "6% of paid-social + email sessions",
-   "instances": 4264,
-   "revenue_affected": 27397.0,
+   "instances": 4234,
+   "revenue_affected": 27327.8,
    "spend_affected": 0.0
   },
   {
@@ -1264,8 +1264,8 @@
    "documented_case": "none published",
    "page_eligible": false,
    "seeded_at": "12% of tagged sessions",
-   "instances": 8682,
-   "revenue_affected": 56913.5,
+   "instances": 8657,
+   "revenue_affected": 57042.95,
    "spend_affected": 0.0
   },
   {
@@ -1275,8 +1275,8 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "2% of tagged sessions",
-   "instances": 1463,
-   "revenue_affected": 10495.15,
+   "instances": 1483,
+   "revenue_affected": 10529.2,
    "spend_affected": 0.0
   },
   {
@@ -1287,7 +1287,7 @@
    "page_eligible": true,
    "seeded_at": "1% of sessions",
    "instances": 2480,
-   "revenue_affected": 13189.15,
+   "revenue_affected": 14005.45,
    "spend_affected": 0.0
   },
   {
@@ -1298,7 +1298,7 @@
    "page_eligible": true,
    "seeded_at": "3% of purchases",
    "instances": 152,
-   "revenue_affected": 14259.1,
+   "revenue_affected": 14160.15,
    "spend_affected": 0.0
   },
   {
@@ -1320,7 +1320,7 @@
    "page_eligible": true,
    "seeded_at": "4% of purchases",
    "instances": 238,
-   "revenue_affected": 23015.45,
+   "revenue_affected": 23074.5,
    "spend_affected": 0.0
   },
   {
@@ -1332,7 +1332,7 @@
    "seeded_at": "3% of paid clicks / 1% of other sessions",
    "instances": 4613,
    "revenue_affected": 0.0,
-   "spend_affected": 2250.52
+   "spend_affected": 2240.27
   },
   {
    "class": "A7",
@@ -1341,8 +1341,8 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "2% of Google Ads clicks",
-   "instances": 1059,
-   "revenue_affected": 2787.5,
+   "instances": 1073,
+   "revenue_affected": 2810.95,
    "spend_affected": 0.0
   },
   {
@@ -1352,8 +1352,8 @@
    "documented_case": "none published",
    "page_eligible": true,
    "seeded_at": "Safari 30.42% of users \u00d7 return gaps over 7 days",
-   "instances": 24809,
-   "revenue_affected": 74531.95,
+   "instances": 24806,
+   "revenue_affected": 41073.8,
    "spend_affected": 0.0
   },
   {
@@ -1364,7 +1364,7 @@
    "page_eligible": true,
    "seeded_at": "+20% over GA4 last-click",
    "instances": 12,
-   "revenue_affected": 42484.33,
+   "revenue_affected": 42504.49,
    "spend_affected": 0.0
   }
  ]

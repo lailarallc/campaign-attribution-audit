@@ -183,6 +183,21 @@ def main():
                     and r["ga_session_number"] == "1" and r["user_pseudo_id"] not in a8_clients)
         check("4", f"First visits on {camp} not explained by A8 resets", {"first_visit_share": round(f1 / n, 3),
               "unexplained": stray}, stray == 0, "0 unexplained")
+    # R1 guard: a client with history at its first exported session must carry a pre-quarter id, and
+    # session numbers step by exactly 1 across a client's exported sessions.
+    # Keyed on every event, not session_start: A3 deliberately drops session_start.
+    per_client = {}
+    for r in ev:
+        per_client.setdefault(r["user_pseudo_id"], {})[int(r["ga_session_id"])] = int(r["ga_session_number"])
+    first_num, minted, steps_bad = {}, {}, 0
+    for c, ss in per_client.items():
+        nums = [n for _, n in sorted(ss.items())]
+        first_num[c], minted[c] = nums[0], int(c.split(".")[1])
+        steps_bad += sum(1 for a_, b_ in zip(nums, nums[1:]) if b_ != a_ + 1)
+    q_start_epoch = 1782878400   # 2026-07-01 00:00 America/New_York
+    r1_bad = sum(1 for c, n in first_num.items() if n > 1 and minted[c] >= q_start_epoch)
+    check("4", "History without exported sessions has a pre-quarter client id (R1 guard)", r1_bad, r1_bad == 0, "0")
+    check("4", "Session numbers step by 1 across a client's exported sessions", steps_bad, steps_bad == 0, "0")
     buyers = {}
     for o in orders:
         buyers[o["uid"]] = buyers.get(o["uid"], 0) + 1

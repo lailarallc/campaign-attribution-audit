@@ -26,6 +26,8 @@ def main():
             gz.write((header + buf.getvalue()).encode("utf-8"))
         print(f"wrote {name.name} ({name.stat().st_size / 1e6:.1f} MB)")
     shutil.copy(ROOT / "data" / "spend.csv", OUT / "spend.csv")
+    for name in ("seed_log.csv.gz", "sessions.csv.gz", "orders.csv.gz"):   # what the hygiene ledger reads
+        shutil.copy(ROOT / "data" / "truth" / name, OUT / ("truth_" + name))
 
 
 if __name__ == "__main__":

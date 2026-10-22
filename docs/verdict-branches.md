@@ -65,7 +65,7 @@ In branch B3, the second line is replaced by the B3 body.
 
 (If the list is empty: "No campaign ranks in the top {k} under all four rules.")
 
-> **Unattributable:** {s}% of conversions, ${d} in revenue, reach no campaign or channel at all. {t}% of those got there through a tracking defect, seeded at the published or stated rate listed below.
+> **Unattributable:** {s}% of conversions, ${d} in revenue, reach no campaign and no traceable source: Direct, Unassigned, (not set) or an unmatched campaign name. _(Corrected 2026-10-22, third pass S6: "or channel at all" was false for Direct-only paths, since Direct is a GA4 channel.)_ {t}% of those got there through a tracking defect, seeded at the published or stated rate listed below.
 
 > **GA4:** Since November 2023, GA4 offers no first-click, linear or position-based model. Its default is data-driven attribution, which cannot be reproduced outside Google. These four rules can be, and they bracket it.
 

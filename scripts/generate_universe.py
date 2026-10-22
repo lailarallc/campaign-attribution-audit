@@ -143,6 +143,7 @@ CATALOG = [  # invented products (item_id, slug, price)
 ]
 CATALOG_W = [9, 7, 5, 6, 5, 3, 4, 4, 6, 4, 3, 3, 1.5, 5, 5]
 PRODUCT_PAGES = ["/products/" + c[1] for c in CATALOG]
+PRODUCT_BY_SLUG = {c[1]: c for c in CATALOG}
 COLLECTIONS = ["/collections/chili-crisp", "/collections/gift-boxes", "/collections/spice-blends",
                "/collections/preserves", "/collections/all", "/pages/our-kitchen", "/collections/hot-honey"]
 LANDING = {   # F10: per campaign (falls back to sub-channel)
@@ -383,7 +384,7 @@ def main():
     late = q_end - timedelta(hours=2)
     for s in sessions:   # R7: nothing may spill past midnight into Q4
         if late <= s["ts"] < q_end:
-            shift = (late - timedelta(minutes=rng.randint(10, 300))) - s["ts"]
+            shift = (q_end - timedelta(hours=rng.uniform(3, 16))) - s["ts"]
             s["ts"] += shift
             if s["sid"] in order_by_sid:
                 order_by_sid[s["sid"]]["ts"] += shift
@@ -648,7 +649,8 @@ def main():
         funnel = 4 if o else (3 if ev.random() < 0.025 else 2 if ev.random() < 0.05 else 1 if ev.random() < 0.22 else 0)
         item = o["lines"][0][0] if o else wpick(ev, list(zip(CATALOG, CATALOG_W)))
         if o:   # an order's funnel products are its own lines (R5)
-            cart_items = list(o["lines"])[:4]
+            cart_items = list(o["lines"])
+            ev.shuffle(cart_items)
         else:
             if s.get("force_cart"):
                 funnel = max(funnel, 2)
@@ -678,6 +680,10 @@ def main():
                 if funnel >= 2:
                     push(tt + timedelta(seconds=ev.uniform(4, 40)), "add_to_cart", base, SITE + path, ref,
                          value=f"{ci[2] * qn:.2f}", currency="USD", items=f"{ci[0]}:{qn}:{ci[2]:.2f}")
+            elif path.startswith("/products/"):   # browsing a product page fires view_item too (S4)
+                pi = PRODUCT_BY_SLUG[path.split("/products/")[1].split("?")[0]]
+                push(tt + timedelta(milliseconds=ev.randint(300, 2500)), "view_item", base, SITE + path, ref,
+                     value=f"{pi[2]:.2f}", currency="USD", items=f"{pi[0]}:1:{pi[2]:.2f}")
             if path.startswith("/checkouts/"):
                 push(tt + timedelta(milliseconds=ev.randint(200, 900)), "begin_checkout", base, SITE + path, ref,
                      currency="USD")

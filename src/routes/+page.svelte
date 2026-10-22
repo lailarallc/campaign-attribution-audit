@@ -101,8 +101,8 @@
 				{/if}
 			</p>
 			<p>
-				<strong>Unattributable:</strong> {pct(site.s, 1)} of conversions, {usd(site.d)} in revenue, reach no campaign or
-				channel at all. {pct(site.t)} of those got there through a tracking defect, seeded at the published or stated rate
+				<strong>Unattributable:</strong> {pct(site.s, 1)} of conversions, {usd(site.d)} in revenue, reach no campaign and
+				no traceable source: Direct, Unassigned, (not set) or an unmatched campaign name. {pct(site.t)} of those got there through a tracking defect, seeded at the published or stated rate
 				listed below.
 			</p>
 			<p>
@@ -311,7 +311,10 @@
 			<a href="/data/events_2026-08.csv.gz" download>August</a>, <a href="/data/events_2026-09.csv.gz" download>September</a>
 			({site.events.toLocaleString('en-US')} events; joined, their rows hash to SHA-256
 			<code class="hash">{site.manifest_sha_events.slice(0, 16)}…</code>), and the daily
-			<a href="/data/spend.csv" download>spend table</a>. Every number on this page comes from those two files.
+			<a href="/data/spend.csv" download>spend table</a>. Every attribution number on this page comes from those files. The hygiene audit counts the
+			defects the generator planted; it reads the <a href="/data/truth_seed_log.csv.gz" download>seed log</a>,
+			<a href="/data/truth_sessions.csv.gz" download>true sessions</a> and
+			<a href="/data/truth_orders.csv.gz" download>true orders</a>, published here too.
 		</p>
 		<p class="cta-row">
 			<a class="cta" href="https://lailarallc.com/campaign-analytics" onclick={fireCta}>Run this on your own GA4 export and spend sheet</a>
