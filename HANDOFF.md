@@ -60,3 +60,24 @@ design-gate §1.5: last non-direct click, top = paid campaign by attributed reve
 presentation). No code or data.
 
 **Next:** owner answers forks A–C → /plan-ceo-review.
+
+## 2026-10-22 — Built, gated, deployed (pending CI result)
+
+**Did:** Pre-registered verdict branches (ff8e41e) before any generator code. Built the
+seeded generator, engine, bounds check and static site. Ran the independent adversarial
+review three times: FAIL (F1–F13), then FAIL (R1–R8), then **PASS WITH FINDINGS** (S1–S8,
+all answered). Branch **B2**, selected mechanically. Bounds 43/43. Byte-stable. Pushed 36d720b;
+CI regenerates, verifies hashes and deploys to Pages project `campaignmath`.
+
+**State:** live-site audit by Max is the next human touchpoint. The repo stays private
+until launch.
+
+**Open / manual:**
+- Confirm the `campaignmath.lailarallc.com` custom domain is Active. The CI domain job is
+  non-fatal; if the token lacks scope, attach it in Pages > campaignmath > Custom domains.
+- GoatCounter: add campaignmath.lailarallc.com as a site (dashboard) so pageviews count.
+- Before launch: USPTO check on "Quellwood"; flip the repo public; move the OG card onto
+  the shared lailarallc.com/og generator (lailara-website manifest entry); add **Live:** to
+  the README.
+- Owner call still open: non-defect click loss (review F5). Currently zero and stated
+  on the page.
