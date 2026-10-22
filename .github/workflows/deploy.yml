@@ -1,0 +1,104 @@
+name: Deploy
+
+# Static SvelteKit build, deployed to Cloudflare Pages via the org reusable workflow.
+# The universe is NOT committed: CI regenerates it from the seed and refuses to deploy
+# unless every hash matches data/manifest.json (byte-stability is a deploy gate), the
+# engine reproduces data/results.json exactly, and the tests pass.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Regenerate, verify, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+
+      - name: Regenerate the universe from the seed
+        run: |
+          python scripts/roll_parameters.py
+          python scripts/generate_universe.py
+
+      - name: Gate — byte-identical to the committed manifest
+        run: git diff --exit-code -- data/parameters.json data/spend.csv data/manifest.json
+
+      - name: Gate — engine and page data reproduce exactly
+        run: |
+          python scripts/attribute.py
+          python scripts/build_site_data.py
+          git diff --exit-code -- data/results.json src/lib/site.json
+
+      - name: Tests
+        run: python -m unittest discover -s tests
+
+      - name: Stage downloads (export + spend table)
+        run: |
+          mkdir -p static/data
+          cp data/export/events.csv.gz data/spend.csv static/data/
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - run: npm ci
+      - run: npm run build
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: site
+          path: build
+
+  # Project name is explicit ("campaignmath"), so the repo name never lands on *.pages.dev.
+  deploy:
+    name: Deploy
+    needs: [build]
+    uses: lailarallc/reusable-workflows/.github/workflows/pages-deploy.yml@v1
+    with:
+      project_name: campaignmath
+      artifact_name: site
+    secrets: inherit
+
+  # Idempotent custom-domain attach. Non-fatal: if the org token lacks Pages-domain or
+  # DNS scope, the site is still live on campaignmath.pages.dev and the domain is one
+  # dashboard step (Pages > campaignmath > Custom domains).
+  domain:
+    name: Attach campaignmath.lailarallc.com
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    continue-on-error: true
+    steps:
+      - name: Attach domain and CNAME if missing
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          DOMAIN: campaignmath.lailarallc.com
+          PROJECT: campaignmath
+        run: |
+          api() { curl -sS -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" "$@"; }
+          base="https://api.cloudflare.com/client/v4"
+          if api "$base/accounts/$CF_ACCOUNT_ID/pages/projects/$PROJECT/domains" | grep -q "\"name\":\"$DOMAIN\""; then
+            echo "domain already attached"
+          else
+            api -X POST "$base/accounts/$CF_ACCOUNT_ID/pages/projects/$PROJECT/domains" --data "{\"name\":\"$DOMAIN\"}" \
+              | grep -q '"success":true' && echo "domain attached" || { echo "::warning::could not attach domain"; exit 1; }
+          fi
+          zone=$(api "$base/zones?name=lailarallc.com" | python3 -c 'import sys,json; r=json.load(sys.stdin)["result"]; print(r[0]["id"] if r else "")')
+          [ -n "$zone" ] || { echo "::warning::zone not visible to token"; exit 1; }
+          if api "$base/zones/$zone/dns_records?name=$DOMAIN" | grep -q "\"name\":\"$DOMAIN\""; then
+            echo "dns record exists"
+          else
+            api -X POST "$base/zones/$zone/dns_records" \
+              --data "{\"type\":\"CNAME\",\"name\":\"campaignmath\",\"content\":\"$PROJECT.pages.dev\",\"proxied\":true}" \
+              | grep -q '"success":true' && echo "cname created" || { echo "::warning::could not create CNAME"; exit 1; }
+          fi

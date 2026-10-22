@@ -433,7 +433,10 @@ def main():
                 "files": {}}
     for p in ["export/events.csv.gz", "truth/sessions.csv.gz", "truth/orders.csv.gz", "truth/seed_log.csv.gz",
               "spend.csv", "parameters.json"]:
-        manifest["files"][p] = hashlib.sha256((DATA / p).read_bytes()).hexdigest()
+        raw = (DATA / p).read_bytes()
+        if p.endswith(".gz"):   # hash content, not deflate bytes: zlib builds may compress differently
+            raw = gzip.decompress(raw)
+        manifest["files"][p] = hashlib.sha256(raw).hexdigest()
     (DATA / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({k: v for k, v in manifest.items() if k != "files"}, indent=1))
 

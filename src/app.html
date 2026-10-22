@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Campaign Math — Lailara LLC</title>
+		<meta
+			name="description"
+			content="Which campaigns actually worked, and can the data even answer that? Four transparent attribution rules and a tracking-hygiene audit on a synthetic quarter of GA4 data."
+		/>
+		<link rel="canonical" href="https://campaignmath.lailarallc.com/" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Lailara LLC" />
+		<meta property="og:url" content="https://campaignmath.lailarallc.com/" />
+		<meta property="og:title" content="Campaign Math — Lailara LLC" />
+		<meta
+			property="og:description"
+			content="Which campaigns actually worked, and can the data even answer that? Four transparent attribution rules and a tracking-hygiene audit on a synthetic quarter of GA4 data."
+		/>
+		<meta property="og:image" content="https://campaignmath.lailarallc.com/og-card.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Campaign Math by Lailara LLC — four attribution rules and a tracking-hygiene audit on synthetic GA4 data." />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Campaign Math — Lailara LLC" />
+		<meta
+			name="twitter:description"
+			content="Which campaigns actually worked, and can the data even answer that? Four transparent attribution rules and a tracking-hygiene audit on a synthetic quarter of GA4 data."
+		/>
+		<meta name="twitter:image" content="https://campaignmath.lailarallc.com/og-card.png" />
+
+		<link rel="stylesheet" href="/lailara/lailara-frame.css" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+		<!-- GoatCounter: cookieless analytics (fleet pattern, Slot Math DECISIONS 2026-08-26).
+		     One query-free pageview; the auto-pageview is suppressed so no query string leaks. -->
+		<script>
+			window.goatcounter = { no_onload: true };
+		</script>
+		<script
+			data-goatcounter="https://lailara.goatcounter.com/count"
+			async
+			src="//gc.zgo.at/count.js"
+		></script>
+		<script>
+			(function () {
+				var tries = 0;
+				(function fire() {
+					var gc = window.goatcounter;
+					if (gc && typeof gc.count === 'function' && typeof gc.get_data === 'function') {
+						var orig = gc.get_data;
+						gc.get_data = function (vars) {
+							var d = orig(vars);
+							d.p = location.pathname;
+							d.q = '';
+							return d;
+						};
+						try { gc.count({}); } finally { gc.get_data = orig; }
+						return;
+					}
+					if (tries++ < 100) setTimeout(fire, 50);
+				})();
+			})();
+		</script>
+	</body>
+</html>

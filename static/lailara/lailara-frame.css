@@ -1,0 +1,593 @@
+/*
+ * lailara-frame.css — v1.5.1
+ * Brand frame and layout kit for Lailara LLC tools.
+ * Every lailarallc.com subdomain tool includes this file.
+ *
+ * Source of truth: LAILARA_DESIGN_SYSTEM.md v2 (May 2026)
+ * Live-site reference: lailarallc.com globals.css (max-width 1200px, nav 80px)
+ *
+ * v1.5.1 - Font-weight fix (2026-08-26). fonts/source-sans-3-latin.woff2 and
+ * fonts/source-sans-3-latin-ext.woff2 were ExtraLight (usWeightClass 200)
+ * outlines shipped under the font-weight: 400 @font-face declarations, so all
+ * body text rendered a weight too light on every consumer of this kit. Replaced
+ * with correct 400-weight cuts (same unicode-range subset). No CSS/selector
+ * change - fonts-only patch. Guarded by tests/test_font_weights.py, which parses
+ * the @font-face blocks and asserts every woff2's usWeightClass matches its
+ * declared weight, so a mislabeled or byte-copied face can never ship again.
+ *
+ * v1.5.0 - Measure alignment (2026-08-26). A content column now has ONE shared
+ * right edge: --ll-content-measure (aliases --ll-body-max-width, 720px) and the
+ * .ll-column wrapper. Every text element in the column - display heading, lede,
+ * prose, footnote - wraps at that edge, so a lede can never end short of the H1
+ * above it. Motivated by the Lift Math hero, where a 15em display headline ran
+ * wider than the 720px lede beneath it. Display leads still cap line length with
+ * --ll-display-max-width, but inside the column edge. See LAILARA_DESIGN_SYSTEM.md
+ * § Typography (Measure alignment). Adoption: new tools from day one; existing
+ * tools on next touch.
+ *
+ * v1.4.0 - Measure tokens (2026-07-30). --ll-body-max-width: 720px shipped in
+ * v1.0.0 but nothing ever consumed it, so every tool hand-picked its own prose
+ * width: 660px, 640px, and ch values from 22ch to 72ch. `ch` is the width of the
+ * digit "0" (~0.5em on Source Sans), so 60ch rendered ~447px - about 45 real
+ * characters, not 60 - and prose wrapped two lines early inside a 1200px shell.
+ * Adds --ll-body-max-width-narrow/-wide, --ll-display-max-width, and .ll-measure*
+ * utilities. All 30 fleet tools were patched in place to consume the token.
+ *
+ * v1.3.0 — Base layer (2026-07-27). The frame styled .lailara-page but never
+ * body, so unstyled text fell back to Times New Roman and black, and the warm
+ * canvas did not cover the page behind the shell. Every tool vendoring an
+ * earlier release inherits that bug — re-vendor upstream before syncing.
+ *
+ * v1.2.0 — Type-scale reconciliation (2026-07-27). Wordmark corrected to the
+ * DS Brand-name step (26px/20px, was 22px). Added the DS display type-scale as
+ * shared utility classes (.ll-headline-number, .ll-section-title,
+ * .ll-benchmark-value) so tools stop hard-coding serif sizes inline and pick up
+ * the documented mobile steps. See LAILARA_DESIGN_SYSTEM.md § Type Scale.
+ *
+ * Font files: place ./fonts/ directory adjacent to this CSS file.
+ * Consumers: vendor a tagged release. Never live-link.
+ */
+
+/* ── Self-hosted fonts ────────────────────────────────────────────────────── */
+/* Place font files at ./fonts/ relative to this CSS file.                    */
+/* Dash: assets/fonts/   Static: same dir as CSS.   Jinja: static/fonts/      */
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/playfair-display-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/playfair-display-latin-700.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/playfair-display-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/playfair-display-latin-ext-700.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/source-sans-3-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/source-sans-3-latin-600.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/source-sans-3-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./fonts/source-sans-3-latin-ext-600.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+/* ── Design-system tokens ─────────────────────────────────────────────────── */
+/* All values from LAILARA_DESIGN_SYSTEM.md v2. Do not edit ad-hoc.           */
+
+:root {
+  /* Canvas — warm off-white brand signature */
+  --ll-canvas:         #f5f3ee;
+
+  /* Brand red — text and 1px rules only, never a background fill */
+  --ll-red-95:         #fce8e7;
+  --ll-red-85:         #f4b3b1;
+  --ll-red-70:         #ee8880;
+  --ll-red-65:         #e8625d;
+  --ll-red-50:         #db2418;
+  --ll-red-42:         #cc100a;  /* Lailara default */
+  --ll-red-30:         #a80d08;
+  --ll-red-20:         #8e0b07;
+  --ll-red-18:         #7a0906;
+  --ll-red-8:          #4d0604;
+
+  /* Chicago — accent blue, primary CTAs */
+  --ll-chicago-95:     #e8eaf4;
+  --ll-chicago-85:     #c5cbe6;
+  --ll-chicago-70:     #8e9ad0;
+  --ll-chicago-60:     #6474c0;
+  --ll-chicago-55:     #475ed1;
+  --ll-chicago-40:     #3348a8;
+  --ll-chicago-20:     #1f2e7a;  /* primary button fill */
+  --ll-chicago-10:     #141e52;
+  --ll-chicago-5:      #0a0f29;
+
+  /* Hong Kong — teal, positive data */
+  --ll-hk-95:          #e4f5f0;
+  --ll-hk-85:          #b5e4d8;
+  --ll-hk-70:          #6dcdb5;
+  --ll-hk-55:          #35b595;
+  --ll-hk-45:          #1fa282;
+  --ll-hk-35:          #158f75;  /* Lailara default */
+  --ll-hk-25:          #0e6e5a;
+  --ll-hk-20:          #0c6552;
+  --ll-hk-15:          #0a5c4b;
+  --ll-hk-5:           #063d32;
+
+  /* Tokyo — berry/rose, risk and negative data */
+  --ll-tokyo-95:       #fbe9ed;
+  --ll-tokyo-85:       #f3c1cb;
+  --ll-tokyo-70:       #e68a9a;
+  --ll-tokyo-55:       #d9506e;
+  --ll-tokyo-45:       #cc3a59;
+  --ll-tokyo-40:       #b82d4a;  /* Lailara default */
+  --ll-tokyo-30:       #94243c;
+  --ll-tokyo-20:       #7e1f34;
+  --ll-tokyo-15:       #6e1a2c;
+  --ll-tokyo-5:        #470f1c;
+
+  /* Singapore — orange, operational/activity */
+  --ll-sg-95:          #fdeee0;
+  --ll-sg-85:          #fbdabc;
+  --ll-sg-80:          #f9c99a;
+  --ll-sg-70:          #f6b97c;
+  --ll-sg-65:          #f4a85c;
+  --ll-sg-55:          #ee8a2a;  /* Lailara default */
+  --ll-sg-45:          #c87222;
+  --ll-sg-35:          #a05a1a;
+  --ll-sg-20:          #7a3d10;
+  --ll-sg-8:           #4a2508;
+
+  /* New York — amber, reserve only */
+  --ll-ny-95:          #fef5d8;
+  --ll-ny-80:          #fce48e;
+  --ll-ny-65:          #f9d454;
+  --ll-ny-55:          #f9c31f;  /* Lailara default */
+  --ll-ny-45:          #d4a518;
+  --ll-ny-35:          #a88312;
+  --ll-ny-20:          #7a5e0a;
+  --ll-ny-8:           #4a3806;
+
+  /* London — greyscale */
+  --ll-london-95:      #f2f2f2;
+  --ll-london-90:      #e0e0e0;
+  --ll-london-85:      #d9d9d9;
+  --ll-london-70:      #b3b3b3;
+  --ll-london-40:      #666666;
+  --ll-london-35:      #595959;
+  --ll-london-20:      #333333;
+  --ll-london-10:      #1a1a1a;
+  --ll-london-5:       #0d0d0d;
+
+  /* Dark card tokens */
+  /* Print paper. Not a palette family — the DS replaces London-100 with the
+     warm canvas for screen, and real paper supplies its own warmth. Declared
+     here so the print block has a token instead of a raw literal. */
+  --ll-paper:          #ffffff;
+
+  --ll-card-bg:        #1a1a1a;
+  --ll-card-text:      #ffffff;
+  --ll-card-subtitle:  #d8d8d8;
+  --ll-card-muted:     #9a9a9a;
+  --ll-card-border:    rgba(255, 255, 255, 0.12);
+  --ll-card-item:      #ededed;
+
+  /* Typography */
+  --ll-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --ll-sans:  'Source Sans 3', 'Source Sans Pro', 'Helvetica Neue', Helvetica,
+              Arial, sans-serif;
+
+  /* Layout — from lailarallc.com globals.css (authoritative over design-spec 900px) */
+  --ll-max-width:      1200px;
+  --ll-body-max-width: 720px;
+  --ll-body-max-width-narrow: 560px;  /* helper text, captions, form hints  */
+  --ll-body-max-width-wide:   900px;  /* wide narrative, changelogs         */
+  --ll-display-max-width:      18em;  /* hero/display leads - em tracks size */
+  --ll-content-measure: var(--ll-body-max-width);  /* one shared column edge - heading + prose + footnote (.ll-column) */
+  --ll-radius:         2px;
+  --ll-section-gap:    60px;
+  --ll-nav-height:     80px;
+
+  /* Spacing scale (4px base) */
+  --ll-space-xxs:  2px;
+  --ll-space-xs:   4px;
+  --ll-space-sm:   8px;
+  --ll-space-md:   12px;
+  --ll-space-base: 16px;
+  --ll-space-lg:   24px;
+  --ll-space-xl:   32px;
+  --ll-space-2xl:  48px;
+  --ll-space-3xl:  60px;
+
+  /* Motion */
+  --ll-duration-fast:   100ms;
+  --ll-duration-normal: 200ms;
+  --ll-duration-slow:   350ms;
+  --ll-ease-out:    cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ll-ease-in:     cubic-bezier(0.4, 0.0, 1, 1);
+  --ll-ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+/* The frame styled .lailara-page but never body, so anything a tool did not
+ * style explicitly inherited the browser defaults instead of the brand: serif
+ * fallback (Times New Roman) for type, black for text, and white behind the
+ * page shell wherever it does not reach.  DS: body is Source Sans 3 on the warm
+ * canvas, and the serif/sans boundary is strict.
+ * Deliberately sets no font-size — tools size their own text, and imposing the
+ * 17px body step here would reflow every consumer of this frame. */
+
+html,
+body {
+  background-color: var(--ll-canvas);
+}
+
+body {
+  font-family: var(--ll-sans);
+  color: var(--ll-london-20);
+}
+
+/* ── Page shell ───────────────────────────────────────────────────────────── */
+
+.lailara-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ll-canvas);
+}
+
+.lailara-main {
+  flex: 1;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────────── */
+
+.lailara-header {
+  background-color: var(--ll-canvas);
+  border-bottom: 1px solid var(--ll-london-85);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.lailara-nav-inner {
+  max-width: var(--ll-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: var(--ll-nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.lailara-wordmark {
+  font-family: var(--ll-serif);
+  font-size: 26px;  /* DS Brand-name step (desktop); 20px mobile below */
+  font-weight: 700;
+  color: var(--ll-london-5);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lailara-wordmark:hover {
+  color: var(--ll-red-42);
+  text-decoration: none;
+}
+
+.lailara-wordmark:visited {
+  color: var(--ll-london-5);
+}
+
+.lailara-tool-name {
+  font-family: var(--ll-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ll-london-35);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+/* ── Content container ────────────────────────────────────────────────────── */
+
+.lailara-container {
+  max-width: var(--ll-max-width);
+  margin: 0 auto;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ── Display type scale ───────────────────────────────────────────────────── */
+/* The DS serif display steps, as shared classes so tools don't hard-code sizes  */
+/* inline (inline styles can't carry the mobile @media step). Values and mobile  */
+/* steps are from LAILARA_DESIGN_SYSTEM.md § Type Scale. Weight 700, serif.       */
+
+.ll-headline-number {
+  font-family: var(--ll-serif);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.ll-section-title {
+  font-family: var(--ll-serif);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.ll-benchmark-value {
+  font-family: var(--ll-serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+@media (max-width: 640px) {
+  .lailara-wordmark    { font-size: 20px; }
+  .ll-headline-number  { font-size: 44px; }
+  .ll-section-title    { font-size: 18px; }
+  .ll-benchmark-value  { font-size: 24px; }
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+
+.lailara-footer {
+  background-color: var(--ll-card-bg);
+  margin-top: auto;
+}
+
+.lailara-footer-inner {
+  max-width: var(--ll-max-width);
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.lailara-footer p {
+  font-family: var(--ll-sans);
+  font-size: 13px;
+  color: var(--ll-card-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.lailara-footer a {
+  color: var(--ll-card-muted);
+  text-decoration: underline;
+}
+
+.lailara-footer a:hover {
+  color: var(--ll-card-text);
+}
+
+.lailara-footer-note {
+  font-family: var(--ll-sans);
+  font-size: 12px;
+  color: var(--ll-card-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── Mobile fix block A — Dash / Plotly pattern ───────────────────────────── */
+/* Plotly Dash ships with no mobile constraints. These rules fill that gap.    */
+
+@media (max-width: 640px) {
+  .lailara-container {
+    padding: 32px 16px;
+    overflow-x: hidden;
+  }
+
+  /* Plotly chart containers */
+  .js-plotly-plot,
+  .plotly,
+  [class*="dash-graph"],
+  .dash-graph > div {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Dash DataTable */
+  .dash-table-container,
+  .dash-spreadsheet-container {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Dash filter controls */
+  .Select,
+  .Select-control,
+  .rc-slider,
+  .VirtualizedSelect {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Dash row-based panel layouts */
+  .row,
+  [class*="dash-tabs"] {
+    flex-wrap: wrap !important;
+  }
+}
+
+/* ── Mobile fix block B — Pages / static HTML pattern ────────────────────── */
+/* Fixes text overflow common in CF Pages tools and Jinja-templated tools.    */
+
+@media (max-width: 640px) {
+  /* Prevent prose overflow */
+  p, h1, h2, h3, h4, h5, h6,
+  li, dt, dd, td, th, label,
+  figcaption, blockquote, caption {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  /* Tables: scroll instead of overflow */
+  .lailara-table-wrap,
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  table {
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  /* Form elements */
+  input, textarea, select, button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Images and embeds */
+  img, video, iframe, embed, object {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Header: allow wrap at very narrow viewports */
+  .lailara-nav-inner {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: var(--ll-nav-height);
+    padding: 12px 16px;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .lailara-tool-name {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+/* ── Print safety ─────────────────────────────────────────────────────────── */
+
+@media print {
+  /* Hide brand chrome; let the tool's content print cleanly */
+  .lailara-header,
+  .lailara-footer {
+    display: none;
+  }
+
+  /* Canvas is screen-only — paper provides its own warmth */
+  body,
+  .lailara-page,
+  .lailara-container {
+    background-color: var(--ll-paper) !important;
+  }
+
+  .lailara-container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+/* -- Measure ---------------------------------------------------
+   Never hand-pick a prose width, and never use `ch` outside a
+   monospace block. `ch` is the width of the digit "0" -- on Source
+   Sans that is ~0.5em, so `60ch` renders ~447px (about 45 real
+   characters), not 60. `rem` is no safer: it inherits the visitor's
+   browser font-size setting, which is not 16px for everyone.
+   Use these tokens for every block of running text.            */
+
+.ll-measure         { max-width: var(--ll-body-max-width); }
+.ll-measure-narrow  { max-width: var(--ll-body-max-width-narrow); }
+.ll-measure-wide    { max-width: var(--ll-body-max-width-wide); }
+.ll-measure-display { max-width: var(--ll-display-max-width); }
+
+/* -- Measure alignment (one column, one edge) ------------------
+   Put .ll-column on the wrapper that holds a heading and the text
+   under it. Everything inside wraps at the same right edge, so a
+   lede never ends short of the H1 above it. Prefer this over
+   giving each block its own .ll-measure and hoping the numbers
+   line up. A display lead inside the column may still cap its own
+   line length with .ll-measure-display -- em tracks type size --
+   but that cap sits inside this edge, never wider than it.
+   Motivating instance: the Lift Math hero (a 15em headline that
+   overran its 720px lede). See LAILARA_DESIGN_SYSTEM.md
+   § Typography (Measure alignment).                           */
+
+.ll-column { max-width: var(--ll-content-measure); }
