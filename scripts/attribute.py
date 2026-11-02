@@ -84,13 +84,26 @@ def attribute_rows(rows, names):
             for k, w in cmlib.split_credit(path, rule).items():
                 credit[rule][k] = credit[rule].get(k, 0.0) + w * p["value"]
                 credit_n[rule][k] = credit_n[rule].get(k, 0.0) + w
-    lc = {k: (round(credit_n["last_click"][k]), credit["last_click"][k]) for k in credit["last_click"]}
     return {"sessions": sess, "convs": convs, "raw_purchases": raw, "paths": paths, "credit": credit,
-            "credit_n": credit_n, "last_click_by_campaign": lc}
+            "credit_n": credit_n}
+
+
+def select_branch(tops, roas_by_campaign, first_rev, last_rev):
+    """Pre-registered verdict legs and branch (docs/verdict-branches.md section 1).
+    tops: rule -> sorted list of top paid campaign ids (ties kept). roas_by_campaign: id -> [ROAS per rule].
+    first_rev / last_rev: revenue per paid campaign, same order, for Kendall tau-b."""
+    leg1 = all(tops[r] == tops["last_click"] for r in cmlib.RULES)
+    wide = [c for c, vals in roas_by_campaign.items() if min(vals) == 0 or max(vals) / min(vals) >= 1.5]
+    leg2 = len(wide) < 3
+    tau = cmlib.kendall_tau_b(first_rev, last_rev)
+    leg3 = tau >= 0.6
+    branch = "BANK" if (leg1 and leg2 and leg3) else ("B1" if not leg1 else "B2")
+    return leg1, wide, leg2, tau, leg3, branch
 
 
 def main():
-    daily = list(csv.DictReader(open(DATA / "spend.csv", encoding="utf-8")))
+    with open(DATA / "spend.csv", encoding="utf-8", newline="") as f:
+        daily = list(csv.DictReader(f))
     spend = []   # the spend table is daily per campaign; the rules work on quarter totals
     for r in daily:
         if not spend or spend[-1]["campaign_id"] != r["campaign_id"]:
@@ -134,17 +147,10 @@ def main():
         ranks[rule] = {c: order.index(c) + 1 for c in order}
         best = by_cid[order[0]]["revenue"][rule]
         tops[rule] = sorted(c for c in paid_ids if by_cid[c]["revenue"][rule] == best)
-    leg1 = all(tops[r] == tops["last_click"] for r in cmlib.RULES)
-    wide = []
-    for c in paid_ids:
-        vals = [by_cid[c]["roas"][r] for r in cmlib.RULES]
-        if min(vals) == 0 or max(vals) / min(vals) >= 1.5:
-            wide.append(c)
-    leg2 = len(wide) < 3
-    tau = cmlib.kendall_tau_b([by_cid[c]["revenue"]["first_click"] for c in paid_ids],
-                              [by_cid[c]["revenue"]["last_click"] for c in paid_ids])
-    leg3 = tau >= 0.6
-    branch = "BANK" if (leg1 and leg2 and leg3) else ("B1" if not leg1 else "B2")
+    leg1, wide, leg2, tau, leg3, branch = select_branch(
+        tops, {c: [by_cid[c]["roas"][r] for r in cmlib.RULES] for c in paid_ids},
+        [by_cid[c]["revenue"]["first_click"] for c in paid_ids],
+        [by_cid[c]["revenue"]["last_click"] for c in paid_ids])
 
     # ---- pinned measures (docs/verdict-branches.md section 2) ----
     total_rev = sum(p["value"] for p in res["convs"])
@@ -338,6 +344,7 @@ def hygiene_ledger(truth, campaigns):
                             if e["detail"] == "paid")
         out.append({"class": cls, "taxonomy": num, "label": label, "documented_case": case,
                     "page_eligible": page, "seeded_at": RATES[cls], "instances": len(entries),
+                    "instances_path_neutral": sum(1 for e in entries if in_path_neutral(e)),
                     "revenue_affected": round(rev, 2), "spend_affected": round(spend_hit, 2)})
     return out
 

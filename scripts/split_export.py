@@ -1,6 +1,7 @@
 """Split the event export into one download per month (Cloudflare Pages caps files at 25 MB).
 Concatenating the three files' rows (one header) reproduces data/export/events.csv.gz exactly.
-Output: static/data/events_2026-07.csv.gz, _08, _09 plus static/data/spend.csv.
+Output: static/data/events_2026-07.csv.gz, _08, _09, static/data/spend.csv and the three
+data/truth/*.csv.gz files copied as static/data/truth_*.csv.gz.
 """
 
 import gzip

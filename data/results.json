@@ -1256,6 +1256,7 @@
    "page_eligible": true,
    "seeded_at": "6% of paid-social + email sessions",
    "instances": 4234,
+   "instances_path_neutral": 0,
    "revenue_affected": 27327.8,
    "spend_affected": 0.0
   },
@@ -1267,6 +1268,7 @@
    "page_eligible": false,
    "seeded_at": "12% of tagged sessions",
    "instances": 8657,
+   "instances_path_neutral": 0,
    "revenue_affected": 57042.95,
    "spend_affected": 0.0
   },
@@ -1278,6 +1280,7 @@
    "page_eligible": true,
    "seeded_at": "2% of tagged sessions",
    "instances": 1483,
+   "instances_path_neutral": 0,
    "revenue_affected": 10529.2,
    "spend_affected": 0.0
   },
@@ -1289,6 +1292,7 @@
    "page_eligible": true,
    "seeded_at": "1% of sessions",
    "instances": 2480,
+   "instances_path_neutral": 0,
    "revenue_affected": 14005.45,
    "spend_affected": 0.0
   },
@@ -1300,6 +1304,7 @@
    "page_eligible": true,
    "seeded_at": "3% of purchases",
    "instances": 152,
+   "instances_path_neutral": 0,
    "revenue_affected": 14160.15,
    "spend_affected": 0.0
   },
@@ -1311,6 +1316,7 @@
    "page_eligible": true,
    "seeded_at": "0.5% of purchases",
    "instances": 35,
+   "instances_path_neutral": 0,
    "revenue_affected": 3136.3,
    "spend_affected": 0.0
   },
@@ -1322,6 +1328,7 @@
    "page_eligible": true,
    "seeded_at": "4% of purchases",
    "instances": 238,
+   "instances_path_neutral": 0,
    "revenue_affected": 23074.5,
    "spend_affected": 0.0
   },
@@ -1333,6 +1340,7 @@
    "page_eligible": true,
    "seeded_at": "3% of paid clicks / 1% of other sessions",
    "instances": 4613,
+   "instances_path_neutral": 0,
    "revenue_affected": 0.0,
    "spend_affected": 2240.27
   },
@@ -1344,6 +1352,7 @@
    "page_eligible": true,
    "seeded_at": "2% of Google Ads clicks",
    "instances": 1073,
+   "instances_path_neutral": 0,
    "revenue_affected": 2810.95,
    "spend_affected": 0.0
   },
@@ -1355,6 +1364,7 @@
    "page_eligible": true,
    "seeded_at": "Safari 30.42% of users \u00d7 return gaps over 7 days",
    "instances": 24806,
+   "instances_path_neutral": 16678,
    "revenue_affected": 41073.8,
    "spend_affected": 0.0
   },
@@ -1366,6 +1376,7 @@
    "page_eligible": true,
    "seeded_at": "+20% over GA4 last-click",
    "instances": 12,
+   "instances_path_neutral": 0,
    "revenue_affected": 42504.49,
    "spend_affected": 0.0
   }

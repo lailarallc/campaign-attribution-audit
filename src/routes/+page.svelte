@@ -30,7 +30,9 @@
 	const Rg = { w: 860, rowH: 34, top: 36, left: 250, right: 30 };
 	const roasH = Rg.top + paid.length * Rg.rowH + 30;
 	const rx = (v) => Rg.left + (v / maxRoas) * (Rg.w - Rg.left - Rg.right);
-	const byRoas = [...paid].sort((a, b) => b.roas_hi / b.roas_lo - a.roas_hi / a.roas_lo);
+	// A zero low end ranks widest, as in attribute.py's ratio().
+	const spread = (c) => (c.roas_lo ? c.roas_hi / c.roas_lo : Infinity);
+	const byRoas = [...paid].sort((a, b) => spread(b) - spread(a));
 	const ticks = Array.from({ length: maxRoas + 1 }, (_, i) => i);
 
 	const totalUntraced = paid.reduce((a, c) => a + c.untraced, 0);
@@ -128,7 +130,7 @@
 		<h2 id="bump-h" class="ll-section-title">Rank of each paid campaign under each rule</h2>
 		<p class="sub">Ranked by attributed revenue. Highlighted lines move two or more places between rules.</p>
 		<div class="scroll">
-			<svg viewBox="0 0 {B.w} {bumpH}" role="img" aria-label="Rank of 12 paid campaigns under four attribution rules. {X} ranks first under all four; {site.n} campaigns move two or more places.">
+			<svg viewBox="0 0 {B.w} {bumpH}" role="img" aria-label="Rank of {site.m} paid campaigns under four attribution rules.{site.branch === 'B1' ? '' : ` ${X} ranks first under all four;`} {site.n} campaigns move two or more places.">
 				{#each RULES as r, i}
 					<text x={colX(i)} y="20" class="axis" text-anchor="middle">{site.rule_labels[r]}</text>
 				{/each}
@@ -213,7 +215,7 @@
 			Direct visits, and {usd(site.d_unattr_touch)} whose every tracked visit is Unassigned, (not set) or unmatched.
 			The last-click "Unassigned, (not set), unmatched" bucket ({usd(site.lc_unattr)}) also holds
 			{usd(site.lc_unattr - site.d_unattr_touch)} of purchases whose last visit was untraceable but an earlier visit
-			carried a campaign, which the other three rules credit.
+			had a traceable source (a campaign, or an organic or referral channel), which the other three rules credit.
 		</p>
 	</section>
 
@@ -234,7 +236,7 @@
 					<p class="card-sub">{h.class === 'A9' ? 'more revenue in platform reports than in GA4' : h.class === 'A4a' ? 'of revenue double-counted in the raw export' : 'of revenue on journeys it touched'}</p>
 					<dl>
 						<dt>Seeded at</dt><dd>{h.seeded_at}</dd>
-						<dt>Results in</dt><dd>{h.instances.toLocaleString('en-US')} instance{h.instances === 1 ? '' : 's'}</dd>
+						<dt>Results in</dt><dd>{h.instances.toLocaleString('en-US')} instance{h.instances === 1 ? '' : 's'}{#if h.instances_path_neutral}; {h.instances_path_neutral.toLocaleString('en-US')} of them fall before the quarter and change no recorded path{/if}</dd>
 						<dt>Documented case</dt><dd>{h.documented_case}</dd>
 					</dl>
 				</article>
@@ -275,7 +277,7 @@
 						<tr>
 							<td><code>{c.name}</code></td><td class="num">{c.clicks.toLocaleString('en-US')}</td>
 							<td class="num">{c.matched.toLocaleString('en-US')}</td>
-							<td class="num">{(c.clicks - c.matched).toLocaleString('en-US')}</td>
+							<td class="num">{Math.max(0, c.clicks - c.matched).toLocaleString('en-US')}</td>
 							<td class="num">{usd(c.untraced)}</td>
 						</tr>
 					{/each}
@@ -309,7 +311,9 @@
 		<p>
 			<strong>Rates.</strong> Each defect rate is either published (cited) or a stated assumption bounded by published
 			figures. None was chosen to make the result dramatic, and none was adjusted after the result was seen. The verdict
-			copy and the rule for choosing it were committed before the data was generated.
+			copy and the rule for choosing it were committed before the data was generated. After generation, review found
+			copy clauses that were false against the data and one measure defined differently from its wording; each was
+			corrected, and each correction is dated and logged in <code>docs/verdict-branches.md</code>.
 		</p>
 		<p>
 			<strong>Check it by hand.</strong>

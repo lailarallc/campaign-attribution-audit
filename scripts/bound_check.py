@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+import cmlib
 from attribute import read_gz
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,7 +31,8 @@ def main():
     truth_by_sid = {t["sid"]: t for t in sess}
     orders = read_gz(DATA / "truth" / "orders.csv.gz")
     log = read_gz(DATA / "truth" / "seed_log.csv.gz")
-    daily = list(csv.DictReader(open(DATA / "spend.csv", encoding="utf-8")))
+    with open(DATA / "spend.csv", encoding="utf-8", newline="") as f:
+        daily = list(csv.DictReader(f))
     spend = {}
     for r in daily:
         a = spend.setdefault(r["campaign_id"], {"campaign_id": r["campaign_id"], "platform": r["platform"],
@@ -137,7 +139,6 @@ def main():
           f[0] >= f[1] >= f[2] >= f[3], "monotone")
     # Per-channel funnel (pinned per channel). Seeded A5 gateway-return sessions are excluded:
     # a purchase with no begin_checkout is that defect's real signature (DECISIONS 2026-10-22).
-    import cmlib
     sess_ch, gw_sessions = {}, set()
     for r in ev:
         if r["event_name"] == "session_start":
@@ -176,7 +177,7 @@ def main():
                 fv[r["campaign"].lower()][1] += 1
     # Retention channels reach only users with history. A first visit there is legitimate only when
     # Safari ITP (A8) minted a new client id for a returning user.
-    a8_clients = {next(t["client_id"] for t in [truth_by_sid[e["sid"]]]) for e in log if e["class"] == "A8"}
+    a8_clients = {truth_by_sid[e["sid"]]["client_id"] for e in log if e["class"] == "A8"}
     for camp in ("qw_meta_rt_cart-abandoners", "qw_email_abandoned-cart", "qw_meta_rt_site-visitors"):
         n, f1 = fv.get(camp, [0, 0])
         stray = sum(1 for r in ev if r["event_name"] == "session_start" and r["campaign"].lower() == camp
@@ -227,7 +228,7 @@ def main():
         "A6_paid": (bot_paid / (paid_h + bot_paid), 0.03),
     }
     for c, (v, t) in realized.items():
-        # tolerance: 3 binomial standard errors (A2a/A2b are conditional on surviving A1, so slightly below)
+        # tolerance: 25% of the target or 0.3pp, whichever is larger (A2a/A2b are conditional on surviving A1, so slightly below)
         check("5", f"Realized rate {c}", round(v, 4), abs(v - t) <= max(0.003, 0.25 * t), f"{t} (+/-25% or 0.3pp)")
 
     paid_rows = [r for r in spend if r["spend"] > 0]

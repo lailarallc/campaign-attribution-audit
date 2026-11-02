@@ -136,4 +136,6 @@ def kendall_tau_b(x, y):
             else:
                 disc += 1
     denom = ((conc + disc + tx) * (conc + disc + ty)) ** 0.5
+    # One side fully tied leaves tau-b undefined; it is read as no disagreement (1.0). Unreachable with
+    # spend-weighted revenues, and pinned by a test so a change is deliberate.
     return (conc - disc) / denom if denom else 1.0

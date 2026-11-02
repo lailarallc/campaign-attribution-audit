@@ -65,5 +65,3 @@ jobs:
       project_name: campaignmath
       artifact_name: site
     secrets: inherit
-
-  # Custom domain is attached (2026-11-02). Repairs go through the manual cf-domain.yml workflow.

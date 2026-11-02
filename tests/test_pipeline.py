@@ -1,5 +1,5 @@
 """Behavior tests for the pinned definitions (docs/design-gate.md 1.5) and the
-pre-registered branch selection (docs/verdict-branches.md 1). Run:
+pre-registered branch selection (docs/verdict-branches.md 1), at each threshold. Run:
     python -m unittest discover -s tests
 """
 
@@ -101,6 +101,58 @@ class Kendall(unittest.TestCase):
         # scipy.stats.kendalltau([1,2,2,3],[1,2,3,3]).statistic == 0.8 (tau-b)
         self.assertAlmostEqual(cmlib.kendall_tau_b([1, 2, 2, 3], [1, 2, 3, 3]), 0.8)
 
+    def test_ties_on_one_side_only(self):
+        # scipy.stats.kendalltau([1,1,2,3],[1,2,3,4]).statistic == 0.9128709 (tau-b)
+        self.assertAlmostEqual(cmlib.kendall_tau_b([1, 1, 2, 3], [1, 2, 3, 4]), 0.9128709, places=6)
+        self.assertAlmostEqual(cmlib.kendall_tau_b([1, 2, 3, 4], [1, 1, 2, 3]), 0.9128709, places=6)
+
+    def test_fully_tied_side_reads_as_agreement(self):
+        self.assertEqual(cmlib.kendall_tau_b([5, 5, 5], [1, 2, 3]), 1.0)
+
+
+class BranchSelection(unittest.TestCase):
+    """docs/verdict-branches.md section 1, at each threshold."""
+    agree = {r: ["G01"] for r in cmlib.RULES}
+    narrow = {"G01": [2.0, 2.0, 2.0, 2.0], "G02": [1.0, 1.0, 1.0, 1.0], "G03": [1.0, 1.4, 1.2, 1.2]}
+    same = ([3, 2, 1], [3, 2, 1])
+
+    def branch(self, tops=None, roas=None, ranks=None):
+        return attribute.select_branch(tops or self.agree, roas or self.narrow, *(ranks or self.same))[-1]
+
+    def test_all_legs_hold_is_bank(self):
+        self.assertEqual(self.branch(), "BANK")
+
+    def test_different_top_is_b1(self):
+        self.assertEqual(self.branch(tops=self.agree | {"first_click": ["G02"]}), "B1")
+
+    def test_tied_top_differs_from_single_top(self):
+        self.assertEqual(self.branch(tops=self.agree | {"linear": ["G01", "G02"]}), "B1")
+
+    def test_ratio_exactly_1_5_counts_as_wide(self):
+        roas = {c: [1.0, 1.5, 1.2, 1.2] for c in ("A", "B", "C")}
+        self.assertEqual(self.branch(roas=roas), "B2")
+
+    def test_ratio_just_under_1_5_is_narrow(self):
+        roas = {c: [1.0, 1.4999, 1.2, 1.2] for c in ("A", "B", "C")}
+        self.assertEqual(self.branch(roas=roas), "BANK")
+
+    def test_two_wide_holds_three_wide_fails(self):
+        two = {"A": [1, 2, 1, 1], "B": [1, 2, 1, 1], "C": [1, 1, 1, 1]}
+        self.assertEqual(self.branch(roas=two), "BANK")
+        self.assertEqual(self.branch(roas=two | {"C": [1, 2, 1, 1]}), "B2")
+
+    def test_zero_roas_counts_as_wide(self):
+        roas = {c: [0.0, 1.0, 1.0, 1.0] for c in ("A", "B", "C")}
+        self.assertEqual(self.branch(roas=roas), "B2")
+
+    def test_tau_below_0_6_is_b2(self):
+        # tau-b of [1,2,3,4] vs [2,1,4,3] is (4 - 2) / 6 = 1/3
+        self.assertEqual(self.branch(ranks=([1, 2, 3, 4], [2, 1, 4, 3])), "B2")
+
+    def test_tau_exactly_0_6_holds(self):
+        # five items, two discordant pairs of ten: (8 - 2) / 10 = 0.6
+        self.assertEqual(self.branch(ranks=([1, 2, 3, 4, 5], [2, 1, 4, 3, 5])), "BANK")
+
 
 class EngineOnToyExport(unittest.TestCase):
     def rows(self):
@@ -129,6 +181,22 @@ class EngineOnToyExport(unittest.TestCase):
         self.assertAlmostEqual(c["linear"]["M01"], 50.0)
         self.assertAlmostEqual(c["last_click"][cmlib.UNATTRIBUTABLE], 50.0)   # (not set) session
 
+    def test_lookback_is_90_days_inclusive(self):
+        day = 86_400
+
+        def ev(t, name, sess, camp="", txn="", value=""):
+            return {"event_timestamp": t * 1_000_000, "event_name": name, "user_pseudo_id": "u", "ga_session_id": sess,
+                    "source": "facebook" if camp else "", "medium": "paid_social" if camp else "", "campaign": camp,
+                    "transaction_id": txn, "value": value}
+        t0 = 1_000 * day
+        rows = [ev(t0 - 90 * day - 1, "session_start", 1, "qw_old"),    # one second outside the window
+                ev(t0 - 90 * day, "session_start", 2, "qw_edge"),       # exactly 90 days: inside
+                ev(t0, "purchase", 2, txn="T9", value="10.00"),
+                ev(t0 + 1, "session_start", 3, "qw_after")]             # after the purchase: outside
+        res = attribute.attribute_rows(rows, {"qw_old": "OLD", "qw_edge": "EDGE", "qw_after": "AFTER"})
+        self.assertEqual(res["credit"]["first_click"], {"EDGE": 10.0})
+        self.assertEqual(res["credit"]["last_click"], {"EDGE": 10.0})
+
 
 class GeneratedUniverse(unittest.TestCase):
     """Runs only when the universe has been generated locally."""
@@ -138,11 +206,9 @@ class GeneratedUniverse(unittest.TestCase):
             self.skipTest("run scripts/generate_universe.py and scripts/attribute.py first")
         self.r = json.loads((ROOT / "data" / "results.json").read_text(encoding="utf-8"))
 
-    def test_branch_follows_preregistered_rule(self):
-        L = self.r["legs"]
-        expected = "BANK" if (L["leg1_same_top"] and L["leg2_holds"] and L["leg3_holds"]) else \
-            ("B1" if not L["leg1_same_top"] else "B2")
-        self.assertEqual(self.r["branch"], expected)
+    def test_seeded_universe_selects_b2(self):
+        # The seeded result recorded in docs/verdict-branches.md and DECISIONS (2026-10-22).
+        self.assertEqual(self.r["branch"], "B2")
 
     def test_visit_shares_partition_revenue(self):
         m = self.r["measures"]

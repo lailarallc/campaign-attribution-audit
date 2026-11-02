@@ -52,7 +52,8 @@ def main():
     # The B2 clause "among paid campaigns, {X} takes the largest share" must be true to print.
     if R["branch"] == "B2" and not R["one_touch"]["top_is_largest_paid"]:
         raise SystemExit("B2 clause false: X is not the largest paid campaign in one-visit sales")
-    # The headline unattributable figure and the last-click bucket figures must reconcile (Max audit #3).
+    # The headline unattributable figure and the last-click bucket figures must reconcile: the page states both and
+    # explains the difference, so a mismatch would publish a false footnote.
     lc_direct = R["non_campaign_credit"]["Direct"]["last_click"]
     assert abs(lc_direct - m["d_direct_only_revenue"]) < 0.01, "Direct bucket != Direct-only paths"
     assert abs(m["d_direct_only_revenue"] + m["d_unattributable_touch_revenue"] - m["d_unattributable_revenue"]) < 0.01

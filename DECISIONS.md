@@ -192,3 +192,12 @@ When a decision is overturned:
 3. Note the link in both directions
 
 This preserves the history of why something is the way it is.
+
+## 2026-11-02 — Pre-publish code review calls
+
+- **Method copy discloses post-generation corrections.** The Rates paragraph said the verdict copy was committed before generation, which is true but omitted the four dated corrections in `docs/verdict-branches.md` (F1 repair, {u} rename, Z clause, S6). The page now says corrections were made and where they are logged. Honesty convention: the reader should not need the repo to learn the copy changed.
+- **A8 instance count shown with its caveat, not changed.** 16,678 of 24,806 A8 instances are resets before the quarter that change no recorded path. Revenue already excludes them. The count stays; the card now states the 16,678. Changing the headline count after publication would be a figure change; labeling it is not.
+- **Footnote wording.** The $8,440 remainder includes purchases whose earlier traceable visit was an organic or referral channel, not only a campaign. Wording fixed; no figure changed.
+- **Branch logic extracted to `select_branch()`** so the pre-registered thresholds are tested directly (13 new tests). Results byte-identical apart from the added `instances_path_neutral` field.
+- **`cf-domain.yml` removed.** The domain is attached; the workflow printed the account's Pages and Workers inventory to logs that become public with the repo. It stays in history for reuse.
+- **kendall_tau_b fully-tied convention kept (1.0) and pinned by test.** Unreachable with this data; changing it post-registration would alter the branch rule.
