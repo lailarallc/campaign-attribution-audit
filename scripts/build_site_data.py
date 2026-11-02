@@ -52,6 +52,10 @@ def main():
     # The B2 clause "among paid campaigns, {X} takes the largest share" must be true to print.
     if R["branch"] == "B2" and not R["one_touch"]["top_is_largest_paid"]:
         raise SystemExit("B2 clause false: X is not the largest paid campaign in one-visit sales")
+    # The headline unattributable figure and the last-click bucket figures must reconcile (Max audit #3).
+    lc_direct = R["non_campaign_credit"]["Direct"]["last_click"]
+    assert abs(lc_direct - m["d_direct_only_revenue"]) < 0.01, "Direct bucket != Direct-only paths"
+    assert abs(m["d_direct_only_revenue"] + m["d_unattributable_touch_revenue"] - m["d_unattributable_revenue"]) < 0.01
     site = {
         "quarter_label": "Q3 2026 (July 1 – September 30)",
         "branch": R["branch"],
@@ -66,6 +70,8 @@ def main():
         "u": m["u_split_share_of_multivisit"],
         "every_rule": [name(c) for c in R["every_rule_top3"]], "k": 3,
         "s": m["s_unattributable_share"], "d": m["d_unattributable_revenue"],
+        "d_direct_only": m["d_direct_only_revenue"], "d_unattr_touch": m["d_unattributable_touch_revenue"],
+        "lc_unattr": R["non_campaign_credit"]["Unattributable"]["last_click"],
         "t": m["t_defect_share_of_unattributable"],
         "conversions": m["conversions"], "revenue": m["revenue"], "raw_purchase_events": m["raw_purchase_events"],
         "orders_generated": MAN["orders"], "events": MAN["events"], "sessions": MAN["sessions_in_quarter"],

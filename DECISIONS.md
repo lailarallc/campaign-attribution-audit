@@ -97,6 +97,12 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-11-02 — Max's live-site audit: three fixes; F5 accepted as-is
+- **Footer:** now the three-lane line, verbatim from Payout Math. The design system records it as the fleet tool footer (`lailara-design-system@5c5b320`), so no new tool ships the retired single-lane line.
+- **Class 4 split:** the ledger labels the two class-4 rows 4a (duplicate purchase sends) and 4b (missing transaction_id).
+- **Unattributable figures reconciled, not a bug.** The headline `{d}` ($61,682) counts purchases no rule can credit to any campaign: Direct-only ($53,214) plus all-unattributable paths ($8,468). The last-click buckets add another $8,440: purchases whose last tracked visit was untraceable while an earlier visit carried a campaign. The page explains this where the bucket numbers sit. `build_site_data.py` now asserts the identity (Direct bucket = Direct-only; Direct-only + unattributable-touch = `{d}`).
+- **F5 (non-defect click loss): accepted as-is (owner).** The footnote's "a real account's gap would be larger" is the honest treatment. Modeling consent or ad-blocker loss would invent rates with no anchor.
+
 ### 2026-11-02 — Custom domain: stale self-claim repaired, no deletion needed
 - **Decision:** repair, don't delete. The "already associated" claim on `campaignmath.lailarallc.com` was the campaignmath Pages project's own deactivated domain entry, left by the first attach, which lacked a CNAME. Created the CNAME to `campaignmath-91v.pages.dev` and re-validated, via `cf-domain.yml` (`mode=fix`).
 - **Why:** the owner-authorized path was to remove a stale association and retry. Diagnosis showed no foreign holder, so nothing needed removing.

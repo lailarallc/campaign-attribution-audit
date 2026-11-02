@@ -114,6 +114,8 @@
   "unattributable_conversions": 694,
   "s_unattributable_share": 0.1249,
   "d_unattributable_revenue": 61682.0,
+  "d_direct_only_revenue": 53213.9,
+  "d_unattributable_touch_revenue": 8468.1,
   "p1_one_touch_rev_share": 0.4362,
   "p2_two_touch_rev_share": 0.2656,
   "p3_three_plus_rev_share": 0.2982,
@@ -1292,7 +1294,7 @@
   },
   {
    "class": "A4a",
-   "taxonomy": "4",
+   "taxonomy": "4a",
    "label": "Duplicate purchase sends",
    "documented_case": "none published",
    "page_eligible": true,
@@ -1303,7 +1305,7 @@
   },
   {
    "class": "A4b",
-   "taxonomy": "4",
+   "taxonomy": "4b",
    "label": "Missing transaction_id",
    "documented_case": "none published",
    "page_eligible": true,

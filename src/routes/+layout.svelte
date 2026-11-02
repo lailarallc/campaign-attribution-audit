@@ -17,7 +17,7 @@
 
 	<footer class="lailara-footer">
 		<div class="lailara-footer-inner">
-			<p>Built by <a href="https://lailarallc.com" target="_blank" rel="noopener">Lailara LLC</a> — data hygiene and analytics consulting for specialty food brands scaling into national retail.</p>
+			<p>Built by <a href="https://lailarallc.com" target="_blank" rel="noopener">Lailara LLC</a> — data hygiene and process hygiene across CPG retail and deduction data, campaign and web analytics, and rebate and incentive payouts.</p>
 			<p class="lailara-footer-note">
 				Quellwood Provisions is an invented brand. Its quarter of data is synthetic, generated from a fixed
 				seed with tracking defects planted at stated rates. Not a client. Figures are Q3 2026 web orders.

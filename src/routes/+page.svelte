@@ -208,6 +208,12 @@
 			{#each site.email as e, i}<code>{e.name}</code> {usdK(e.revenue.last_click)} (last-click){i < site.email.length - 1 ? '; ' : '.'}{/each}
 			Revenue credited to no campaign, last-click:
 			{#each site.buckets as b, i}{b.label} {usdK(b.revenue.last_click)}{i < site.buckets.length - 1 ? '; ' : '.'}{/each}
+			These last-click buckets and the unattributable line at the top measure different things. The top line
+			({usd(site.d)}) counts purchases that no rule can credit to any campaign: {usd(site.d_direct_only)} with only
+			Direct visits, and {usd(site.d_unattr_touch)} whose every tracked visit is Unassigned, (not set) or unmatched.
+			The last-click "Unassigned, (not set), unmatched" bucket ({usd(site.lc_unattr)}) also holds
+			{usd(site.lc_unattr - site.d_unattr_touch)} of purchases whose last visit was untraceable but an earlier visit
+			carried a campaign, which the other three rules credit.
 		</p>
 	</section>
 

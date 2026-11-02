@@ -46,6 +46,9 @@
  "k": 3,
  "s": 0.1249,
  "d": 61682.0,
+ "d_direct_only": 53213.9,
+ "d_unattr_touch": 8468.1,
+ "lc_unattr": 16908.2,
  "t": 0.2565,
  "conversions": 5556,
  "revenue": 497338.0,
@@ -639,7 +642,7 @@
  "hygiene_rest": [
   {
    "class": "A4a",
-   "taxonomy": "4",
+   "taxonomy": "4a",
    "label": "Duplicate purchase sends",
    "documented_case": "none published",
    "page_eligible": true,
@@ -672,7 +675,7 @@
   },
   {
    "class": "A4b",
-   "taxonomy": "4",
+   "taxonomy": "4b",
    "label": "Missing transaction_id",
    "documented_case": "none published",
    "page_eligible": true,
