@@ -123,5 +123,13 @@ single-lane footer; the design system now forbids it for new tools.
 (campaignmath.lailarallc.com) and the case study (lailarallc.com/work/campaign-math).
 
 **Publish gate (/publish):** secret scan over full history clean (gitleaks, 19 commits; pattern
-grep for keys/tokens/private keys: none). README real. Code review and /improve passes run
-before the flip (see below). Go-public y/n is the owner's.
+grep for keys/tokens/private keys: none). README real. Six-reviewer /ce:code-review and an
+/improve pass ran; fixes in 103480a (see DECISIONS 2026-11-02 and PLAN improvement history).
+`cf-domain.yml` is removed (still in history for reuse). Go-public y/n is the owner's.
+
+**Owner calls before the flip:**
+- Two past cf-domain run logs (41501420741, 41501235239) list the account's Pages projects,
+  Workers domains and DNS records. They become public with the repo. Delete them or accept.
+- Docs named a real client in the guardrail text: CLAUDE.md, DECISIONS.md,
+  docs/design-gate.md, docs/campaign-analytics-brief.md, and history. Accept or genericize
+  (history rewrite would need a force-push).

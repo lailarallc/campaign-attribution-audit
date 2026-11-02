@@ -42,44 +42,44 @@ Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in
 - [x] Static site built on frame v1.5.1, checked at 1440 and 375
 - [x] Deploy verified live at campaignmath.lailarallc.com (2026-11-02)
 - [x] Max's live-site audit (3 fixes shipped 2026-11-02)
-- [ ] Launch: USPTO check, repo public, shared OG card, README Live line
+- [x] USPTO screen for "Quellwood": 0 live / 0 dead (2026-11-02)
+- [x] README Live line; case study live at lailarallc.com/work/campaign-math
+- [x] Max's sign-off on tool and case study (2026-11-02)
+- [x] Pre-publish code review + /improve pass (2026-11-02)
+- [ ] Repo public (owner's y/n at /publish)
+- [ ] Shared OG card (lailara-website manifest entry, then switch og:image)
 
 ## Why this arc, why now
 
-[One or two sentences. The reason matters when you come back in three
-weeks and wonder why this was the priority.]
+Campaign Math is the flagship of the campaign and web analytics lane. A buyer cannot trust a
+ROAS figure until the rule and the tracking under it are visible; this arc ships that proof.
 
 ## Business question this arc answers
 
-[One sentence. Direct connection to the project-level business question
-in CLAUDE.md.]
+Which campaigns actually worked, and can your data even answer that question?
 
 ## Tasks
 
-Work in vertical slices — one section/feature end-to-end before moving
-to the next. Visualizations get reviewed in their own slice, not
-deferred to a polish phase.
-
-- [ ] Specific, scoped, actionable
-- [ ] Each one is a thing Claude Code could plausibly finish in one
-      session
-- [ ] If a task feels too big, break it down before adding it
-- [x] Completed items stay struck or checked, so the trail is visible
+- [x] Pin the gate, definitions and verdict branches before any data
+- [x] Build the universe, engine, bounds check and static site
+- [x] Pass the independent adversarial realism review
+- [x] Deploy to campaignmath.lailarallc.com; Max's audit fixes
+- [ ] Public flip (owner)
+- [ ] Shared OG card
 
 ## Out of scope for this arc
 
-- Things explicitly NOT being done in this round
-- Captures the decisions about what to defer
-- Prevents scope creep mid-session
+- Client mode (scoring a buyer's own export). Roadmap.
+- v2 scored against true journeys. Roadmap.
+- Non-defect click loss (review F5): accepted as zero, stated on the page.
+- SvelteKit 3 / adapter-static 4 major upgrades (deferred, 2026-11-02 improve pass).
 
 ## Definition of done for this arc
 
-- [ ] Specific, verifiable conditions
-- [ ] Not "the prose is better" — "every section's executive summary
-      has been reviewed and either approved or marked for domain
-      insertion"
-- [ ] When all of these are checked, the arc is done and a new PLAN.md
-      arc gets defined
+- [x] Gate pinned; bounds 43/43; realism review PASS WITH FINDINGS, all answered
+- [x] Live site matches HEAD; CI regenerates and hash-gates every deploy
+- [x] Max's sign-off on tool and case study
+- [ ] Repo public; README Live line resolves
 
 ---
 
@@ -102,3 +102,10 @@ Each entry records what was found, what was fixed, and when to
 check again.
 
 <!-- Entries are added by /improve — don't delete this section -->
+
+### 2026-11-02 — Improvement pass (pre-publish)
+- **Trigger:** owner-initiated, as part of the /publish gate
+- **What was reviewed:** all code (6-reviewer /ce:code-review: correctness, security, Python, testing, maintainability, standards), workflow files, deps, README, git hygiene; gitleaks over full history
+- **What was fixed:** method copy now discloses post-generation corrections; $8,440 footnote wording; A8 card states its 16,678 pre-quarter resets; `select_branch()` extracted with threshold tests (26 -> 38 tests); cf-domain.yml removed; dead code and stale comments; PLAN.md template filled; FAILURES.md backfilled
+- **Deferred:** channel_group full-label and credit_key branch tests; `secrets: inherit` -> explicit secrets (fleet pattern, org workflow); roll_parameters ctr_pct basis text (needs parameters.json regen); Frisch source on the bot footnote; spend.csv contiguity assumption; bot sessions on bad links not in seed log; GoatCounter SRI/CSP; dependency major upgrades
+- **Next review:** 2026-12-02
