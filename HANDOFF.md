@@ -116,3 +116,12 @@ per-deploy domain job (72f36b6). USPTO screen for "Quellwood": 0 live / 0 dead (
 
 **Noted, not done (fleet scope):** other tools (e.g. Slot Math) still render the retired
 single-lane footer; the design system now forbids it for new tools.
+
+## 2026-11-02 — Max's sign-off; publish gate
+
+**Sign-off:** Max's audit sign-off is given for both the tool
+(campaignmath.lailarallc.com) and the case study (lailarallc.com/work/campaign-math).
+
+**Publish gate (/publish):** secret scan over full history clean (gitleaks, 19 commits; pattern
+grep for keys/tokens/private keys: none). README real. Code review and /improve passes run
+before the flip (see below). Go-public y/n is the owner's.
