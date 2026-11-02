@@ -201,3 +201,10 @@ This preserves the history of why something is the way it is.
 - **Branch logic extracted to `select_branch()`** so the pre-registered thresholds are tested directly (13 new tests). Results byte-identical apart from the added `instances_path_neutral` field.
 - **`cf-domain.yml` removed.** The domain is attached; the workflow printed the account's Pages and Workers inventory to logs that become public with the repo. It stays in history for reuse.
 - **kendall_tau_b fully-tied convention kept (1.0) and pinned by test.** Unreachable with this data; changing it post-registration would alter the branch rule.
+
+## 2026-11-02 — History rewritten before first publication, never after
+
+- **Decision:** the guardrail text named a real client in five places (CLAUDE.md, DECISIONS.md, HANDOFF.md, docs/campaign-analytics-brief.md, docs/design-gate.md). Reworded to "any real program operator or client the owner has worked with" and history rewritten (filter-branch, text-only, tag `v0.1-foundation` carried) and force-pushed. The repo was private, unpinned, with no collaborators or forks, and 22 commits old. Same ruling as rebate-payout-validator (2026-10-16).
+- **Orphaned commits accepted.** GitHub keeps pre-rewrite commits reachable by SHA until it garbage-collects them. Old SHAs are deliberately not recorded here. Accepted on the rebate repo's reasoning: the line was a guardrail, not a disclosure, and is unreachable without a SHA recorded nowhere.
+- **Do not:** rewrite history once the repo is public or has any collaborator, fork or pin. After publication, a fix goes in a new commit.
+

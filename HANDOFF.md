@@ -127,9 +127,8 @@ grep for keys/tokens/private keys: none). README real. Six-reviewer /ce:code-rev
 /improve pass ran; fixes in 103480a (see DECISIONS 2026-11-02 and PLAN improvement history).
 `cf-domain.yml` is removed (still in history for reuse). Go-public y/n is the owner's.
 
-**Owner calls before the flip:**
-- Two past cf-domain run logs (41501420741, 41501235239) list the account's Pages projects,
-  Workers domains and DNS records. They become public with the repo. Delete them or accept.
-- Docs named a real client in the guardrail text: CLAUDE.md, DECISIONS.md,
-  docs/design-gate.md, docs/campaign-analytics-brief.md, and history. Accept or genericize
-  (history rewrite would need a force-push).
+**Owner calls before the flip (resolved 2026-11-02, rebate-repo precedent):**
+- Client name: guardrail text reworded in five places to "any real program operator or client
+  the owner has worked with"; history rewritten before first publication (DECISIONS 2026-11-02).
+- Two past cf-domain run logs list the account's Pages/Workers/DNS inventory: owner deletes them
+  (`gh run delete`) before the flip.
