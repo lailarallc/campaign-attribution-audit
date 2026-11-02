@@ -105,15 +105,18 @@ jobs:
                   print("  remove from Pages project", ref, errs(api("DELETE", f"/accounts/{A}/pages/projects/{ref}/domains/{DOM}")) or "ok")
               elif kind == "worker":
                   print("  remove Workers domain", ref, errs(api("DELETE", f"/accounts/{A}/workers/domains/{ref}")) or "ok")
-          if ("pages", PROJ) in holders:
-              print("  already on campaignmath (status above); re-validating")
-              r = api("PATCH", f"/accounts/{A}/pages/projects/{PROJ}/domains/{DOM}")
-          else:
-              r = api("POST", f"/accounts/{A}/pages/projects/{PROJ}/domains", {"name": DOM})
-          print("  attach:", "ok " + str(r.get("result", {}).get("status")) if r.get("success") else errs(r))
+          # DNS first: a Pages domain with no CNAME pointing at the project deactivates.
           if zone and sub:
               have = api("GET", f"/zones/{zone}/dns_records?name={DOM}").get("result", [])
               if not have:
                   c = api("POST", f"/zones/{zone}/dns_records",
                           {"type": "CNAME", "name": "campaignmath", "content": sub, "proxied": True})
                   print("  cname:", "ok" if c.get("success") else errs(c))
+              else:
+                  print("  cname: exists", [(x["type"], x["content"]) for x in have])
+          if ("pages", PROJ) in holders:
+              print("  already on campaignmath (status above); re-validating")
+              r = api("PATCH", f"/accounts/{A}/pages/projects/{PROJ}/domains/{DOM}")
+          else:
+              r = api("POST", f"/accounts/{A}/pages/projects/{PROJ}/domains", {"name": DOM})
+          print("  attach:", "ok " + str(r.get("result", {}).get("status")) if r.get("success") else errs(r))
