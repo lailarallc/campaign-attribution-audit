@@ -40,7 +40,7 @@ Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in
 - [x] Universe generated, byte-stable; bounds 43/43
 - [x] Independent adversarial realism review: PASS WITH FINDINGS (third pass), all findings answered
 - [x] Static site built on frame v1.5.1, checked at 1440 and 375
-- [ ] Deploy verified live at campaignmath.lailarallc.com
+- [x] Deploy verified live at campaignmath.lailarallc.com (2026-11-02)
 - [ ] Max's live-site audit
 - [ ] Launch: USPTO check, repo public, shared OG card, README Live line
 

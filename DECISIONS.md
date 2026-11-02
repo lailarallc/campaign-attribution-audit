@@ -97,6 +97,11 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-11-02 — Custom domain: stale self-claim repaired, no deletion needed
+- **Decision:** repair, don't delete. The "already associated" claim on `campaignmath.lailarallc.com` was the campaignmath Pages project's own deactivated domain entry, left by the first attach, which lacked a CNAME. Created the CNAME to `campaignmath-91v.pages.dev` and re-validated, via `cf-domain.yml` (`mode=fix`).
+- **Why:** the owner-authorized path was to remove a stale association and retry. Diagnosis showed no foreign holder, so nothing needed removing.
+- **Do not:** attach a Pages custom domain without its CNAME in the same step. A domain left without one deactivates and blocks re-adding from the dashboard.
+
 ### 2026-10-22 — Third independent pass: PASS WITH FINDINGS; realism gate cleared
 - **Verdict:** PASS WITH FINDINGS (`docs/realism-review.md`, third pass). Engine, hashes, branch and every slot were independently reproduced. Every S finding is answered in its response table.
 - **Accuracy corrections to printed claims:**

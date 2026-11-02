@@ -1,6 +1,8 @@
 # Campaign Math
 
-<!-- Repo name campaign-attribution-audit is permanent; the tool is Campaign Math. Add **Live:** once deployed. -->
+**Live:** https://campaignmath.lailarallc.com
+
+<!-- Repo name campaign-attribution-audit is permanent; the tool is Campaign Math. -->
 
 Every marketing report asserts a return on ad spend. The number rests on an attribution rule nobody chose and on tracking data with silent defects. Campaign Math scores one quarter of web orders under four transparent attribution rules (last-click, first-click, linear, position-based), shows each campaign's return on spend as a range rather than a number, and audits the tracking defects that decide how much of the data can be attributed at all.
 

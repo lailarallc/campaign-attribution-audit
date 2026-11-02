@@ -85,3 +85,18 @@ launch.
   the README.
 - Owner call still open: non-defect click loss (review F5). Currently zero and stated
   on the page.
+
+## 2026-11-02 — Custom domain live
+
+**Did:** Dashboard refused `campaignmath.lailarallc.com` ("already associated"). Diagnosed via
+a manual workflow (`.github/workflows/cf-domain.yml`, read-only by default, org secrets):
+the claim was held by the **campaignmath project itself**, status `deactivated` — the first
+CI attach registered the domain but never created the CNAME. No other Pages project or
+Workers domain held it. Fix run created the CNAME → campaignmath-91v.pages.dev and
+re-validated; domain served the build within ~15 s.
+
+**State:** LIVE at https://campaignmath.lailarallc.com (verified: page, OG card, downloads 200).
+README Live line added. Next human touchpoint: Max's live-site audit.
+
+**Still open:** GoatCounter site add; USPTO check on "Quellwood"; repo public at launch;
+shared OG card (proposed session); owner call on non-defect click loss (F5).
