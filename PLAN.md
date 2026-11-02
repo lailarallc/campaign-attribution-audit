@@ -46,7 +46,7 @@ Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in
 - [x] README Live line; case study live at lailarallc.com/work/campaign-math
 - [x] Max's sign-off on tool and case study (2026-11-02)
 - [x] Pre-publish code review + /improve pass (2026-11-02)
-- [ ] Repo public (owner's y/n at /publish)
+- [x] Repo public (owner y, 2026-11-02)
 - [ ] Shared OG card (lailara-website manifest entry, then switch og:image)
 
 ## Why this arc, why now
@@ -64,7 +64,7 @@ Which campaigns actually worked, and can your data even answer that question?
 - [x] Build the universe, engine, bounds check and static site
 - [x] Pass the independent adversarial realism review
 - [x] Deploy to campaignmath.lailarallc.com; Max's audit fixes
-- [ ] Public flip (owner)
+- [x] Public flip (owner, 2026-11-02)
 - [ ] Shared OG card
 
 ## Out of scope for this arc
@@ -79,7 +79,7 @@ Which campaigns actually worked, and can your data even answer that question?
 - [x] Gate pinned; bounds 43/43; realism review PASS WITH FINDINGS, all answered
 - [x] Live site matches HEAD; CI regenerates and hash-gates every deploy
 - [x] Max's sign-off on tool and case study
-- [ ] Repo public; README Live line resolves
+- [x] Repo public; README Live line resolves
 
 ---
 

@@ -133,3 +133,5 @@ grep for keys/tokens/private keys: none). README real. Six-reviewer /ce:code-rev
   the owner has worked with"; history rewritten before first publication (DECISIONS 2026-11-02).
 - Two past cf-domain run logs list the account's Pages/Workers/DNS inventory: accepted, not
   deleted (owner, revised ruling; DECISIONS 2026-11-02).
+
+**Published:** repo flipped PUBLIC on the owner's y (2026-11-02). Remaining: shared OG card.
