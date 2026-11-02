@@ -44,3 +44,10 @@ quarto" or "scope, scrollytelling, decoration"]
 
 ### 2026-11-02 — Commit message claimed an edit that had failed
 **What we tried:** committed after a string patch that did not apply (CRLF mismatch), with a message describing it (3e88d98). **Why it failed:** didn't read the diff before committing. **Instead:** fdb0773 applied it and said so; patches now normalize line endings. **Status:** Resolved. **Tags:** git, CRLF, read the diff
+
+### 2026-11-02 — Draft copy stated a correction count from memory
+**What we tried:** method copy saying "Two copy clauses ... were corrected." **Why it failed:** docs/verdict-branches.md logs four post-generation changes (two clause corrections, a definition repair, a slot rename). Caught by grepping the log before commit. **Instead:** wording without a count. **Status:** Resolved. **Tags:** copy, honesty, count from the source
+
+### 2026-11-02 — Multi-file patch script aborted halfway
+**What we tried:** one python heredoc applying several string replacements across files, each guarded by an assert. **Why it failed:** an assert on a later file fired after earlier files were already written, leaving a partial change set. **Instead:** Edit tool per change, then the test run. **Status:** Resolved. **Tags:** tooling, atomic edits, patch scripts
+

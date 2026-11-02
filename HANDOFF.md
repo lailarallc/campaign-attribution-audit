@@ -135,3 +135,24 @@ grep for keys/tokens/private keys: none). README real. Six-reviewer /ce:code-rev
   deleted (owner, revised ruling; DECISIONS 2026-11-02).
 
 **Published:** repo flipped PUBLIC on the owner's y (2026-11-02). Remaining: shared OG card.
+
+## 2026-11-02 17:07
+
+**Started from:** case study live and verified; Max's re-audit, GoatCounter and the public flip open.
+
+**Did:** Max's sign-off recorded. /publish gate: gitleaks over full history (clean); six-reviewer
+/ce:code-review and /improve pass; fixes in 103480a (method copy discloses post-generation
+corrections, footnote wording, A8 pre-quarter caveat, `select_branch()` + threshold tests 26 -> 38,
+cf-domain.yml removed, cleanups). Client name reworded in five places and history rewritten
+pre-publication (filter-branch, bb3d50f). cf-domain run logs accepted, not deleted (owner ruling).
+GoatCounter item struck (shared lailara site). **Repo flipped PUBLIC**; description and topics set.
+Profile README (MsShawnP/MsShawnP): new section 5 "Campaign & web analytics", totals recounted
+from rows (45 tools / 36 live / 2 PyPI), numbers note names the GA4-style lane.
+
+**State:** public, live at campaignmath.lailarallc.com matching HEAD, CI green, bounds 43/43,
+38 tests pass. Backup of pre-rewrite history: scratchpad bundle (session-local, disposable).
+
+**Next:** shared OG card: add the campaignmath entry to the lailara-website /og manifest, then point
+`og:image` in src/app.html at it and redeploy. Deferred review items are listed in PLAN.md
+Improvement history (channel_group/credit_key tests, explicit secrets, Frisch footnote, etc.).
+Next /improve due 2026-12-02.
