@@ -97,6 +97,9 @@ Each entry:
 - **Why:** the office-hours verdict critic found both terms undefined. Strict last-click could make "(direct)" the top campaign. An unpinned ranking metric, winner set or campaign allocation could each be picked after seeing which rule wins.
 - **Do not:** change any §1.5 definition after generation without an entry whose reason is not the verdict.
 
+### 2026-11-02 — "Quellwood" USPTO screen: no marks
+- **Result:** a USPTO trademark search (tmsearch.uspto.gov, wordmark "contains" search) for "quellwood" returned **0 live and 0 dead** marks. Control: the same search for "doritos" returned 91 results, so the search was executing. This is a screen for the distance guardrail, not a legal clearance.
+
 ### 2026-11-02 — Max's live-site audit: three fixes; F5 accepted as-is
 - **Footer:** now the three-lane line, verbatim from Payout Math. The design system records it as the fleet tool footer (`lailara-design-system@5c5b320`), so no new tool ships the retired single-lane line.
 - **Class 4 split:** the ledger labels the two class-4 rows 4a (duplicate purchase sends) and 4b (missing transaction_id).

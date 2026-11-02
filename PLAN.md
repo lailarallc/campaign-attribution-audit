@@ -41,7 +41,7 @@ Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in
 - [x] Independent adversarial realism review: PASS WITH FINDINGS (third pass), all findings answered
 - [x] Static site built on frame v1.5.1, checked at 1440 and 375
 - [x] Deploy verified live at campaignmath.lailarallc.com (2026-11-02)
-- [ ] Max's live-site audit
+- [x] Max's live-site audit (3 fixes shipped 2026-11-02)
 - [ ] Launch: USPTO check, repo public, shared OG card, README Live line
 
 ## Why this arc, why now

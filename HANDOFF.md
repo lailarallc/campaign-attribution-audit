@@ -100,3 +100,19 @@ README Live line added. Next human touchpoint: Max's live-site audit.
 
 **Still open:** GoatCounter site add; USPTO check on "Quellwood"; repo public at launch;
 shared OG card (proposed session); owner call on non-defect click loss (F5).
+
+## 2026-11-02 — Max's audit fixes live; launch tail
+
+**Did:** three-lane footer (+ design-system rule, lailara-design-system@5c5b320); class 4a/4b
+labels; unattributable figures reconciled on-page with a build-time identity assert; F5 accepted
+as-is (owner). Deployed 89ee441, verified live on campaignmath.lailarallc.com. Dropped the
+per-deploy domain job (72f36b6). USPTO screen for "Quellwood": 0 live / 0 dead (control
+"doritos" = 91).
+
+**Waiting on the owner:**
+- GoatCounter: the in-app browser is not signed in (lands on /user/new). Sign in at
+  lailara.goatcounter.com and add campaignmath.lailarallc.com the same way slotmath was added.
+- Public flip of the repo: held for the owner's word.
+
+**Noted, not done (fleet scope):** other tools (e.g. Slot Math) still render the retired
+single-lane footer; the design system now forbids it for new tools.
