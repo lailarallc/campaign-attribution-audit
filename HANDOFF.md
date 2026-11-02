@@ -110,8 +110,9 @@ per-deploy domain job (72f36b6). USPTO screen for "Quellwood": 0 live / 0 dead (
 "doritos" = 91).
 
 **Waiting on the owner:**
-- GoatCounter: the in-app browser is not signed in (lands on /user/new). Sign in at
-  lailara.goatcounter.com and add campaignmath.lailarallc.com the same way slotmath was added.
+- ~~GoatCounter: add campaignmath.lailarallc.com as a site.~~ Moot (owner, 2026-11-02): the snippet
+  counts against the shared lailara.goatcounter.com site, the Slot Math fleet pattern. There is no
+  add-a-domain step.
 - Public flip of the repo: held for the owner's word.
 
 **Noted, not done (fleet scope):** other tools (e.g. Slot Math) still render the retired
