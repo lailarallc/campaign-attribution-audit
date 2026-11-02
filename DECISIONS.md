@@ -208,3 +208,8 @@ This preserves the history of why something is the way it is.
 - **Orphaned commits accepted.** GitHub keeps pre-rewrite commits reachable by SHA until it garbage-collects them. Old SHAs are deliberately not recorded here. Accepted on the rebate repo's reasoning: the line was a guardrail, not a disclosure, and is unreachable without a SHA recorded nowhere.
 - **Do not:** rewrite history once the repo is public or has any collaborator, fork or pin. After publication, a fix goes in a new commit.
 
+
+## 2026-11-02 — Two cf-domain run logs accepted, not deleted
+
+- **Decision (owner, revising the earlier delete order):** runs 41501420741 and 41501235239 stay and become public with the repo. They contain infrastructure names only: Pages project names, custom domains, Workers domains with service names and object ids, and DNS records for one hostname. The names and domains are already public via the live subdomains and DNS. No credential is printed; the token sits only in a request header and the account id is masked (pre-publish security review). Same precedent as the rebate repo's accepted orphan commit.
+- **Note for accuracy:** the Workers domain object ids are not otherwise public. They are not usable without an API token for the account.

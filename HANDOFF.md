@@ -131,5 +131,5 @@ grep for keys/tokens/private keys: none). README real. Six-reviewer /ce:code-rev
 **Owner calls before the flip (resolved 2026-11-02, rebate-repo precedent):**
 - Client name: guardrail text reworded in five places to "any real program operator or client
   the owner has worked with"; history rewritten before first publication (DECISIONS 2026-11-02).
-- Two past cf-domain run logs list the account's Pages/Workers/DNS inventory: owner deletes them
-  (`gh run delete`) before the flip.
+- Two past cf-domain run logs list the account's Pages/Workers/DNS inventory: accepted, not
+  deleted (owner, revised ruling; DECISIONS 2026-11-02).
