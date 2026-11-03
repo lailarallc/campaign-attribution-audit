@@ -156,3 +156,19 @@ from rows (45 tools / 36 live / 2 PyPI), numbers note names the GA4-style lane.
 `og:image` in src/app.html at it and redeploy. Deferred review items are listed in PLAN.md
 Improvement history (channel_group/credit_key tests, explicit secrets, Frisch footnote, etc.).
 Next /improve due 2026-12-02.
+
+## 2026-11-03 — v1.0-public tag; shared OG card; arc closed
+
+**Did:** annotated tag `v1.0-public` (tag object 80ff10e, peeled commit d2b9c0e) pushed. Shared OG
+card: lailara-website manifest entry `campaignmath` (847eb68, subhead shortened in 9ae6d0f after
+the first render clipped it mid-sentence); og:image and twitter:image now point at
+https://lailarallc.com/og/s/campaignmath.png. Bespoke `static/og-card.png` and
+`scripts/make_og_card.py` removed (Payout Math pattern: no per-repo card).
+
+**State:** every PLAN.md task is done. Live and public; CI green.
+
+**Next:** nothing open in this arc. Next /improve due 2026-12-02 (deferred review items listed in
+PLAN.md Improvement history). Website note, not this repo: `src/og/subdomain-manifest.ts` section
+comments say Pages 12 / Fly 17 / Workers 6 and "36 project subdomains"; the file holds 14 / 15 / 5
+entries (34). Stale before this change; left untouched.
+

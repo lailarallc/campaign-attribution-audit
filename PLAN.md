@@ -47,7 +47,7 @@ Gate inputs awaiting owner acceptance: A-tags A1–A9 plus the §2/§3 A rows in
 - [x] Max's sign-off on tool and case study (2026-11-02)
 - [x] Pre-publish code review + /improve pass (2026-11-02)
 - [x] Repo public (owner y, 2026-11-02)
-- [ ] Shared OG card (lailara-website manifest entry, then switch og:image)
+- [x] Shared OG card: lailarallc.com/og/s/campaignmath.png (2026-11-03)
 
 ## Why this arc, why now
 
@@ -65,7 +65,7 @@ Which campaigns actually worked, and can your data even answer that question?
 - [x] Pass the independent adversarial realism review
 - [x] Deploy to campaignmath.lailarallc.com; Max's audit fixes
 - [x] Public flip (owner, 2026-11-02)
-- [ ] Shared OG card
+- [x] Shared OG card
 
 ## Out of scope for this arc
 
