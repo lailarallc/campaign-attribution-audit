@@ -35,7 +35,9 @@ Outcome:
 
 Second line, then the branch body:
 
-> And which campaign worked best depends on a rule nobody chose.
+> And which campaign worked best depends on the attribution rule.
+
+> _(Reworded 2026-11-15, owner decision: the pre-registered line read "depends on a rule nobody chose." The owner found it vague and edged toward the reader. Tone only: no figure, measure or branch rule changed. See DECISIONS.)_
 
 In branch B3, the second line is replaced by the B3 body.
 

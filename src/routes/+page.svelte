@@ -60,7 +60,7 @@
 		</h1>
 
 		{#if site.branch !== 'BANK'}
-			<p class="second">And which campaign worked best depends on a rule nobody chose.</p>
+			<p class="second">And which campaign worked best depends on the attribution rule.</p>
 		{/if}
 
 		{#if site.branch === 'B1'}
