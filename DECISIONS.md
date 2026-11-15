@@ -47,6 +47,7 @@ Each entry:
 - **Do not:** cite a mechanism as if it were a decision case. Drop the "none published" text to make a row look stronger. Admit a class on a vendor-only mechanism (2a stays a footnote for that reason).
 
 ### 2026-10-16 — Verdict grammar: "your top campaign depends on a rule nobody chose"
+- **Wording superseded 2026-11-15** (see "Verdict second line reworded" at the end of this file). The decision about the four rules stands; only the phrase "a rule nobody chose" is retired.
 - **Decision:** the tool computes four transparent rules itself (last-click, first-click, linear, position-based). The copy names the Nov 2023 removal: GA4 replaced the dropdown with a default no one can audit. The four rules are the checkable bracket around that black box. Every number on the page is reproducible by hand. Data-driven attribution appears only as the thing you can't reproduce, cited to [Google's doc](https://support.google.com/analytics/answer/10596866) ("no longer available as of November 2023").
 - **Why:** owner decision. The removal strengthens the story. Comparing GA4's own models would rest the flagship on a model that can't be checked, which is what this portfolio exists to refuse.
 - **Rejected:** comparing GA4's current models (DDA vs the last-click variants).
@@ -213,3 +214,10 @@ This preserves the history of why something is the way it is.
 
 - **Decision (owner, revising the earlier delete order):** runs 41501420741 and 41501235239 stay and become public with the repo. They contain infrastructure names only: Pages project names, custom domains, Workers domains with service names and object ids, and DNS records for one hostname. The names and domains are already public via the live subdomains and DNS. No credential is printed; the token sits only in a request header and the account id is masked (pre-publish security review). Same precedent as the rebate repo's accepted orphan commit.
 - **Note for accuracy:** the Workers domain object ids are not otherwise public. They are not usable without an API token for the account.
+
+## 2026-11-15 — Verdict second line reworded: "depends on the attribution rule"
+
+- **Decision (owner):** the verdict's second line is now "And which campaign worked best depends on the attribution rule." It replaces "depends on a rule nobody chose" (2026-10-16 verdict grammar, above).
+- **Why:** the owner read the old line as vague and a little snarky, a jab at whoever runs the account. The site voice allows no snark. The point survives: the answer moves with the rule.
+- **Scope:** `src/routes/+page.svelte`, `docs/verdict-branches.md` (dated note), README opening. Tone only. No figure, measure, threshold or branch rule changed. PLAN.md, HANDOFF.md and `docs/office-hours.md` keep the old phrase as history.
+- **Do not:** bring back "a rule nobody chose" in page copy, the site, or videos.
